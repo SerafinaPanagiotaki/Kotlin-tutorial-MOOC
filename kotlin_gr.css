@@ -1,0 +1,230 @@
+@charset "utf-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{    
+    padding: 20px;
+    background-color: #000000;
+    background-image: radial-gradient(#ffffff, #000000 55%);
+}
+#logo{
+    position:absolute;
+    left:15px;
+    top:23px;
+    height:12%;
+    z-index: 2;
+    cursor: pointer;
+}
+#title{
+    color:#5c36ab;
+    text-shadow: 3px 2px 4px #fa769e;
+}
+#lang_choice{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 72%;
+    float:right;
+    margin-right: 21px;
+
+}
+.lang{
+    width:4%;
+    height:4%;
+    float:right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.lang:hover{
+    opacity: .6;
+}
+#menu{
+    float: left;
+    cursor: pointer;
+    width:18%;
+    background-color: #5c36ab;  
+    margin-bottom: 30px;
+}
+.nav{
+    padding: 0 5px;    
+}
+.nav li{
+    list-style-type: none;
+    text-align: left;    
+    padding:10px 0; 
+    margin:0; 
+}
+.nav a{
+    text-decoration: none;
+    color:#ffffff;    
+    font-weight: 580;
+    vertical-align: middle;
+}
+.headlines{
+    color:#ffffff;    
+    font-weight: 600;
+    vertical-align: middle;
+    text-shadow: 3px 1px 2px #34137c;  
+    background-color: #ff5c8e;
+    padding:15px 0;
+    margin-top: 0;
+}
+h4{
+    color:white; 
+    font-weight: 600;
+    padding:10px 8px; 
+    border-radius: 4px;
+    text-shadow: 3px 1px 2px #34137c;  
+    background-color: #ff5c8e;
+    margin-bottom: -5px;
+    text-align: center;
+}
+.display_info{
+    color:#5c36ab; 
+    text-shadow: 1px 1px 1px#fa769e; 
+    font-weight: bolder; 
+    font-size: 14px; 
+    text-align: center;
+    word-wrap: break-word;
+}
+.nav li:hover, .top:hover{
+    background-color:#9577d4; 
+    text-shadow: 4px 3px 3px #fa769e;   
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 97%;
+    cursor: pointer;
+}
+.menu_buttons{
+    margin-bottom: 5px;
+}
+#context{
+    margin:auto;
+    width:60%;
+    text-align: justify;
+    line-height: 1.5;
+}
+.right_side{
+    position: fixed;
+    float: right;
+    right:8px;
+    top:200px;
+    width:11%;
+}
+#text_image{
+    float: left;
+    margin-right: 5px;
+}
+#context_left, #context_right{
+    float:left;
+}
+.black{
+    float: left;
+    position: relative;
+    top: -20px;
+    margin-left: -15px;
+}
+#black{
+    border-radius: 50%;
+    opacity:.23;
+    z-index: 5;
+    width:20%;
+    left:5px;
+    margin-right: 5px;
+}
+#logo2{
+    position: relative;
+    left:-130px;
+    top:30px;
+    width: 13%;
+    margin-right: 5px;
+    z-index: 2;
+}
+.top{
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    padding: 10px 35px;
+    background-color:#5c36ab;
+    color: #ffffff;
+    text-shadow: 3px 1px 2px #ff5c8e;
+    font-weight: 600;
+    border: 2px solid #5c36ab;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#intro2, #basics2, #syntax2, #others2{
+    display: none;
+}
+#intro1:hover #intro2{
+    display: block;
+}
+#basics1:hover #basics2{
+    display: block;
+}
+#syntax1:hover #syntax2{
+    display: block;
+}
+#others1:hover #others2{
+    display: block;
+}
+footer{
+    position:relative;
+    bottom: -6px;
+    width: 60%;
+    margin-left: 20%;
+    padding: 15px 0 0 0;
+    text-align: center;
+    color:#34137c;
+    text-shadow: 1px 1px 2px #fa769e;
+    font-weight: bold;
+    font-size: .92em;
+    padding-top: 30px;
+}
+.comment_li{
+    color:#5c36ab;
+    text-shadow: 1px 1px 1px#fa769e;
+    text-decoration: none;
+    font-size: 1.3em;
+    list-style-type: square;
+    font-weight: 550;
+}
+.comments{
+    font-size: 1.1em;
+    color:#b3b3b3;
+}
+.light_blue_color{
+    color:#3ca1c3;
+}
+.purple_color{
+    color:purple;
+}
+.green_color{ 
+    color:green;
+}
+.red_color{
+    color:red;
+}
+.decoration{
+    color:#ff5c8e;
+    font-weight:bold;
+}
+.titloi{
+    color: #5c36ab;
+    text-shadow: 3px 2px 3px #ffffff;
+    background-color:#ff5c8e;
+    border-radius: 4px;    
+    padding: 4px 20px 6px 20px;
+}
+#screen1, #screen2{
+    background-color: #5c36ab;  
+    color:#ffffff;
+    padding:15px 12px; 
+    margin: 0;
+    margin-top: -16px;
+    font-weight: 550;
+    font-size: .9em;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}

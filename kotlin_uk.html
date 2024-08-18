@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(1)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(1)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                    <ul id="syntax2">
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                            &nbsp;&nbsp;&nbsp;Comments
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                            &nbsp;&nbsp;&nbsp;Data Types
+                        </a></li>                        
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                            &nbsp;&nbsp;&nbsp;Variables
+                        </a>  </li>   
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                            &nbsp;&nbsp;&nbsp;Operators
+                        </a> </li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                            &nbsp;&nbsp;&nbsp;Boolean
+                        </a>   </li>                                                              
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                            &nbsp;&nbsp;&nbsp;Output
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                            &nbsp;&nbsp;&nbsp;Strings
+                        </a></li>      
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                            &nbsp;&nbsp;&nbsp;If...else
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                            &nbsp;&nbsp;&nbsp;When
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                            &nbsp;&nbsp;&nbsp;For loop
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                            &nbsp;&nbsp;&nbsp;While loop
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                            &nbsp;&nbsp;&nbsp;Break/Continue
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                            &nbsp;&nbsp;&nbsp;Collections
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                            &nbsp;&nbsp;&nbsp;Ranges
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                            &nbsp;&nbsp;&nbsp;Functions
+                        </a></li>                            
+                    </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                </a>
+                <ul id="others2">
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                        &nbsp;&nbsp;&nbsp;Null safety
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                        &nbsp;&nbsp;&nbsp;Equality
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                        &nbsp;&nbsp;&nbsp;This expression
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#asyncrhonous">
+                        &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                        &nbsp;&nbsp;&nbsp;Annotations
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                        &nbsp;&nbsp;&nbsp;Destructuring declarations
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                        &nbsp;&nbsp;&nbsp;Reflection
+                    </a></li>                                                                                                  
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <img src="black.jpg" alt="black" class="black" id="black"/>
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo2" class="black"/>
+            <p style="position:relative; left: -95px; width:110%;"> Kotlin is a modern, trending programming language. It is easy to learn, 
+                especially if you already know Java (it is 100% compatible with Java). Kotlin is used to develop Android apps, server side apps,
+                and much more.</p>
+            <p style="position:relative; left: 15px; width:100%;"><cite title="https://www.w3schools.com/kotlin/index.php, https://en.wikipedia.org/wiki/Kotlin_(programming_language)" 
+                style="color:#5c36ab; font-weight: bold;">In this Tutorial sections </cite>you can find lots of info which will help you 
+                understand Kotlin. There is also <cite title="https://www.w3schools.com/kotlin/index.php, https://en.wikipedia.org/wiki/Kotlin_(programming_language)" style="color:#5c36ab; 
+                font-weight: bold;">Kotlin Tutorial in Greek language </cite>(just click on the Greek flag above) and of course you can 
+                always visit the <a href="https://kotlinlang.org/" target="_blank" style="text-decoration: none;"><span style="font-weight: bold; 
+                color:#34137c; text-shadow: 2px 1px 2px #fa769e;"><cite title="https://kotlinlang.org/">official Kotlin website</cite>
+                </span></a>.
+            </p>
+            <p style="position:relative; left: 15px;">
+                <strong>Let's start learning Kotlin!</strong>
+            </p>
+            <p onclick="info()" style="cursor:pointer; position:relative; left: 185px;">For more info about Kotlin Tutorial website you can 
+                press <span style="font-weight: bold; color:#34137c; text-shadow: 2px 1px 2px #fa769e;">here</span>.
+            </p>             
+        </div>  
+        <div class="right_side">
+            <h4>
+                Now displaying:
+            </h4>
+            <p class="display_info">
+                Home
+            </p>
+        </div>           
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p style="position: fixed; bottom: 0; margin-left: 180px;">Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

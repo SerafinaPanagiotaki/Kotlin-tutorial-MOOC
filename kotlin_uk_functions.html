@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(5)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(5)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                    <ul id="syntax2">
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                            &nbsp;&nbsp;&nbsp;Comments
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                            &nbsp;&nbsp;&nbsp;Data Types
+                        </a></li>                        
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                            &nbsp;&nbsp;&nbsp;Variables
+                        </a>  </li>   
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                            &nbsp;&nbsp;&nbsp;Operators
+                        </a> </li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                            &nbsp;&nbsp;&nbsp;Boolean
+                        </a>   </li>                                                              
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                            &nbsp;&nbsp;&nbsp;Output
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                            &nbsp;&nbsp;&nbsp;Strings
+                        </a></li>      
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                            &nbsp;&nbsp;&nbsp;If...else
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                            &nbsp;&nbsp;&nbsp;When
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                            &nbsp;&nbsp;&nbsp;For loop
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                            &nbsp;&nbsp;&nbsp;While loop
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                            &nbsp;&nbsp;&nbsp;Break/Continue
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                            &nbsp;&nbsp;&nbsp;Collections
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                            &nbsp;&nbsp;&nbsp;Ranges
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                            &nbsp;&nbsp;&nbsp;Functions
+                        </a></li>                            
+                    </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Null safety
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Equality
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;This expression
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Annotations
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Destructuring declarations
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <h1 id="null" class="titloi">Null safety</h1>  
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Nullable types and non-null types
+            </h3>
+            <p>
+                Kotlin's type system is aimed at eliminating the danger of null references, also known as 
+                <a href="https://en.wikipedia.org/wiki/Null_pointer#History" target="_blank" style="text-decoration:none;">
+                <abbr title="https://en.wikipedia.org/wiki/Null_pointer#History">The Billion Dollar Mistake</abbr></a>.
+            </p>
+            <p>
+                One of the most common pitfalls in many programming languages, including Java, is that accessing a member of a null 
+                reference will result in a null reference exception. In Java this would be the equivalent of a <span class="red_color">
+                NullPointerException</span>, or an <b>NPE</b> for short.
+            </p>
+            <p>
+                The only possible causes of an NPE in Kotlin are:
+            </p>
+            <ul>
+                <li>An explicit call to <span class="red_color">throw NullPointerException()</span>.</li>
+                <li> Usage of the <span class="red_color">!!</span> operator that is described below.</li>
+                <li>Data inconsistency with regard to initialization, such as when:
+                    <ul style="list-style-type:square;">
+                        <li>An uninitialized <span class="red_color">this</span> available in a constructor is passed and used somewhere
+                             (a "leaking <span class="red_color">this</span>").
+                        </li>
+                        <li>A <a href="https://kotlinlang.org/docs/inheritance.html#derived-class-initialization-order" target="_blank" 
+                            style="text-decoration:none;"><abbr title="https://kotlinlang.org/docs/inheritance.html#derived-class-initialization-order">
+                            superclass constructor calls an open member</abbr></a> whose implementation in the derived class uses an 
+                            uninitialized state.
+                        </li>
+                    </ul>
+                </li>
+                <li>Java interoperation:
+                    <ul style="list-style-type:square;">
+                        <li>Attempts to access a member of a <span class="red_color">null</span> reference of a 
+                            <a href="https://kotlinlang.org/docs/java-interop.html#null-safety-and-platform-types" target="_blank" 
+                            style="text-decoration:none;"><abbr title="https://kotlinlang.org/docs/java-interop.html#null-safety-and-platform-types">
+                            platform type;</abbr></a></li>
+                        <li>
+                            Nullability issues with generic types being used for Java interoperation. For example, a piece of Java code 
+                            might add <span class="red_color">null</span> into a Kotlin <span class="red_color">MutableList&lt;String>
+                            </span>, therefore requiring a <span class="red_color">MutableList&lt;String?></span> for 
+                            working with it.
+
+                        </li>
+                        <li>
+                            Other issues caused by external Java code.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                In Kotlin, the type system distinguishes between references that can hold <span class="red_color">null</span> (nullable 
+                references) and those that cannot (non-null references). For example, a regular variable of type <span class="red_color">
+                String</span> cannot hold <span class="red_color">null</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> a:<span class="light_blue_color"> String</span> = <span class="green_color">"abc"</span><span class="comments"> // Regular initialization means non-null by default</span>
+a = <span class="light_blue_color">null <span class="comments">// compilation error</span>
+            </code></pre>
+            <p>
+                To allow nulls, you can declare a variable as a nullable string by writing <span class="red_color">String?</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> b:<span class="light_blue_color"> String?</span> = <span class="green_color">"abc"</span><span class="comments"> // can be set to null</span>
+b = <span class="light_blue_color">null </span><span class="comments">// ok</span>
+<span class="red_color">print</span>(b)</code></pre>
+            <p>
+                Now, if you call a method or access a property on <span class="red_color">a</span>, it's guaranteed not to cause an NPE,
+                 so you can safely say:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = a.<span class="red_color">length</span></code></pre>            
+            <p>
+                But if you want to access the same property on <span class="red_color">b</span>, that would not be safe, and the 
+                compiler reports an error:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = b.<span class="red_color">length</span><span class="comments"> // error: variable 'b' can be null</span></code></pre>        
+            <p>
+                But you still need to access that property, right? There are a few ways to do so.  
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Checking for null in conditions
+            </h3>  
+            <p>
+                First, you can explicitly check whether <span class="red_color">b</span> is <span class="red_color">null</span>, and 
+                handle the two options separately:
+            </p>          
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = <span class="light_blue_color"> if</span>(b <span class="light_blue_color">!= null</span>) b.<span class="red_color">length</span> <span class="light_blue_color">else</span> <span class="purple_color">-1</span></code></pre>
+            <p>
+                The compiler tracks the information about the check you performed, and allows the call to <span class="red_color">
+                    length</span> inside the <span class="red_color">if</span>. More complex conditions are supported as well:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> b: <span class="light_blue_color">String?</span> = <span class="green_color">"Kotlin"</span>
+<span class="light_blue_color">if</span>(b <span class="light_blue_color">!= null && </span>b.<span class="red_color">length</span> > 0) {
+    <span class="red_color"> print</span>(<span class="green_color">"String of length ${b.length}"</span>)
+} <span class="light_blue_color">else </span>{
+    <span class="red_color"> print</span>(<span class="green_color">"Empty string"</span>)
+}</code></pre>
+            <p>
+                Note that this only works where <span class="red_color">b</span> is immutable (meaning it is a local variable that is 
+                not modified between the check and its usage or it is a member <span class="red_color">val</span> that has a backing 
+                field and is not overridable), because otherwise it could be the case that <span class="red_color">b</span> changes to 
+                <span class="red_color">null</span> after the check.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Safe calls
+            </h3>
+            <p>
+                Your second option for accessing a property on a nullable variable is using the safe call operator <span class="red_color">                    
+                ?.</span>:
+            </p>             
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> a = <span class="green_color">"Kotlin"</span>
+<span class="light_blue_color">val</span>  b: <span class="light_blue_color">String?</span> = <span class="light_blue_color">null</span>                
+<span class="red_color">println</span>(b?.<span class="red_color">length</span>)
+<span class="red_color">println</span>(a?.<span class="red_color">length</span>) <span class="comments">// Unnecessary safe call</span></code></pre>
+            <p>
+                This returns <span class="red_color">b.length</span> if <span class="red_color">b</span> is not null, and 
+                <span class="red_color">null</span> otherwise. The type of this expression is <span class="red_color">Int?</span>.
+            </p>
+            <p>
+                Safe calls are useful in chains. For example, Bob is an employee who may be assigned to a department (or not). That 
+                department may in turn have another employee as a department head. To obtain the name of Bob's department head (if 
+                there is one), you write the following:
+            </p>
+            <pre style="font-size: 1.1em;"><code>bob?.department?.head?.name</code></pre>
+            <p>
+                Such a chain returns <span class="red_color">null</span> if any of the properties in it is <span class="red_color">                    
+                null</span>.
+            </p>
+            <p>
+                To perform a certain operation only for non-null values, you can use the safe call operator together with 
+                <span class="red_color">let</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> listWithNulls: List<span class="purple_color"><</span>String<span class="purple_color">?></span> = listOf(<span class="green_color">"Kotlin"</span>, <span class="light_blue_color">null</span>)             
+<span class="light_blue_color">for</span>(item <span class="light_blue_color">in</span> listWithNulls) {
+    item?.let { println(it) } <span class="comments">// prints Kotlin and ignores null</span>
+}</code></pre>  
+            <p>
+                A safe call can also be placed on the left side of an assignment. Then, if one of the receivers in the safe calls chain 
+                is <span class="red_color">null</span>, the assignment is skipped and the expression on the right is not evaluated at 
+                all:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// If either `person` or `person.department` is null, the function is not called:</span>
+person?.department?.head = managersPool.<span class="red_color">getManager</span>()</code></pre>    
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Nullable receiver
+            </h3>  
+            <p>
+                Extension functions can be defined on a <a href="https://kotlinlang.org/docs/extensions.html#nullable-receiver" 
+                target="_blank" style="text-decoration: none;"><abbr title="https://kotlinlang.org/docs/extensions.html#nullable-receiver">nullable receiver</abbr>
+            </a>. This way you can specify behaviour for null values without the need to use null-checking logic at each call-site.
+            </p>   
+            <p>
+                For example, the <span class="red_color">toString()</span> function is defined on a nullable receiver. It returns the 
+                String "null" (as opposed to a <span class="red_color">null</span> value). This can be helpful in certain situations, 
+                for example, logging:
+            </p>     
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> person: Person? = </span><span class="light_blue_color">null</span>
+logger.<span class="red_color">debug</span>(person.<span class="red_color">toString</span>()) <span class="comments">// Logs "null", does not throw an exception</span></code></pre>             
+            <p>
+                If you want your <span class="red_color">toString()</span> invocation to return a nullable string, use the 
+                <a href="https://kotlinlang.org/docs/null-safety.html#safe-calls" target="_blank" style="text-decoration: none;">
+                <abbr title="https://kotlinlang.org/docs/null-safety.html#safe-calls">safe-call operator</abbr></a> 
+                <span class="red_color"><b>?.</b></span> :
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> timestamp: Instant? = </span><span class="light_blue_color">null</span>
+<span class="light_blue_color">val</span> isoTimestamp = timestamp?.</span><span class="red_color">toString</span>() <span class="comments">// Returns a String? object which is `null`</span>                
+<span class="light_blue_color">if</span>(isoTimestamp == <span class="light_blue_color">null</span>) {
+    <span class="comments">// Handle the case where timestamp was `null`</span>
+}</code></pre>             
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Elvis operator
+            </h3> 
+            <p>
+                When you have a nullable reference, <span class="red_color">b</span>, you can say "if <span class="red_color">b</span>
+                 is not <span class="red_color">null</span>, use it, otherwise use some non-null value":
+            </p>                           
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l: Int = </span><span class="light_blue_color">if</span>(b != <span class="light_blue_color">null</span>) b.length <span class="light_blue_color">else </span><span class="purple_color">-1</span></code></pre> 
+            <p>
+                Instead of writing the complete <span class="red_color">if</span> expression, you can also express this with the Elvis 
+                operator <span class="red_color"><b>?:</b></span> :
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = b?.<span class="red_color">length ?:</span> <span class="purple_color">-1</span></code></pre> 
+            <p>
+                If the expression to the left of <b><span class="red_color">?:</span></b> is not <span class="red_color">null</span>,
+                 the Elvis operator returns it, otherwise it returns the expression to the right. Note that the expression on the 
+                 right-hand side is evaluated only if the left-hand side is <span class="red_color">null</span>.
+            </p>
+            <p>
+                Since <span class="red_color">throw</span> and <span class="red_color">return</span> are expressions in Kotlin, they can also be 
+                used on the right-hand side of the Elvis operator. This can be handy, for example, when checking function arguments:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">foo</span>(node: Node): String? {
+    <span class="light_blue_color">val</span> parent = node.<span class="red_color">getParent</span>() <span class="purple_color">?:</span> <span class="light_blue_color">return null</span>
+    <span class="light_blue_color">val</span> name = node.<span class="red_color">getName</span>() <span class="purple_color">?:</span> <span class="light_blue_color">throw IllegalArgumentException</span>(<span class="green_color">"name expected"</span>)
+    <span class="comments">// ...</span>
+}</code></pre> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                The !! operator
+            </h3>
+            <p>
+                The third option is for NPE-lovers: the not-null assertion operator (<b><span class="red_color">!!</span></b>) converts
+                 any value to a non-null type and throws an exception if the value is <span class="red_color">null</span>. You can write
+                 <span class="red_color">b!!</span>, and this will return a non-null value of <span class="red_color">b</span> (for 
+                 example, a <span class="red_color">String</span> in our example) or throw an NPE if <span class="red_color">b</span> is 
+                 <span class="red_color">null</span>:
+
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = b<span class="purple_color">!!</span>.length</code></pre> 
+            <p>
+                Thus, if you want an NPE, you can have it, but you have to ask for it explicitly and it won't appear out of the blue.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Safe casts
+            </h3> 
+            <p>
+                Regular casts may result in a <span class="red_color">ClassCastException</span> if the object is not of the target type.
+                 Another option is to use safe casts that return <span class="red_color">null</span> if the attempt was not successful:
+            </p>       
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> aInt: Int<span class="purple_color">?</span> = a <span class="light_blue_color">as</span><span class="purple_color">?</span> Int</code></pre> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Collections of a nullable type
+            </h3> 
+            <p>
+                If you have a collection of elements of a nullable type and want to filter non-null elements, you can do so by using 
+                <span class="red_color">filterNotNull</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> nullableList: List<span class="purple_color"><</span>Int<span class="purple_color">?></span> = <span class="red_color">listOf</span>(<span class="purple_color">1</span>, <span class="purple_color">2</span>, <span class="light_blue_color">null</span>, <span class="purple_color">4</span>)</code></pre> 
+            <h1 id="equality" class="titloi">Equality</h1>
+            <p>
+                In Kotlin there are two types of equality:
+            </p>
+            <ul>
+                <li><strong>Structural</strong> equality (<span class="red_color">==</span> - a check for <span class="red_color">equals()</span>)</li>
+                <li><strong>Referential</strong> equality (<span class="red_color">===</span> - two references point to the same object)</li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Structural equality
+            </h3>
+            <p>
+                Structural equality is checked by the <span class="red_color">==</span> operation and its negated counterpart 
+                <span class="red_color">!=</span>. By convention, an expression like <span class="red_color">a == b</span> is translated
+                 to:
+            </p> 
+            <pre style="font-size: 1.1em;"><code>a<span class="purple_color">?</span><span class="red_color">.equals</span>(b) <span class="purple_color">?: </span>(b <span class="purple_color">===</span> <span class="light_blue_color">null</span>)</code></pre> 
+            <p>
+                If <span class="red_color">a</span> is not <span class="red_color">null</span>, it calls the <span class="red_color">                    
+                    equals(Any?)</span> function, otherwise (<span class="red_color">a</span> is <span class="red_color">null</span>) it 
+                checks that <span class="red_color">b</span> is referentially equal to <span class="red_color">null</span>.
+            </p>
+            <p>
+                Note that there's no point in optimizing your code when comparing to <span class="red_color">null</span> explicitly: 
+                <span class="red_color">a == null</span> will be automatically translated to <span class="red_color">a === null</span>.
+            </p>
+            <p>
+                To provide a custom equals check implementation, override the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html"
+                target="_blank" style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html"><span class="red_color">
+                equals(other: Any?): Boolean</span></abbr></a> function. Functions with the same name and other signatures, like 
+                <span class="red_color">equals(other: Foo)</span>, don't affect equality checks with the operators <span class="red_color">
+                ==</span> and <span class="red_color">!=</span> .
+            </p>
+            <p>
+                Structural equality has nothing to do with comparison defined by the <span class="red_color">Comparable<...></span> 
+                interface, so only a custom <span class="red_color">equals(Any?)</span> implementation may affect the behavior of the 
+                operator.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Referential equality
+            </h3>
+            <p>
+                Referential equality is checked by the <span class="red_color">===</span> operation and its negated counterpart 
+                <span class="red_color">!==</span> . <span class="red_color">a === b</span> evaluates to true if and only if 
+                <span class="red_color">a</span> and <span class="red_color">b</span> point to the same object. For values represented 
+                by primitive types at runtime (for example, <span class="red_color">Int</span>), the <span class="red_color">===</span>
+                 equality check is equivalent to the <span class="red_color">==</span> check.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Floating-point numbers equality
+            </h3>
+            <p>
+                When an equality check operands are statically known to be <span class="red_color">Float</span> or <span class="red_color">
+                Double</span> (nullable or not), the check follows the <a href="https://en.wikipedia.org/wiki/IEEE_754" target="_blank"
+                style="text-decoration: none;"><abbr title="https://en.wikipedia.org/wiki/IEEE_754">IEEE 754 Standard for Floating-Point Arithmetic.</abbr></a>
+            </p>
+            <p>
+                Otherwise, structural equality is used, which disagrees with the standard so that <span class="red_color">NaN</span> is 
+                equal to itself, <span class="red_color">NaN</span> is considered greater than any other element, including 
+                <span class="red_color">POSITIVE_INFINITY</span>, and <span class="red_color">-0.0</span> is not equal to 
+                <span class="red_color">0.0</span> .
+            </p>
+            <h1 id="this" class="titloi">This expression</h1>
+            <p>
+                To denote the current <b>receiver</b>, you use <span class="red_color">this</span> expressions:
+            </p>               
+            <ul>
+                <li>
+                    In a member of a class, <span class="red_color">this</span> refers to the current object of that class.
+                </li>
+                <li>
+                    In an <a href="https://kotlinlang.org/docs/extensions.html" target="_blank" style="text-decoration: none;">
+                    <abbr title="https://kotlinlang.org/docs/extensions.html">extension function</abbr></a> or a 
+                    <a href="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver" target="_blank" style="text-decoration: none;">
+                    <abbr title="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver">function literal with receiver</abbr></a>  
+                    <span class="red_color">this</span> denotes the receiver parameter that is passed on the left-hand side of a dot.
+                </li>
+            </ul>
+            <p>
+                If <span class="red_color">this</span> has no qualifiers, it refers to the <strong>innermost enclosing scope</strong>. 
+                To refer to <span class="red_color">this</span> in other scopes, <strong>label qualifiers</strong> are used.                
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Qualified this
+            </h3>
+            <p>
+                To access <span class="red_color">this</span> from an outer scope (a class, 
+                <a href="https://kotlinlang.org/docs/extensions.html" target="_blank" style="text-decoration: none;">
+                <abbr title="https://kotlinlang.org/docs/extensions.html">extension function</abbr></a>, or labeled 
+                <a href="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver">
+                function literal with receiver</abbr></a>) you write <span class="red_color">this@label</span>, where<span class="red_color">
+                @label</span> is a label on the scope <span class="red_color">this</span> is meant to be from:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> A { <span class="comments">// implicit label @A</span>
+    <span class="light_blue_color">inner class</span> B { <span class="comments">// implicit label @B</span>  
+        <span class="light_blue_color">fun</span><span class="red_color"> Int.foo</span>() { <span class="comments">// implicit label @foo</span> 
+            <span class="light_blue_color">val</span> a = <span class="ligth_blue_color">this</span><span class="purple_color">@A</span><span class="comments">// A's this</span> 
+            <span class="light_blue_color">val</span> b = <span class="ligth_blue_color">this</span><span class="purple_color">@B</span><span class="comments">// B's this</span> 
+
+            <span class="light_blue_color">val</span> c = <span class="ligth_blue_color">this</span><span class="comments"> // foo()'s receiver, an Int</span> 
+            <span class="light_blue_color">val</span> c1 = <span class="ligth_blue_color">this</span><span class="purple_color">@foo</span><span class="comments">// foo()'s receiver, an Int</span> 
+            <span class="light_blue_color">val</span> funLit = <span class="purple_color">lambda@ </span><span class="light_blue_color">fun</span> String.() {        
+                <span class="light_blue_color">val</span> d = <span class="ligth_blue_color">this</span><span class="comments"> // funLit's receiver, a String</span> 
+            }
+            
+            <span class="light_blue_color">val</span> funLit2 = { s: String <span class="purple_color">-></span>
+                <span class="comments">// foo()'s receiver, since enclosing lambda expression</span>
+                <span class="comments">// doesn't have any receiver</span>
+                <span class="light_blue_color">val</span> d1 = <span class="ligth_blue_color">this</span>
+            }    
+        }
+    }
+}</code></pre> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Implicit this
+            </h3>
+            <p>
+                When you call a member function on <span class="red_color">this</span>, you can skip the <span class="red_color">this.</span>
+                 part. If you have a non-member function with the same name, use this with caution because in some cases it can be called 
+                 instead:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">printLine</span>() { <span class="red_color">println</span>(<span class="green_color">"Top-level function"</span>) }
+<span class="light_blue_color">class</span> A {
+    <span class="light_blue_color">fun </span><span class="red_color">printLine</span>() { <span class="red_color">println</span>(<span class="green_color">"Member function"</span>) }        
+        
+    <span class="light_blue_color">fun </span><span class="red_color">invokePrintLine</span>(omitThis: Boolean = <span class="light_blue_color">false</span>) {
+        <span class="light_blue_color">if</span>(omitThis) <span class="red_color">printLine()</span>
+        <span class="light_blue_color">else this</span>.<span class="red_color">printLine()</span>
+    }
+}
+            ​
+A().invokePrintLine() <span class="comments">// Member function</span>
+A().invokePrintLine(omitThis = <span class="light_blue_color">true</span>) <span class="comments">// Top-level function</span></code></pre>
+            <h1 id="asynchronous" class="titloi">Asynchronous programming techniques</h1>
+            <p>
+                For decades, as developers we are confronted with a problem to solve - how to prevent our applications from blocking. 
+                Whether we're developing desktop, mobile, or even server-side applications, we want to avoid having the user wait or 
+                what's worse cause bottlenecks that would prevent an application from scaling.
+            </p>
+            <p>
+                There have been many approaches to solving this problem, including:
+            </p>
+            <ul>
+                <li>Threading</li>
+                <li>Callbacks</li>
+                <li>Futures, promises, and others</li>
+                <li>Reactive Extensions</li>
+                <li>Coroutines</li>
+            </ul>
+            <p>
+                Before explaining what coroutines are, let's briefly review some of the other solutions.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Threading
+            </h3>
+            <P>
+                Threads are by far probably the most well-known approach to avoid applications from blocking.
+            </P>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="light_blue_color">val</span> token = <span class="red_color">preparePost</span>()
+    <span class="light_blue_color">val</span> post = <span class="red_color">submitPost</span>(token, item)
+    <span class="red_color">processPost</span>(post)
+}           
+
+<span class="light_blue_color">fun </span><span class="red_color">preparePost</span>(): Token {
+    <span class="comments">// makes a request and consequently blocks the main thread</span>
+    <span class="light_blue_color">return</span> token
+}</code></pre>
+            <p>
+                Let's assume in the code above that <span class="red_color">preparePost</span> is a long-running process and 
+                consequently would block the user interface. What we can do is launch it in a separate thread. This would then allow us 
+                to avoid the UI from blocking. This is a very common technique, but has a series of drawbacks:
+            </p>
+            <ul>
+                <li>
+                    Threads aren't cheap. Threads require context switches which are costly.</li>
+                <li>
+                    Threads aren't infinite. The number of threads that can be launched is limited by the underlying operating system. 
+                    In server-side applications, this could cause a major bottleneck.
+                </li>
+                <li>
+                    Threads aren't always available. Some platforms, such as JavaScript do not even support threads.
+
+                </li>
+                <li>
+                    Threads aren't easy. Debugging threads, avoiding race conditions are common problems we suffer in multi-threaded 
+                    programming.
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Callbacks
+            </h3>
+            <p>
+                With callbacks, the idea is to pass one function as a parameter to another function, and have this one invoked once the 
+                process has completed.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="red_color">preparePostAsync</span> { token <span class="purple_color">-></span>
+        <span class="red_color">submitPostAsync</span>(token, item) { post <span class="purple_color">-></span>
+            <span class="red_color">processPost</span>(post)
+        }
+    }
+}
+
+<span class="light_blue_color">fun </span><span class="red_color">preparePostAsync</span>(callback: (Token) <span class="purple_color">-></span> Unit) {
+    <span class="comments">// make request and return immediately</span>    
+    <span class="comments">// arrange callback to be invoked later</span>
+}</code></pre>
+            <p>
+                This in principle feels like a much more elegant solution, but once again has several issues:
+            </p> 
+            <ul>
+                <li>
+                    Difficulty of nested callbacks. Usually a function that is used as a callback, often ends up needing its own 
+                    callback. This leads to a series of nested callbacks which lead to incomprehensible code. The pattern is often 
+                    referred to as the titled christmas tree (braces represent branches of the tree).
+                </li>
+                <li>
+                    Error handling is complicated. The nesting model makes error handling and propagation of these somewhat more 
+                    complicated.
+                </li>
+            </ul>
+            <p>
+                Callbacks are quite common in event-loop architectures such as JavaScript, but even there, generally people have moved 
+                away to using other approaches such as promises or reactive extensions.           
+            </p>          
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Futures, promises, and others
+            </h3>
+            <p>
+                The idea behind futures or promises (there are also other terms these can be referred to depending on language/platform),
+                 is that when we make a call, we're promised that at some point it will return with an object called a Promise, which 
+                 can then be operated on.
+            </p>           
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="red_color">preparePostAsync()</span>
+    .<span class="red_color">thenCompose</span> { token <span class="purple_color">-></span>
+        <span class="red_color">submitPostAsync</span>(token, item)
+    }
+    .<span class="red_color">thenAccept</span> { post <span class="purple_color">-></span>
+        <span class="red_color">processPost</span>(post)
+    }       
+}            
+
+<span class="light_blue_color">fun </span><span class="red_color">preparePostAsyn</span>(): Promise<span class="purple_color"><</span>Token<span class="purple_color">></span> {
+    <span class="comments">// makes request and returns a promise that is completed later</span>           
+    <span class="light_blue_color">return</span> promise
+}</code></pre>
+            <p>
+                This approach requires a series of changes in how we program, in particular:
+            </p>
+            <ul>
+                <li>
+                    Different programming model. Similar to callbacks, the programming model moves away from a top-down imperative 
+                    approach to a compositional model with chained calls. Traditional program structures such as loops, exception 
+                    handling, etc. usually are no longer valid in this model.
+                </li>
+                <li>
+                    Different APIs. Usually there's a need to learn a completely new API such as <span class="red_color">
+                    thenCompose</span> or <span class="red_color">thenAccept</span>, which can also vary across platforms.
+                </li>
+                <li>
+                    Specific return type. The return type moves away from the actual data that we need and instead returns a new type 
+                    <span class="red_color">Promise</span> which has to be introspected.
+                </li>
+                <li>
+                    Error handling can be complicated. The propagation and chaining of errors aren't always straightforward.          
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Reactive extensions
+            </h3>
+            <p>
+                Reactive Extensions (Rx) were introduced to C# by Erik Meijer. While it was definitely used on the .NET platform it 
+                really didn't reach mainstream adoption until Netflix ported it over to Java, naming it RxJava. From then on, numerous 
+                ports have been provided for a variety of platforms including JavaScript (RxJS).
+            </p>          
+            <p>
+                The idea behind Rx is to move towards what's called <span class="red_color">observable streams</span> whereby we now 
+                think of data as streams (infinite amounts of data) and these streams can be observed. In practical terms, Rx is 
+                simply the <a href="https://en.wikipedia.org/wiki/Observer_pattern" target="_blank" style="text-decoration:none;">
+                <abbr title="https://en.wikipedia.org/wiki/Observer_pattern">Observer Pattern</abbr></a> with a series of extensions 
+                which allow us to operate on the data.
+            </p>
+            <p>
+                In approach it's quite similar to Futures, but one can think of a Future as returning a discrete element, whereas Rx 
+                returns a stream. However, similar to the previous, it also introduces a complete new way of thinking about our 
+                programming model, famously phrased as
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">"everything is a stream, and it's observable"</span></code></pre>
+            <p>
+                This implies a different way to approach problems and quite a significant shift from what we're used to when writing 
+                synchronous code. One benefit as opposed to Futures is that given it's ported to so many platforms, generally we can 
+                find a consistent API experience no matter what we use, be it C#, Java, JavaScript, or any other language where Rx is 
+                available.
+            </p>
+            <p>
+                In addition, Rx does introduce a somewhat nicer approach to error handling.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Coroutines
+            </h3> 
+            <p>
+                Kotlin's approach to working with asynchronous code is using coroutines, which is the idea of suspendable computations, 
+                i.e. the idea that a function can suspend its execution at some point and resume later on.
+            </p>
+            <p>
+                One of the benefits however of coroutines is that when it comes to the developer, writing non-blocking code is 
+                essentially the same as writing blocking code. The programming model in itself doesn't really change.
+            </p>         
+            <p>
+                Take for instance the following code:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="red_color">launch</span> {   
+        <span class="light_blue_color">val</span> token = <span class="red_color">preparePost</span>()  
+        <span class="light_blue_color">val</span> post = <span class="red_color">submitPost</span>(token, item)
+        <span class="red_color">processPost</span>(post)
+    }
+}       
+          
+<span class="light_blue_color">suspend fun</span><span class="red_color"> preparePost</span>(): Token { 
+    <span class="comments">// makes a request and suspends the coroutine</span>
+    <span class="light_blue_color">return</span> <span class="red_color">suspendCoroutine</span> { <span class="comments">/* ... */</span> }
+}</code></pre>
+            <p>
+                This code will launch a long-running operation without blocking the main thread. The <span class="red_color">preparePost()
+                </span> is what's called a <span class="red_color">suspendable function</span>, thus the keyword <span class="red_color">
+                suspend</span> prefixing it. What this means as stated above, is that the function will execute, pause execution and 
+                resume at some point in time.
+            </p>
+            <ul>
+                <li>
+                    The function signature remains exactly the same. The only difference is <span class="red_color">suspend</span> being 
+                    added to it. The return type however is the type we want to be returned.
+                </li>
+                <li>
+                    The code is still written as if we were writing synchronous code, top-down, without the need of any special syntax, 
+                    beyond the use of a function called <span class="red_color">launch</span> which essentially kicks off the coroutine 
+                    (covered in other tutorials).
+                </li>
+                <li>
+                    The programming model and APIs remain the same. We can continue to use loops, exception handling, etc. and there's 
+                    no need to learn a complete set of new APIs.
+                </li>
+                <li>
+                    It is platform independent. Whether we're targeting JVM, JavaScript or any other platform, the code we write is the 
+                    same. Under the covers the compiler takes care of adapting it to each platform.
+                </li>
+            </ul>
+            <p>
+                Coroutines are not a new concept, let alone invented by Kotlin. They've been around for decades and are popular in some 
+                other programming languages such as Go. What is important to note though is that the way they're implemented in Kotlin, 
+                most of the functionality is delegated to libraries. In fact, beyond the <span class="red_color">suspend</span> keyword, 
+                no other keywords are added to the language. This is somewhat different from languages such as C# that have 
+                <span class="red_color">async</span> and <span class="red_color">wait</span> as part of the syntax. With Kotlin, these 
+                are just library functions.
+            </p>
+            <h1 id="annotations" class="titloi">Annotations</h1>
+            <p>
+                Annotations are means of attaching metadata to code. To declare an annotation, put the <span class="red_color">                    
+                    annotation</span> modifier in front of a class:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> Fancy</code></pre>
+            <p>
+                Additional attributes of the annotation can be specified by annotating the annotation class with meta-annotations:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/">
+                    <span class="red_color">@Target</span></abbr></a> specifies the possible kinds of elements which can be annotated with the 
+                    annotation (such as classes, functions, properties, and expressions);
+ 
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-retention/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-retention/">
+                    <span class="red_color">@Retention</span></abbr></a> specifies whether the annotation is stored in the compiled class 
+                    files and whether it's visible through reflection at runtime (by default, both are true);
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/">
+                    <span class="red_color">@Repeatable</span></abbr></a> allows using the same annotation on a single element multiple 
+                    times;
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-must-be-documented/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-must-be-documented/">
+                    <span class="red_color"> @MustBeDocumented</span></abbr></a> specifies that the annotation is part of the public API 
+                    and should be included in the class or method signature shown in the generated API documentation.
+                </li>
+            </ul>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@Target</span>(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION,
+        AnnotationTarget.TYPE_PARAMETER, AnnotationTarget.VALUE_PARAMETER,
+        AnnotationTarget.EXPRESSION)
+<span class="green_color">@Retention</span>(AnnotationRetention.SOURCE)
+<span class="green_color">@MustBeDocumented</span>
+<span class="light_blue_color">annotation class</span> Fancy</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Usage
+            </h3>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@Fancy</span><span class="light_blue_color"> class</span> Foo {
+    <span class="green_color">@Fancy</span><span class="light_blue_color"> fun</span><span class="light_blue_color"> baz</span>(<span class="green_color">@Fancy</span> foo: Int): Int {              
+        <span class="light_blue_color">return</span>(<span class="green_color">@Fancy</span> <span class="purple_color">1</span>)
+    }
+}</code></pre>
+            <p>
+                If you need to annotate the primary constructor of a class, you need to add the <span class="red_color">constructor
+                </span> keyword to the constructor declaration, and add the annotations before it:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> Foo <span class="green_color"> @Inject</span><span class="light_blue_color"> constructor</span>(dependency: MyDependency) { ... }</code></pre>
+            <p>
+                You can also annotate property accessors:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> Foo {
+    <span class="light_blue_color">var</span> x: MyDependency<span class="purple_color">?</span> = <span class="light_blue_color">null</span>
+        <span class="green_color">@Inject</span> set
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Constructors
+            </h3>
+            <p>
+                Annotations can have constructors that take parameters.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> Special(<span class="light_blue_color">val</span> why: String)
+
+<span class="green_color">@Special</span>(<span class="green_color">"example"</span>) class Foo {}</code></pre>
+            <p>
+                Allowed parameter types are:
+            </p> 
+            <ul>
+                <li>Types that correspond to Java primitive types (Int, Long etc.)</li>
+                <li>Strings</li>
+                <li>Classes (<span class="red_color">Foo::class</span>)</li>
+                <li>Enums</li>
+                <li>Other annotations</li>
+                <li>Arrays of the types listed above</li>
+            </ul> 
+            <p>
+                Annotation parameters cannot have nullable types, because the JVM does not support storing <span class="red_color">
+                null</span> as a value of an annotation attribute.
+            </p>
+            <p>
+                If an annotation is used as a parameter of another annotation, its name is not prefixed with the <span class="red_color">                    
+                @</span> character:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> ReplaceWith(<span class="light_blue_color">val</span> expression: String)             
+
+<span class="light_blue_color">annotation class</span> Deprecated(              
+    <span class="light_blue_color">val</span> message: String,   
+    <span class="light_blue_color">val</span> replaceWith: ReplaceWith = ReplaceWith(<span class="green_color">""</span>))          
+
+<span class="green_color">@Deprecated</span>(<span class="green_color">"This function is deprecated, use === instead"</span>, ReplaceWith(<span class="green_color">"this === other"</span>))</code></pre>
+            <p>
+                If you need to specify a class as an argument of an annotation, use a Kotlin class 
+                <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/">
+                (KClass)</abbr></a>. The Kotlin compiler will automatically convert it to a Java class, so that the Java code can 
+                access the annotations and arguments normally.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> kotlin.reflect.KClass
+<span class="light_blue_color">annotation class</span> Ann(val arg1: KClass<span class="purple_color">&lt;*></span>, <span class="light_blue_color">val</span> arg2: KClass<span class="purple_color"><</span>out Any<span class="purple_color">></span>)
+
+<span class="green_color">@Ann</span>(String<span class="purple_color">::</span>class, Int<span class="purple_color">::</span>class) <span class="light_blue_color">class</span> MyClass</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Instantiation
+            </h3>
+            <p>
+                In Java, an annotation type is a form of an interface, so you can implement it and use an instance. As an alternative to 
+                this mechanism, Kotlin lets you call a constructor of an annotation class in arbitrary code and similarly use the 
+                resulting instance.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> InfoMarker(<span class="light_blue_color">val</span> info: String)
+
+<span class="light_blue_color">fun</span> <span class="red_color">processInfo</span>(marker: InfoMarker): Unit = <span class="red_color">TODO</span>() 
+
+
+<span class="light_blue_color">fun</span> <span class="red_color">main</span>(args: Array<String>) {
+    <span class="light_blue_color">if </span>(args.<span class="red_color">isNotEmpty</span>())
+        <span class="red_color">processInfo</span>(<span class="red_color">getAnnotationReflective</span>(args))
+    <span class="light_blue_color">else</span>
+        <span class="red_color">processInfo</span>(<span class="light_blue_color">InfoMarker</span>(<span class="green_color">"default"</span></span>))
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Lambdas
+            </h3>
+            <p>
+                Annotations can also be used on lambdas. They will be applied to the <span class="red_color">invoke()</span> method into 
+                which the body of the lambda is generated. This is useful for frameworks like 
+                <a href="https://docs.paralleluniverse.co/quasar/" target="_blank" style="text-decoration: none;">
+                <abbr title="https://docs.paralleluniverse.co/quasar/">Quasar</abbr></a>, which uses annotations for concurrency control.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> Suspendable
+
+<span class="light_blue_color">val</span> f = <span class="green_color">@Suspendable</span> { Fiber.<span class="red_color">sleep</span>(<span class="red_color">10</span>) }</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Annotation use-site targets
+            </h3>
+            <p>
+                When you're annotating a property or a primary constructor parameter, there are multiple Java elements which are 
+                generated from the corresponding Kotlin element, and therefore multiple possible locations for the annotation in the 
+                generated Java bytecode. To specify how exactly the annotation should be generated, use the following syntax:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class Example</span>(<span class="green_color">@field:Ann </span><span class="light_blue_color">val</span> foo,    <span class="comments">// annotate Java field</span>
+              <span class="green_color">@get:Ann </span><span class="light_blue_color">val</span> bar,<span class="comments">// annotate Java getter</span>      
+              <span class="green_color">@param:Ann </span><span class="light_blue_color">val</span> quux)<span class="comments">// annotate Java constructor parameter</span></code></pre>
+            <p>
+                The same syntax can be used to annotate the entire file. To do this, put an annotation with the target <span class="red_color">
+                file</span> at the top level of a file, before the package directive or before all imports if the file is in the default package:
+            </p> 
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@file:JvmName</span>(<span class="green_color">"Foo"</span>)
+<span class="light_blue_color">package</span> org.jetbrains.demo</code></pre>
+            <p>
+                If you have multiple annotations with the same target, you can avoid repeating the target by adding brackets after the 
+                target and putting all the annotations inside the brackets:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> Example {
+<span class="green_color">@set:[Inject VisibleForTesting]</span>
+<span class="light_blue_color">var</span> collaborator: Collaborator               
+}</code></pre>
+            <p>
+                The full list of supported use-site targets is:
+            </p>
+            <ul>
+                <li><span class="red_color">file</span></li>
+                <li><span class="red_color">property</span> (annotations with this target are not visible to Java)</li>
+                <li><span class="red_color">field</span></li>
+                <li><span class="red_color">get</span> (property getter)</li>
+                <li><span class="red_color">set</span> (property setter)</li>
+                <li><span class="red_color">receiver</span> (receiver parameter of an extension function or property)</li>
+                <li><span class="red_color">param</span> (constructor parameter)</li>
+                <li><span class="red_color">setparam</span> (property setter parameter)</li>
+                <li><span class="red_color">delegate</span> (the field storing the delegate instance for a delegated property)</li>
+            </ul>
+            <p>
+                To annotate the receiver parameter of an extension function, use the following syntax:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun</span><span class="green_color"> @receiver:Fancy</span> String.<span class="red_color">myExtension</span>() { ... }</code></pre>
+            <p>
+                If you don't specify a use-site target, the target is chosen according to the <span class="red_color">@Target</span> 
+                annotation of the annotation being used. If there are multiple applicable targets, the first applicable target from the 
+                following list is used:
+            </p>
+            <ul>
+                <li><span class="red_color">param</span></li>
+                <li><span class="red_color">property</li>
+                <li><span class="red_color">field</span></li>
+             </ul>  
+             <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Java annotations
+            </h3> 
+            <p>
+                Java annotations are 100% compatible with Kotlin:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.junit.Test
+<span class="light_blue_color">import</span> org.junit.Assert.<span class="purple_color">*</span>
+<span class="light_blue_color">import</span> org.junit.Rule
+<span class="light_blue_color">import</span> org.junit.rules.<span class="purple_color">*</span>
+         
+<span class="light_blue_color">class</span>  Tests {           
+    <span class="comments">// apply @Rule annotation to property getter</span>
+    <span class="green_color">@get:Rule </span><span class="light_blue_color">val</span> tempFolder = <span class="red_color">TemporaryFolder</span>()
+            
+    <span class="green_color">@Test </span><span class="light_blue_color">fun</span><span class="red_color"> simple</span>() {
+        <span class="light_blue_color">val</span> f = tempFolder.<span class="red_color">newFile</span>()
+        <span class="red_color">assertEquals</span>(<span class="purple_color">42</span>, <span class="red_color">getTheAnswer</span>())
+    }             
+}</code></pre>
+            <p>
+                Since the order of parameters for an annotation written in Java is not defined, you can't use a regular function call 
+                syntax for passing the arguments. Instead, you need to use the named argument syntax:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>Ann {
+    <span class="light_blue_color">int</span> intValue();      
+    String stringValue();
+}
+
+<span class="comments">// Kotlin</span>
+<span class="green_color">@Ann</span>(intValue = <span class="purple_color">1</span>, stringValue = <span class="green_color">"abc"</span>) <span class="ligth_blue_color">class</span> C</code></pre>
+             <p>
+                Just like in Java, a special case is the <span class="red_color">value</span> parameter; its value can be specified without an explicit name:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>AnnWithValue {
+    String<span class="light_blue_color"> value</span>;      
+}
+                
+<span class="comments">// Kotlin</span>
+<span class="green_color">@AnnWithValue</span>(<span class="green_color">"abc"</span>, ) <span class="light_blue_color">class</span> C</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Arrays as annotation parameters
+            </h3> 
+            <p>
+                If the <span class="red_color">value</span> argument in Java has an array type, it becomes a <span class="red_color">
+                vararg</span> parameter in Kotlin:
+            </p>                              
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>AnnWithArrayValue {
+    String<span class="red_color"> value</span>();      
+}
+                                
+<span class="comments">// Kotlin</span>
+<span class="green_color">@AnnWithArrayValue</span>(<span class="green_color">"abc"</span>, <span class="green_color">"foo"</span>, <span class="green_color">"bar"</span> ) <span class="light_blue_color">class</span> C</code></pre>
+            <p>
+                For other arguments that have an array type, you need to use the array literal syntax or<span class="red_color">
+                arrayOf(...)</span> :
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>AnnWithArrayMethod {
+    String[] <span class="light_blue_color">names</span>();      
+}
+
+<span class="comments">// Kotlin</span>
+<span class="green_color">@AnnWithArrayMethod</span>(names = [<span class="green_color">"abc"</span>, <span class="green_color">"foo"</span>, <span class="green_color">"bar"</span> ]) <span class="light_blue_color">class</span> C</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Accessing properties of an annotation instance
+            </h3> 
+            <p>
+                Values of an annotation instance are exposed as properties to Kotlin code:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>Ann {
+    <span class="light_blue_color">int value</span>();   
+}
+<span class="comments">// Kotlin</span>                                                              
+<span class="light_blue_color">fun </span><span class="red_color">foo</span>(ann: Ann) {
+    <span class="light_blue_color">val </span>i = ann.<span class="red_color">value</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Repeatable annotations
+            </h3>                     
+            <p>
+                Just like in <a href="https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html" target="_blank" style="
+                text-decoration:none;">
+                <abbr title="https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html">Java</abbr></a>, Kotlin has 
+                repeatable annotations, which can be applied to a single code element multiple times. To make your annotation 
+                repeatable, mark its declaration with the  <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/"
+                target="_blank" style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/">
+                <span class="red_color">@kotlin.annotation.Repeatable</span></abbr></a> meta-annotation. This will make it repeatable 
+                both in Kotlin and Java. Java repeatable annotations are also supported from the Kotlin side.
+            </p>  
+            <p>
+                The main difference with the scheme used in Java is the absence of a <strong>containing annotation</strong>, which the 
+                Kotlin compiler generates automatically with a predefined name. For an annotation in the example below, it will 
+                generate the containing annotation <span class="red_color">@Tag.Container</span>:
+            </p>                    
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@Repeatable</span>
+<span class="light_blue_color">annotation class</span> Tag(<span class="light_blue_color">val</span> name: String)</span>
+<span class="comments">// The compiler generates the @Tag.Container containing annotation</span></code></pre>
+            <p>
+                You can set a custom name for a containing annotation by applying the <span class="red_color">
+                @kotlin.jvm.JvmRepeatable</span> meta-annotation and passing an explicitly declared containing annotation class as an 
+                argument:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@JvmRepeatable</span>(Tags<span class="purple_color">::</span><span class="light_blue_color">class</span>)
+<span class="light_blue_color">annotation class </span>Tag(<span class="light_blue_color">val</span> name: String)
+                
+<span class="light_blue_color">annotation class </span>Tag(<span class="light_blue_color">val</span> value: Array<span class="purple_color"><</span>Tag<span class="purple_color">></span>)</code></pre>
+            <p>
+                To extract Kotlin or Java repeatable annotations via reflection, use the 
+                <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect.full/find-annotations.html" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect.full/find-annotations.html">
+                <span class="red_color"> KAnnotatedElement.findAnnotations()</span></abbr></a> function.
+            </p>
+            <h1 id="destructuring" class="titloi">Destructuring declarations</h1>
+            <p>
+                <strong>Note:</strong> Not to be confused with the <span class="red_color">destructor</span> method common in 
+                object-oriented languages.
+            </p>
+            <p>
+                <span class="red_color">Destructuring declarations</span> decompose an object into multiple variables at once, e.g. a 
+                2D coordinate object might be destructured into two integers, x and y.
+            </p>
+            <p>
+                For example, the <span class="red_color">Map.Entry</span> object supports destructuring to simplify access to its key and value fields:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for</span>((key, value) <span class="light_blue_color">in</span> map)
+    <span class="red_color">println</span>(<span class="green_color">"$</span>key: <span class="green_color">$</span>value<span class="green_color">"</span>)</code></pre>
+            <h1 id="reflection" class="titloi">Reflection</h1>
+            <p>
+                <strong>Reflection</strong> is a set of language and library features that allows you to introspect the structure of 
+                your program at runtime. Functions and properties are first-class citizens in Kotlin, and the ability to introspect 
+                them (for example, learning the name or the type of a property or function at runtime) is essential when using a 
+                functional or reactive style.
+            </p>
+            <p>
+                <strong>Note:</strong> Kotlin/JS provides limited support for reflection features.
+            </p>                   
+        </div>
+        <div class="right_side">
+            <h4>
+                Now displaying:
+            </h4>
+            <p class="display_info">
+                More Kotlin features
+            </p>
+        </div>    
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

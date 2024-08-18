@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+        <p id="lang_choice">Language selection:</p></br></br>
+        <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(4)"/>
+        <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(4)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Comments
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Data Types
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Variables
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Operators
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Boolean
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Output
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Strings
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;For loop
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;While loop
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Collections
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Ranges
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Functions
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Null safety
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Equality
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;This expression
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#asyncrhonous">
+                            &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Annotations
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Destructuring declarations
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <h1 id="comments" class="titloi">Comments</h1>
+            <p>
+                Comments can be used to explain Kotlin code, and to make it more readable. It can also be used to prevent execution 
+                when testing alternative code.
+            </p>
+            <ul>
+                <li class="comment_li">
+                    Single-line Comments
+                </li>
+                <p style="margin-top: 2px;">
+                Single-line comments starts with two forward slashes (<span style="color:#ff5c8e; font-weight:bold;">//</span>).
+            </p>
+            <p>Any text between <span class="decoration">//</span> and the end of the line is ignored by 
+                Kotlin (will not be executed).
+            </p>
+            <p>This example uses a single-line comment before a line of code:</p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// This is a comment</span>
+<span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span></code>
+</pre>
+            <p>
+                This example uses a single-line comment at the end of a line of code:
+            </p>
+            </span>
+            <pre style="font-size: 1.1em;"><span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span><span class="comments"><code>// This is a comment</code>
+                </pre>  
+            <li class="comment_li">
+                Multi-line Comments
+            </li>               
+            <p style="margin-top: 2px;">
+                Multi-line comments start with <span class="decoration">/*</span> and ends with <span class="decoration">*/</span>.
+            </p>
+            <p>
+                Any text between <span class="decoration">/*</span> and <span class="decoration">*/</span> will be ignored by Kotlin.
+            </p>
+            <p>
+                This example uses a multi-line comment (a comment block) to explain the code:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">/*The code below will print the words Hello World
+to the screen, and it is amazing */</span>
+<span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span>
+            </code></pre> 
+            <li class="comment_li">
+                Nested Comments
+            </li>
+            <p style="margin-top: 2px;">
+                Block comments in Kotlin can be nested. This example uses a nested comment:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">/* The comment starts here
+/* contains a nested comment *⁠/
+and ends here. */</span>
+<span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span>
+            </code></pre>
+        </ul> 
+        <h1 id="data_types" class="titloi">Data Types</h1>
+        <p>
+            In Kotlin, the type of a variable is decided by its value:
+        </p>
+        <pre><code style="font-size: 1.1em;"><span class="light_blue_color">val</span> myNum = <span class="purple_color">5</span>             <span class="comments">// Int</span>
+<span class="light_blue_color">val</span> myDoubleNum = <span class="purple_color">5.99</span>    <span class="comments">// Double</span>
+<span class="light_blue_color">val</span> myLetter = <span class="green_color">'D'</span>        <span class="comments">// Char</span>
+<span class="light_blue_color">val</span> myBoolean = <span class="purple_color">true</span>      <span class="comments">// Boolean</span>
+<span class="light_blue_color">val</span> myText = <span class="green_color">"Hello"</span>      <span class="comments">// String</span></code></pre>
+        <p>
+            However, it is possible to specify the type if you want:
+        </p>
+        <pre><code style="font-size: 1.1em;"><span class="light_blue_color">val</span> myNum: Int = <span class="purple_color">5</span>             <span class="comments">// Int</span>
+<span class="light_blue_color">val</span> myDoubleNum: Double = <span class="purple_color">5.99</span>    <span class="comments">// Double</span>
+<span class="light_blue_color">val</span> myLetter: Char = <span class="green_color">'D'</span>        <span class="comments">// Char</span>
+<span class="light_blue_color">val</span> myBoolean: Boolean = <span class="purple_color">true</span>      <span class="comments">// Boolean</span>
+<span class="light_blue_color">val</span> myText: String = <span class="green_color">"Hello"</span>      <span class="comments">// String</span>
+                    </code></pre>  
+        <p>
+            Sometimes you have to specify the type, and often you don't. Anyhow, it is good to know what the different types represent.
+        </p>           
+        <p>
+            Data types are divided into different groups:
+        </p>            
+        <ul>
+            <li>Numbers</li>
+            <li>Characters</li>
+            <li>Booleans</li>
+            <li>Strings</li>
+            <li>Arrays</li>
+        </ul>         
+        <ul>
+            <li class="comment_li">
+                Numbers
+            </li>
+            </ul>
+            <p>
+                Number types are divided into two groups:
+            </p>
+            <p>
+                <strong>Integer types</strong> store whole numbers, positive or negative (such as 123 or -456), without decimals. 
+                Valid types are 
+                <span class="red_color">Byte</span>, 
+                <span class="red_color">Short</span>, 
+                <span class="red_color">Int</span> and 
+                <span class="red_color">Long</span>.
+            </p>
+            <p>
+                <strong>Floating point</strong> types represent numbers with a fractional part, containing one or more decimals. 
+                There are two types: 
+                <span class="red_color">Float</span> and 
+                <span class="red_color">Double</span>.
+            </p>
+            <p style="color:#5c36ab;">
+                <i>
+                    If you don't specify the type for a numeric variable, it is most often returned as 
+                    <span class="red_color">Int</span> for whole numbers and 
+                    <span class="red_color">Double</span> for floating point numbers.
+                </i>
+            </p>
+            <ul>
+                <li class="comment_li">
+                    Integer Types
+                </li>
+                </ul>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Byte
+                </h3>
+                <p>
+                    The <span class="red_color">Byte</span> data type can store whole numbers from -128 to 127. This can be used 
+                    instead of <span class="red_color">Int</span> or other integer types to save memory when you are certain that 
+                    the value will be within -128 and 127:
+
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Byte = <span class="purple_color">100</span>
+<span class="red_color">println</span>(myNum)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Short
+                </h3>
+                <p>
+                    The <span class="red_color">Short</span> data type can store whole numbers from -32768 to 32767:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Short = <span class="purple_color">5000</span>
+<span class="red_color">println</span>(myNum)
+
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Int
+                </h3>
+                <p>
+                    The <span class="red_color">Int</span> data type can store whole numbers from -2147483648 to 2147483647:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Int = <span class="purple_color">100000</span>
+<span class="red_color">println</span>(myNum)
+
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Long
+                </h3>
+                <p>
+                    The <span class="red_color">Long</span> data type can store whole numbers from -9223372036854775807 to 
+                    9223372036854775807. This is used when <span class="red_color">Int</span> is not large enough to store the value. 
+                    Optionally, you can end the value with an "L":
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Long = <span class="purple_color">15000000000L</span>
+<span class="red_color">println</span>(myNum)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Difference Between Int and Long
+                </h3>
+                <p>
+                    A whole number is an <span class="red_color">Int</span> as long as it is up to 2147483647. If it goes beyond that, 
+                    it is defined as <span class="red_color">Long</span>:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum1 = <span class="purple_color">2147483647</span><span class="comments"> //Int</span>
+<span class="light_blue_color">val</span> myNum2 = <span class="purple_color">2147483648</span> <span class="comments"> //Long</span>
+                </code></pre>
+            <h1 id="variables" class="titloi">Variables</h1>  
+            <p>
+                Variables are containers for storing data values.
+            </p>
+            <p>
+                To create a variable, use <span class="red_color">var</span> or <span class="red_color">val</span>, and assign a value 
+                to it with the equal sign (<span class="red_color">=</span>):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> <i>variableName = value</i>
+<span class="light_blue_color">val</span> <i>variableName = value</i>
+            </code></pre>
+            <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0; font-weight: bold;">
+               For example:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name = <span class="green_color">"John"</span>
+<span class="light_blue_color">val</span> birthyear = <span class="purple_color">1975</span>
+<span class="red_color">println</span>(name)          <span class="comments">// Print the value of name</span>
+<span class="red_color">println</span>(birthyear)     <span class="comments">// Print the value of birthyear</span></code></pre>
+            <p>
+                You can declare variables at the top level:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> PI = <span class="purple_color">3.14</span>
+<span class="light_blue_color">var</span> x = <span class="purple_color">0</span>
+
+<span class="red_color">fun</span><span class="purple_color"> incrementX()</span> { 
+    x += 1 
+}            </code></pre>
+            <p style="margin-top: 0; margin-bottom: 35px;">
+                The difference between <span class="red_color">var</span> and <span class="red_color">val</span> is that variables 
+                declared with the <span class="red_color">var</span> keyword <b>can be changed/modified</b>, while <span class="red_color">
+                val</span> variables <b>cannot</b>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Variable Type
+            </h3>
+            <p>
+                Unlike many other programming languages, variables in Kotlin do not need to be declared with a specified type 
+                (like "String" for text or "Int" for numbers, if you are familiar with those).
+            </p>
+            <p>
+                To create a variable in Kotlin that should store text and another that should store a number, look at the following 
+                example:    
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name = <span class="green_color">"John"</span><span class="comments"> //String (text)</span>
+<span class="light_blue_color">val</span> birthyear = <span class="purple_color">1975</span><span class="comments"> //Int (number)</span>
+                
+<span class="red_color">println</span>(name)          <span class="comments"> //Print the value of name</span>
+<span class="red_color">println</span>(birthyear)     <span class="comments"> //Print the value of birthyear</span>                
+            </code></pre>            
+            <p>
+                Kotlin is smart enough to understand that <b>"John"</b> is a <span class="red_color">String</span> (text), and that 
+                <b>1975</b> is an <span class="red_color">Int</span> (number) variable.
+            </p>
+            <p>
+                However, it is possible to specify the type if you insist:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name: String = <span class="green_color">"John"</span><span class="comments"> //String</span>
+<span class="light_blue_color">val</span> birthyear: Int = <span class="purple_color">1975</span><span class="comments"> //Int</span>
+                                
+<span class="red_color">println</span>(name)          
+<span class="red_color">println</span>(birthyear)                 
+            </code></pre>
+            <p>
+                You can also declare a variable without assigning the value, and assign the value later. <b>However</b>, this is only 
+                possible when you specify the type:
+            </p>
+                <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #e0fbe0;"><code><span class="comments">//This works fine:</span>
+<span class="light_blue_color">var</span> name: String
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)
+                </code></pre>
+                <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #ffdddd;"><code><span class="comments">//This will generate an error:</span>
+<span class="light_blue_color">var</span> name
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)
+                </code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Notes on val
+            </h3>                
+            <p>
+                When you create a variable with the <span class="red_color">val</span> keyword, the value <b>cannot</b> 
+                be changed/reassigned. Read-only local variables are defined using the keyword <span class="red_color">val</span>. 
+                They can be assigned a value only once.
+            </p>
+             <p>
+                The following example will generate an error:
+             </p>
+             <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #ffdddd;"><code>
+<span class="light_blue_color">val</span> name = <span class="green_color">"John"</span>
+name = <span class="green_color">"Robert"</span>                
+<span class="red_color">println</span>(name)
+            </code></pre>           
+            <p>
+                When using <span class="red_color">var</span>, you can change the value whenever you want:
+            </p>
+            <pre style="font-size: 1.1em;"><code>
+<span class="light_blue_color">var</span> name = <span class="green_color">"John"</span>
+name = <span class="green_color">"Robert"</span>                
+<span class="red_color">println</span>(name)
+            </code></pre>  
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                So When To Use val?
+            </h3>             
+            <p>
+                The <span class="red_color">val</span> keyword is useful when you want a variable to always store the same value, 
+                like PI (3.14159...):   
+            </p>                  
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> pi = <span class="purple_color">3.14159265359</span>               
+<span class="red_color">println</span>(pi)
+            </code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Display Variables
+            </h3>             
+            <p>
+                Like you have seen with the examples above, the <span class="red_color">println()</span> method is often used to 
+                display variables.  
+            </p>  
+            <p>
+                To combine both text and a variable, use the <span class="red_color">+</span> character:
+            </p>                
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> name = <span class="green_color">"John"</span>               
+<span class="red_color">println</span>(<span class="green_color">"Hello "</span> <span class="purple_color">+</span> name)
+            </code></pre>            
+            <p>
+                You can also use the <span class="red_color">+</span> character to add a variable to another variable:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">val</span> lastName = <span class="green_color">"Doe"</span> 
+<span class="light_blue_color">val</span> fullName = firstName <span class="purple_color">+</span> lastName               
+<span class="red_color">println</span>(fullName)
+            </code></pre>                             
+            <p>
+                For numeric values, the <span class="red_color">+</span> character works as a mathematical operator:
+            </p>           
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> x = <span class="purple_color">5</span>
+<span class="light_blue_color">val</span> y = <span class="purple_color">6</span>              
+<span class="red_color">println</span>(x<span class="purple_color">+</span>y)<span class="comments"> //Print the value of x + y </span>
+            </code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Variable Names
+            </h3>             
+            <p>
+                A variable can have a short name (like x and y) or more descriptive names (age, sum, totalVolume).
+            </p>
+            <p>
+                The general rule for Kotlin variables are:
+            </p>
+            <ul>
+                <li>Names can contain letters, digits, underscores, and dollar signs</li>
+                <li>Names should start with a letter</li>
+                <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+                <li>Names are case sensitive ("myVar" and "myvar" are different variables)</li>
+                <li>Names should start with a lowercase letter and it cannot contain whitespace</li>
+                <li>Reserved words (like Kotlin keywords, such as <span class="red_color">var</span> or 
+                    <span class="red_color">String</span>) cannot be used as names</li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                camelCase variables
+            </h3>             
+            <p>
+                You might notice that we used <b>firstName</b> and <b>lastName</b> as variable names in the example above, instead of firstname 
+                and lastname. This is called "camelCase", and it is considered as good practice as it makes it easier to read when 
+                you have a variable name with different words in it, for example "myFavoriteFood", "rateActionMovies" etc.            
+            </p>     
+            <h1 id="operators" class="titloi">Operators</h1>
+            <p>
+                Operators are used to perform operations on variables and values.
+            </p>
+            <p>
+                The value is called an operand, while the operation (to be performed between the two operands) is defined by an 
+                operator:
+            </p>
+            <center><table style="border: 2px solid #5c36ab; width:60%; text-align: center;">
+                <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                    <td style="padding:10px 0;">Operand</td><td>Operator</td><td>Operand</td></tr>
+                <tr><td>100</td><td>+</td><td>50</td></tr>
+            </table></center>
+            <p>
+                In the example below, the numbers 100 and 50 are <b>operands</b>, and the + sign is an <b>operator</b>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> x =<span class="purple_color">100</span> + <span class="purple_color">50</span>                 
+            </code></pre>            
+            <p>
+                Although the <span class="red_color">+</span> operator is often used to add together two values, like in the example above, it can 
+                also be used to add together a variable and a value, or a variable and a variable:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> sum1 = <span class="purple_color">100</span> + <span class="purple_color">50</span>       <span class="comments"></span>// 150 (100 + 50)
+<span class="light_blue_color">var</span> sum2 = sum1 + <span class="purple_color">250</span>     <span class="comments"></span>// 400 (150 + 250)
+<span class="light_blue_color">var</span> sum3 = sum2 + sum2    <span class="comments"></span>// 800 (400 + 400)</code></pre>
+            <p>
+                Kotlin divides the operators into the following groups:
+            </p>
+            <ul>
+                <li>Arithmetic operators</li>
+                <li>Assignment operators</li>
+                <li>Comparison operators</li>
+                <li>Logical operators</li>
+            </ul>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Arithmetic Operators
+            </h3>
+            <p style="line-height: 0;">
+                Arithmetic operators are used to perform common mathematical operations.
+            </p><br>
+            <center><table style="border: 2px solid #5c36ab; width:80%; text-align: center;">
+                <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                    <td style="padding: 15px 0;">Operator</td><td>Name</td><td>Description</td><td>Example</td></tr>
+                <tr><td>+</td><td>Addition</td><td>Adds together two values</td><td>x + y</td></tr>
+                <tr><td>-</td><td>Subtraction</td><td>Subtracts one value from another</td><td>x - y</td></tr>
+                <tr><td>*</td><td>Multiplication</td><td>Multiplies two values</td><td>x * y</td></tr>
+                <tr><td>/</td><td>Division</td><td>Divides one value from another</td><td>x / y</td></tr>
+                <tr><td>%</td><td>Modulus</td><td>Returns the division remainder</td><td>x % y</td></tr>
+                <tr><td>++</td><td>Increment</td><td>Increases the value by 1</td><td>++x, x++</td></tr>
+                <tr><td>--</td><td>Decrement</td><td>Decreases the value by 1</td><td>--x, x--</td></tr>
+            </table></center>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Kotlin Assignment Operators
+            </h3>
+            <p>
+                Assignment operators are used to assign values to variables.
+            </p>
+            <p>
+                In the example below, we use the <b>assignment</b> operator (<span class="red_color">=</span>) to assign the value 
+                <b>10</b> to a variable called <b>x</b>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> x = <span class="purple_color">10</span>                
+            </code></pre>
+            <p>
+                The <b>addition assignment</b> operator (<span class="red_color">+=</span>) adds a value to a variable:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> x = <span class="purple_color">10</span> 
+x += <span class="purple_color">5</span>                       
+            </code></pre>            
+            <p>
+                A list of all assignment operators:
+            </p>
+            <center><table style="border: 2px solid #5c36ab; width:60%; text-align: center;">
+                <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                    <td style="padding: 15px 0;">Operator</td><td>Example</td><td>Same as</td></tr>
+                <tr><td>=</td><td>x = 5</td><td>x = 5</td></tr>
+                <tr><td>+=</td><td>x += 3</td><td>x = x + 3</td></tr>
+                <tr><td>-=</td><td>x -= 3</td><td>x = x - 3</td></tr>
+                <tr><td>*=</td><td>x *= 3</td><td>x = x * 3</td></tr>
+                <tr><td>/=</td><td>x /= 3</td><td>x = x / 3</td></tr>
+                <tr><td>%=</td><td>x %= 3</td><td>x = x % 3</td></tr>
+            </table></center> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Kotlin Comparison Operators
+            </h3>        
+            <p>
+                Comparison operators are used to compare two values, and returns a <span class="red_color">Boolean</span> value: 
+                either <span class="red_color">true</span> or <span class="red_color">false</span>. 
+            </p>
+            <center><table style="border: 2px solid #5c36ab; width:60%; text-align: center;">
+                <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                    <td style="padding: 15px 0;">Operator</td><td>Name</td><td>Example</td></tr>
+                <tr><td>==</td><td>Equal to</td><td>x == y</td></tr>
+                <tr><td>!=</td><td>Not equal</td><td>x != y</td></tr>
+                <tr><td>></td><td>Greater than</td><td>x > y</td></tr>
+                <tr><td><</td><td>Less than</td><td>x < y</td></tr>
+                <tr><td>>=</td><td>Greater than or equal to</td><td>x >= y</td></tr>
+                <tr><td><=</td><td>Less than or equal to</td><td>x <= y</td></tr>
+            </table></center>                     
+            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;" id="boolean">
+                Kotlin Logical Operators
+            </h3>        
+            <p>
+                Logical operators are used to determine the logic between variables or values:
+            </p>
+            <center><table style="border: 2px solid #5c36ab; width:80%; text-align: center;">
+                <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                    <td style="padding: 15px 0;">Operator</td><td>Name</td><td>Description</td><td>Example</td></tr>
+                <tr><td>&&</td><td>Logical and</td><td>Returns true if both statements are true</td><td>x < 5 &&  x < 10</td></tr>
+                <tr><td>||</td><td>Logical or</td><td>Returns true if one of the statements is true</td><td>x < 5 || x < 4</td></tr>
+                <tr><td>!</td><td>Logical not</td><td>Reverse the result, returns false if the result is true</td><td></td></tr>
+            </table></center> 
+            <p>
+                Very often, in programming, you will need a data type that can only have one of two values, like:
+            </p>
+            <ul>
+                <li>YES / NO</li>
+                <li>ON / OFF</li>
+                <li>TRUE / FALSE</li>
+            </ul>
+            <p>
+                For this, Kotlin has a <span class="red_color">Boolean</span> data type, which can take the values 
+                <span class="red_color">true</span> or <span class="red_color">false</span>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Boolean Values
+            </h3>
+            <p>
+                A boolean type can be declared with the <span class="red_color">Boolean</span> keyword and can only take the values
+                <span class="red_color">true</span> or <span class="red_color">false</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> isKotlinFun: Boolean = <span class="purple_color">true</span>         
+<span class="light_blue_color">var</span> isFishTasty: Boolean = <span class="purple_color">false</span>
+<span class="red_color">println</span>(isKotlinFun)   <span class="comments">// Outputs true</span>
+<span class="red_color">println</span>(isFishTasty)   <span class="comments">// Outputs false</span>                        
+            </code></pre> 
+            <p>
+                Just like we have already learned with other data types, the example above can also be written 
+                without specifying the type, as Kotlin is smart enough to understand that the variables are Booleans:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> isKotlinFun = <span class="purple_color">true</span>         
+<span class="light_blue_color">val</span> isFishTasty = <span class="purple_color">false</span>
+<span class="red_color">println</span>(isKotlinFun)   <span class="comments">// Outputs true</span>
+<span class="red_color">println</span>(isFishTasty)   <span class="comments">// Outputs false</span>                        
+            </code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Boolean Expression
+            </h3>              
+            <p>
+                A Boolean expression returns a Boolean value: <span class="red_color">true</span> or <span class="red_color">
+                    false</span>.
+            </p>
+            <p>
+                You can use a comparison operator, such as the <b>greater than</b> (<span class="red_color">></span>) operator 
+                to find out if an expression (or a variable) is true:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> x = <span class="purple_color">10</span>         
+<span class="light_blue_color">val</span> y = <span class="purple_color">9</span>
+<span class="red_color">println</span>(x > y)   <span class="comments">// Returns true, because 10 is greater than 9                        
+            </code></pre> 
+            <p>
+                Or even easier:
+            <pre style="font-size: 1.1em;"><code><span class="red_color">println</span>(10 > 9)   <span class="comments">// Returns true, because 10 is greater than 9                        
+            </code></pre>            
+            <p>
+                In the examples below, we use the <b>equal to</b> (<span class="red_color">==</span>) operator to evaluate 
+                an expression:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> x = <span class="purple_color">10</span>         
+<span class="red_color">println</span>(x == 10)   <span class="comments">// Returns true, because the value of x is equal to 10                    
+            </code></pre>                      
+            <pre style="font-size: 1.1em;"><span class="red_color">println</span>(10 == 15)   <span class="comments">// Returns false, because 10 is not equal to 15                
+            </code></pre>             
+            <p>
+                The Boolean value of an expression is the basis for all Kotlin comparisons and conditions.
+            </p>
+            <h1 id="output" class="titloi">Output</h1>
+            <p>
+                The <span class="red_color">println()</span> function is used to output values/print text:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"Hello World"</span>)
+}</code></pre>
+            <p>
+                You can add as many <span class="red_color">println()</span> functions as you want. Note that it will add a new line 
+                for each function:               
+            </p>          
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"Hello World"</span>)
+    <span class="red_color">println</span>(<span class="green_color">"I am learning Kotlin."</span>)
+    <span class="red_color">println</span>(<span class="green_color">"It is awesome!"</span>)                
+}</code></pre>
+            <p>
+                You can also print numbers, and perform mathematical calculations:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="purple_color">3 + 3</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                The print() function
+            </h3>
+            <p>
+                There is also a <span class="red_color">print()</span> function, which is similar to <span class="red_color">
+                    println()</span>. The only difference is that it does not insert a new line at the end of the output:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">print</span>(<span class="green_color">"Hello World! "</span>)
+    <span class="red_color">print</span>(<span class="green_color">"I am learning Kotlin. "</span>)
+    <span class="red_color">print</span>(<span class="green_color">""It is awesome!""</span>)                                
+}</code></pre>
+            <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Note that we have added a space character to create a space between the sentences.
+            </p>
+            <h1 id="strings" class="titloi">Strings</h1>
+            <p>
+                Strings are used for storing text.
+            </p>
+            <p>
+                A string contains a collection of characters surrounded by double quotes:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>greeting = <span class="green_color">"Hello"</span></code></pre>
+            <p>
+                Unlike Java, you do not have to specify that the variable should be a <span class="red_color">String</span>. Kotlin is 
+                smart enough to understand that the greeting variable in the example above is a <span class="red_color">String</span> 
+                because of the double quotes.
+            </p>
+            <p>
+                However, just like with other data types, you can specify the type if you insist:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>greeting: String = <span class="green_color">"Hello"</span></code></pre>
+            <p>
+                <strong>Note:</strong> If you want to create a <span class="red_color">String</span> without assigning the value (and 
+                assign the value later), you must specify the type while declaring the variable:
+            </p>
+            <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #e0fbe0;"><code><span class="comments">//This works fine:</span>
+<span class="light_blue_color">var</span> name: String
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)</code></pre>
+            <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #ffdddd;"><code><span class="comments">//This will generate an error:</span>
+<span class="light_blue_color">var</span> name
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)</code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Access a String
+            </h3>                
+            <p>
+                To access the characters (elements) of a string, you must refer to the <strong>index number</strong>  inside <stong>
+                    square brackets</stong>.
+            </p>
+            <p>
+                String indexes start with 0. In the example below, we access the first and third element in <span class="red_color">
+                    txt</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"Hello World"</span>
+<span class="red_color">println</span>(txt[<span class="purple_color">0</span>])<span class="comments"> // first element (H)</span>
+<span class="red_color">println</span>(txt[<span class="purple_color">2</span>])<span class="comments"> // third element (l)</span></code></pre>
+            <p>
+                [0] is the first element, [1] is the second element, [2] is the third element, etc.
+
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                String Length
+            </h3>
+            <p>
+                A String in Kotlin is an object, which contain properties and functions that can perform certain operations on strings, 
+                by writing a dot character (.) after the specific string variable. For example, the length of a string can be found with
+                 the <span class="red_color">length</span> property:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>
+<span class="red_color">println</span>(<span class="green_color">"The length of the txt string is: "</span><span class="purple_color"> + </span>txt.length)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                String Functions
+            </h3> 
+            <p>
+                There are many string functions available, for example <span class="red_color">toUpperCase()</span> and <span class="red_color">
+                    toLowerCase()</span>:
+            </p>
+            <p>
+                <b>Strings are immutable</b>. Once you initialize a string, you can't change its value or assign a new value to it. All 
+                operations that transform strings return their results in a new <span class="red_color">String</span> object, leaving 
+                the original string unchanged:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"Hello World"</span>
+<span class="red_color">println</span>(txt.<span class="red_color">toUpperCase</span>())<span class="comments"> // Creates and prints a new String object, outputs "HELLO WORLD"</span>
+<span class="red_color">println</span>(txt.<span class="red_color">toLowerCase</span>())<span class="comments"> // Creates and prints a new String object, outputs "hello world"</span>
+<span class="red_color">println</span>(txt)<span class="comments"> // The original string remains the same</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Comparing Strings
+            </h3>                 
+            <p>
+                The <span class="red_color">compareTo(string)</span> function compares two strings and returns 0 if both are equal:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt1 = <span class="green_color">"Hello World"</span>
+<span class="light_blue_color">var </span>txt2 = <span class="green_color">"Hello World"</span>
+<span class="red_color">println</span>(txt1.<span class="red_color">compareTo</span>(txt2))<span class="comments"> // Outputs 0 (they are equal)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Finding a String in a String
+            </h3> 
+            <p>
+                The <span class="red_color">indexOf()</span> function returns the <b>index</b> (the position) of the first occurrence 
+                of a specified text in a string (including whitespace):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"Please locate where 'locate' occurs!"</span>
+<span class="red_color">println</span>(txt.<span class="red_color">indexOf</span>(<span class="green_color">"locate"</span>))<span class="comments"> // Outputs 7</code></pre>
+            <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Remember that Kotlin counts positions from zero. 0 is the first position in a string, 1 is the second, 2 is the third ...
+            </p> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Quotes Inside a String
+            </h3>   
+            <p>
+                To use quotes inside a string, use single quotes ('):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt1 = <span class="green_color">"It's alright"</span>
+<span class="light_blue_color">var </span>txt2 = <span class="green_color">"That's great"</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                String Concatenation
+            </h3>      
+            <p>
+                The <span class="red_color">+</span> operator can be used between strings to add them together to make a new string. 
+                This is called <strong>concatenation</strong>:
+            </p>             
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">var </span>lastName = <span class="green_color">"Doe"</span>
+<span class="red_color">println</span>(firstName <span class="purple_color">+</span><span class="green_color"> " "</span><span class="purple_color">+</span> lastName)</code></pre>
+            <p>
+                Note that we have added an empty text (" ") to create a space between firstName and lastName on print.
+            </p>            
+            <p>
+                This also works for concatenating strings with values of other types, <b>as long as the first element in the expression 
+                is a string</b>:
+            </p>            
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>s = <span class="green_color">"abc" </span><span class="purple_color">+ </span>1
+<span class="red_color">println</span>(s + <span class="green_color">"def"</span>)<span class="comments"> // Outputs "abc1def"</span></code></pre>
+            <p>
+                You can also use the <span class="red_color">plus()</span> function to concatenate two strings:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">var </span>lastName = <span class="green_color">"Doe"</span>
+<span class="red_color">println</span>(firstName.<span class="red_color">plus</span>(lastName))</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                String literals
+            </h3>
+            <p style="line-height: 0;">
+                Kotlin has two types of string literals:
+            </p>
+            <ul style="list-style-type:square;">
+                <li>Escaped strings</li>
+                <li>Raw strings</li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Escaped string
+            </h3>           
+            <p>
+                Escaped strings can contain escaped characters.
+            </p>
+            <p>
+                Here's an example of an escaped string:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>s = <span class="green_color">"Hello, world!\n"</span><span class="comments"> //Escaping is done in the conventional way, with a backslash (\).</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Raw strings
+            </h3>
+            <p>
+                Raw strings can contain newlines and arbitrary text. It is delimited by a triple quote <span class="red_color">(""")
+                </span>, contains no escaping and can contain newlines and any other characters:
+            </p>               
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>text = <span class="green_color">"""
+    for (c in "foo") 
+        print(c) 
+"""</span></code></pre>
+            <p>
+                To remove leading whitespace from raw strings, use the <span class="red_color">trimMargin()</span> function:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>text = <span class="green_color">"""
+    |Tell me and I forget.
+    |Teach me and I remember.
+    |Involve me and I learn.
+    |(Benjamin Franklin)
+    """</span>.<span class="red_color">trimMargin()</span></code></pre>
+            <p>
+                By default, a pipe symbol <span class="red_color">|</span> is used as <b>margin prefix</b>, but you can choose another 
+                character and pass it as a parameter, like <span class="red_color">trimMargin</span>(<span class="green_color">">"
+                </span>).
+            </p>    
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                String Templates/Interpolation
+            </h3> 
+            <p>
+                Instead of concatenation, you can also use "string templates", which is an easy way to add variables and expressions 
+                inside a string.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">var </span>lastName = <span class="green_color">"Doe"</span>
+<span class="red_color">println</span>(<span class="green_color">"My name is </span><span class="comments">$</span>firstName <span class="comments">$</span>lastName<span class="green_color">"</span>)</code></pre>
+            <p>
+                String literals may contain template expressions - pieces of code that are evaluated and whose results are concatenated 
+                into the string. A template expression starts with a dollar sign (<span class="red_color">$</span>) and consists of 
+                either a name:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>i = <span class="purple_color">10</span>
+<span class="red_color">println</span>(<span class="green_color">"i = $i"</span>)<span class="comments"> // Prints "i = 10"</span></code></pre>
+            <p>
+                or an expression in curly braces:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>s = <span class="green_color">"abc"</span>
+<span class="red_color">println</span>(<span class="green_color">"$s.length is ${s.length}"</span>)<span class="comments"> // Prints "abc.length is 3"</span></code></pre>
+             <p>
+                You can use templates both in raw and escaped strings. To insert the dollar sign <span class="red_color">$ </span> in a 
+                raw string (which <strong>doesn't support</strong> backslash escaping) before any symbol, which is allowed as a beginning of an 
+                identifier, use the following syntax:
+             </p>               
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>price = <span class="green_color">"""
+${'$'}_9.99                
+"""</span></code></pre>                                                  
+              <p>
+                String Templates is a popular feature of Kotlin, as it reduces the amount of code. For example, you do not have to 
+                specify a whitespace between firstName and lastName, like we did in the concatenation example.
+              </p>   
+              <h1 id="ifelse" class="titloi">If... Else</h1>
+              <p>
+                Kotlin supports the usual logical conditions from mathematics:
+              </p>
+              <ul>
+                <li>Less than: <span class="red_color">a < b</span></li>
+                <li>Less than or equal to: <span class="red_color">a <= b</span></li>
+                <li>Greater than: <span class="red_color"></span>a > b</li>
+                <li>Greater than or equal to: <span class="red_color">a >= b</span></li>
+                <li>Equal to <span class="red_color">a == b</span></li>
+                <li>Not Equal to: <span class="red_color">a != b</span></li>
+              </ul>
+              <p>
+                You can use these conditions to perform different actions for different decisions.
+              </p>
+              <p>
+                Kotlin has the following conditionals
+              </p>
+              <ul style="list-style-type: square;">
+                <li>Use <span class="red_color">if</span> to specify a block of code to be executed, if a specified condition is true</li>
+                <li>Use <span class="red_color">else</span> to specify a block of code to be executed, if the same condition is false</li>
+                <li>Use <span class="red_color">else if</span> to specify a new condition to test, if the first condition is false</li>
+                <li>Use <span class="red_color">when</span> to specify many alternative blocks of code to be executed</li>
+              </ul>
+              <p>
+                <b>Note:</b> Unlike Java, <span class="red_color">if..else</span> can be used as a <b>statement</b> or as an 
+                <b>expression</b> (to assign a value to a variable) in Kotlin.
+              </p>
+              <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                If
+            </h3> 
+            <p>
+                Use <span class="red_color">if</span> to specify a block of code to be executed if a condition is <span class="red_color">
+                true</span>.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">if </span>(condition){
+    <span class="comments"> // block of code to be executed if the condition is true</span>    
+}</code></pre>
+            <p>
+                Note that <span class="red_color">if</span> is in lowercase letters. Uppercase letters (If or IF) will generate an error.
+            </p>
+            <p>
+                In the example below, we test two values to find out if 20 is greater than 18. If the condition is <span class="red_color">
+                true</span>, print some text:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">if </span>(<span class="purple_color">20</span> > <span class="purple_color">18</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"20 is greater than 18"</span>)
+}</code></pre>    
+            <p>
+                We can also test variables:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>x = <span class="purple_color">20</span>
+<span class="light_blue_color">val </span>y = <span class="purple_color">18</span>                
+<span class="light_blue_color">if </span>(x > y) {
+    <span class="red_color">println</span>(<span class="green_color">"x is greater than y"</span>)
+}</code></pre>
+            <h3 style="line-height: 0.5;">
+                Example explained
+            </h3>
+            <p>
+                In the example above we use two variables, <b>x</b> and <b>y</b>, to test whether x is greater than y (using the 
+                <span class="red_color">></span> operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we
+                print to the screen that "x is greater than y".
+            </p>
+            <p>
+                In Kotlin, <span class="red_color">if</span> is an expression: it returns a value. Therefore, <b>there is no ternary 
+                operator (<span class="red_color">condition ? then : else</span>)</b> because ordinary if works fine in this role.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>max = a
+<span class="light_blue_color">if </span>(a <span class="red_color"><</span> b) max = b</code></pre>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// With else</span>
+<span class="light_blue_color">if </span>(a <span class="red_color">></span> b){
+    max = a
+} <span class="light_blue_color">else</span> {
+    max = b
+}</code></pre>  
+            <pre style="font-size: 1.1em;"><code><span class="comments">// As expression</span>
+max = <span class="light_blue_color">if </span>(a <span class="red_color">></span> b) a <span class="light_blue_color">else </span>b</code></pre>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// You can also use `else if` in expressions:</span>
+<span class="light_blue_color">val </span>maxLimit = <span class="purple_color">1</span>
+<span class="light_blue_color">val </span>maxOrLimit = <span class="light_blue_color">if </span>(maxLimit <span class="red_color">></span> a) maxLimit <span class="light_blue_color">else if </span>(a <span class="red_color">></span> b) a <span class="light_blue_color">else </span>b</code></pre>
+            <p>
+                Branches of an <span class="red_color">if</span> expression can be blocks. In this case, <strong>the last expression 
+                is the value of a block</strong>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>max = <span class="light_blue_color">if </span>(a <span class="red_color">></span> b) {
+    <span class="red_color">print</span>(<span class="green_color">"Choose a"</span>)
+    a  
+} <span class="light_blue_color">else </span>{              
+    <span class="red_color">print</span>(<span class="green_color">"Choose b"</span>)
+    b                  
+}</code></pre>              
+            <p>
+                If you're using <span class="red_color">if</span> as an expression, for example, for returning its value or assigning 
+                it to a variable, <strong>the <span class="red_color">else</span> branch is mandatory</strong>.            
+            </p>
+            <h1 id="when" class="titloi">When</h1>
+            <p>
+                Instead of writing many <span class="red_color">if..else</span> expressions, you can use the <span class="red_color">
+                    when</span> expression, which is much easier to read.
+            </p>
+            <p>
+                It is used to select one of many code blocks to be executed:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Example - Use the weekday number to calculate the weekday name:</span>
+<span class="light_blue_color">val </span>day = <span class="purple_color">4</span> 
+<span class="light_blue_color">val </span>result = <span class="light_blue_color">when</span> (day) {
+    <span class="purple_color">1 -></span> <span class="green_color">"Monday"</span>  
+    <span class="purple_color">2 -></span> <span class="green_color">"Tuesday"</span>  
+    <span class="purple_color">3 -></span> <span class="green_color">"Wednsday"</span>  
+    <span class="purple_color">4 -></span> <span class="green_color">"Thirsday"</span>  
+    <span class="purple_color">5 -></span> <span class="green_color">"Friday"</span>  
+    <span class="purple_color">6 -></span> <span class="green_color">"Saturday"</span>  
+    <span class="purple_color">7 -></span> <span class="green_color">"Sunday"</span>  
+    <span class="light_blue_color">else</span> <span class="purple_color">-></span> <span class="green_color">"Invalid day."</span>    
+}
+<span class="red_color">println</span>(result)
+
+<span class="comments">// Outputs "Thursday" (day 4)</span></code></pre>            
+            <p>
+                The <span class="red_color">when</span> expression is similar to the <span class="red_color">switch</span> statement 
+                in Java.
+            </p>
+            <p style="line-height:.5;">
+                This is how it works:
+            </p>
+            <ul>
+                <li>The <span class="red_color">when</span> variable (<b>day</b>) is evaluated once</li>
+                <li>The value of the <b>day</b> variable is compared with the values of each "branch"</li>
+                <li>Each branch starts with a value, followed by an arrow (->) and a result</li>
+                <li>If there is a match, the associated block of code is executed</li>
+                <li><span class="red_color">else</span> is used to specify some code to run if there is no match</li>
+                <li>In the example above, the value of <span class="red_color">day</span> is <span class="red_color">4</span>, 
+                meaning "Thursday" will be printed</li>
+            </ul>
+            <p>
+                <span class="red_color">when</span> can be used either as an expression or as a statement. If it is used as an 
+                expression, the value of the first matching branch becomes the value of the overall expression. If it is used as a 
+                statement, the values of individual branches are ignored. Just like with <span class="red_color">if</span>, each 
+                branch can be a block, and <b>its value is the value of the last expression in the block</b>.
+            </p>
+            <p>
+                If <span class="red_color">when</span> is used as an expression, the <span class="red_color">else</span> branch is 
+                mandatory, unless the compiler can prove that all possible cases are covered with branch conditions, for example, with 
+                <span class="red_color">enum</span> class entries and <span class="red_color">sealed</span> class subtypes).
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">enum class </span>Bit {
+    ZERO, ONE                
+}
+
+<span class="light_blue_color">val</span> numericValue = <span class="light_blue_color">when</span> (<span class="purple_color">getRandomBit</span>()) {
+    Bit.ZERO <span class="purple_color">-> 0</span>
+    Bit.ONE <span class="purple_color">-> 1</span>
+    <span class="comments">// 'else' is not required because all cases are covered</span>
+}</code></pre>
+            <p>
+                In <span class="red_color">when</span> statements, the <span class="red_color">else</span> branch is mandatory in the 
+                following conditions:
+            </p>
+            <ul>
+                <li><span class="red_color">when</span> has a subject of a <span class="red_color">Boolean</span>, <span class="red_color">
+                enum</span>, or <span class="red_color">sealed</span> type, or their nullable counterparts.</li>
+                <li>branches of <span class="red_color">when</span> don't cover all possible cases for this subject.
+                </li>
+            </ul>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">enum class </span>Color {
+    RED, GREEN, BLUE                
+}
+            
+<span class="light_blue_color">when</span> (<span class="purple_color">getColor</span>()) {
+    <span class="purple_color">Color</span>.RED -> <span class="red_color">println</span> (<span class="green_color">"red"</span>)
+    <span class="purple_color">Color</span>.GREEN -> <span class="red_color">println</span> (<span class="green_color">"green"</span>)
+    <span class="purple_color">Color</span>.BLUE -> <span class="red_color">println</span> (<span class="green_color">"blue"</span>)
+    <span class="comments">// 'else' is not required because all cases are covered</span>
+}</code></pre>
+<pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (<span class="purple_color">getColor</span>()) {
+    <span class="purple_color">Color</span>.RED -> <span class="red_color">println</span> (<span class="green_color">"red"</span>)<span class="comments"> // no branches for GREEN and BLUE</span>
+    <span class="light_blue_color">else</span> -> <span class="red_color">println</span> (<span class="green_color">"not red"</span>)<span class="comments"> // 'else' is required</span> 
+}</code></pre>
+            <p>
+                To define a common behavior for <b>multiple cases</b>, combine their conditions in a single line with a comma:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (x) {
+    <span class="purple_color">0</span>, <span class="purple_color">1</span> -> <span class="red_color">print</span>(<span class="green_color">"x == 0 or x == 1"</span>)
+    <span class="light_blue_color">else</span> -> <span class="red_color">print</span> (<span class="green_color">"otherwise"</span>)
+}</code></pre>
+            <p>
+                You can use arbitrary expressions (not only constants) as branch conditions
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (x) {
+    s.<span class="red_color">toInt()</span> -> <span class="red_color">print</span>(<span class="green_color">"s encodes x"</span>)
+    <span class="light_blue_color">else</span> -> <span class="red_color">print</span> (<span class="green_color">"s does not encode x"</span>)
+}</code></pre>
+            <p>
+                You can also check a value for being in or !in a range or a collection:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (x) {
+    <span class="red_color">in</span><span class="light_blue_color"> 1..10</span> -> <span class="red_color">print</span>(<span class="green_color">"x is in the range"</span>)
+    <span class="red_color">in</span>  validNumbers -> <span class="red_color">print</span>(<span class="green_color">"x is valid"</span>)        
+    <span class="red_color">!in</span><span class="light_blue_color"> 10..20</span> -> <span class="red_color">print</span>(<span class="green_color">"x is outside the range"</span>)
+    <span class="light_blue_color">else</span> -> <span class="red_color">print</span> (<span class="green_color">"none of the above"</span>)
+}</code></pre>
+            <p>
+                Another option is checking that a value is or !is of a particular type. Note that, due to smart casts, you can access 
+                the methods and properties of the type without any extra checks.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span> <span class="red_color">hasPrefix</span> (<span class="purple_color">x: Any</span>) = <span class="light_blue_color">when</span> (x) {
+    <span class="red_color">is</span><span class="red_color"> String</span> -> x.<span class="red_color">startsWith</span>(<span class="green_color">"prefix"</span>)
+    <span class="light_blue_color">else</span> -> <span class="purple_color">false</span>
+}</code></pre>
+            <p>
+                <span class="red_color">when</span> can also be used as a replacement for an <span class="red_color">if-else if</span> 
+                chain. If no argument is supplied, the branch conditions are simply boolean expressions, and a branch is executed when 
+                its condition is true:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when </span> {
+    x.<span class="red_color">isOdd()</span> -> <span class="red_color"> print</span>(<span class="green_color">"x is odd"</span>)
+    y.<span class="red_color">isEven()</span> -> <span class="red_color"> print</span>(<span class="green_color">"y is even"</span>)
+    <span class="light_blue_color">else</span> -> <span class="red_color"> print</span>(<span class="green_color">"x+y is odd"</span>)
+}</code></pre>
+            <p>
+                You can capture <span class="red_color">when</span> subject in a variable using following syntax:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">Request.getBody</span>() =
+    <span class="light_blue_color">when</span> (<span class="light_blue_color">val </span>response = <span class="red_color">executeRequest()</span>) {
+    <span class="red_color">is </span> Success -> <span class="red_color"> response</span>.body
+    <span class="red_color">is </span> HttpError -> <span class="red_color"> throw HttpException</span> (<span class="red_color">response</span>.status)
+}</code></pre>
+            <p>
+                The scope of variable introduced in <span class="red_color">when</span> subject is restricted to the body of this 
+                <span class="red_color">when</span>.
+            </p>
+            <h1 id="for" class="titloi">For loop</h1>
+            <p>
+                Often when you work with arrays, you need to loop through all of the elements.
+            </p>
+            <p>
+                To loop through array elements, use the <span class="red_color">for</span> loop together with the <span class="red_color">
+                in</span> operator:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Example - Output all elements in the cars array:</span>
+<span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)                
+<span class="light_blue_color">for</span> (x <span class="light_blue_color">in </span>cars) {
+    <span class="red_color">println</span> (x)
+}</code></pre>
+            <p>
+                You can loop through all kinds of arrays. In the example above, we used an array of strings. In the example below, 
+                we loop through an array of integers:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>nums = <span class="red_color">arrayOf</span>(<span class="purple_color">1, 5, 10, 15, 20</span>)                
+<span class="light_blue_color">for</span> (x <span class="light_blue_color">in </span>nums) {
+    <span class="red_color">println</span> (x)
+}</code></pre>            
+            <p>
+                Unlike Java and other programming languages, there is no traditional <span class="red_color">for</span> loop in Kotlin. 
+                In Kotlin, the <span class="red_color">for</span> loop is used to loop through arrays, ranges, and other things that 
+                contains a countable number of values. This is equivalent to the <span class="red_color">foreach</span> loop in 
+                languages like C#.
+            </p>
+            <p>
+                <span class="red_color">For</span> loop iterates through anything that provides an iterator. This means that it:
+            </p>
+            <ul>
+                <li>has a member or an extension function <span class="red_color">iterator()</span> that returns <span class="red_color">
+                Iterator</span>:</li>
+                <li>has a member or an extension function <span class="red_color">next()</span></li>
+                <li>has a member or an extension function <span class="red_color">hasNext()</span> that returns <span class="red_color">
+                Boolean</span>.</li>
+            </ul>
+            <p>
+                All of these three functions need to be marked as <span class="red_color">operator</span>
+            </p>
+            <p>
+                To iterate over a range of numbers, use a range expression:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span> (i  <span class="light_blue_color">in </span><span class="purple_color">1..3</span>) {        
+    <span class="red_color">println</span> (i)
+}
+
+<span class="light_blue_color">for </span> (i  <span class="light_blue_color">in </span><span class="purple_color">6</span> <span class="light_blue_color"></span>downTo <span class="purple_color">0 </span><span class="light_blue_color">step </span><span class="purple_color">2</span></span>) {        
+    <span class="red_color">println</span> (i)
+}</code></pre>
+            <p>
+                A <span class="red_color">for</span> loop over a range or an array is compiled to an index-based loop that does not 
+                create an iterator object.
+            </p>
+            <p>
+                If you want to iterate through an array or a list with an index, you can do it this way:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>(i <span class="light_blue_color">in</span> array.indices) {
+    <span class="red_color">println</span> array[<span class="red_color">i</span>]
+}</code></pre> 
+            <p>
+                Alternatively, you can use the <span class="red_color">withIndex</span> library function:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>((index, value) <span class="light_blue_color">in</span> array.<span class="red_color">withIndex()</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"the element at $index is $value"</span>)
+}</code></pre>
+            <h1 id="while" class="titloi">While loop</h1>
+            <p>
+                Loops can execute a block of code as long as a specified condition is reached. Loops are handy because they save time, 
+                reduce errors, and they make code more readable.
+            </p>
+            <p>
+                The <span class="red_color">while</span> loop loops through a block of code as long as a specified condition is 
+                <span class="red_color">true</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">while </span>(condition) {
+    <span class="comments">// code block to be executed</span>
+}</code></pre>
+            <p>
+                In the example below, the code in the loop will run, over and over again, as long as the counter variable (i) is less 
+                than 5:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>i = <span class="purple_color">0</span>
+<span class="light_blue_color">while </span>(i < <span class="purple_color">5</span>) {
+    <span class="red_color">println</span>(i) 
+    i<span class="purple_color">++</span>
+}</code></pre>
+            <p>
+                <strong>Note:</strong> Do not forget to increase the variable used in the condition, otherwise the loop will never end.
+            </p>
+            <p>
+                <span class="red_color">While</span> and <span class="red_color">do-while</span> loops execute their body continuously 
+                while their condition is satisfied. The difference between them is the condition checking time:
+            </p>
+            <ul style="list-style-type: square;">
+                <li><span class="red_color">while</span> checks the condition and, <strong>if it's satisfied, executes the body and 
+                    then returns to the condition check.</strong></li>
+                <li><span class="red_color">do-while</span> <strong>executes the body and then checks the condition</strong>. If it's 
+                    satisfied, the loop repeats. So, <strong>the body of <span class="red_color"></span>do-while executes at least 
+                    once regardless of the condition.</strong></li>
+            </ul>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">while </span>(x > <span class="purple_color">0</span>) {
+    x<span class="purple_color">--</span>
+}
+
+<span class="light_blue_color">do </span>{
+    <span class="light_blue_color">val/span> y = <span class="red_color">retrieveData()</span>
+}<span class="light_blue_color">while</span> (y != <span class="purple_color">null</span>)<span class="comments"> // y is visible here!</span></code></pre>      
+            <h1 id="break_continue" class="titloi">Break/Continue</h1>                
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Break
+            </h3>
+            <p>
+                The <span class="red_color">break</span> statement is used to jump out of a loop.
+            </p>        
+            <pre style="font-size: 1.1em;"><code><span class="comments">// This example jumps out of the loop when i is equal to 4:</span>
+<span class="light_blue_color">var  </span>i = <span class="purple_color">0</span>) 
+<span class="light_blue_color">while </span>(i < <span class="purple_color">10</span>) {
+    <span class="red_color">println</span>(i)
+    <span class="light_blue_color">if</span> (i == <span class="purple_color">4</span>) {
+        <span class="light_blue_color">break</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Continue
+            </h3>
+            <p>
+                The <span class="red_color">continue</span> statement breaks one iteration (in the loop), if a specified condition 
+                occurs, and continues with the next iteration in the loop.
+
+            </p>            
+            <pre style="font-size: 1.1em;"><code><span class="comments">// This example skips the value of 4:</span>
+<span class="light_blue_color">var </span>i = <span class="purple_color">0</span>
+<span class="light_blue_color">while </span>(i < <span class="purple_color">10</span>) { 
+    <span class="light_blue_color">if </span>(i == <span class="purple_color">4</span>) {
+        i++
+        <span class="light_blue_color">continue</span>
+    }
+    <span class="red_color">println</span>(i)
+    i++                
+}</code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Break and continue labels
+            </h3>
+            <p>
+                Any expression in Kotlin may be marked with a label. Labels have the form of an identifier followed by the
+                <span class="red_color">@</span> sign, such as <span class="red_color">abc@</span> or <span class="red_color">fooBar@
+                </span>. To label an expression, just add a label in front of it.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="purple_color">loop@ </span><span class="light_blue_color">for</span> (i <span class="light_blue_color">in</span> <span class="purple_color">1</span>..<span class="purple_color">100</span>1) {
+    <span class="comments">// ...</span>) 
+}</code></pre>
+            <p>
+                Now, we can qualify a <span class="red_color">break</span> or a <span class="red_color">continue</span> with a 
+                <span class="red_color">label</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="purple_color">loop@ </span><span class="light_blue_color">for</span> (i <span class="light_blue_color">in</span> <span class="purple_color">1</span>..<span class="purple_color">100</span>) {
+    <span class="light_blue_color">for</span>(j <span class="light_blue_color">in</span> <span class="purple_color">1</span>..<span class="purple_color">100</span>) {
+        <span class="light_blue_color">if</span> (...) <span class="light_blue_color">break</span><span class="purple_color">@loop</span>
+    }
+}</code></pre>
+            <p>
+                A <span class="red_color">break</span> qualified with a <span class="red_color">label</span> jumps to the execution 
+                point right after the loop marked with that label. A <span class="red_color">continue</span> proceeds to the next 
+                iteration of that loop.
+            </p>    
+            <h1 id="collections" class="titloi">Collections</h1>                
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Arrays
+            </h3>
+            <p>
+                Arrays are used to store multiple values in a single variable, instead of creating separate variables for each value.
+            </p>
+            <p>
+                To create an array, use the <span class="red_color">arrayOf()</span> function, and place the values in a 
+                comma-separated list inside it:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Access the Elements of an Array
+            </h3>
+            <p>
+                You can access an array element by referring to the <strong>index number</strong>, inside <strong>square brackets
+                </strong>.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// In this example, we access the value of the first element in cars:</span>
+<span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)                
+<span class="red_color">println</span>(cars[<span class="purple_color">0</span>])
+<span class="comments">// Outputs Volvo</span></code></pre>            
+                <p>
+                    <strong>Note:</strong> Just like with Strings, Array indexes start with 0: [0] is the first element. [1] is the 
+                    second element, etc.
+                </p>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Change an Array Element
+                </h3>            
+                <p>
+                    To change the value of a specific element, refer to the index number:
+                </p>
+                <pre style="font-size: 1.1em;"><code>cars[<span class="purple_color">0</span>] = <span class="green_color">"Opel"</span>
+                
+<span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+cars[<span class="purple_color">0</span>] = <span class="green_color">"Opel"</span>
+<span class="red_color">println</span>(cars[<span class="purple_color">0</span>])
+<span class="comments">// Now outputs Opel instead of Volvo</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Array Length / Size
+            </h3>      
+            <p>
+                To find out how many elements an array have, use the <span class="red_color">size</span> property:
+            </p>                 
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+<span class="red_color">println</span>(cars.size)
+<span class="comments">// Outputs 4 </span></code></pre>               
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Check if an Element Exists
+            </h3>
+            <p>
+                You can use the <span class="red_color">in</span> operator to check if an element exists in an array:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+<span class="light_blue_color">if</span>(<span class="green_color"> "Volvo" </span><span class="light_blue_color"> in </span>cars) {
+    <span class="red_color">println</span><span class="green_color">"It exists!"</span>)
+}<span class="light_blue_color"> else </span>{  
+    <span class="red_color">println</span><span class="green_color">"It does not exist."</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Loop Through an Array
+            </h3>
+            <p>
+                Often when you work with arrays, you need to loop through all of the elements.
+            </p>
+            <p>
+                You can loop through the array elements with the <span class="red_color">for</span> loop. The following example outputs 
+                all elements in the cars array:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+<span class="light_blue_color">for</span> (x <span class="light_blue_color"> in </span>cars) {
+    <span class="red_color">println</span>(x)
+}</code></pre>
+            <p>
+                Arrays in Kotlin are represented by the <span class="red_color">Array</span> class. It has <span class="red_color">get()
+                </span> and <span class="red_color">set()</span> functions that turn into <span class="red_color">[ ]</span> by operator 
+                overloading conventions, and the <span class="red_color">size</span> property, along with other useful member functions:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class </span>Array<T> <span class="light_blue_color">private constructor</span>() {
+    <span class="light_blue_color">val</span> size: Int
+    <span class="light_blue_color">operator fun get</span>(index: Int): T
+    <span class="light_blue_color">operator fun set</span>(index: Int, value: T): Unit
+
+    <span class="light_blue_color">operator fun iterator</span>(): Iterator<T>
+    <span class="comments">// ...</span>
+}</code></pre>
+            <p>
+                To create an array, use the function <span class="red_color">arrayOf()</span> and pass the item values to it, so that 
+                <span class="red_color">arrayOf(1, 2, 3)</span> creates an array <span class="red_color">[1, 2, 3]</span>. 
+                Alternatively, the <span class="red_color">arrayOfNulls()</span> function can be used to create an array of a given 
+                size filled with <span class="red_color">null</span> elements.
+            </p>
+            <p>
+                Another option is to use the <span class="red_color">Array</span> constructor that takes the array size and the 
+                function that returns values of array elements given its index:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Creates an Array<String> with values ["0", "1", "4", "9", "16"]</span>
+<span class="light_blue_color">val</span> asc = Array(<span class="purple_color">5</span>) { i -> (i * i).toString() }
+asc.forEach { <span class="red_color">println</span>(it) }</code></pre>
+            <p>
+                The <span class="red_color">[ ]</span> operation stands for calls to member functions <span class="red_color">get() 
+                </span> and <span class="red_color">set()</span>.
+            </p>
+            <p>
+                Arrays in Kotlin are <i>invariant</i>. This means that Kotlin does not let us assign an <span class="red_color">            
+                Array<String> </span>to an <span class="red_color">Array<Any></Any></span>, which prevents a possible runtime failure 
+                (but you can use <span class="red_color">Array<out Any></out></span>).
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Primitive type arrays
+            </h3>
+            <p>
+                Kotlin also has classes that represent arrays of primitive types without boxing overhead: <span class="red_color">                    
+                    ByteArray</span>, <span class="red_color">ShortArray</span>, <span class="red_color">IntArray</span>, and so on. 
+                These classes have no inheritance relation to the <span class="red_color">Array</span> class, but they have the same 
+                set of methods and properties. Each of them also has a corresponding factory function:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>x: IntArray = <span class="red_color">intArrayOf</span>(<span class="purple_color">1</span>, <span class="purple_color">2</span>, <span class="purple_color">3</span>)
+x[<span class="purple_color">0</span>] = x[<span class="purple_color">1</span>] + x[<span class="purple_color">2</span>]                
+
+<span class="comments">// Array of int of size 5 with values [0, 0, 0, 0, 0]</span>
+<span class="light_blue_color">val </span>arr = <span class="red_color">IntArray</span>(<span class="purple_color">5</span>)
+
+<span class="comments">// Example of initializing the values in the array with a constant</span>
+<span class="comments">// Array of int of size 5 with values [42, 42, 42, 42, 42]</span>
+<span class="light_blue_color">val </span>arr = <span class="red_color">IntArray</span>(<span class="purple_color">5</span>) { <span class="purple_color">42</span> }
+
+<span class="comments">// Example of initializing the values in the array using a lambda</span>
+<span class="comments">// Array of int of size 5 with values [0, 1, 2, 3, 4] (values initialized to their index value)</span>
+<span class="light_blue_color">var </span>arr = <span class="red_color">IntArray</span>(<span class="purple_color">5</span>) { <span class="light_blue_color">it</span> * <span class="purple_color">1</span> }</code></pre>
+            <h1 id="ranges" class="titloi">Ranges</h1>  
+            <p>
+                With the <a href="#for"><span class="red_color">for</span> loop</a>, you can also create ranges of values with "<span class="red_color">..</span>":
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Print the whole alphabet:</span>
+<span class="light_blue_color">for </span>(chars <span class="light_blue_color">in </span><span class="green_color">'a'</span></span><span class="purple_color">..</span><span class="green_color">'x'</span>) {
+    <span class="red_color">println</span>(chars)
+}</code></pre>
+            <p>
+                You can also create ranges of numbers:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>(nums <span class="light_blue_color">in </span><span class="purple_color">5..15</span>) {
+    <span class="red_color">println</span>(nums)
+}</code></pre>
+            <p>
+                <strong>Note:</strong> The first and last value is included in the range.   
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Check if a Value Exists
+            </h3> 
+            <p>
+                You can also use the <span class="light_blue_color">in</span> operator to check if a value exists in a range:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>nums = <span class="red_color">arrayOf</span>(<span class="purple_color">2</span>, <span class="purple_color">4</span>, <span class="purple_color">6</span>, <span class="purple_color">8</span>)
+<span class="light_blue_color">if</span> (<span class="purple_color">2 </span><span class="light_blue_color">in</span> nums) {
+    <span class="red_color">println</span>(<span class="green_color">"It exists!"</span>)
+} else {
+    <span class="red_color">println</span>(<span class="green_color">"It does not exist."</span>)
+}
+
+<span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo"</span>, <span class="green_color">"BMW"</span>, <span class="green_color">"Ford"</span>, <span class="green_color">"Mazda"</span>)
+<span class="light_blue_color">if</span> (<span class="green_color">"Volvo" </span><span class="light_blue_color">in</span> carss) {
+    <span class="red_color">println</span>(<span class="green_color">"It exists!"</span>)
+} else {
+    <span class="red_color">println</span>(<span class="green_color">"It does not exist."</span>)
+}</code></pre>  
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Check if a number is out of range
+            </h3>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>list = listOf(<span class="green_color">"a"</span>, <span class="green_color">"b"</span>, <span class="green_color">"c"</span>)
+<span class="light_blue_color">if </span>(<span class="purple_color">-1 !<span class="light_blue_color">in</span> <span class="purple_color">0</span>..list.<span class="red_color">lastIndex</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"-1 is out of range"</span>)
+}
+
+<span class="light_blue_color">if </span>(list.<span class="red_color">size</span><span class="purple_color"> !<span class="light_blue_color">in</span> list.<span class="red_color">indices</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"list size is out of valid list indices range, too"</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Iterate over a progression
+            </h3>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>(x <span class="light_blue_color">in </span><span class="purple_color">1..10</span> step <span class="purple_color">2</span>) {
+    <span class="red_color">println</span>(x) <span class="comments">// Outputs 1, 3, 5, 7, 9</span>
+}
+
+<span class="light_blue_color">for </span>(x <span class="light_blue_color">in </span><span class="purple_color">9 </span>downTo <span class="purple_color">0</span> step <span class="purple_color">3</span>) {
+    <span class="red_color">println</span>(x) <span class="comments">// Outputs 9, 6, 3, 0</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Break or Continue a Range
+            </h3>      
+            <p>
+                You can also use the <span class="red_color">break</span> and <span class="red_color">continue</span> keywords in a 
+                range:
+            </p>       
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Stop the loop when nums is equal to 10:</span> 
+<span class="light_blue_color">for</span> (nums <span class="light_blue_color">in</span> <span class="purple_color">5..15</span>) {               
+    <span class="light_blue_color">if</span> (nums == <span class="purple_color">10</span>){
+        <span class="light_blue_color">break</span>
+    }
+    <span class="red_color">println</span>(nums)
+}
+
+<span class="comments">// Skip the value of 10 in the loop, and continue with the next iteration:</span> 
+<span class="light_blue_color">for</span> (nums <span class="light_blue_color">in</span> <span class="purple_color">5..15</span>) {               
+    <span class="light_blue_color">if</span> (nums == <span class="purple_color">10</span>){
+        <span class="light_blue_color">continue</span>
+    }
+    <span class="red_color">println</span>(nums)    
+}</code></pre>
+            <h1 id="functions" class="titloi">Functions</h1>
+            <p>
+                A <strong>function</strong> is a block of code which only runs when it is called. You can pass data, known as parameters, into a function.                
+            </p>  
+            <p>
+                Functions are used to perform certain actions, and they are also known as <strong>methods</strong>.
+ 
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Predefined Functions
+            </h3>       
+            <p>
+                For example, <span class="red_color">println()</span> is a function. It is used to output/print text to the screen:
+            </p>     
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"Hello World"</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Create Your Own Functions
+            </h3>
+            <p>
+                To create your own function, use the <span class="red_color">fun</span> keyword, and write the name of the function, 
+                followed by parantheses <b>()</b>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Create a function named "myFunction" that should output some text:</span>
+<span class="light_blue_color">fun </span><span class="red_color">myFunction</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"I just got executed!"</span>)
+}</code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Call a Function
+            </h3>
+            <p>
+                Now that you have created a function, you can execute it by <b>calling</b> it. To call a function in Kotlin, write the
+                name of the function followed by two parantheses <b>()</b>.
+            </p>           
+            <p>
+                In the following example, <span class="red_color">myFunction</span>() will print some text (the action), when it is 
+                called:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">myFunction</span>()<span class="comments"> // Call myFunction</span>
+}
+
+<span class="comments"> // Outputs "I just got executed!"</span></code></pre>
+            <p>
+                A function can be called multiple times, if you want:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">myFunction</span>()<span class="comments"> // Call myFunction</span>
+    <span class="red_color">myFunction</span>()<span class="comments"> // Call myFunction</span>
+    <span class="red_color">myFunction</span>()<span class="comments"> // Call myFunction</span>
+}
+                
+<span class="comments"> // Outputs "I just got executed!"</span>
+<span class="comments"> // Outputs "I just got executed!"</span>
+<span class="comments"> // Outputs "I just got executed!"</span></code></pre> 
+<pre style="font-size: 1.1em;"><code><span class="comments">// A function with two Int parameters and Int return type.</span>
+<span class="light_blue_color">fun </span><span class="red_color">sum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>): <span class="light_blue_color">Int</span> {
+    <span class="light_blue_color">return</span> a + b
+}
+
+<span class="comments">// A function body can be an expression. Its return type is inferred.</span>
+<span class="light_blue_color">fun </span><span class="red_color">sum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>) = a + b
+
+<span class="comments">// A function that returns no meaningful value.</span>
+<span class="light_blue_color">fun </span><span class="red_color">sum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>): <span class="light_blue_color">Unit</span> {
+    <span class="red_color">println</span>(<span class="green_color">"sum of $a and $b is ${a + b}"</span>) 
+}
+
+<span class="comments">// Unit return type can be omitted.</span>
+<span class="light_blue_color">fun </span><span class="red_color">printSum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"sum of $a and $b is ${a + b}"</span>) 
+}</code></pre>
+    </div>
+    <div class="right_side">
+        <h4>
+            Now displaying:
+        </h4>
+        <p class="display_info">
+            Syntax
+        </p>
+    </div>    
+    <br><br>        
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

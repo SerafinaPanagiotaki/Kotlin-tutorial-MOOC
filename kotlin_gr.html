@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(1)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(1)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1" onclick="display(1,1)"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>              
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                </a>
+                <ul id="others2">
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                        &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                        &nbsp;&nbsp;&nbsp;Ισότητα
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                        &nbsp;&nbsp;&nbsp;Έκφραση this
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                        &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                        &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                        &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                        &nbsp;&nbsp;&nbsp;Reflection
+                    </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <img src="black.jpg" alt="black" class="black" id="black"/>
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo2" class="black"/>
+            <p style="position:relative; left: -90px; width:110%;"> Η Kotlin είναι μία μοντέρνα γλώσσα προγραμματισμού, αρκετά εύκολη στην εκμάθηση, 
+                ιδιαίτερα αν κάποιος γνωρίζει τη γλώσσα προγραμματισμού Java (με την οποία η Kotlin είναι 100% συμβατή) και 
+                χρησιμοποιείται στην ανάπτυξη εφαρμογών για Android, εφαρμογών server-side κ.α.</p>
+            <p style="position:relative; left: 15px; width:100%;">Μπορείτε να περιηγηθείτε στις 
+                <cite title="https://www.w3schools.com/kotlin/index.php, https://en.wikipedia.org/wiki/Kotlin_(programming_language)" 
+                style="color:#5c36ab; font-weight: bold;"> θεματικές ενότητες στο μενού και να αντλήσετε πολύτιμα στοιχεία που θα σας 
+                βοηθήσουν να γνωρίσετε την Kotlin</cite>. Για όσους επιθυμούν, υπάρχει κι 
+                <cite title="https://www.w3schools.com/kotlin/index.php, https://en.wikipedia.org/wiki/Kotlin_(programming_language)" 
+                style="color:#5c36ab; font-weight: bold;"> ο αντίστοιχος Οδηγός εκμάθησης και στην Αγγλική γλώσσα 
+                </cite>(κάντε κλικ στο εικονίδιο της σημαίας), ενώ μπορείτε επίσης να ανατρέξετε και στο <a href="https://kotlinlang.org/" 
+                target="_blank" style="text-decoration: none;"><span style="font-weight: bold; color:#34137c; 
+                text-shadow: 2px 1px 2px #fa769e;"><cite title="https://kotlinlang.org/">επίσημο site της Kotlin</cite></span></a>.
+            </p>
+            <p style="position:relative; left: 185px;">
+                <strong>Ας ξεκινήσουμε την εκμάθηση της Kotlin!</strong>
+            </p>
+            <p onclick="info()" style="cursor:pointer; position:relative; left: 185px;">Για πληροφορίες σχετικά με τον Οδηγό εκμάθησης μπορείτε να πατήστε <span style="font-weight: bold;
+                color:#34137c; text-shadow: 2px 1px 2px #fa769e;">εδώ</span>.</p>                    
+        </div> 
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info">
+                Αρχική
+            </p>
+        </div>   
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p style="position: fixed; bottom: 0; margin-left: 180px;">Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

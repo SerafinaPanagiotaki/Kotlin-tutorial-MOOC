@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(10)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(10)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                    <ul id="syntax2">
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                            &nbsp;&nbsp;&nbsp;Comments
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                            &nbsp;&nbsp;&nbsp;Data Types
+                        </a></li>                        
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                            &nbsp;&nbsp;&nbsp;Variables
+                        </a>  </li>   
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                            &nbsp;&nbsp;&nbsp;Operators
+                        </a> </li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                            &nbsp;&nbsp;&nbsp;Boolean
+                        </a>   </li>                                                              
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                            &nbsp;&nbsp;&nbsp;Output
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                            &nbsp;&nbsp;&nbsp;Strings
+                        </a></li>      
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                            &nbsp;&nbsp;&nbsp;If...else
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                            &nbsp;&nbsp;&nbsp;When
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                            &nbsp;&nbsp;&nbsp;For loop
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                            &nbsp;&nbsp;&nbsp;While loop
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                            &nbsp;&nbsp;&nbsp;Break/Continue
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                            &nbsp;&nbsp;&nbsp;Collections
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                            &nbsp;&nbsp;&nbsp;Ranges
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                            &nbsp;&nbsp;&nbsp;Functions
+                        </a></li>                            
+                    </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Null safety
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Equality
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;This expression
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Annotations
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Destructuring declarations
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <h1 class="titloi">Inheritance</h1>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Subclass and Superclass
+            </h3>
+            <p>
+                In Kotlin, it is possible to inherit class properties and functions from one class to another. We group the "inheritance 
+                concept" into two categories:
+            </p>
+            <ul>
+                <li><b>subclass</b> (child) - the class that inherits from another class</li>
+                <li><b>superclass</b> (parent) - the class being inherited from</li>
+            </ul>
+            <p>
+                In the example below, <span class="red_color">MyChildClass</span> (subclass) inherits the properties from the 
+                <span class="red_color">MyParentClass</span> class (superclass):
+            </p>
+            <pre><code><span clas="comments">// Superclass</span>
+<span class="light_blue_color">open class</span> MyParentClass {
+    <span class="light_blue_color">val</span> x = <span class="purple_color">5</span>
+}
+   
+<span clas="comments">// Subclass</span>
+    <span class="light_blue_color">class</span> MyChildClass: MyParentClass() {
+        <span class="light_blue_color">fun</span> <span class="red_color">myFunction</span>() {
+            <span class="red_color">println</span>(x) <span clas="comments">// x is now inherited from the superclass</span>
+    }
+}
+            
+<span clas="comments">// Create an object of MyChildClass and call myFunction</span>
+<span class="light_blue_color">fun</span> <span class="red_color">main</span>() {
+    <span class="light_blue_color">val</span> myObj = MyChildClass()
+              myObj.<span class="red_color">myFunction</span>()
+}</code></pre>
+            <p style="line-height: 0; text-decoration: underline; font-weight: 600;">
+                Example Explained
+            </p>
+            <p>
+                Use the <span class="red_color">open</span> keyword in front of the <strong>superclass</strong>/parent, to make this the class other 
+                classes should inherit properties and functions from.
+            </p>
+            <p>
+                To inherit from a class, specify the name of the <strong>subclass</strong>, followed by a colon <span class="red_color">
+                <b>:</b></span>, and then the name of the <strong>superclass</strong>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Why And When To Use "Inheritance"?
+            </h3>
+            <p>
+                It is useful for code reusability: reuse properties and functions of an existing class when you create a new class.            
+            </p>
+            <p>
+                All classes in Kotlin have a common superclass, <span class="red_color">Any</span>, which is the default superclass for a 
+                class with no supertypes declared:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Example <span class="comments">// Implicitly inherits from Any</span></code></pre>
+            <p>
+                <span class="red_color">Any</span> has three methods: <span class="red_color">equals()</span>, <span class="red_color">
+                hashCode()</span>, and <span class="red_color">toString()</span>. Thus, these methods are defined for all Kotlin classes.            
+            </p>
+            <p>
+                By default, Kotlin classes are final – they can't be inherited. To make a class inheritable, mark it with the 
+                <span class="red_color">open</span> keyword:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Base <span class="comments">// Class is open for inheritance</span></code></pre>
+            <p>
+                To declare an explicit supertype, place the type after a colon in the class header:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Base(p: <span class="purple_color">Int</span>)
+            
+<span class="light_blue_color">class</span> Derived(p: <span class="purple_color">Int</span>) : Base(p)</code></pre>
+            <p>
+                If the derived class has a primary constructor, the base class can (and must) be initialized in that primary constructor 
+                according to its parameters.
+            </p>
+            <p>
+                If the derived class has no primary constructor, then each secondary constructor has to initialize the base type using 
+                the <span class="red_color">super</span> keyword or it has to delegate to another constructor which does. Note that in 
+                this case different secondary constructors can call different constructors of the base type:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> MyView : View {
+    <span class="light_blue_color">constructor</span>(ctx: Context) : <span class="light_blue_color">super</span>(ctx)
+            
+    <span class="light_blue_color">constructor</span>(ctx: Context, attrs: AttributeSet) : <span class="light_blue_color">super</span>(ctx, attrs)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Overriding methods
+            </h3>
+            <p>
+                Kotlin requires explicit modifiers for overridable members and overrides:         
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Shape {
+    <span class="light_blue_color">open fun</span> <span class="red_color">draw</span>() { <span class="comments">/*...*/</span> }
+    <span class="light_blue_color">fun</span> <span class="red_color">fill</span>() { <span class="comments">/*...*/</span> }
+}
+            
+<span class="light_blue_color">class</span> Circle() : Shape() {
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() { <span class="comments">/*...*/</span> }
+}</code></pre>
+            <p>
+                The <span class="red_color">override</span> modifier is required for <span class="red_color">Circle.draw()</span>. If 
+                it's missing, the compiler will complain. If there is no <span class="red_color">open</span> modifier on a function, like 
+                <span class="red_color">Shape.fill()</span>, declaring a method with the same signature in a subclass is not allowed, either 
+                with <span class="red_color">override</span> or without it. The <span class="red_color">open</span> modifier has no effect 
+                when added to members of a final class – a class without an <span class="red_color">open</span> modifier.
+            </p>
+            <p>
+                A member marked <span class="red_color">override</span> is itself open, so it may be overridden in subclasses. If you 
+                want to prohibit re-overriding, use <span class="red_color">final</span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Rectangle() : Shape() {
+    <span class="light_blue_color">final override fun</span> <span class="red_color">draw</span>() { <span class="comments">/*...*/</span> }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Overriding properties
+            </h3>
+            <p>
+                The overriding mechanism works on properties in the same way that it does on methods. Properties declared on a superclass 
+                that are then redeclared on a derived class must be prefaced with <span class="red_color">override</span>, and they must 
+                have a compatible type. Each declared property can be overridden by a property with an initializer or by a property with a 
+                <span class="red_color">get</span> method:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Shape {
+    <span class="light_blue_color">open val</span> vertexCount: <span class="purple_color">Int</span> = <span class="purple_color">0</span>
+}
+            
+<span class="light_blue_color">class</span> Rectangle : Shape() {
+    <span class="light_blue_color">override val</span> vertexCount = <span class="purple_color">4</span>
+}</code></pre>
+            <p>
+                You can also override a <span class="red_color">val</span> property with a <span class="red_color">var</span> property, 
+                but not vice versa. This is allowed because a <span class="red_color">val</span> property essentially declares a 
+                <span class="red_color">get</span> method, and overriding it as a <span class="red_color">var</span> additionally 
+                declares a <span class="red_color">set</span> method in the derived class.
+            </p>
+            <p>
+                Note that you can use the <span class="red_color">override</span> keyword as part of the property declaration in a 
+                primary constructor:
+            </p>
+            <pre><code><span class="light_blue_color">interface</span> Shape {
+    <span class="light_blue_color">val</span> vertexCount: <span class="purple_color">Int</span>
+}
+            
+<span class="light_blue_color">class</span> Rectangle(<span class="light_blue_color">override val</span> vertexCount: <span class="purple_color">Int</span> = <span class="purple_color">4</span>) : Shape <span class="comments">// Always has 4 vertices</span>
+            
+<span class="light_blue_color">class</span> Polygon : Shape {
+    <span class="light_blue_color">override var</span> vertexCount: <span class="purple_color">Int</span> = <span class="purple_color">0</span><span class="comments"> // Can be set to any number later</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Derived class initialization order
+            </h3>
+            <p>
+                During the construction of a new instance of a derived class, the base class initialization is done as the first step 
+                (preceded only by evaluation of the arguments for the base class constructor), which means that it happens before the 
+                initialization logic of the derived class is run.
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Base(<span class="light_blue_color">val</span> name: String) {
+            ​
+    <span class="light_blue_color">init</span> {<span class="red_color">println</span>(<span class="green_color">"Initializing a base class"</span>) }
+            ​
+    <span class="light_blue_color">open val</span> size: <span class="purple_color">Int</span> = 
+                    name.<span class="red_color">length</span>.<span class="red_color">also</span> { <span class="red_color">println</span>(<span class="green_color">"Initializing size in the base class: $it"</span>) }
+            }
+            ​
+<span class="light_blue_color">class</span> Derived(
+    name: String,
+    <span class="light_blue_color">val</span> lastName: String,
+) : Base(name.<span class="red_color">replaceFirstChar</span> { <span class="light_blue_color">it</span>.<span class="red_color">uppercase</span>() }.<span class="red_color">also</span> { <span class="red_color">println</span>(<span class="green_color">"Argument for the base class: $it"</span>) }) {
+            ​
+    <span class="light_blue_color">init</span> { <span class="red_color">println</span>(<span class="green_color">"Initializing a derived class"</span>) }
+            ​
+    <span class="light_blue_color">override val</span> size: <span class="purple_color">Int</span> =
+        (<span class="light_blue_color">super</span>.<span class="red_color">size</span> + lastName.<span class="red_color">length</span>).<span class="red_color">also</span> { <span class="red_color">println</span>(<span class="green_color">"Initializing size in the derived class: $it"</span>) }
+}</code></pre>
+            <p>
+                This means that when the base class constructor is executed, the properties declared or overridden in the derived class 
+                have not yet been initialized. Using any of those properties in the base class initialization logic (either directly or 
+                indirectly through another overridden <span class="red_color">open</span> member implementation) may lead to incorrect 
+                behavior or a runtime failure. When designing a base class, you should therefore avoid using <span class="red_color">open
+                </span> members in the constructors, property initializers, or <span class="red_color">init</span> blocks.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Calling the superclass implementation
+            </h3>
+            <p>
+                Code in a derived class can call its superclass functions and property accessor implementations using the 
+                <span class="red_color">super</span> keyword:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Rectangle {
+    <span class="light_blue_color">open fun</span> <span class="red_color">draw</span>() { <span class="red_color">println</span>(<span class="green_color">"Drawing a rectangle"</span>) }
+    <span class="light_blue_color">val</span> borderColor: String <span class="red_color">get</span>() = <span class="green_color">"black"</span>
+}
+            
+<span class="light_blue_color">class</span> FilledRectangle : Rectangle() {
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() {
+        <span class="light_blue_color">super</span>.<span class="red_color">draw</span>()
+        <span class="light_blue_color">println</span>(<span class="green_color">"Filling the rectangle"</span>)
+}
+            
+<span class="light_blue_color">val</span> fillColor: String <span class="red_color">get</span>() = <span class="light_blue_color">super</span>.borderColor
+}</code></pre>
+            <p>
+                Inside an inner class, accessing the superclass of the outer class is done using the <span class="red_color">super</span> 
+                keyword qualified with the outer class name: <span class="red_color">super@Outer</span>:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> FilledRectangle: Rectangle() {
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() {
+        <span class="light_blue_color">val</span> filler = Filler()
+        filler.<span class="red_color">drawAndFill</span>()
+}
+            ​
+    <span class="light_blue_color">inner class</span> Filler {
+        <span class="light_blue_color">fun</span> <span class="red_color">fill</span>() { <span class="red_color">println</span>(<span class="green_color">"Filling"</span>) }
+        <span class="light_blue_color">fun</span> <span class="red_color">drawAndFill</span>() {
+            <span class="light_blue_color">super@FilledRectangle</span>.<span class="red_color">draw</span>() <span class="comments">// Calls Rectangle's implementation of draw()</span>
+            <span class="red_color">fill</span>()
+            <span class="red_color">println</span>(<span class="green_color">"Drawn a filled rectangle with color ${super@FilledRectangle.borderColor}"</span>) <span class="comments">/* Uses Rectangle's implementation 
+        of borderColor's get()*/</span>
+        }
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Overriding rules
+            </h3>
+            <p>
+                In Kotlin, implementation inheritance is regulated by the following rule: if a class inherits multiple implementations of 
+                the same member from its immediate superclasses, it must override this member and provide its own implementation (perhaps, 
+                using one of the inherited ones).
+            </p>
+            <p>
+                To denote the supertype from which the inherited implementation is taken, use <span class="red_color">super</span> 
+                qualified by the supertype name in angle brackets, such as <span class="red_color">super&lt;Base></span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Rectangle {
+    <span class="light_blue_color">open fun</span> <span class="red_color">draw</span>() { <span class="comments">/* ... */</span> }
+}
+            
+<span class="light_blue_color">interface</span> Polygon {
+    <span class="light_blue_color">fun</span> <span class="red_color">draw</span>() { <span class="comments">/* ... */</span> } <span class="comments">// interface members are 'open' by default</span>
+}
+            
+<span class="light_blue_color">class</span> Square() : Rectangle(), Polygon {
+    <span class="comments">// The compiler requires draw() to be overridden:</span>
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() {
+        <span class="light_blue_color">super&lt;Rectangle></span>.<span class="red_color">draw</span>() <span class="comments">// call to Rectangle.draw()</span>
+        <span class="light_blue_color">super&lt;Polygon></span>.<span class="red_color">draw</span>() <span class="comments">// call to Polygon.draw()</span>
+    }
+}</code></pre>
+            <p>
+                It's fine to inherit from both <span class="red_color">Rectangle</span> and <span class="red_color">Polygon</span>, but 
+                both of them have their implementations of <span class="red_color">draw()</span>, so you need to override 
+                <span class="red_color">draw()</span> in <span class="red_color">Square</span> and provide a separate implementation for 
+                it to eliminate the ambiguity.
+            </p>
+        </div>
+        <div class="right_side">
+            <h4>
+                Now displaying:
+            </h4>
+            <p class="display_info">
+                Inheritance
+            </p>
+        </div>    
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

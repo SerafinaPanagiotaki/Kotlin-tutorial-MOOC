@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(5)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(5)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1" onclick="display(1,1)"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>              
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Ισότητα
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;Έκφραση this
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">            
+            <h1 id="null" class="titloi">Ασφάλεια έναντι του κενού (Null safety)</h1>  
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Nullable types και non-null types
+            </h3>
+            <p>Το σύστημα τύπων της Kotlin είναι προσανατολισμένο να εξουδετερώνει τον κίνδυνο αναφορών σε null (null references), που 
+                είναι επίσης γνωστές με το όνομα <a href="https://en.wikipedia.org/wiki/Null_pointer#History" target="_blank" 
+                style="text-decoration:none;"><abbr title="https://en.wikipedia.org/wiki/Null_pointer#History">Το λάθος του ενός 
+                δισεκατομμυρίου δολαρίων (The Billion Dollar Mistake)</abbr></a>.
+            </p>
+            <p>
+                Μία από τις πιο συνηθισμένες παγίδες σε αρκετές γλώσσες προγραμματισμού, συμπεριλαμβανομένης της Java, είναι πως αν 
+                επιχειρήσουμε να έχουμε πρόσβαση σε ένα μέλος που κάνει αναφορά στο κενό (null reference) κάτι τέτοιο θα οδηγήσει σε null 
+                reference exception. Στη Java κάτι τέτοιο θα μπορούσε να χαρακτηριστεί ισοδύναμο με την εξαίρεση 
+                <span class="red_color">NullPointerException</span>, ή <b>NPE</b> εν συντομία.
+            </p>
+            <p>
+                Οι μόνοι πιθανοί λόγοι πρόκλησης NPE στην Kotlin είναι:
+            </p>
+            <ul>
+                <li>Μία ρητή κλήση της <span class="red_color">throw NullPointerException()</span>.</li>
+                <li>Χρήση του τελεστή <span class="red_color">!!</span> ο οποίος θα περιγραφεί παρακάτω.</li>
+                <li>Ασυνέπεια δεδομένων (Data inconsistency) αναφορικά με κάποια αρχικοποίηση, όπως λχ όταν:
+                    <ul style="list-style-type:square;">
+                        <li>Ένα μη αρχικοποιημένο <span class="red_color">this</span> διαθέσιμο σε κάποιον κατασευαστή (constructor) 
+                            περνά και χρησιμοποιείται αλλού ("leaking <span class="red_color">this</span>", όπως λέγεται χαρακτηριστικά).
+                        </li>
+                        <li>Ένας  <a href="https://kotlinlang.org/docs/inheritance.html#derived-class-initialization-order" target="_blank" 
+                            style="text-decoration:none;"><abbr title="https://kotlinlang.org/docs/inheritance.html#derived-class-initialization-order">
+                            κατασκευαστής υπερκλάσης καλεί ένα ανοιχτό μέλος</abbr></a> του οποίου η υλοποίηση στην παράγωγη κλάση 
+                            χρησιμοποιεί μία μη αρχικοποιημένη διατύπωση.
+                        </li>
+                    </ul>
+                </li>
+                <li>Διαλειτουργικότητα της Java (Java interoperation):
+                    <ul style="list-style-type:square;">
+                        <li>Επιχειρεί να έχει πρόσβαση σε ένα μέλος μίας αναφοράς σε <span class="red_color">null</span> ενός
+                            <a href="https://kotlinlang.org/docs/java-interop.html#null-safety-and-platform-types" target="_blank" 
+                            style="text-decoration:none;"><abbr title="https://kotlinlang.org/docs/java-interop.html#null-safety-and-platform-types">
+                            τύπου πλατφόρμας<b>·</b></abbr></a></li>
+                        <li>
+                            Θέματα (Nullability issues) με γενικούς τύπους που χρησιμοποιούνται για τη διαλειτουργκότητα της Java.
+                            Για παράδειγμα, ένα τμήμα κώδικα της Java μπορεί να προσθέσει <span class="red_color">null</span> μέσα σε 
+                            ένα <span class="red_color">MutableList&lt;String></span> της Kotlin, επομένως απαιτείται ένα 
+                            <span class="red_color">MutableList&lt;String?></span> για να δουλέψουμε μαζί του.
+                        </li>
+                        <li>
+                            Άλλα ζητήματα που προκαλούνται από εξωτερικό κώδικα Java.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Στην Kotlin, το σύστημα τύπων διακρίνει ανάμεσα στις αναφορές που μπορούν να κρατήσουν <span class="red_color">null
+                </span>(nullable references) και σε αυτές που δεν μπορούν (non-null references). Για παράδειγμα, μία μεταβλητή
+                τύπου <span class="red_color">String</span> δεν μπορεί να κρατήσει <span class="red_color">null</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> a:<span class="light_blue_color"> String</span> = <span class="green_color">"abc"</span><span class="comments"> //Κανονική αρχικοποίηση, από σύμβαση θεωρείται non-null</span>
+a = <span class="light_blue_color">null <span class="comments">// compilation error</span>
+            </code></pre>
+            <p>
+                Για να επιτρέψουμε nulls, μπορούμε να δηλώσουμε τη μεταβλητή ως nullable string γράφοντας <span class="red_color">String?</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> b:<span class="light_blue_color"> String?</span> = <span class="green_color">"abc"</span><span class="comments"> // μπορεί να αρχικοποιηθεί με null</span>
+b = <span class="light_blue_color">null </span><span class="comments">// ok</span>
+<span class="red_color">print</span>(b)</code></pre>
+            <p>
+                Αν καλέσουμε μία μέθοδο ή προσπελάσουμε μία ιδιότητα ενός στοιχείου <span class="red_color">a</span>, είναι εγγυημένο 
+                πως δε θα προκληθεί NPE, επομένως μπορούμε με ασφάλεια να πούμε:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = a.<span class="red_color">length</span></code></pre>            
+            <p>
+                Αν θέλουμε όμως να προσπελάσουμε την ίδια ιδιότητα ενός στοιχείου <span class="red_color">b</span>, κάτι τέτοιο δε θα 
+                ήταν ασφαλές και ο compiler θα ανέφερε σφάλμα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = b.<span class="red_color">length</span><span class="comments"> // Σφάλμα: Η μεταβλητή 'b' μπορεί να έχει τιμή null</span></code></pre>        
+            <p>
+                Παρόλα αυτά χρειαζόμαστε να προσπελάσουμε αυτή την ιδιότητα, και για αυτό υπάρχουν μερικοί τρόποι να το υλοποιήσουμε.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Έλεγχος για null σε συνθήκες
+            </h3>  
+            <p>
+                Αρχικά, μπορούμε να ελέγξουμε ρητά αν η μεταβλητή <span class="red_color">b</span> έχει τιμή <span class="red_color">
+                null</span>, και να διαχειριστούμε τις δύο περιπτώσεις ξεχωριστά: 
+            </p>          
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = <span class="light_blue_color"> if</span>(b <span class="light_blue_color">!= null</span>) b.<span class="red_color">length</span> <span class="light_blue_color">else</span> <span class="purple_color">-1</span></code></pre>
+            <p>
+                Ο compiler εντοπίζει την πληροφορία του ελέγχου που πραγματοποιήσαμε και μας επιτρέπει να καλέσουμε την ιδιότητα
+                <span class="red_color">length</span> μέσα στη συνθήκη του <span class="red_color">if</span>. Περισσότερο περίπλοκες 
+                συνθήκες υποστηρίζονται επίσης:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> b: <span class="light_blue_color">String?</span> = <span class="green_color">"Kotlin"</span>
+<span class="light_blue_color">if</span>(b <span class="light_blue_color">!= null && </span>b.<span class="red_color">length</span> > 0) {
+    <span class="red_color"> print</span>(<span class="green_color">"String of length ${b.length}"</span>)
+} <span class="light_blue_color">else </span>{
+    <span class="red_color"> print</span>(<span class="green_color">"Empty string"</span>)
+}</code></pre>
+            <p>
+                Παρατηρήστε πως αυτό δουλεύει όταν η μεταβλητή είναι <span class="red_color">b</span> αμετάβλητη (immutable), εννοώντας πως είναι μία τοπικής 
+                εμβέλειας μεταβλητή η οποία δεν έχει τροποποιηθεί μεταξύ του ελέγχου και της χρήσης της ή είναι ένα μέλος 
+                <span class="red_color">val</span> που έχει υποστηρικτικό πεδίο και δεν υπερκαλύπτεται (δεν είναι overridable), διότι 
+                σε διαφορετική περίπτωση θα υπήρχε περίπτωση η μεταβλητή <span class="red_color">b</span> να αλλάξει τιμή σε
+                <span class="red_color">null</span> μετά τον έλεγχο.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Safe calls
+            </h3>
+            <p>
+                Η δεύτερη επιλογή μας για να προσπελάσουμε την ιδιότητα μίας nullable μεταβητής είναι χρησιμοποιώντας τον τελεστή
+                safe call <span class="red_color">?.</span>:
+            </p>             
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> a = <span class="green_color">"Kotlin"</span>
+<span class="light_blue_color">val</span>  b: <span class="light_blue_color">String?</span> = <span class="light_blue_color">null</span>                
+<span class="red_color">println</span>(b?.<span class="red_color">length</span>)
+<span class="red_color">println</span>(a?.<span class="red_color">length</span>) <span class="comments">// Αχρείαστη safe call</span></code></pre>
+            <p>
+                Αυτό επιστρέφει το <span class="red_color">b.length</span> εάν το <span class="red_color">b</span> δεν έχει τιμή null, 
+                και <span class="red_color">null</span> σε διαφορετική περίπτωση. Ο τύπος της έκφρασης είναι <span class="red_color">
+                Int?</span>.
+            </p>
+            <p> 
+                Οι safe calls είναι χρήσιμες στις αλυσίδες (chains). Για παράδειγμα, ο Bob είναι ένας εργαζόμενος ο οποίος μπορεί να έχει 
+                ανατεθεί σε ένα τμήμα της εταιρίας (ή όχι). Αυτό το τμήμα μπορεί με τη σειρά του να έχει κάποιον άλλον εργαζόμενο ως 
+                επικεφαλής του. Για νά πάρουμε το όνομα του Bob ως επικεφαλής του τμήματος (αν υπάρχει), γράφουμε τα παρακάτω:
+            </p>
+            <pre style="font-size: 1.1em;"><code>bob?.department?.head?.name</code></pre>
+            <p>
+                Μία τέτοια αλυσία επιστρέφει <span class="red_color">null</span> αν κάποια από τις ιδιότητές της έχει τιμή 
+                <span class="red_color">null</span>.
+            </p>
+            <p>
+                Για να εκτελέσουμε μία εργασία σε αλυσίδα μόνο για τιμές non-null, μπορούμε να χρησιμοποιήσουμε τον τελεστή safe call 
+                μαζί με το <span class="red_color">let</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> listWithNulls: List<span class="purple_color"><</span>String<span class="purple_color">?></span> = listOf(<span class="green_color">"Kotlin"</span>, <span class="light_blue_color">null</span>)             
+<span class="light_blue_color">for</span>(item <span class="light_blue_color">in</span> listWithNulls) {
+    item?.let { println(it) } <span class="comments">// Εκτυπώνει "Kotlin" και αγνοεί το null</span>
+}</code></pre>  
+            <p>
+                Μία safe call μπορεί επίσης να τοποθετηθεί στο αριστερό μέρος μίας ανάθεσης. Ακολούθως, αν έστω ένας από τους δέκτες
+                της αλυσίδας κατά το safe call έχει τιμή <span class="red_color">null</span>, η ανάθεση παραλείπεται και η έκφραση στα 
+                δεξιά δεν υπολογίζεται καθόλου:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Αν έστω ένα από τα `person` ή `person.department` έχει τιμή null, η συνάρτηση δεν καλείται:</span>
+person?.department?.head = managersPool.<span class="red_color">getManager</span>()</code></pre>    
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Nullable receiver
+            </h3>  
+            <p>
+                Οι extension functions μπορούν να οριστούν σε ένα <a href="https://kotlinlang.org/docs/extensions.html#nullable-receiver" 
+                target="_blank" style="text-decoration: none;"><abbr title="https://kotlinlang.org/docs/extensions.html#nullable-receiver">nullable receiver</abbr>
+                </a>. Με αυτόν τον τρόπο μπορούμε να καθορίσουμε την συμπεριφορά για τιμές null χωρίς την ανάγκη να χρησιμοποιήσουμε τη 
+                λογική ελέγχου (null-checking logic) σε κάθε κλήση.
+            </p>   
+            <p>
+                Για παράδειγμα, η συνάρτηση <span class="red_color">toString()</span> είναι ορισμένη σε ένα nullable receiver. Επιστρέφει 
+                το String "null" (αντί για τιμή <span class="red_color">null</span>). Κάτι τέτοιο μπορεί να αποβεί πολύ βοηθητικό σε 
+                συγκεκριμένες περιπτώσεις, όπως για παράδειγμα σε μία είσοδο (logging):
+            </p>     
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> person: Person? = </span><span class="light_blue_color">null</span>
+logger.<span class="red_color">debug</span>(person.<span class="red_color">toString</span>()) <span class="comments">// Αναγράφει "null", δεν εμφανίζει μία exception</span></code></pre>             
+            <p>
+                Αν θέλουμε η κλήση της συνάρτησης <span class="red_color">toString()</span> να επιστρέφει ένα  nullable string,
+                χρησιμοποιούμε τον <a href="https://kotlinlang.org/docs/null-safety.html#safe-calls" target="_blank" style="text-decoration: none;">
+                <abbr title="https://kotlinlang.org/docs/null-safety.html#safe-calls">τελεστή safe-call</abbr></a> 
+                <span class="red_color"><b>?.</b></span> :
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> timestamp: Instant? = </span><span class="light_blue_color">null</span>
+<span class="light_blue_color">val</span> isoTimestamp = timestamp?.</span><span class="red_color">toString</span>() <span class="comments">// Επιστρέφει ένα αντικείμενο String? με τιμή `null`</span>                
+<span class="light_blue_color">if</span>(isoTimestamp == <span class="light_blue_color">null</span>) {
+    <span class="comments">// Διαχειρίζεται την περίπτωση όπου η μεταβλητή timestamp έχει τιμή `null`</span>
+}</code></pre>             
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Τελεστής Elvis
+            </h3> 
+            <p>
+                Όταν έχουμε μία nullable αναφορά, <span class="red_color">b</span>, μπορούμε να πούμε "αν η μεταβλητή 
+                <span class="red_color">b</span> δεν έχει τιμή <span class="red_color">null</span>, χρησιμοποίησέ την, αλλιώς,
+                χρησιμοποίησε κάποια άλλη τιμή non-null":
+            </p>                           
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l: Int = </span><span class="light_blue_color">if</span>(b != <span class="light_blue_color">null</span>) b.length <span class="light_blue_color">else </span><span class="purple_color">-1</span></code></pre> 
+            <p>
+                Αντί να γράφουμε ολόκληρη την έκφραση <span class="red_color">if</span>, μπορούμε επίσης να εκφράσουμε το ίδιο με τον 
+                τελεστή Elvis (Elvis operator) <span class="red_color"><b>?:</b></span> :
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = b?.<span class="red_color">length ?:</span> <span class="purple_color">-1</span></code></pre> 
+            <p>
+                Αν η έκφραση στο αριστερό μέρος του <b><span class="red_color">?:</span></b> δεν έχει τιμή <span class="red_color">
+                null</span>, ο τελεστής Elvis την επιστρέφει, διαφορετικά επιστρέφει την έκφραση στο δεξί μέρος. Παρατηρήστε πως η 
+                έκφραση στο εξί μέρος υπολογίζεται μόνο στην περίπτωση που το αριστερό μέρος έχει τιμή <span class="red_color">null                    
+                </span>.
+            </p>
+            <p>
+                Εφόσον οι <span class="red_color">throw</span> και <span class="red_color">return</span> είναι εκφράσεις στην Kotlin, 
+                μπορούμε επίσης να τις χρησιμοποιήσουμε στο δεξί μέρος του τελεστή Elvis. Κάτι τέτοιο μπορεί να είναι βολικό, για 
+                παράδειγμα όταν ελέγχουμε ορίσματα συναρτήσεων:
+             </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">foo</span>(node: Node): String? {
+    <span class="light_blue_color">val</span> parent = node.<span class="red_color">getParent</span>() <span class="purple_color">?:</span> <span class="light_blue_color">return null</span>
+    <span class="light_blue_color">val</span> name = node.<span class="red_color">getName</span>() <span class="purple_color">?:</span> <span class="light_blue_color">throw IllegalArgumentException</span>(<span class="green_color">"name expected"</span>)
+    <span class="comments">// ...</span>
+}</code></pre> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Ο τελεστής !! 
+            </h3>
+            <p>
+                Η τρίτη επιλογή μας είναι η χρήση του τελεστή not-null assertion operator (<b><span class="red_color">!!</span></b>) που
+                μετατρέπει οποιαδήποτε τιμή σε έναν non-null τύπο και πετάει μία εξαίρεση στην περίπτωση που η τιμή είναι
+                <span class="red_color">null</span>. Μπορούμε να γράψουμε <span class="red_color">b!!</span>, και αυτό θα επιστρέψει μία 
+                τιμή του <span class="red_color">b</span> non-null (λόγου χάρη, ένα <span class="red_color">String</span> στο 
+                παράδειγμά μας) ή θα πετάξει μία NPE αν η μεταβλητή <span class="red_color">b</span> έχει τιμή <span class="red_color">
+                null</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> l = b<span class="purple_color">!!</span>.length</code></pre> 
+            <p>
+                Συνεπώς, αν θέλουμε μία NPE, μπορούμε να την έχουμε, όμως θα πρέπει να το ζητήσουμε ρητά και δε εμφανιστεί έτσι ξαφνικά.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Safe casts
+            </h3> 
+            <p>
+                Τα regular casts είναι δυνατό να οδηγήσουν σε <span class="red_color">ClassCastException</span> στην περίπτωση που το 
+                αντικείμενο δεν είναι του συγκεκριμένου τύπου. Μία άλλη επιλογή είναι να χρησιμοποιήσουμε τα safe casts που επιστρέφουν 
+                <span class="red_color">null</span> σε περίπτωση που η απόπειρα δεν είναι επιτυχημένη:
+            </p>       
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> aInt: Int<span class="purple_color">?</span> = a <span class="light_blue_color">as</span><span class="purple_color">?</span> Int</code></pre> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Δομές δεδομένων ενός τύπου nullable
+            </h3> 
+            <p>
+                Αν έχουμε μία δομή δεδομένων με στοιχεία ενός τύπου nullable και θέλουμε να φιλτράρουμε τα non-null στοιχεία, μπορούμε 
+                επίσης να το κάνουμε χρησιμοποιώντας <span class="red_color">filterNotNull</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> nullableList: List<span class="purple_color"><</span>Int<span class="purple_color">?></span> = <span class="red_color">listOf</span>(<span class="purple_color">1</span>, <span class="purple_color">2</span>, <span class="light_blue_color">null</span>, <span class="purple_color">4</span>)</code></pre> 
+            <h1 id="equality" class="titloi">Ισότητα</h1>
+            <p>
+               Στην Kotlin υπάρχουν δύο τύποι ισότητας:
+            </p>
+            <ul>
+                <li><strong>Διαδικαστική (Structural)</strong> ισότητα (<span class="red_color">==</span> - έλεγχος για 
+                <span class="red_color">equals()</span>)</li>
+                <li><strong>Αναφορική (Referential)</strong> ισότητα (<span class="red_color">===</span> - δύο αναφορές δείχνουν στο ίδιο 
+                    αντικείμενο)</li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Διαδικαστική ισότητα (Structural equality)
+            </h3>
+            <p>
+                Η διαδικαστική ισότητα ελέγχεται από τον τελεστή <span class="red_color">==</span> και τον αντίστοιχο αντίθετό του
+                <span class="red_color">!=</span>. Από σύμβαση, μία έκφραση του τύπου <span class="red_color">a == b</span> μεταφράζεται 
+                σε:
+            </p> 
+            <pre style="font-size: 1.1em;"><code>a<span class="purple_color">?</span><span class="red_color">.equals</span>(b) <span class="purple_color">?: </span>(b <span class="purple_color">===</span> <span class="light_blue_color">null</span>)</code></pre> 
+            <p>
+                Αν το <span class="red_color">a</span> δεν έχει τιμή <span class="red_color">null</span>, καλεί την συνάρτηση
+                <span class="red_color">equals(Any?)</span>, αλλιώς (το <span class="red_color">a</span> έχει τιμή 
+                <span class="red_color">null</span>) ελέγχει ότι το <span class="red_color">b</span> είναι αναφορικά ίσο με 
+                <span class="red_color">null</span>.
+            </p>
+            <p>
+                Παρατηρήστε πως δεν συντρέχει λόγος βελτιστοποίησης του κώδικά μας όταν συγκρίνουμε ρητά με <span class="red_color">
+                null</span>: Το <span class="red_color">a == null</span> αυτομάτως θα μεταφραστεί σε <span class="red_color">a === null                    
+                </span>.
+            </p>
+            <p>
+                Για να παρέχουμε μία συνηθισμένη υλοποίηση ισότητας, κάνουμε υερκάλυψη (override) στην συνάρτηση
+                <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html">
+                <span class="red_color">equals(other: Any?): Boolean</span></abbr></a>. Συναρτήσεις με ίδιο όνομα και διαφορετικές 
+                υπογραφές, όπως για παράδειγμα <span class="red_color">equals(other: Foo)</span>, δεν επηρεάζουν τον έλεγχο ισότητας
+                με τους τελεστές <span class="red_color">==</span> και <span class="red_color">!=</span> .
+            </p>
+            <p>
+                Η διαδικαστική ισότητα δεν έχει να κάνει σε τίποτα  σε σύγκριση με το καθορισμένο interface <span class="red_color">
+                Comparable<...></span>, έτσι μόνο μία συνηθισμένη υλοποίηση <span class="red_color">equals(Any?)</span> μπορεί να 
+                επηρέασει την συμπεριφορά του τελεστή.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Αναφορική ισότητα (Referential equality)
+            </h3>
+            <p>
+                Η αναφορική ισότητα ελέγχεται με τον τελεστή <span class="red_color">===</span> και τον αντίστοιχο αντίθετό του
+                <span class="red_color">!==</span> . <span class="red_color">a === b</span> υπολογίζεται ως true αν και μόνο αν
+                <span class="red_color">a</span> και <span class="red_color">b</span> δείχνουν στο ίδιο αντικέιμενο. Για τιμές που 
+                αναπαριστώνται από πρωτογενείς τύπους (primitive types) κατά τη διάρκεια εκτέλεσης (για παράδειγμά, 
+                <span class="red_color">Int</span>), ο έλεγχος ισότητας <span class="red_color">===</span> είναι ισοδύναμος με τον 
+                έλεγχο <span class="red_color">==</span>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Ισότητα αριθμών κινητής υποδιαστολής
+            </h3>
+            <p>
+                Όταν μία ισότητα ελέγχει τελεστέους που είναι τύπου <span class="red_color">Float</span> ή <span class="red_color">
+                Double</span> (nullable ή όχι), ο έλεγχος ακολουθεί τη διαδικασία <a href="https://en.wikipedia.org/wiki/IEEE_754" 
+                target="_blank" style="text-decoration: none;"><abbr title="https://en.wikipedia.org/wiki/IEEE_754">IEEE 754 
+                Standard for Floating-Point Arithmetic.</abbr></a>
+            </p>
+            <p>
+                Σε διαφορετική περίπτωση, χρησιμοποιείται η διαδικαστική ισότητα, η οποία δεν συμφωνεί με το πρότυπο ότι το
+                <span class="red_color">NaN</span> ισούται με τον εαυτό του, το <span class="red_color">NaN</span> θεωρείται 
+                μεγαλύτερο από οποιδήποτε στοιχείο, συμπεριλαμβανομένου του <span class="red_color">POSITIVE_INFINITY</span>, και
+                το <span class="red_color">-0.0</span> δεν ισούται με το <span class="red_color">0.0</span> .
+            </p>
+            <h1 id="this" class="titloi">Έκφραση This</h1>
+            <p>
+                Για να επισημάνουμε τον τρέχοντα <b>receiver</b>, χρησιμοποιούμε τις εκφράσεις <span class="red_color">this</span>:
+            </p>               
+            <ul>
+                <li>
+                    Σε μέλος κλάσης, το <span class="red_color">this</span> αναφέρεται στο τρέχον αντικείμενο της κλάσης.
+                </li>
+                <li>
+                    Σε μία <a href="https://kotlinlang.org/docs/extensions.html" target="_blank" style="text-decoration: none;">
+                    <abbr title="https://kotlinlang.org/docs/extensions.html">extension function</abbr></a> ή μία συνάρτηση
+                    <a href="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver" target="_blank" style="text-decoration: none;">
+                    <abbr title="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver">function literal with receiver</abbr></a>  
+                    το <span class="red_color">this</span> επισημαίνει την παράμετρο δέκτη (receiver parameter) που πέρασε στο αριστερό 
+                    μέρος της τελείας.
+                </li>
+            </ul>
+            <p>
+                Αν το <span class="red_color">this</span> δεν έχει προσδιοριστές (qualifiers), αναφέρεται στο <strong>εσωτερικότερο 
+                πεδίο εμβέλειας</strong>. Για να αναφερθούμε με το <span class="red_color">this</span> σε άλλα πεδία εμβέλειας, 
+                χρησιμοποιούμε <strong>label qualifiers</strong>.                
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Qualified this
+            </h3>
+            <p>
+                Για να προσπελάσουμε το <span class="red_color">this</span> από ένα εξωτερικό πεδίο εμβέλειας (μία κλάση, μία
+                <a href="https://kotlinlang.org/docs/extensions.html" target="_blank" style="text-decoration: none;">
+                <abbr title="https://kotlinlang.org/docs/extensions.html">extension function</abbr></a>, ή 
+                <a href="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/docs/lambdas.html#function-literals-with-receiver">
+                function literal with receiver</abbr></a> με ετικέτα) γράφουμε <span class="red_color">this@label</span>, όπου
+                <span class="red_color">@label</span> είναι μία ετικέτα από το πεδίο εμβέλειας που υποτίθεται πως είναι το
+                <span class="red_color">this</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> A { <span class="comments">// Έμμεση label @A</span>
+    <span class="light_blue_color">inner class</span> B { <span class="comments">// Έμμεση label @B</span>  
+        <span class="light_blue_color">fun</span><span class="red_color"> Int.foo</span>() { <span class="comments">// Έμμεση label @foo</span> 
+            <span class="light_blue_color">val</span> a = <span class="ligth_blue_color">this</span><span class="purple_color">@A</span><span class="comments">// Το this του Α</span> 
+            <span class="light_blue_color">val</span> b = <span class="ligth_blue_color">this</span><span class="purple_color">@B</span><span class="comments">// Το this του Β</span> 
+
+            <span class="light_blue_color">val</span> c = <span class="ligth_blue_color">this</span><span class="comments"> // Δέκτης της foo(), τύπου Int</span> 
+            <span class="light_blue_color">val</span> c1 = <span class="ligth_blue_color">this</span><span class="purple_color">@foo</span><span class="comments">// Δέκτης της foo(), τύπου Int</span> 
+            <span class="light_blue_color">val</span> funLit = <span class="purple_color">lambda@ </span><span class="light_blue_color">fun</span> String.() {        
+                <span class="light_blue_color">val</span> d = <span class="ligth_blue_color">this</span><span class="comments"> // Δέκτης της funLit(), τύπου String</span> 
+            }
+            
+            <span class="light_blue_color">val</span> funLit2 = { s: String <span class="purple_color">-></span>
+                <span class="comments">// Δέκτης της foo(), εφόσον εμπεριέχει έκφραση lambda</span>
+                <span class="comments">// Δεν έχει καθόλου δέκτη</span>
+                <span class="light_blue_color">val</span> d1 = <span class="ligth_blue_color">this</span>
+            }    
+        }
+    }
+}</code></pre> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Έμμεσο this (Implicit this)
+            </h3>
+            <p>
+                Όταν καλούμε μία συνάρτηση μέλος με το <span class="red_color">this</span>, μπορούμε να παραλείψουμε το τμήμα του 
+                <span class="red_color">this.</span>. Αν έχουμε μία συνάρτηση - που δεν είναι μέλος - με το ίδιο όνομα, το χρησιμοποιούμε με
+                προσοχή, διότι σε κάποιες περιπτώσεις μπορεί να κληθεί εκείνη στη θέση της:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">printLine</span>() { <span class="red_color">println</span>(<span class="green_color">"Top-level function"</span>) }
+<span class="light_blue_color">class</span> A {
+    <span class="light_blue_color">fun </span><span class="red_color">printLine</span>() { <span class="red_color">println</span>(<span class="green_color">"Member function"</span>) }        
+        
+    <span class="light_blue_color">fun </span><span class="red_color">invokePrintLine</span>(omitThis: Boolean = <span class="light_blue_color">false</span>) {
+        <span class="light_blue_color">if</span>(omitThis) <span class="red_color">printLine()</span>
+        <span class="light_blue_color">else this</span>.<span class="red_color">printLine()</span>
+    }
+}
+            ​
+A().invokePrintLine() <span class="comments">// Συνάρτηση μέλος (Member function)</span>
+A().invokePrintLine(omitThis = <span class="light_blue_color">true</span>) <span class="comments">// Κορυφαίου επιπέδου συνάρτηση (Top-level function)</span></code></pre>
+            <h1 id="asynchronous" class="titloi">Ασύγχρονες τεχνικές προγραμματισμού</h1>
+            <p>
+                Για δεκαετίες, ως προγραμματιστές ερχόμασταν αντιμέτωποι με ένα πρόβλημα - πώς να εμποδίσουμε τις εφαρμογές μας να 
+                μπλοκάρουν. Είτε προγραμματίζουμε για desktop, ή κινητά, ή ακόμα και για εφαρμογές από την πλευρά του εξυπηρετητή
+                (server-side applications), θέλουμε να αποφύγουμε την αναμονή του χρήστη ή ακόμα χειρότερα να προκληθεί συμφόρηση που 
+                θα εμπόδιζε την εφαρμογή να εκτελεστεί περαιτέρω.
+            </p>
+            <p>
+                Έχουν υπάρξει πολλές προσεγγίσεις για την επίλυση του προβλήματος, συμπεριλαμβανομένων:
+            </p>
+            <ul>
+                <li>Threading</li>
+                <li>Callbacks</li>
+                <li>Futures, promises και άλλα</li>
+                <li>Reactive Extensions</li>
+                <li>Coroutines</li>
+            </ul>
+            <p>
+                Προτού εξηγήσουμε τί είναι οι coroutines, ας δούμε περιληπτικά κάποιες από τις υπόλοιπες λύσεις.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Threading
+            </h3>
+            <P>
+                Τα Threads είναι μακράν η πιο γνωστή προσέγγιση για να αποφύγουμε το μπλοκάρισα των εφαρμογών.
+            </P>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="light_blue_color">val</span> token = <span class="red_color">preparePost</span>()
+    <span class="light_blue_color">val</span> post = <span class="red_color">submitPost</span>(token, item)
+    <span class="red_color">processPost</span>(post)
+}           
+
+<span class="light_blue_color">fun </span><span class="red_color">preparePost</span>(): Token {
+    <span class="comments">// Κάνει αίτημα και ακολούθως μπλοκάρει το main thread</span>
+    <span class="light_blue_color">return</span> token
+}</code></pre>
+            <p>
+                Ας υποθέσουμε πως στον παραπάνω κώδικα η <span class="red_color">preparePost</span> είναι μία διεργασία που απαιτείται
+                μεγάλο χρόνο εκτέλεσης και συνακόλουθα θα μπλοκάριζε το user interface. Αυτό που μπορούμε να κάνουμε είναι να την 
+                ξεκινήσουμε σε ένα ξεχωριστό thread. Κάτι τέτοιο μας επιτρέπει να αποτρέχουμε το UI απο το μπλοκάρισμα. Είναι μία πολύ 
+                συνηθισμένη πρακτική, όμως έχει μία σειρά από μειονεκτήματα:
+            </p>
+            <ul>
+                <li>
+                    Τα threads δεν είναι φτηνά και απαιτούν αλλαγή πλαισίου που είναι κοστοβόρο.
+                </li>
+                <li>
+                    Τα threads δεν είναι απεριόριστα. Ο αριθμός των threads που μπορούν να ξεκινήσουν είναι περιορισμένος από το 
+                    υφιστάμενο λειτουργικό σύστημα. Στις εφαρμογές από την πλευρά του εξυπηρετητή (server-side applications),
+                    αυτό θα προκαλούσε τεράστια συμφόρηση.
+                </li>
+                <li>
+                    Τα threads δεν είναι πάντοτε διαθέσιμα. Κάποιες πλατφόρμες, όπως η JavaScript δεν υποστηρίζουν καν threads.
+
+                </li>
+                <li>
+                    Τα threads δεν είναι εύκολα. Η αποσφαλμάτωση (debugging) των threads, η αποφυγή συνθηκών αγώνα δρόμου είναι 
+                    κοινά προβλήματα που υφιστάμεθα σε προγραμματισμό multi-threaded. 
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Callbacks
+            </h3>
+            <p>
+                Με τα callbacks, η κεντρική ιδέα είναι να περάσουμε μία συνάρτηση ως παράμετρο σε μία άλλη συνάρτηση, και να έχουμε
+                αυτήν να καλείται μόλις η διεργασία ολοκληρωθεί.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="red_color">preparePostAsync</span> { token <span class="purple_color">-></span>
+        <span class="red_color">submitPostAsync</span>(token, item) { post <span class="purple_color">-></span>
+            <span class="red_color">processPost</span>(post)
+        }
+    }
+}
+
+<span class="light_blue_color">fun </span><span class="red_color">preparePostAsync</span>(callback: (Token) <span class="purple_color">-></span> Unit) {
+    <span class="comments">// Κάνει αίτημα και επιστρέφει άμεσα</span>    
+    <span class="comments">// Ρυθμίζει callback για να κληθεί μεταγενέστερα</span>
+}</code></pre>
+            <p>
+                Αυτό στην πράξη μοιάζει να αποτελεί ποιο ελκυστική λύση, όμως για άλλη μια φορά υπάρχουν θέματα:
+            </p> 
+            <ul>
+                <li>
+                    Δυσκολία των εμφωλευμένων callbacks (nested callbacks). Συνήθως μία συνάρτηση που χρησιμοποιείται για callback, 
+                    συχνά καταλήγει να χρειάζεται το δικό της callback. Αυτό οδηγεί σε μία σειρά από εμφωλευμένα callbacks που οδηγούν 
+                    σε ακατανόητο κώδικα. Το σχήμα συχνά αναφέρεται ως titled christmas tree (τα άγκιστρα αναπαριστούν τα κλαδιά του 
+                    δέντρου).
+                </li>
+                <li>
+                    Η διαχείριση σφαλμάτων είναι περίπλοκη. Το εμφωλευμένο μοντέλο κάνει τη διαχείριση σφαλμάτων και την εξάπλωσή τους 
+                    κατά κάποιον τρόπο πιο περίπλοκη.
+                </li>
+            </ul>
+            <p>
+                Τα callbacks συνηθίζονται αρκετά σε αρχιτεκτονικές επαναληπτικών γεγονότων (event-loop architectures) όπως για 
+                παράδειγμα η JavaScript, όμως ακόμα κι εκεί, γενικά οι άνθρωποι απομακρυνθήκαμε από εκεί αναζητώντας άλλες προσεγγίσεις 
+                όπως promises ή reactive extensions.           
+            </p>          
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Futures, promises, και άλλα
+            </h3>
+            <p>
+                Η ιδέα πίσω από τα futures ή promises (υπάρχουν επίσης άλλοι όροι που μπορούν να αναφερθούν ανάλογα με τη γλώσσα/
+                πλατφόρμα), είναι πως όταν κάνουμε μία κλήση, υποσχόμαστε πως σε κάποιο σημείο θα επιστρέψουμε με ένα αντικείμενο που 
+                καλείται Promise, το οποίο τότε θα μπορεί να είναι διαχειρίσιμο.
+            </p>           
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="red_color">preparePostAsync()</span>
+    .<span class="red_color">thenCompose</span> { token <span class="purple_color">-></span>
+        <span class="red_color">submitPostAsync</span>(token, item)
+    }
+    .<span class="red_color">thenAccept</span> { post <span class="purple_color">-></span>
+        <span class="red_color">processPost</span>(post)
+    }       
+}            
+
+<span class="light_blue_color">fun </span><span class="red_color">preparePostAsyn</span>(): Promise<span class="purple_color"><</span>Token<span class="purple_color">></span> {
+    <span class="comments">// Διατυπώνει αίτημα και επιστρέφει μία υπόσχεση που θα ολοκληρωθεί μεταγενέστερα</span>           
+    <span class="light_blue_color">return</span> promise
+}</code></pre>
+            <p>
+                Αυτή η προσέγιση απαιτεί μία σειρά από αλλαγές, ειδικότερα στον τρόπο προγραμματισμού μας: 
+            </p>
+            <ul>
+                <li>
+                    Διαφορετικό μοντέλο προγραμματισμού. Παρόμοια με τα callbacks, το προγραμματιστικό μοντέλο απομακρύνεται από την  
+                    από πάνω προς τα κάτω επιτακτική προσέγγιση προς ένα συνθετκό μοντέλο αλυσιδωτών κλήσεων. Οι παραδοσιακές δομές 
+                    προγραμματισμού, όπως οι δομές επανάληψης, χειρισμοί εξαιρέσεων (exception handling), κλπ συνήθως δεν είναι πλέον 
+                    έγκυρα σε αυτό το μοντέλο.
+                </li>
+                <li>
+                    Διαφορετικά APIs. Συνήθως υπάρχει η ανάγκη να μάθουμε ένα εντελώς νέο API όπως για παράδειγμα 
+                    <span class="red_color">thenCompose</span> ή <span class="red_color">thenAccept</span>, που μπορούν επίσης να 
+                    ποικίλλουν μεταξύ των πλατφορμών.
+                </li>
+                <li>
+                    Συγεκριμένος τύπος επιστροφής. Ο τύπος επιστροφής μάς απομακρύνει από τα πραγματικά δεδομένα που χρειαζόμαστε και 
+                    στη θέση τους επιστρέφει ένα νέο τύπο <span class="red_color">Promise</span> που θα πρέπει να ενδοσκοπηθεί.
+                </li>
+                <li>
+                    Η διαχείριση σφαλμάτων μπορεί να γίνει περίπλοκη. Η εξάπλωση τους και τα αλυσιδωτά λάθη δεν είναι πάντοτε σαφή.        
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Reactive extensions
+            </h3>
+            <p>
+                Τα Reactive Extensions (Rx) εισήχθησαν στη C# από τον Erik Meijer. Ενώ χρησιμοποιήκαν ξεκάθαρα στην πλατφόρμα .NET 
+                platform δεν έφτασε σε ευρεία αποδοχή μέχρις ότου το Netflix τα ενσωμάτωσε στη Java, ονομάζοντάς τα RxJava. Έκτοτε,
+                αμέτρητες εισαγωγές σημειώθηκαν σε πλήθος πλατφορμών συμπεριλαμβανομένης της JavaScript (RxJS).
+            </p>          
+            <p>
+                Η ιδέα πίσω από τα Rx είναι να προωθήσουμε αυτό που καλείται <span class="red_color">observable streams</span>
+                μέσω του οποίου τώρα σκεφτόμαστε τα δεδομένα ως ροές (απεριόριστες ποσότητες δεδομένων) και αυτές οι ροές μπορούν να
+                παρατηρηθούν. Πιο πρακτικά, τα Rx είναι απλά το <a href="https://en.wikipedia.org/wiki/Observer_pattern" 
+                target="_blank" style="text-decoration:none;"><abbr title="https://en.wikipedia.org/wiki/Observer_pattern">Observer 
+                Pattern</abbr></a> με μία σειρά από extensions που μας επιτρέπουν να χειριζόμαστε τα δεδομένα.
+            </p>
+            <p>
+                Προσεγγιστικά είναι αρκετά παρόμοια με τα Futures, όμως κάποιος θα μπορούσε να θεωρήσει τα Futures πως επιστρέφουν ένα 
+                διακριτό αντικείμενο, ενώ τα Rx επιστρέφουν μία ροή (stream). Όπως και να 'χει, παρόμοια με τα προηγούμενα, επίσης 
+                παρουσιάζει ένα νέο τρόπο σκέψης σχετικά με τα προγραμματιικτά μας μοντέλα, διάσημα διατυπωμένο ως:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">"everything is a stream, and it's observable"</span></code></pre>
+            <p>
+                Αυτό υπονοεί διαφορετικό τρόπο προσέγγισης των προβλημάτων και μία αρκετά σημαντική μετατόπιση από όπου συνηθίζαμε στον
+                σύγχρονο κώδικα. Ένα πλεονέκτημα σε αντίθεση με τα Futures είναι πως με δεδομένο ότι εισήχθη σε τόσες πολλές πλατφόρμες,
+                γενικά μπορούμε να βρούμε σταθερή εμπερία API experience ανεξάρτητα του τί χρησιμοπoιούμε, θα μπορούσε να είναι C#, Java,
+                JavaScript, ή οποιαδήποτε άλλη γλώσσα όπου τα Rx είναι διαθέσιμα.
+            </p>
+            <p>
+                Επιπρόσθετα, τα Rx παρουσιάζουν μία καλύτερη προσέγγιση στη διαχείριση σφαλμάτων κατά κάποιον τρόπο.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;"> 
+                Coroutines
+            </h3> 
+            <p>
+                Η προσέγγιση της Kotlin να δουλεύει με ασύγχρονο κώδικα (asynchronous code) είναι η χρησιμοποίηση των coroutines, που 
+                αποτελεί την ιδέα διακόψιμων υπολογισμών, πχ η ιδέα πως μία συνάρτηση μπορεί να διακόψει την εκτέλεσή της σε κάποιο 
+                χρονικό σημείο και να συνεχίσει αργότερα.
+            </p>
+            <p>
+                Ένα από τα πλεονεκτήματα των coroutines είναι πως αναφορικά με τους προγραμματιστές, η γραφή κώδικα χωρίς blocks 
+                (non-blocking code) είναι ουσιαστικά το ίδιο με το να γράφουμε κώδικα με blocks (blocking code). Το προγραμματιστικό 
+                μοντέλο δεν αλλάζει στην πραγματικότητα.
+            </p>         
+            <p>
+                Πάρτε για παράδειγμα τον ακόλουθο κώδικα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">postItem</span>(item: Item) {
+    <span class="red_color">launch</span> {   
+        <span class="light_blue_color">val</span> token = <span class="red_color">preparePost</span>()  
+        <span class="light_blue_color">val</span> post = <span class="red_color">submitPost</span>(token, item)
+        <span class="red_color">processPost</span>(post)
+    }
+}       
+          
+<span class="light_blue_color">suspend fun</span><span class="red_color"> preparePost</span>(): Token { 
+    <span class="comments">// Κάνει αίτημα και διακόπτει την coroutine</span>
+    <span class="light_blue_color">return</span> <span class="red_color">suspendCoroutine</span> { <span class="comments">/* ... */</span> }
+}</code></pre>
+            <p>
+                Αυτός ο κώδικας θα ξεκινήσει μία μεγάλης διάρκειας εκτέλεση χωρίς να μπλοκάρει το main thread. Η συνάρτηση
+                <span class="red_color">preparePost()</span> είναι αυτό που αποκαλούμε μία <span class="red_color">suspendable function                    
+                </span>, συνεπώς το keyword <span class="red_color">suspend</span> προγηείται αυτής. Αυτό που εννοείτα από τα παραπάνω, 
+                είναι πως η συνάρτηση θα εκτελεστεί, θα παγώσει την εκτέλεσή της και θα συνεχίσει σε κάποιο άλλο χρονικό σημείο.
+            </p>
+            <ul>
+                <li>
+                    Η υπογραφή της συνάρτησης παραμένει ακριβώς η ίδια. Η μοναδική διαφορά είναι το ότι προστέθηκε σε αυτήν το 
+                    <span class="red_color">suspend</span>. Ο τύπος επιστροφής παρόλα αυτά είναι αυτός που επιθυμούμε να επιστραφεί.
+                </li>
+                <li>
+                    Ο κώδικας είναι ακόμα γραμμένος σαν να γράφαμε σύγχρονο κώδικα, από πάνω προς τα κάτω, χωρίς την ανάγκη ειδικής 
+                    σύνταξης, πέρα από τη χρήση μίας συνάρτησης που καλείται <span class="red_color">launch</span> η οποία ουσιαστικά 
+                    ξεκινά την coroutine.
+                </li>
+                <li>
+                    Το προγραμματιστικό μοντέλο και τα APIs παραμένουν ίδια. Μπορούμε να συνεχίσουμε να χρησιμοποιούμε δομές επανάληψης, 
+                    διαχείριση σφαλμάτων κλπ και δεν υπάρχει ανάγκη να μάθουμε ένα πλήρες σετ νέων APIs.
+                </li>
+                <li>
+                    Είναι ανεξάρτητη πλατφόρμα. Ανεξάρτητα αν στοχεύουμε στη JVM, τη JavaScript ή κάποια άλλη πλατφορμα, ο κώδικας που 
+                    γράφουμε είναι ο ίδιος. Ο compiler φροντίζει από κάτω την προσαρμογή του σε κάθε πλατφόρμα.
+                </li>
+            </ul>
+            <p>
+                Οι coroutines δεν είναι κάποια νέα έννοια, που επινοήθηκε μόνο από την Kotlin. Υπάρχουν εδώ και δεκαετίες και είναι 
+                διάσημες σε κάποιες άλλες γλώσσες προγραμματισμού, όπως η Go. Αυτό που έχει σημασία να σημειώσουμε ωστόσο είναι πως ο 
+                τρόπος υλοποίησής τους στην Kotlin, η πλειοψηφία της λειτουργικότητάς τους έχει ανατεθεί σε βιβλιοθήκες. Στην 
+                πραγματικότητα, πέρα από το keyword <span class="red_color">suspend</span>, δεν έχουν προστεθεί άλλα keywords στη 
+                γλώσσα. Αυτό είναι κατά κάποιον τρόπο διαφορετικό από άλλες γλώσσες όπως η C# που έχει <span class="red_color">async
+                </span> και <span class="red_color">wait</span> ως τμήμα της σύνταξης. Στην Kotlin, αυτές είναι απλώς συναρτήσεις 
+                βιβλιοθήκης.
+            </p>
+            <h1 id="annotations" class="titloi">Σημειώσεις (Annotations)</h1>
+            <p>
+                Τα annotations είναι τρόποι σύνδεσης μεταδεδομένων στον κώδικα. Για να δηλώσουμε ένα annotation, βάζουμε ένα 
+                <span class="red_color">annotation</span> modifier μπροστά από μία κλάση:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> Fancy</code></pre>
+            <p>
+                Επιπλέον ιδιότητές του annotation μπορούν να προσδιοριστούν σημειώνοντας (annotating) την κλάση (annotation class) με 
+                meta-annotations:
+            </p>
+            <ul>
+                <li>
+                    Η <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/">
+                    <span class="red_color">@Target</span></abbr></a> προσδιορίζει τα πιθανά είδη στοιχείων που μπορούν να σημειωθούν
+                    (annotated) με το annotation (όπως κλάσεις, συναρτήσεις, ιδιότητες και εκφράσεις)
+                </li>
+                <li>
+                    Η <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-retention/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-retention/">
+                    <span class="red_color">@Retention</span></abbr></a> προσδιορίζει εάν η annotation ειναι αποθηκευμένη στα αρχεία της 
+                    compiled class και αν είναι ορατή μέσω της reflection κατά τη διάρκεια εκτέλεσης του προγράμματος (από σύμβαση, και τα 
+                    δύο έχουν τιμή true)
+                </li>
+                <li>
+                    Η <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/">
+                    <span class="red_color">@Repeatable</span></abbr></a> επιτρέπει τη χρήση του ίδιου annotation σε ένα μόνο στοιχείο
+                    πολλές φορές
+                </li>
+                <li>
+                    Η <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-must-be-documented/" target="_blank" 
+                    style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-must-be-documented/">
+                    <span class="red_color"> @MustBeDocumented</span></abbr></a> προσδιορίζει ότι το annotation αποτελεί τμήμα του public 
+                    API και θα έπρεπε να περιλαμβάνεται στην υπογραφή της κλάσης ή της μεθόδου που εμφανίζεται στο αναπαραγόμενο API 
+                    documentation.
+                </li>
+            </ul>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@Target</span>(AnnotationTarget.CLASS, AnnotationTarget.FUNCTION,
+        AnnotationTarget.TYPE_PARAMETER, AnnotationTarget.VALUE_PARAMETER,
+        AnnotationTarget.EXPRESSION)
+<span class="green_color">@Retention</span>(AnnotationRetention.SOURCE)
+<span class="green_color">@MustBeDocumented</span>
+<span class="light_blue_color">annotation class</span> Fancy</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Χρήση
+            </h3>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@Fancy</span><span class="light_blue_color"> class</span> Foo {
+    <span class="green_color">@Fancy</span><span class="light_blue_color"> fun</span><span class="light_blue_color"> baz</span>(<span class="green_color">@Fancy</span> foo: Int): Int {              
+        <span class="light_blue_color">return</span>(<span class="green_color">@Fancy</span> <span class="purple_color">1</span>)
+    }
+}</code></pre>
+            <p>
+                Αν χρειαζόμαστε να κάνουμε annotatIon στον πρωτεύοντα κατασκευαστή μίας κλάσης, πρέπει να προσθέσουμε το keyword
+                <span class="red_color">constructor</span> στη δήλωση του κατασκευαστή, και να προσθέσουμε τα annotations πριν από αυτό:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> Foo <span class="green_color"> @Inject</span><span class="light_blue_color"> constructor</span>(dependency: MyDependency) { ... }</code></pre>
+            <p>
+                Μπορούμε επίσης να σημειώσουμε (annotate) property accessors:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> Foo {
+    <span class="light_blue_color">var</span> x: MyDependency<span class="purple_color">?</span> = <span class="light_blue_color">null</span>
+        <span class="green_color">@Inject</span> set
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Κατασκευαστές (Constructors)
+            </h3>
+            <p>
+                Τα annotations μπορούν να έχουν κατασκευαστές που παίρνουν παραμέτρους.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> Special(<span class="light_blue_color">val</span> why: String)
+
+<span class="green_color">@Special</span>(<span class="green_color">"example"</span>) class Foo {}</code></pre>
+            <p>
+                Οι επιτρεπτοί τύποι παραμέτρων είναι οι εξής:
+            </p> 
+            <ul>
+                <li>Τύπου που αντιστοιχούν στους πρωτεύοντες τύπους ( primitive types) της Java (Int, Long κλπ)</li>
+                <li>Strings</li>
+                <li>Κλάσεις (<span class="red_color">Foo::class</span>)</li>
+                <li>Enums</li>
+                <li>Άλλα annotations</li>
+                <li>Πίνακες τύπου όσων προαναφέρθηκαν</li>
+            </ul> 
+            <p>
+                Οι παράμετροι των annotations δεν μπορούν να έχουν τύπους nullable, διότι η JVM δεν υποστηρίζει την αποθήκευση τιμής
+                <span class="red_color">null</span> σε ιδιότητα ενός annotation.
+            </p>
+            <p>
+                Αν ένα annotation χρησιμοποιείται ως παράμετρος ενός άλλου annotation, το όνομά του δεν σημαίνεται από αριστερά 
+                (prefixed) με το χαρακτήρα <span class="red_color">@</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> ReplaceWith(<span class="light_blue_color">val</span> expression: String)             
+
+<span class="light_blue_color">annotation class</span> Deprecated(              
+    <span class="light_blue_color">val</span> message: String,   
+    <span class="light_blue_color">val</span> replaceWith: ReplaceWith = ReplaceWith(<span class="green_color">""</span>))          
+
+<span class="green_color">@Deprecated</span>(<span class="green_color">"This function is deprecated, use === instead"</span>, ReplaceWith(<span class="green_color">"this === other"</span>))</code></pre>
+            <p>
+                Αν χρειάζεται να προσδιορίσουμε μία κλάση ή ένα όρισμα ενός annotation, χρησιμοποιούμε μία κλάση Kotlin  
+                <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/">
+                (KClass)</abbr></a>. Ο compiler της Kotlin θα τη μετατρέψει αυτόματα σε κλάση Java, έτσι ώστε ο κώδικας Java να μπορεί 
+                να προσπελαύνει τα annotations και τα ορίσματα φυσιολογικά.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> kotlin.reflect.KClass
+<span class="light_blue_color">annotation class</span> Ann(val arg1: KClass<span class="purple_color">&lt;*></span>, <span class="light_blue_color">val</span> arg2: KClass<span class="purple_color"><</span>out Any<span class="purple_color">></span>)
+
+<span class="green_color">@Ann</span>(String<span class="purple_color">::</span>class, Int<span class="purple_color">::</span>class) <span class="light_blue_color">class</span> MyClass</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Instantiation
+            </h3>
+            <p>
+                Στη Java, ένας τύπος annotation είναι σχήμα ενός interface, έτσι ώστε να μπορούμε να το υλοποιήσουμε και να 
+                χρησιμοποιήσουμε έν στιγμιότυπο (instance). Ως εναλλακτική αυτού του μηχανισμού, η Kotlin μας επιτρέπει να καλέσουμε έναν
+                κατασκευαστή μίας annotation κλάσης σε τυχαίο κώδικα και παρόμοια να χρησιμοποιήσουμε το παραγόμενο στιγμιότυπο.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> InfoMarker(<span class="light_blue_color">val</span> info: String)
+
+<span class="light_blue_color">fun</span> <span class="red_color">processInfo</span>(marker: InfoMarker): Unit = <span class="red_color">TODO</span>() 
+
+
+<span class="light_blue_color">fun</span> <span class="red_color">main</span>(args: Array<String>) {
+    <span class="light_blue_color">if </span>(args.<span class="red_color">isNotEmpty</span>())
+        <span class="red_color">processInfo</span>(<span class="red_color">getAnnotationReflective</span>(args))
+    <span class="light_blue_color">else</span>
+        <span class="red_color">processInfo</span>(<span class="light_blue_color">InfoMarker</span>(<span class="green_color">"default"</span></span>))
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Lambdas
+            </h3>
+            <p>
+                Τα annotations μπορούν επίσης να χρησιμοποιηθούν σε συναρτήσεις lambda. Θα εφαρμοστούν στη μέθοδο 
+                <span class="red_color">invoke()</span> στην οποία το σώμα της συνάρτησης lambda είναι παραγόμενο. Κάτι τέτοιο είναι 
+                χρήσιμο για frameworks όπως το <a href="https://docs.paralleluniverse.co/quasar/" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://docs.paralleluniverse.co/quasar/">Quasar</abbr></a>, που 
+                χρησιμοποιεί annotations για έλεγχο (concurrency control).
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">annotation class</span> Suspendable
+
+<span class="light_blue_color">val</span> f = <span class="green_color">@Suspendable</span> { Fiber.<span class="red_color">sleep</span>(<span class="red_color">10</span>) }</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Annotation use-site targets
+            </h3>
+            <p>
+                Όταν σημειώνουμε (annotate) μία ιδιότητα ή μία παράμετρο πρωτεύοντα κατασκευαστή, υπάρχουν πολλά στοιχεία Java τα οποία 
+                αναπαράγονται από το αντίστοιχο στοιχείο της Kotlin, κι επομένως πολλές πιθανές τοποθεσίες για το annotation μέσα στον 
+                παραγόμενο κώδικα (Java bytecode). Για να προσδιορίσουμε πώς ακριβώς θα έπρεπε να αναπαραχθεί το annotation, 
+                χρησιμοποιούμε την ακόλουθη σύνταξη:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class Example</span>(<span class="green_color">@field:Ann </span><span class="light_blue_color">val</span> foo,    <span class="comments">// Κάνει annotation στο πεδίο της Java</span>
+              <span class="green_color">@get:Ann </span><span class="light_blue_color">val</span> bar,    <span class="comments">// Κάνει annotation στο getter της Java</span>      
+              <span class="green_color">@param:Ann </span><span class="light_blue_color">val</span> quux)    <span class="comments">// Κάνει annotation στην παράμετρο του κατασευαστή της Java</span></code></pre>
+            <p>
+                Η ίδια σύνταξη μπορεί να χρησιμοποιηθεί για να σημειώσουμε ένα ολόκληρο αρχείο. Για να το κάνουμε, βάζουμε μία σημείωση στο
+                <span class="red_color">αρχείο</span> στόχο στην κορυφή, πριν από τις οδηγίες του πακέτου (package directive) ή πριν  
+                από τα άλλα imports αν το αρχείο βρίσκεται στο default πακέτο:
+            </p> 
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@file:JvmName</span>(<span class="green_color">"Foo"</span>)
+<span class="light_blue_color">package</span> org.jetbrains.demo</code></pre>
+            <p>
+                Αν έχουμε πολλαπλές σημειώσεις που αφορούν στον ίδιο στόχο, μπορούμε να αποφύγουμε την επανάληψη προσθέτοντας αγκύλες 
+                μετά από τον στόχο και βάζοντας όλες τις σημειώσεις ανάμεσά τους:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class</span> Example {
+<span class="green_color">@set:[Inject VisibleForTesting]</span>
+<span class="light_blue_color">var</span> collaborator: Collaborator               
+}</code></pre>
+            <p>
+                Ακολουθεί η πλήρης λίστα των υποστηριζόμενων use-site στόχων:
+            </p>
+            <ul>
+                <li><span class="red_color">file</span></li>
+                <li><span class="red_color">property</span> (τα annotations με αυτόν στον στόχο δεν είναι ορατά στη Java)</li>
+                <li><span class="red_color">field</span></li>
+                <li><span class="red_color">get</span> (property getter)</li>
+                <li><span class="red_color">set</span> (property setter)</li>
+                <li><span class="red_color">receiver</span> (receiver parameter μίας extension function ή μίας ιδιότητας)</li>
+                <li><span class="red_color">param</span> (constructor parameter)</li>
+                <li><span class="red_color">setparam</span> (property setter parameter)</li>
+                <li><span class="red_color">delegate</span> (το πεδίο που αποθηκεύει το στιγμιότυπο ανάθεσης για μία ανατεθειμένη ιδιότητα</li>
+            </ul>
+            <p>
+                Για να σημειώσουμε την παράμετρο του αποδέκτη μίας extension function, χρησιμοποιούμε την ακόλουθη σύνταξη:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun</span><span class="green_color"> @receiver:Fancy</span> String.<span class="red_color">myExtension</span>() { ... }</code></pre>
+            <p>
+                Αν δεν προσδιορίσουμε ένα use-site στόχο, αυτός επιλέγεται σύμφωνα με το <span class="red_color">@Target</span> 
+                annotation της σημείωσης (annotation) που χρησιμοποιείται. Αν υπάρχουν πολλαπλοί applicable στόχοι,  χρησιμοποιείται ο 
+                πρώτος από τη λίστα που ακολουθεί: 
+            </p>
+            <ul>
+                <li><span class="red_color">param</span></li>
+                <li><span class="red_color">property</li>
+                <li><span class="red_color">field</span></li>
+             </ul>  
+             <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Σημειώσεις Java (Java annotations)
+            </h3> 
+            <p>
+                Οι Java annotations are 100% συμβατές με την Kotlin:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.junit.Test
+<span class="light_blue_color">import</span> org.junit.Assert.<span class="purple_color">*</span>
+<span class="light_blue_color">import</span> org.junit.Rule
+<span class="light_blue_color">import</span> org.junit.rules.<span class="purple_color">*</span>
+         
+<span class="light_blue_color">class</span>  Tests {           
+    <span class="comments">// Εφαρμόζει την @Rule annotation στην ιδιότητα getter</span>
+    <span class="green_color">@get:Rule </span><span class="light_blue_color">val</span> tempFolder = <span class="red_color">TemporaryFolder</span>()
+            
+    <span class="green_color">@Test </span><span class="light_blue_color">fun</span><span class="red_color"> simple</span>() {
+        <span class="light_blue_color">val</span> f = tempFolder.<span class="red_color">newFile</span>()
+        <span class="red_color">assertEquals</span>(<span class="purple_color">42</span>, <span class="red_color">getTheAnswer</span>())
+    }             
+}</code></pre>
+            <p>
+                Εφόσον η σειρά παραμέτρων για ένα annotation γραμμένο σε Java δεν έχει διευκρινιστεί, δεν μπορούμε να 
+                χρησιμοποιήσουμε μία κανονική σύνταξη κλήσης συνάρτησης για να περάσουμε τα ορίσματα. Αντί αυτού, χρειάζεται να 
+                χρησιμοποιήσουμε την αναγνωρισμένη σύνταξη του ορίσματος:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>Ann {
+    <span class="light_blue_color">int</span> intValue();      
+    String stringValue();
+}
+
+<span class="comments">// Kotlin</span>
+<span class="green_color">@Ann</span>(intValue = <span class="purple_color">1</span>, stringValue = <span class="green_color">"abc"</span>) <span class="ligth_blue_color">class</span> C</code></pre>
+             <p>
+                Όπως και στη Java, η παράμετρος <span class="red_color">value</span> αποτελεί ειδική περίπτωση· Η τιμή της μπορεί να 
+                προσδιοριστεί χωρίς ρητή ονομασία:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>AnnWithValue {
+    String<span class="light_blue_color"> value</span>;      
+}
+                
+<span class="comments">// Kotlin</span>
+<span class="green_color">@AnnWithValue</span>(<span class="green_color">"abc"</span>, ) <span class="light_blue_color">class</span> C</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Πίνακες ως παράμετροι σημειώσεων (annotation parameters)
+            </h3> 
+            <p>
+                Αν το όρισμα <span class="red_color">value</span> έχει τύπο array στη Java, στην Kotlin γίνεται <span class="red_color">
+                vararg</span> παράμετρος:
+            </p>                              
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>AnnWithArrayValue {
+    String<span class="red_color"> value</span>();      
+}
+                                
+<span class="comments">// Kotlin</span>
+<span class="green_color">@AnnWithArrayValue</span>(<span class="green_color">"abc"</span>, <span class="green_color">"foo"</span>, <span class="green_color">"bar"</span> ) <span class="light_blue_color">class</span> C</code></pre>
+            <p>
+                Για άλλα ορίσματα που έχουν τύπο array, χρειάζεται να χρσιμοποιήσουμε τη ρητή σύνταξη πίνακα ή το <span class="red_color">
+                arrayOf(...)</span> :
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>AnnWithArrayMethod {
+    String[] <span class="light_blue_color">names</span>();      
+}
+
+<span class="comments">// Kotlin</span>                                                
+<span class="green_color">@AnnWithArrayMethod</span>(names = [<span class="green_color">"abc"</span>, <span class="green_color">"foo"</span>, <span class="green_color">"bar"</span> ]) <span class="light_blue_color">class</span> C</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Προσπέλαση ιδιοτήτων ενός annotation στιγμιότυπου
+            </h3> 
+            <p>
+                Οι τιμές ενός annotation στιγμιότυπου είναι ακάλυπτες ως ιδιότητες στον κώδικα της kotlin:                
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Java</span>
+<span class="light_blue_color">public</span><span class="green_color"> @interface </span>Ann {
+    <span class="light_blue_color">int value</span>();   
+}
+<span class="comments">// Kotlin</span>                                                              
+<span class="light_blue_color">fun </span><span class="red_color">foo</span>(ann: Ann) {
+    <span class="light_blue_color">val </span>i = ann.<span class="red_color">value</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Επαναλήψιμα (repeatable) annotations
+            </h3>                     
+            <p>
+                Όπως ακριβώς στη <a href="https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html" target="_blank" 
+                style="text-decoration:none;"><abbr title="https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html">
+                Java</abbr></a>, η Kotlin έχει επαναλήψιμα (repeatable) annotations, τα οποία μπορούμε να εφαρμόσουμε σε ένα μόνο                 
+                στοιχείο του κώδικα πολλαπλές φορές. Για να κάνουμε τη σημείωσή μας επαναλήψιμη, σημειώνουμε τη δήλωσή της με το
+                meta-annotation <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/"
+                target="_blank" style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-repeatable/">
+                <span class="red_color">@kotlin.annotation.Repeatable</span></abbr></a>. Αυτό θα την κάνει επαναλήψιμη τόσο στην Kotlin 
+                όσο και στη Java. Τα repeatable annotations της Java υποστηρίζονται επίσης και από την πλευρά της Kotlin.
+            </p>  
+            <p>
+                Η κύρια διαφορά με το σχήμα που χρησιμοποιείτα στη Java είναι η απουσία ενός <strong>containing annotation</strong>, 
+                το οποίο ο compiler της Kotlin αναπαραγάγει αυτόματα με προκαθορισμένο όνομα. Για το annotation στο παράδειγμά που 
+                ακολουθεί, θα αναπαραχθεί το containing annotation <span class="red_color">@Tag.Container</span>:
+            </p>                    
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@Repeatable</span>
+<span class="light_blue_color">annotation class</span> Tag(<span class="light_blue_color">val</span> name: String)</span>
+<span class="comments">// Ο compiler αναπαραγάγει το @Tag.Container containing annotation</span></code></pre>
+            <p>
+                Μπορούμε να θέσουμε ένα προσαρμοσμένο όνομα για ένα containing annotation εφαρμόζοντας το meta-annotation<span class="red_color">
+                 @kotlin.jvm.JvmRepeatable</span> και περνώντας μία ρητά δηλωμένη containing annotation κλάση ως όρισμα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="green_color">@JvmRepeatable</span>(Tags<span class="purple_color">::</span><span class="light_blue_color">class</span>)
+<span class="light_blue_color">annotation class </span>Tag(<span class="light_blue_color">val</span> name: String)
+                
+<span class="light_blue_color">annotation class </span>Tag(<span class="light_blue_color">val</span> value: Array<span class="purple_color"><</span>Tag<span class="purple_color">></span>)</code></pre>
+            <p>
+                Για να αφαιρέσουμε τις επαναλήψιμες σημειώσεις στην Kotlin ή τη Java μέσω reflection, χρησιμοποιούμε τη συνάρτηση
+                <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect.full/find-annotations.html" target="_blank" 
+                style="text-decoration: none;"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect.full/find-annotations.html">
+                <span class="red_color"> KAnnotatedElement.findAnnotations()</span></abbr></a>.
+            </p>
+            <h1 id="destructuring" class="titloi">Δηλώσεις αποικοδόμησης (Destructuring declarations)</h1>
+            <p>
+                <strong>Σημείωση:</strong> Δε θα πρέπει να το συγχέουμε με τη συνηθισμένη μέθοδο <span class="red_color">destructor                    
+                </span> στις γλώσσες αντικειμενοστραφούς προγραμματισμού (object-oriented).
+            </p>
+            <p>
+                Οι <span class="red_color">δηλώσεις αποικοδόμησης (destructuring declarations)</span> αποσυνθέτουν άμεσα ένα 
+                αντικείμενο σε πολλαπλές μεταβλητές, πχ ένα δισδιάστατο αντικείμενο συντεταγμένων μπορεί να αποικοδομηθεί σε δύο 
+                ακεραίους, x και y.
+            </p>
+            <p>
+                Για παράδειγμα, το αντικείμενο <span class="red_color">Map.Entry</span> υποστηρίζει την αποικοδόμηση για να απλοποιήσει 
+                την προσπέλαση στα πεδία key και value:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for</span>((key, value) <span class="light_blue_color">in</span> map)
+    <span class="red_color">println</span>(<span class="green_color">"$</span>key: <span class="green_color">$</span>value<span class="green_color">"</span>)</code></pre>
+            <h1 id="reflection" class="titloi">Reflection</h1>
+            <p>
+                Η <strong>Reflection</strong> είναι ένα σετ από στοιχεία γλώσσας και βιβλιοθήκης που μας επιτρέπει να ενδοσκοπούμε τη 
+                δομή του προγράμματός μας κατά το χρόνο εκτέλεσης. Οι συναρτήσεις και οι ιδιότητες είναι πρώτης σημασίας στην Kotlin, και 
+                η ικανότητα να τις ενδοσκοπούμε (για παράδειγμα, το να μάθουμε το όνομα ή τον τύπο μίας ιδιότητας ή μίας συνάρτησης κατά 
+                το χρόνο εκτέλεσης) είναι σημαντική όταν χρησιμοποιούμε ένα στυλ λειτουργικό (functional) ή αντιδραστικό (reactive).
+            </p>
+            <p>
+                <strong>Σημείωση:</strong> Οι Kotlin/JS παρέχουν περιορισμένη υποστήριξη για τα στοιχεία reflection.
+            </p> 
+        </div> 
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info" >
+                Επιπλέον στοιχεία για την Kotlin
+            </p>            
+        </div>        
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

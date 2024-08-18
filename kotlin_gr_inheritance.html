@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(10)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(10)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1" onclick="display(1,1)"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>              
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Ισότητα
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;Έκφραση this
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <h1 class="titloi">Κληρονομικότητα</h1>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Subclass and Superclass
+            </h3>
+            <p>
+                Στην Kotlin είναι εφικτό να κληρονομήσουμε ιδιότητες και συναρτήσεις από μία κλάση σε άλλη. Ομαδοποιούμε την «έννοια της 
+                κληρονομικότητας» σε δύο κατηγορίες:
+            </p>
+            <ul>
+                <li><b>subclass</b> (child) - η κλάση που κληρονομεί από μία άλλη</li>
+                <li><b>superclass</b> (parent) - η κλάση που κληρονομείται</li>
+            </ul>
+            <p>
+                Στο παράδειγμα που ακολουθεί, η υποκλάση <span class="red_color">MyChildClass</span> κληρονομεί τις ιδιότητες 
+                από την υπερκλάση <span class="red_color">MyParentClass</span>:
+            </p>
+            <pre><code><span clas="comments">// Superclass</span>
+<span class="light_blue_color">open class</span> MyParentClass {
+    <span class="light_blue_color">val</span> x = <span class="purple_color">5</span>
+}
+   
+<span clas="comments">// Subclass</span>
+    <span class="light_blue_color">class</span> MyChildClass: MyParentClass() {
+        <span class="light_blue_color">fun</span> <span class="red_color">myFunction</span>() {
+            <span class="red_color">println</span>(x) <span clas="comments">// Το x κληρονομείται τώρα από την υπερκλάση</span>
+    }
+}
+            
+<span clas="comments">//Δημιουργία ενός αντικειμένου της κλάσης MyChildClass και κλήση της συνάρτησης myFunction</span>
+<span class="light_blue_color">fun</span> <span class="red_color">main</span>() {
+    <span class="light_blue_color">val</span> myObj = MyChildClass()
+              myObj.<span class="red_color">myFunction</span>()
+}</code></pre>
+            <p style="line-height: 0; text-decoration: underline; font-weight: 600;">
+                Εξήγηση του παραδείγματος
+            </p>
+            <p>
+                Χρησιμοποιούμε το keyword <span class="red_color">open</span> μπροστά από την <strong>υπερκλάση (superclass)</strong>/
+                γονική κλάση (parent), για να δείξουμε πως άλλες κλάσεις θα πρέπει να κληρονομούν ιδιότητες και συναρτήσεις από αυτή.
+            </p>
+            <p>
+                Για να κληρονομήσουμε από μία κλάση, προσδιορίζουμε το όνομα της <strong>υποκλάσης (subclass)</strong>, ακολουθούμενο από 
+                άνω-κάτω τελεία <span class="red_color"><b>:</b></span>, και στην συνέχεια το όνομα της <strong>υπερκλάσης (superclass)</strong>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Γιατί και πότε χρησιμοποιούμε την κληρονομικότητα;
+            </h3>
+            <p>
+                Είναι χρήσιμη για επναχρησιμοποίηση κώδικα· μπορούμε να χρησιμοποιούμε εκ νέου ιδιότητες και συναρτήσεις μίας υφιστάμενης 
+                κλάσης όταν δημιουργούμε μία νέα κλάση.
+            </p>
+            <p>
+                Όλες οι κλάσεις στην Kotlin έχουν μία κοινή superclass, την <span class="red_color">Any</span>, η οποία είναι η default 
+                superclass για μία κλάση που δεν έχει δηλωθεί με supertypes:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Example <span class="comments">// Έμμεσα κληρονομεί από την Any</span></code></pre>
+            <p>
+                Η κλάση <span class="red_color">Any</span> διαθέτει τρεις μεθόδους: Τις <span class="red_color">equals()</span>, 
+                <span class="red_color">hashCode()</span> και <span class="red_color">toString()</span>. Συνεπώς, αυτές οι μεθοδοι είναι 
+                ορισμένες για όλες τις κλάσεις της Kotlin.            
+            </p>
+            <p>
+                Από σύμβαση, οι κλάσεις στην Kotlin είναι final – δεν μπορούν να κληρονομηθούν. Για να κάνουμε μία κλάση κληρονομήσιμη, την 
+                επισημαίνουμε με το keyword <span class="red_color">open</span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Base <span class="comments">// Η κλάση είναι ανοιχτή για κληρονομικότητα</span></code></pre>
+            <p>
+                Για να δηλώσουμε ένα ρητό supertype, τοποθετούμε τον τύπο μετά από άνω-κάτω τελεία στο class header:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Base(p: <span class="purple_color">Int</span>)
+            
+<span class="light_blue_color">class</span> Derived(p: <span class="purple_color">Int</span>) : Base(p)</code></pre>
+            <p>
+                Αν η παράγωγη κλάση έχει πρωτεύοντα κατασκευαστή, η κλάση βάσης (base class) μπορεί - και πρέπει - να αρχικοποιηθεί στον 
+                πρωτεύοντα κατασκευαστή σύμφωνα με τις παραμέτρους της.
+            </p>
+            <p>
+                Αν πάλι η παράγωγη κλάση δεν έχει πρωτεύοντα κατασκευαστή, τότε κάθε δευτερεύον κατασκευαστής πρέπει να αρχικοποιήσει 
+                τον τύπο βάσης (base type) με τη χρήση του keyword <span class="red_color">super</span> ή να αναθέσει σε άλλον 
+                κατασκευαστή που μπορεί να αρχικοποιήσει. Ας σημειώσουμε πως σε αυτήν την περίπτωση διαφορετικοί δευτερεύοντες 
+                κατασκευαστές μπορούν να καλέσουν διαφορετικούς κατασκευαστές του τύπου βάσης:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> MyView : View {
+    <span class="light_blue_color">constructor</span>(ctx: Context) : <span class="light_blue_color">super</span>(ctx)
+            
+    <span class="light_blue_color">constructor</span>(ctx: Context, attrs: AttributeSet) : <span class="light_blue_color">super</span>(ctx, attrs)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Υπερκλάλυψη μεθόδων (Overriding methods)
+            </h3>
+            <p>
+                Η Kotlin απαιτεί ρητούς τροποποιητές (modifiers) για υπερκαλύψεις και μέλη που μπορούν να υπερκαλυφθούν:        
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Shape {
+    <span class="light_blue_color">open fun</span> <span class="red_color">draw</span>() { <span class="comments">/*...*/</span> }
+    <span class="light_blue_color">fun</span> <span class="red_color">fill</span>() { <span class="comments">/*...*/</span> }
+}
+            
+<span class="light_blue_color">class</span> Circle() : Shape() {
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() { <span class="comments">/*...*/</span> }
+}</code></pre>
+            <p>
+                Ο modifier <span class="red_color">override</span> απαιτείται για την συνάρτηση <span class="red_color">Circle.draw()</span>. 
+                Αν λείπει, τότε ο compiler θα παράξει σφάλμα. Αν δεν υπάρχει καθόλου modifier <span class="red_color">open</span> σε μία 
+                συνάρτηση, όπως για παράδειγμα η <span class="red_color">Shape.fill()</span>, η δήλωση μεθόδου σε μία υποκλάση με την ίδια 
+                υπογραφή δεν επιτρέπεται, είτε με τη χρήση του <span class="red_color">override</span> ή χωρίς. Ο <span class="red_color">
+                open</span> modifier δεν επιδρά όταν προστίθεται σε μέλη μίας final κλάσης – μίας κλάσης χωρίς τον modifier 
+                <span class="red_color">open</span>.
+            </p>
+            <p>
+                Ένα μέλος που επισημαίνεται με <span class="red_color">override</span> είναι από μόνο του ανοιχτό, επομένως μπορεί να 
+                υπερκαλυφθεί σε υποκλάσεις. Αν θέλουμε να απαγορεύσουμε την επανα-υπερκάλυψη (re-overriding), χρησιμοποιούμε τη λέξη
+                <span class="red_color">final</span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Rectangle() : Shape() {
+    <span class="light_blue_color">final override fun</span> <span class="red_color">draw</span>() { <span class="comments">/*...*/</span> }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Υπερκάλυψη ιδιοτήτων (Overriding properties)
+            </h3>
+            <p>
+                Ο μηχανισμός υπερκάλυψης δουλεύει με ιδιότητες με τον ίδιο τρόπο που το κάνει και με τις μεθόδους. Οι ιδιότητες που 
+                δηλώνονται σε μία υπερκλάση που στην συνέχεια επαναδηλώνονται σε μία παράγωγη κλάση πρέπει να ξεκινούν με τη λέξη 
+                <span class="red_color">override</span>, και πρέπει να έχουν συμβατό τύπο. Κάθε δηλωμένη ιδιότητα μπορεί να υπερκαλυφθεί 
+                από μία ιδιότητα με αρχικοποίηση (initializer) ή από μία ιδιότητα με τη μέθοδο <span class="red_color">get</span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Shape {
+    <span class="light_blue_color">open val</span> vertexCount: <span class="purple_color">Int</span> = <span class="purple_color">0</span>
+}
+            
+<span class="light_blue_color">class</span> Rectangle : Shape() {
+    <span class="light_blue_color">override val</span> vertexCount = <span class="purple_color">4</span>
+}</code></pre>
+            <p>
+                Μπορούμε επίσης α υπερκαλύψουμε μία ιδιότητα <span class="red_color">val</span> με μία ιδιότητα <span class="red_color">var</span>
+                και αντίστροφα. Αυτό επιτρέπεται επειδή μία ιδιότητα <span class="red_color">val</span> ουσιαστικά δηλώνει μία μέθοδο
+                <span class="red_color">get</span>, και υπερκαλύπτοντάς την ως <span class="red_color">var</span> δηλώνει επιπρόσθετα μία 
+                μέθοδο <span class="red_color">set</span> στην παράγωγη κλάση.
+            </p>
+            <p>
+                Σημειώστε πως μπορούμε να χρησιμοποιήσουμε το keyword <span class="red_color">override</span> ως τμήμα μίας δήλωσης 
+                ιδιότητας σε έναν πρωτεύοντα κατασκευαστή:
+            </p>
+            <pre><code><span class="light_blue_color">interface</span> Shape {
+    <span class="light_blue_color">val</span> vertexCount: <span class="purple_color">Int</span>
+}
+            
+<span class="light_blue_color">class</span> Rectangle(<span class="light_blue_color">override val</span> vertexCount: <span class="purple_color">Int</span> = <span class="purple_color">4</span>) : Shape <span class="comments">// Έχει πάντοτε 4 κορυφές</span>
+            
+<span class="light_blue_color">class</span> Polygon : Shape {
+    <span class="light_blue_color">override var</span> vertexCount: <span class="purple_color">Int</span> = <span class="purple_color">0</span><span class="comments"> // Μπορεί να ανατεθεί σε οποιονδήποτε αριθμό αργότερα</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Σειρά αρχικοποίησης παραγόμενης κλάσης (Derived class initialization order)
+            </h3>
+            <p>
+                Κατά τη διάρκεια της κατασκευής ενός νέου στιγμιότυπου μίας παράγωγης κλάσης, η αρχικοποίηση της κλάσης βάσης γίνεται 
+                στο πρώτο βήμα (προηγείται μόνο η αξιολόγηση των ορισμάτων για τον κατασκευαστή της κλάσης βάσης), που σημαίνει πως 
+                συμβαίνει πριν τρέξει η λογική αρχικοποίηση της παράγωγης κλάσης. 
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Base(<span class="light_blue_color">val</span> name: String) {
+            ​
+    <span class="light_blue_color">init</span> {<span class="red_color">println</span>(<span class="green_color">"Initializing a base class"</span>) }
+            ​
+    <span class="light_blue_color">open val</span> size: <span class="purple_color">Int</span> = name.<span class="red_color">length</span>.<span class="red_color">also</span> { <span class="red_color">println</span>(<span class="green_color">"Initializing size in the base class: $it"</span>) }
+}
+            ​
+<span class="light_blue_color">class</span> Derived(
+    name: String,
+    <span class="light_blue_color">val</span> lastName: String,
+) : Base(name.<span class="red_color">replaceFirstChar</span> { <span class="light_blue_color">it</span>.<span class="red_color">uppercase</span>() }.<span class="red_color">also</span> { <span class="red_color">println</span>(<span class="green_color">"Argument for the base class: $it"</span>) }) {
+            ​
+    <span class="light_blue_color">init</span> { <span class="red_color">println</span>(<span class="green_color">"Initializing a derived class"</span>) }
+            ​
+    <span class="light_blue_color">override val</span> size: <span class="purple_color">Int</span> = (<span class="light_blue_color">super</span>.<span class="red_color">size</span> + lastName.<span class="red_color">length</span>).<span class="red_color">also</span> { <span class="red_color">println</span>(<span class="green_color">"Initializing size in the derived class: $it"</span>) }
+}</code></pre>
+            <p>
+                Αυτό σημαίνει πως όταν εκτελείται ο κατασκευαστής της κλάσης βάσης, οι δηλωμένες ή υπερκαλυμένες ιδιότητες στην παράγωγη 
+                κλάση δεν έχουν αρχικοποιηθεί ακόμη. Η χρήση κάποιων εξ αυτών των ιδιοτήτων στη λογική αρχικοποίηση της κλάσης βάσης (είτε 
+                άμεσα ή έμμεσα, μέσω άλλης υλοποίησης υπερκαλυμένου <span class="red_color">open</span> μέλους) μπορεί να οδηγήσει σε μη 
+                ορθή συμπεριφορά και σφάλματα κατά το χρόνο εκτέλεσης (runtime failure). Όταν σχεδιάζουμε μία κλάση βάσης, πρέπει επομένως 
+                να αποφεύγουμε τη χρήση <span class="red_color">open</span> μελών στους κατασκευαστές, στους property initializers ή στα
+                <span class="red_color">init</span> blocks.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Κλήση υλοποίησης της υπερκλάσης
+            </h3>
+            <p>
+                Ο κώδικας σε μία παράγωγη κλάση μπορεί να καλεί τις συναρτήσεις και τις υλοποιήσεις των accessor ιδιοτήτων της υπερκλάσης με 
+                τη χρήση του keyword <span class="red_color">super</span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Rectangle {
+    <span class="light_blue_color">open fun</span> <span class="red_color">draw</span>() { <span class="red_color">println</span>(<span class="green_color">"Drawing a rectangle"</span>) }
+    <span class="light_blue_color">val</span> borderColor: String <span class="red_color">get</span>() = <span class="green_color">"black"</span>
+}
+            
+<span class="light_blue_color">class</span> FilledRectangle : Rectangle() {
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() {
+        <span class="light_blue_color">super</span>.<span class="red_color">draw</span>()
+        <span class="light_blue_color">println</span>(<span class="green_color">"Filling the rectangle"</span>)
+    }
+            
+    <span class="light_blue_color">val</span> fillColor: String <span class="red_color">get</span>() = <span class="light_blue_color">super</span>.borderColor
+}</code></pre>
+            <p>
+                Μέσα σε μία εσωτερική κλάση (inner class), η προσπέλαση της υπερκλάσης της εξωτερικής κλάσης γίνεται με τη χρήση του keyword 
+                <span class="red_color">super</span> πιστοποιημένου με το όνομα της εξωτερικής κλάσης: <span class="red_color">super@Outer</span>:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> FilledRectangle: Rectangle() {
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() {
+        <span class="light_blue_color">val</span> filler = Filler()
+        filler.<span class="red_color">drawAndFill</span>()
+    }
+            ​
+    <span class="light_blue_color">inner class</span> Filler {
+        <span class="light_blue_color">fun</span> <span class="red_color">fill</span>() { <span class="red_color">println</span>(<span class="green_color">"Filling"</span>) }
+        <span class="light_blue_color">fun</span> <span class="red_color">drawAndFill</span>() {
+            <span class="light_blue_color">super@FilledRectangle</span>.<span class="red_color">draw</span>() <span class="comments">// Κλήση για υλοποίηση της συνάρτησης draw() της κλάσης Rectangle</span>
+            <span class="red_color">fill</span>()
+            <span class="red_color">println</span>(<span class="green_color">"Drawn a filled rectangle with color ${super@FilledRectangle.borderColor}"</span>) <span class="comments">/* Χρήση υλοποίησης 
+           της συνάρτησης get() της μεταβλητής borderColor από την κλάση Rectangle*/</span>
+        }
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Κανόνες υπερκάλυψης
+            </h3>
+            <p>
+                Στην Kotlin, η υλοποίηση της κληρονομικότητας ρυθμίζεται από τον ακόλουθο κανόνα: αν μία κλάση κληρονομεί πολλαπλές 
+                υλοποιήσεις από το ίδιο μέλος από την άμεση υπερκλάση της, θα πρέπει να υπερκαλυφθεί το μέλος και να παρέχει τη δική του  
+                υλοποίηση (χρησιμοποιώντας ίσως μία από τις κληρονομημένες).
+            </p>
+            <p>
+                Για να σημάνουμε το supertype από το οποίο ελήφθη η κληρονομημένη υλοποίηση, χρησιμοποιούμε το <span class="red_color">
+                super</span> πιστοποιημένο από το όνομα του supertype σε angle brackets, όπως για παράδειγμα 
+                <span class="red_color">super&lt;Base></span>:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Rectangle {
+    <span class="light_blue_color">open fun</span> <span class="red_color">draw</span>() { <span class="comments">/* ... */</span> }
+}
+            
+<span class="light_blue_color">interface</span> Polygon {
+    <span class="light_blue_color">fun</span> <span class="red_color">draw</span>() { <span class="comments">/* ... */</span> } <span class="comments">// Τα μέλη του interface από σύμβαση είναι 'open'</span>
+}
+            
+<span class="light_blue_color">class</span> Square() : Rectangle(), Polygon {
+    <span class="comments">// Ο compiler απαιτεί να υπερκαλυφθεί η συνάρτηση draw()</span>
+    <span class="light_blue_color">override fun</span> <span class="red_color">draw</span>() {
+        <span class="light_blue_color">super&lt;Rectangle></span>.<span class="red_color">draw</span>() <span class="comments">// Κλήση της Rectangle.draw()</span>
+        <span class="light_blue_color">super&lt;Polygon></span>.<span class="red_color">draw</span>() <span class="comments">// Κλήση της Polygon.draw()</span>
+    }
+}</code></pre>
+            <p>
+                Είναι εντάξει να κληρονομούμε από τις κλάσεις <span class="red_color">Rectangle</span> και <span class="red_color">
+                Polygon</span>, όμως και οι δυο τους έχουν τη δική τους υλοποίηση της συνάρτησης  <span class="red_color">draw()</span>, 
+                επομένως χρειάζεται να υπερκαλύψουμε την συνάρτηση <span class="red_color">draw()</span> στην κλάση 
+                <span class="red_color">Square</span> και να παρέχουμε μία ξεχωριστή υλοποίηση για να εξαλείψουμε την ασάφεια (ambiguity).
+            </p>                       
+        </div>
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info" >
+                Κληρονομικότητα
+            </p>            
+        </div>        
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

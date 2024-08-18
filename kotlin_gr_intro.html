@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(3)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(3)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>                
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                </a>
+                <ul id="others2">
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                        &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                        &nbsp;&nbsp;&nbsp;Ισότητα
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                        &nbsp;&nbsp;&nbsp;Έκφραση this
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                        &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                        &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                        &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                        &nbsp;&nbsp;&nbsp;Reflection
+                    </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <h1 id="started" class="titloi">Ξεκινώντας με την kotlin</h1>
+            <p>
+                Η Kotlin είναι μία μοντέρνα και συνάμα ώριμη γλώσσα προγραμματισμού, που σκοπό της έχει να κάνει πιο εύκολη τη ζωή
+                των προγραμματιστών. Είναι περιεκτική, ασφαλής, <abbr title="διαλειτουργική (interoperable): Αναφέρεται σε συστήματα, ιδιαίτερα υπολογιστικά και στις τηλεπικοινωνίες, όπου είναι ικανά να δουλεύουν από κοινού χωρίς να είναι ειδικά ρυθμισμένα για κάτι τέτοιο.">
+                διαλειτουργική</abbr> τόσο με τη Java όσο και με άλλες γλώσσες προγραμματισμού και παρέχει πολλούς τρόπους επαναχρησιμοποίησης 
+                κώδικα μεταξύ πολλαπλών πλατφορμών για παραγωγικό προγραμματισμό.
+            </p>
+            <h1 id="install" class="titloi">Εγκατάσταση της kotlin</h1>
+            <p>
+                Η Kotlin περιλαμβάνεται σε κάθε έκδοση των <a style="text-decoration:none;" href="https://www.jetbrains.com/idea/download/?_gl=1*ztyvgs*_ga*MTA5ODc5ODgyOS4xNjc3MDQ5MTg1*_ga_9J976DJZ68*MTY3NzE4NjQzOC4xNS4xLjE2NzcxODY0NDcuNTEuMC4w&_ga=2.129710412.1395615115.1677049197-1098798829.1677049185#section=windows" target="_blank">
+                    <span style="font-weight: bold; color:#34137c; text-shadow: 2px 1px 2px #fa769e;"><cite title="https://www.jetbrains.com/idea/download/?_gl=1*ztyvgs*_ga*MTA5ODc5ODgyOS4xNjc3MDQ5MTg1*_ga_9J976DJZ68*MTY3NzE4NjQzOC4xNS4xLjE2NzcxODY0NDcuNTEuMC4w&_ga=2.129710412.1395615115.1677049197-1098798829.1677049185#section=windows">
+                    IntelliJ IDEA</cite></span></a> και <a style="text-decoration:none;" href="https://developer.android.com/studio" target="_blank">
+                    <span style="font-weight: bold; color:#34137c; text-shadow: 2px 1px 2px #fa769e;"><cite title="https://developer.android.com/studio">
+                    Android Studio</cite></span></a>. Κατεβάστε και εγκαταστήστε ένα από αυτά τα <abbr title="IDE (Integrated Development Enviroment): Ολοκληρωμένο περιβάλλον ανάπτυξης">
+                    IDEs</abbr> για να ξεκινήσετε να χρησιμοποιείτε την Kotlin.
+            </p></br>                             
+        </div>
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info">
+                Εισαγωγή
+            </p>
+        </div>             
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

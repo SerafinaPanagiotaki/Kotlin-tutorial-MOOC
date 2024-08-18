@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(7)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(7)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                    <ul id="syntax2">
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                            &nbsp;&nbsp;&nbsp;Comments
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                            &nbsp;&nbsp;&nbsp;Data Types
+                        </a></li>                        
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                            &nbsp;&nbsp;&nbsp;Variables
+                        </a>  </li>   
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                            &nbsp;&nbsp;&nbsp;Operators
+                        </a> </li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                            &nbsp;&nbsp;&nbsp;Boolean
+                        </a>   </li>                                                              
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                            &nbsp;&nbsp;&nbsp;Output
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                            &nbsp;&nbsp;&nbsp;Strings
+                        </a></li>      
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                            &nbsp;&nbsp;&nbsp;If...else
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                            &nbsp;&nbsp;&nbsp;When
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                            &nbsp;&nbsp;&nbsp;For loop
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                            &nbsp;&nbsp;&nbsp;While loop
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                            &nbsp;&nbsp;&nbsp;Break/Continue
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                            &nbsp;&nbsp;&nbsp;Collections
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                            &nbsp;&nbsp;&nbsp;Ranges
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                            &nbsp;&nbsp;&nbsp;Functions
+                        </a></li>                            
+                    </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Null safety
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Equality
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;This expression
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Annotations
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Destructuring declarations
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <h1 class="titloi">Classes/Objects</h1>
+            <p>
+                Everything in Kotlin is associated with classes and objects, along with its properties and functions. For example: in 
+                real life, a car is an <b>object</b>. The car has <b>properties</b>, such as brand, weight and color, and <b>functions</b>, 
+                such as drive and brake.
+            </p>
+            <p>
+                A Class is like an object constructor, or a "blueprint" for creating objects.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Create a Class
+            </h3>
+            <p>
+                To create a class, use the <span class="red_color">class</span> keyword, and specify the name of the class:
+            </p>
+            <pre><code><span class="comments">//Create a Car class along with some properties (brand, model and year)</span>
+<span class="light_blue_color">class</span> Car {  
+    <span class="light_blue_color">var</span> brand = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span> model = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span> year = <span class="purple_color">0</span>  
+}</code></pre>
+            <p>                 
+                A <strong>property</strong> is basically a <a href="https://www.w3schools.com/kotlin/kotlin_variables.php" 
+                target="_blank" style="text-decoration: none;"><abbr title="https://www.w3schools.com/kotlin/kotlin_variables.php"><strong>variable</strong></abbr></a> 
+                that belongs to the class.
+            </p>
+            <p>
+                <strong>Good to Know:</strong> It is considered good practice to start the name of a class with an upper case letter, 
+                for better organization.
+            </p>
+            <p>
+                The class declaration consists of the class name, the class header (specifying its type parameters, the primary 
+                constructor, and some other things), and the class body surrounded by curly braces. Both the header and the body are 
+                optional; if the class has no body, the curly braces can be omitted.
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Empty</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Create an Object
+            </h3>
+            <p>
+                Now we can use the class named <b>Car</b> to create objects.
+            </p>
+            <p>
+                In the example below, we create an object of <b>Car</b> called <b>c1</b>, and then we access the properties of <b>c1</b> 
+                by using the dot syntax (<span class="red_color">.</span>), just like we did to access array and string properties:
+            </p>
+            <pre><code><span class="comments">// Create a c1 object of the Car class</span>
+<span class="light_blue_color">val </span> c1 = <span class="red_color">Car</span>()
+
+<span class="comments"> // Access the properties and add some values to it</span>
+c1.brand = <span class="green_color">"Ford"</span> 
+c1.model = <span class="green_color">"Mustang"</span> 
+c1.year = <span class="purple_color">1969</span> 
+
+<span class="red_color">println</span>(c1.brand)  <span class="comments">// Outputs Ford</span>
+<span class="red_color">println</span>(c1.model)  <span class="comments">// Outputs Mustang</span>
+<span class="red_color">println</span>(c1.year)   <span class="comments">// Outputs 1969 </span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Object expressions and declarations
+            </h3>
+            <p>
+                Sometimes you need to create an object that is a slight modification of some class, without explicitly declaring a new 
+                subclass for it. Kotlin can handle this with <b>object expressions</b> and <b>object declarations</b>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Object expressions
+            </h3>
+            <p>
+                Object expressions create objects of anonymous classes, that is, classes that aren't explicitly declared with the 
+                <span class="red_color">class</span> declaration. Such classes are useful for one-time use. You can define them from 
+                scratch, inherit from existing classes, or implement interfaces. Instances of anonymous classes are also called 
+                <strong>anonymous objects</strong> because they are defined by an expression, not a name.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Creating anonymous objects from scratch
+            </h3>
+            <p>
+                Object expressions start with the <span class="red_color">object</span> keyword.
+            </p>
+            <p>
+                If you just need an object that doesn't have any nontrivial supertypes, write its members in curly braces after 
+                <span class="red_color">object</span>:
+            </p>
+            <pre><code><span class="light_blue_color">val</span> helloWorld = <span class="light_blue_color">object</span> {
+    <span class="light_blue_color">val</span> hello = <span class="green_color">"Hello"</span>
+    <span class="light_blue_color">val</span> world = <span class="green_color">"World"</span>
+    <span class="comments">// object expressions extend Any, so `override` is required on `toString()`</span>
+    <span class="light_blue_color"> override fun </span><span class="red_color">toString</span>() =  <span class="green_color">"$hello $world"</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Inheriting anonymous objects from supertypes
+            </h3>
+            <p>
+                To create an object of an anonymous class that inherits from some type (or types), specify this type after 
+                <span class="red_color">object</span> and a colon (<span class="red_color">:</span>). Then implement or override the 
+                members of this class as if you were <a href="https://kotlinlang.org/docs/inheritance.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/inheritance.html">inheriting</abbr></a> from it:
+            </p>
+            <pre><code>window.<span class="red_color">addMouseListener</span>(<span class="light_blue_color">object</span>: <span class="red_color">MouseAdapter</span>() {</span>
+    <span class="light_blue_color">override fun </span><span class="red_color">mouseClicked</span>(e: MouseEvent) { <span class="comments">/*...*/ </span>}
+
+    <span class="light_blue_color">override fun </span><span class="red_color">mouseEntered</span>(e: MouseEvent) { <span class="comments">/*...*/ </span>}
+})</code></pre>
+            <p>
+                If a supertype has a constructor, pass appropriate constructor parameters to it. Multiple supertypes can be specified as 
+                a comma-delimited list after the colon:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> A(x: <span class="purple_color">Int</span>) {
+    <span class="light_blue_color">public open val </span>y: <span class="purple_color">Int</span> = x
+}
+
+<span class="light_blue_color">interface</span> B { <span class="comments">/*...*/</span> }
+<span class="light_blue_color">val</span> ab: A = <span class="light_blue_color">object</span> : A(<span class="purple_color">1</span>), B {
+    <span class="light_blue_color">override val</span> y = <span class="purple_color">15</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Using anonymous objects as return and value types
+            </h3>
+            <p>
+                When an anonymous object is used as a type of a local or 
+                <a href="https://kotlinlang.org/docs/visibility-modifiers.html#packages" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/visibility-modifiers.html#packages">private</abbr></a> but not 
+                <a href="https://kotlinlang.org/docs/inline-functions.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/inline-functions.html">inline</abbr></a> declaration (function or property), 
+                all its members are accessible via this function or property:
+            </p>
+            <pre><code>window.<span class="light_blue_color">class</span> C {
+    <span class="light_blue_color">private fun</span> <span class="red_color">getObject</span>() = <span class="light_blue_color">object</span> {
+        <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>       
+    }
+
+    <span class="light_blue_color">fun </span><span class="red_color">printX</span>() {
+        <span class="red_color">println</span>(<span class="red_color">getObject</span>().x)
+    }
+}</code></pre>
+            <p>
+                If this function or property is public or private inline, its actual type is:
+            </p>
+            <ul>
+                <li><span class="red_color">Any </span>if the anonymous object doesn't have a declared supertype</li>
+                <li>The declared supertype of the anonymous object, if there is exactly one such type</li>
+                <li>The explicitly declared type if there is more than one declared supertype</li>
+            </ul>
+            <p>
+                In all these cases, members added in the anonymous object are not accessible. Overridden members are accessible if they 
+                are declared in the actual type of the function or property:
+            </p>
+            <pre><code><span class="light_blue_color">interface</span> A {
+    <span class="light_blue_color">fun</span><span class="red_color"> funFromA</span>() {}
+}
+<span class="light_blue_color">interface</span> B
+
+<span class="light_blue_color">class</span> C {
+    <span class="comments">// The return type is Any; x is not accessible</span>
+    <span class="light_blue_color">fun</span><span class="red_color"> getObject</span>() = <span class="light_blue_color">object</span> {
+        <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>
+    }
+
+    <span class="comments">// The return type is A; x is not accessible</span>
+    <span class="light_blue_color">fun</span><span class="red_color"> getObjectA</span>() = <span class="light_blue_color">object</span>: A {
+        <span class="light_blue_color">override fun</span><span class="red_color"> funFromA</span>() {}
+        <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>
+    }
+
+    <span class="comments">// The return type is B; funFromA() and x are not accessible</span>
+    <span class="light_blue_color">fun</span><span class="red_color"> getObjectB</span>(): B = <span class="light_blue_color">object</span>: A, B { <span class="comments">// explicit return type is required</span>
+        <span class="light_blue_color">override fun </span><span class="red_color"> funFromA</span>() {}
+            <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Accessing variables from anonymous objects
+            </h3>
+            <p>
+                The code in object expressions can access variables from the enclosing scope:
+            </p>
+            <pre><code><span class="light_blue_color">fun</span><span class="red_color"> countClicks</span>(window: JComponent) {
+    <span class="light_blue_color">var</span> clickCount =<span class="purple_color">0</span>
+    <span class="light_blue_color">var</span> enterCount =<span class="purple_color">0</span>
+
+    window.<span class="red_color">addMouseListener</span>(<span class="light_blue_color">object</span> : <span class="red_color">MouseAdapter</span>() {
+        <span class="light_blue_color">override fun</span><span class="red_color"> mouseClicked</span>(e: MouseEvent) {
+            clickCount++
+        }
+
+        <span class="light_blue_color">override fun</span><span class="red_color"> mouseEntered</span>(e: MouseEvent) {
+            enterCount++
+        }
+    })
+    <span class="comments"></span>// ...
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Object declarations
+            </h3>
+            <p>
+                The <a href="https://en.wikipedia.org/wiki/Singleton_pattern" target="_blank">
+                <abbr title="https://en.wikipedia.org/wiki/Singleton_pattern">Singleton</abbr></a> pattern can be useful in several cases, 
+                and Kotlin makes it easy to declare singletons:
+            </p>
+            <pre><code><span class="light_blue_color">object</span> DataProviderManager {
+    <span class="light_blue_color">fun </span><span class="red_color">registerDataProvider</span>(provider: DataProvider) {
+        <span class="comments"></span>// ...</span>
+    }
+
+    <span class="light_blue_color">val</span> allDataProviders: Collection<span class="purple_color">&lt;</span>DataProvider<span class="purple_color">></span>
+    <span class="red_color">get</span>() = <span class="comments">// ...</span>
+}</code></pre>
+            <p>
+                This is called an <strong>object declaration</strong>, and it always has a name following the <span class="red_color">
+                object</span> keyword. Just like a variable declaration, an object declaration is not an expression, and it cannot be 
+                used on the right-hand side of an assignment statement.
+            </p>
+            <p>
+                The initialization of an object declaration is thread-safe and done on first access.
+            </p>
+            <p>
+                To refer to the object, use its name directly:
+            </p>
+            <pre><code>DataProviderManager.<span class="light_blue_color">registerDataProvider</span>(...)</code></pre>
+            <p>
+                Such objects can have supertypes:
+            </p>
+            <pre><code><span class="light_blue_color">object</span> DefaultListener : <span class="red_color">MouseAdapter</span>() {
+    <span class="light_blue_color">override fun</span><span class="red_color"> mouseClicked</span>(e: MouseEvent) { <span class="comments">...</span> }
+    <span class="light_blue_color">override fun</span><span class="red_color"> mouseEntered</span>(e: MouseEvent) { <span class="comments">...</span> }
+}</code></pre>
+            <p>
+                <strong>Note: </strong>Object declarations can't be local (that is, they can't be nested directly inside a function), but 
+                they can be nested into other object declarations or non-inner classes.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Data objects
+            </h3>
+            <p>
+                <strong>Note: </strong>Data object declarations is an <a href="https://kotlinlang.org/docs/components-stability.html" 
+                target="_blank"><abbr title="https://kotlinlang.org/docs/components-stability.html">Experimental</abbr></a> feature. It 
+                may be dropped or changed at any time. Opt-in is required with the <span class="red_color">compilerOptions.
+                languageVersion.set(KotlinVersion.KOTLIN_1_9) </span><a href="https://kotlinlang.org/docs/gradle.html#compiler-options" 
+                target="_blank"><abbr title="https://kotlinlang.org/docs/gradle.html#compiler-options">compiler option</abbr></a>.
+            </p>
+            When printing a plain <span class="red_color">object</span> declaration in Kotlin, you'll notice that its string 
+            representation contains both its name and the hash of the object:
+            <p>
+                <pre><code><span class="light_blue_color">object</span> MyObject
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="red_color">println</span>(MyObject) <span class="comments">// MyObject@1f32e575</span>
+}</code></pre>
+            <p>
+                Just like <a href="https://kotlinlang.org/docs/data-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/data-classes.html">data classes</abbr></a>, you can mark an 
+                <span class="red_color">object</span> declaration with the <span class="red_color">data</span> modifier. This instructs 
+                the compiler to generate a number of functions for your object:
+            </p>
+            <ul>
+                <li><span class="red_color">toString()</span> returning the name of the data object</li>
+                <li><span class="red_color">equals()</span> / <span class="red_color">hashCode()</span> pair</li>
+            </ul>
+            <p>
+                <strong>Note: </strong>You can't provide a custom <span class="red_color">equals</span> or <span class="red_color">
+                hashCode</span> implementation for a <span class="red_color">data</span> object.
+            </p>
+            <p>
+                The <span class="red_color">toString()</span> function of a data object returns the name of the object:
+            </p>
+            <pre><code><span class="light_blue_color">data object</span> MyDataObject {
+    <span class="light_blue_color">val</span> x: Int = <span class="purple_color">3</span>
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="red_color">println</span>(MyDataObject) <span class="comments"></span>// MyDataObject
+}</code></pre>
+            <p>
+                The <span class="red_color">equals()</span> function for a <span class="red_color">data object</span> ensures that all 
+                objects that have the type of your <span class="red_color">data object</span> are considered equal. In most cases, you 
+                will only have a single instance of your data object at runtime (after all, a <span class="red_color">data object</span> 
+                declares a singleton). However, in the edge case where another object of the same type is generated at runtime (for 
+                example, by using platform reflection with j<span class="red_color">Java.lang.reflect</span> or a JVM serialization 
+                library that uses this API under the hood), this ensures that the objects are treated as being equal.
+            </p>
+            <p>
+                <strong>Note: </strong> Make sure to only compare <span class="red_color">data objects</span> structurally (using the 
+                <span class="red_color">==</span> operator) and never by reference (using the <span class="red_color">===</span> 
+                operator). This helps you avoid pitfalls when more than one instance of a data object exists at runtime.
+            </p>
+            <pre><code><span class="light_blue_color">import</span> java.lang.reflect.Constructor
+<span class="light_blue_color">data object</span> MySingleton
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="light_blue_color">val</span> evilTwin = <span class="red_color">createInstanceViaReflection</span>()
+
+    <span class="red_color">println</span>(MySingleton)<span class="comments"> // MySingleton</span>
+    <span class="red_color">println</span>(evilTwin)<span class="comments"> // MySingleton</span>
+
+    <span class="comments">// Even when a library forcefully creates a second instance of MySingleton, its `equals` method returns true:</span>
+    <span class="red_color">println</span>(MySingleton == evilTwin) <span class="comments">// true</span>
+
+    <span class="comments">// Do not compare data objects via ===.</span>
+    <span class="red_color">println</span>(MySingleton === evilTwin) <span class="comments">// false</span>
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> createInstanceViaReflection</span>(): MySingleton {
+    <span class="comments">// Kotlin reflection does not permit the instantiation of data objects.</span>
+    <span class="comments">// This creates a new MySingleton instance "by force" (i.e. Java platform reflection)</span>
+    <span class="comments">// Don't do this yourself!</span>
+    <span class="light_blue_color">return</span> (MySingleton.javaClass.declaredConstructors[<span class="purple_color">0</span>].<span class="red_color">apply</span> { <span class="light_blue_color">isAccessible</span> = <span class="purple_color">true</span> } <span class="light_blue_color">as Constructor</span><span class="purple_color">&lt;</span>MySingleton<span class="purple_color">></span>).<span class="red_color">newInstance</span>()
+}</code></pre>
+            <p>
+                The generated <span class="red_color">hashCode()</span> function has behavior that is consistent with the 
+                <span class="red_color">equals()</span> function, so that all runtime instances of a <span class="red_color">data 
+                object</span> have the same hash code.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Differences between data objects and data classes
+            </h3>
+            <p>
+                While <span class="red_color">data object</span> and <span class="red_color">data class</span> declarations are often 
+                used together and have some similarities, there are some functions that are not generated for a <span class="red_color">
+                data object</span>:
+            </p>
+            <ul>
+                <li>No <span class="red_color">copy()</span> function. Because a <span class="red_color">data object</span> declaration 
+                is intended to be used as singleton objects, <span class="red_color">no copy()</span> function is generated. The 
+                singleton pattern restricts the instantiation of a class to a single instance, which would be violated by allowing copies of the instance to be created.
+                </li>
+                <li>No <span class="red_color">componentN()</span> function. Unlike a <span class="red_color">data class</span>, a 
+                <span class="red_color">data object</span> does not have any data properties. Since attempting to destructure such an 
+                object without data properties would not make sense, no <span class="red_color">componentN()</span> functions are 
+                generated.
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Using data objects with sealed hierarchies
+            </h3>
+            <p>
+                <span class="red_color">data object</span> declarations are a particularly good fit for sealed hierarchies, like 
+                <a href="https://kotlinlang.org/docs/sealed-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/sealed-classes.html"> sealed classes</abbr></a> or 
+                <a href="https://kotlinlang.org/docs/sealed-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/sealed-classes.html">sealed interfaces</abbr></a>, since they allow you to 
+                maintain symmetry with any data classes you might have defined alongside the object:
+            </p>
+            <pre><code><span class="light_blue_color">sealed interface</span> ReadResult
+<span class="light_blue_color">data class</span> Number(<span class="light_blue_color">val</span> number: <span class="purple_color">Int</span>) : ReadResult
+<span class="light_blue_color">data class</span> Text(<span class="light_blue_color">val</span> text: String) : ReadResult
+<span class="light_blue_color">data object</span> EndOfFile : ReadResult
+
+<span class="light_blue_color">fun</span><span class="red_color"> printReadResult</span>(r: ReadResult) {
+    <span class="light_blue_color">when</span>(r) {
+        <span class="light_blue_color">is</span> Number <span class="purple_color">-></span><span class="red_color"> println</span>(<span class="green_color">"Num(${r.number}"</span>)
+        <span class="light_blue_color">is</span> Text <span class="purple_color">-></span><span class="red_color"> println</span>(<span class="green_color">"Txt(${r.text}"</span>)
+        <span class="light_blue_color">is</span> EndOfFile <span class="purple_color">-></span><span class="red_color"> println</span>(<span class="green_color">"EOF"</span>)
+    }
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="red_color">printReadResult</span>(EndOfFile) <span class="comments">// EOF</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Companion objects
+            </h3>
+            <p>
+                An object declaration inside a class can be marked with the <span class="red_color">companion</span> keyword:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> MyClass {
+    <span class="light_blue_color">companion object</span> Factory {
+        <span class="light_blue_color">fun</span><span class="red_color"> create</span>(): MyClass =<span class="light_blue_color"> MyClass</span>()
+    }
+}</code></pre>
+            <p>
+                Members of the companion object can be called simply by using the class name as the qualifier:
+            </p>
+            <pre><code><span class="light_blue_color">val</span> instance = MyClass.<span class="red_color">create</span>()</code></pre>
+            <p>
+                The name of the companion object can be omitted, in which case the name <span class="red_color">Companion</span> will be 
+                used:
+            </p>  
+            <pre><code><span class="light_blue_color">class</span> MyClass {
+    <span class="light_blue_color">companion object</span> { }
+}
+
+<span class="light_blue_color">val</span> x = MyClass.Companion</code></pre>
+            <p>
+                Class members can access the private members of the corresponding companion object.
+            </p>
+            <p>
+                The name of a class used by itself (not as a qualifier to another name) acts as a reference to the companion object of 
+                the class (whether named or not):
+            </p>
+            <pre><code><span class="light_blue_color">class</span> MyClass1 {
+    <span class="light_blue_color">companion object</span> Named { }
+}
+
+<span class="light_blue_color">val</span> x = MyClass1
+
+<span class="light_blue_color">class</span> MyClass2 {
+    <span class="light_blue_color">companion object</span> { }
+}
+
+<span class="light_blue_color">val</span> y = MyClass2</code></pre>
+            <p>
+                Note that even though the members of companion objects look like static members in other languages, at runtime those are 
+                still instance members of real objects, and can, for example, implement interfaces:
+            </p>
+            <pre><code><span class="light_blue_color">interface</span> Factory<span class="purple_color">&lt;</span>T<span class="purple_color">></span> {
+    <span class="light_blue_color">fun</span><span class="red_color"> create</span>(): T
+}
+
+<span class="light_blue_color">class</span> MyClass {
+    <span class="light_blue_color">companion object</span> : Factory<span class="purple_color">&lt;</span>MyClass<span class="purple_color">></span> {
+        <span class="light_blue_color">override fun</span><span class="red_color"> create</span>(): MyClass = <span class="light_blue_color">MyClass</span>()
+    }
+}
+
+<span class="light_blue_color">val</span> f: Factory<span class="light_blue_color">&lt;</span>MyClass<span class="light_blue_color">></span> = MyClass</code></pre>
+            <p>
+                However, on the JVM you can have members of companion objects generated as real static methods and fields if you use the 
+                <span class="red_color">@JvmStatic</span> annotation. See the 
+                <a href="https://kotlinlang.org/docs/java-to-kotlin-interop.html#static-fields" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/java-to-kotlin-interop.html#static-fields">Java interoperability</a> section for 
+                more detail.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Semantic difference between object expressions and declarations
+            </h3>
+            <p>
+                There is one important semantic difference between object expressions and object declarations:
+            </p>
+            <ul>
+                <li>Object expressions are executed (and initialized) <b>immediately</b>, where they are used.</li>
+                <li>Object declarations are initialized <b>lazily</b>, when accessed for the first time.</li>
+                <li>A companion object is initialized when the corresponding class is loaded (resolved) that matches the semantics of a 
+                Java static initializer.</li>
+            </ul>     
+</div>
+        <div class="right_side">
+            <h4>
+                Now displaying:
+            </h4>
+            <p class="display_info">
+                Classes / objects
+            </p>
+        </div>    
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

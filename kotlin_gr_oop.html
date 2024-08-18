@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(6)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(6)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1" onclick="display(1,1)"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>              
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Ισότητα
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;Έκφραση this
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <h1 class="titloi">Αντικειμενοστραφής προγραμματισμός</h1>
+            <p style="line-height: .5;">
+                Τα αρχικά OOP σημαίνουν <strong>Object-Oriented Programming (Αντικειμενοστραφής προγραμματισμός).</strong>
+            </p>
+            <p>
+                Ο διαδικαστικός προγραμματισμός έχει να κάνει με το γράψιμο διαδικασιών ή μεθόδων που εκτελούν εργασίες πάνω στα 
+                δεδομένα, ενώ ο αντικειμενοστραφής προγραμματισμός έχει να κάνει με τη δημιουργία αντικειμένων που περιέχουν και 
+                δεδομένα και μεθόδους.
+            </p>
+            <p>
+                Ο αντικειμενοστραφής προγραμματισμός έχει πολλά πλεονεκτήματα σε σχέση με τον αντικειμενοστραφή προγραμματισμό:
+            </p>
+            <ul>
+                <li>Το OOP πρόγραμμα είναι ταχύτερο και ευκολότερο να εκτελεστεί </li>
+                <li>Το OOP παρέχει ξεκάθαρη δομή των προγραμμάτων</li>
+                <li>ΤΟ OOP βοηθά στη διατήρηση του κώδικα της kotlin να παραμείνει DRY ("Don't Repeat Yourself"), και κάνει τον κώδικα 
+                    ευκολότερο να συντηρηθεί να τροποποιηθεί και να αποσφαλματωθεί.</li>
+                <li>Το OOP κάνει εφιτκή τη δημιουργία πλήρως επαναχρησιμοποιήσιμων εφαρμογών με λιγότερο κώδικα και μικρότερο χρόνο 
+                    ανάπτυξής του</li>
+            </ul>
+            <p>
+                <strong>Σχόλιο:</strong> Η αρχή "Don't Repeat Yourself" (DRY) έχει να κάνει με τη μείωση του επαναλήψιμου κώδικα. 
+                Πρέπει να αφαιρέσουμε τα κομμάτια κώδικα που είναι κοινά σε μία εφαρμογή και να τα τοποθετήσουμε σε ένα μόνο μέρος 
+                προκειμένου να τα επαναχρησιμοποιούμε αντί να τα επαναλαμβάνουμε.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Κλάσεις (Classes) και αντικείμενα (Objects)
+            </h3>
+            <p style="line-height: .5;">
+                Οι κλάσεις και τα αντικειμενα είναι οι δύο κύριες μορφές του αντικειμενοστραφούς προγραμματισμού.
+            </p>
+            <p>
+                Κοιτάζοντας το επόμενο παράδειγμα καταλαβαίνουμε τη διαφορά μεταξύ κλάσης και αντικειμένου:
+            </p>
+            <table>
+                <tr style="font-weight: bold; line-height: 1.5; background-color: #a2a0a7;">
+                    <td style="padding:8px 0;">Κλάση</td><td>Αντικείμενα</td>
+                </tr>
+                <tr>
+                    <td>Φρούτο</td><td>Μήλο</td>
+                </tr>
+                <tr>
+                    <td></td><td>Μπανάνα</td>
+                </tr>
+                <tr>
+                    <td></td><td>Μάνγκο</td>
+                </tr>                
+            </table>
+            <p>
+                Άλλο ένα παράδειγμα:
+            </p>
+            <table>
+                <tr style="font-weight: bold; line-height: 1.5; background-color: #a2a0a7;">
+                    <td style="padding:8px 0;">Κλάση</td><td>Αντικείμενα</td>
+                </tr>
+                <tr>
+                    <td>Αυτοκίνητο</td><td>Volvo</td>
+                </tr>
+                <tr>
+                    <td></td><td>Audi</td>
+                </tr>
+                <tr>
+                    <td></td><td>Toyota</td>
+                </tr>                
+            </table> 
+            <p>
+                Επομένως, η κλάση είναι ένα πρότυπο μοντελοποίησης αντικειμένων και το αντικείμενο είναι ένα στιγμιότυπο (instance) μίας 
+                κλάσης. 
+            </p>           
+            <p>
+                Όταν δημιουργιούνται μεμονωμένα αντικείμενα, κληρονομούν όλες τις μεταβλητές και τις μεθόδους από την κλάση. 
+            </p>
+            <h1 class="titloi">Packages και imports</h1>            
+            <p>
+               Ένα source file μπορεί να ξεκινά με τη δήλωση πακέτου (package declaration):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">package</span>  org.example
+    <span class="light_blue_color">fun</span><span class="red_color">  printMessage</span>() { <span class="comments">/*...*/</span> }
+    <span class="light_blue_color">class</span> Message {  <span class="comments">/*...*/</span> }</span>
+
+    <span class="comments">// ...</span></code></pre>
+            <p>
+                Όλα τα περιεχόμενα - όπως οι κλάσεις και οι συναρτήσεις - του source file περιλαμβάνονται σε αυτό το πακέτο. Επομένως, 
+                στο παραπάνω παράδειγμα το πλήρες όνομα της συνάρτησης <span class="red_color">printMessage()</span> είναι 
+                <span class="red_color">org.example.printMessage </span>και το πλήρες όνομα της κλάσης 
+                <span class="red_color">Message</span> είναι <span class="red_color">org.example.Message</span>.
+            </p>      
+            <p>
+                Αν το πακέτο δεν είναι προσδιορισμένο, τα περιεχόμενα ενός τέτοιου αρχείου ανήκουν στο default πακέτο χωρίς όνομα.
+            </p>      
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Default imports
+            </h3>
+            <p>
+                Ένας αριθμός πακέτων από σύμβαση είναι εισαγμένο (imported) σε κάθε αρχείο Kotlin:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/">kotlin.*</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/">kotlin.annotation.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/">kotlin.collections.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.comparisons/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.comparisons/">kotlin.comparisons.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/">kotlin.io.*</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/">kotlin.ranges.*</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/">kotlin.sequences.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/">kotlin.text.*</abbr></a>
+                </li>                                                                                                                
+            </ul>
+            <p>
+                Επιπρόσθετα πακέτα εισάγονται ανάλογα με την στοχευμένη πλατφόρμα:
+            </p>
+            <ul style="list-style-type: square;">
+                <li>JVM:
+                    <ul style="list-style-type: disc;">
+                        <li>java.lang.*</li>
+                        <li>
+                            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/" style="text-decoration: none;" 
+                            target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/">kotlin.jvm.*</abbr></a>                                                                                    
+                        </li>
+                    </ul>
+                </li>
+                <li>JS:
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/" style="text-decoration: none;" 
+                            target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/">kotlin.js.*</abbr></a>                            
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Imports
+            </h3>            
+            <p>
+                Ξεχωριστά από τα default imports, κάθε αρχείο περιέχει τις δικές του εισηγμένες οδηγίες.
+            </p>
+            <p>
+                Μπορούμε να εισάγουμε είτε ένα μόνο όνομα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.example.Message <span class="comments">// Η κλάση Message είναι τώρα προσβάσιμη δίχως προϋποθέσεις</span></code></pre>
+             <p>
+                ή όλα τα προσβάσιμα περιεχόμενα (ενός πακέτου, μία κλάσης, ενός αντικειμένου κοκ):
+             </p>  
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.example.* <span class="comments">// Όλα όσα περιέχονται στο πακέτο 'org.example' γίνονται προσβάσιμα</span></code></pre>
+             <p>
+                Αν υπάρχει διαμάχη ονομάτων, μπορούμε να το αποσαφηνίσουμε χρησιμοποιώντας ένα keyword για να μετονομάσουμε τοπικά την 
+                υπό διαμάχη οντότητα:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.example.Message <span class="comments">// Η κλάση Message είναι προσβάσιμη</span></code></pre>
+<pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.test.Message as TestMessage <span class="comments">// Το TestMessage αντικαθιστά το 'org.test.Message'</span></code></pre>
+            <p>
+                Το keyword <span class="red_color">import</span> δεν είναι περιορισμένο στην εισαγωγή κλάσεων· μπορούμε επίσης να το 
+                χρησιμοποιήσουμε για να εισάγουμε άλλες δηλώσεις:
+            </p>
+            <ul>
+                <li>Top-level συναρτήσεις και ιδιότητες</li>
+                <li>Συναρτήσεις και ιδιότητες που δηλώνονται σε 
+                    <a href="https://kotlinlang.org/docs/object-declarations.html#object-declarations-overview" 
+                    style="text-decoration: none;" target="_blank"><abbr 
+                    title="https://kotlinlang.org/docs/object-declarations.html#object-declarations-overview">δηλώσεις αντικειμένων 
+                    (object declarations)</abbr></a>                               
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/enum-classes.html" style="text-decoration: none;" target="_blank"><abbr 
+                    title="https://kotlinlang.org/docs/enum-classes.html">Enum constants</abbr></a>                                                  
+                   </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Ορατότητα των top-level δηλώσεων
+            </h3>
+            <p>
+                Αν μία top-level δήλωση έχει σημειωθεί ως private, είναι private στο αρχείο που έχει δηλωθεί (βλέπε 
+                <a href="https://kotlinlang.org/docs/visibility-modifiers.html" style="text-decoration: none;" target="_blank"><abbr 
+                title="https://kotlinlang.org/docs/visibility-modifiers.html">Visibility modifiers</abbr></a>).                                                        
+            </p>
+            <h1 class="titloi">Interfaces</h1>
+            <p>
+                Τα interfaces στην  Kotlin μπορούν να περιλαμβάνουν δηλώσεις μεθόδων, καθώς επίσης και υλοποιήσεις μεθόδων. Αυτό που 
+                κάνει τη διαφορά από τις abstract κλάσεις έγκειται στο γεγονός πως τα interfaces δεν μπορούν να αποθηκεύουν καταστάσεις. 
+                Μπορούν να έχουν ιδιότητες, όμως αυτές χρειάζεται να είναι abstract ή να παρέχουν υλοποιήσεις πρόσβασης (accessor 
+                implementations).
+            </p>
+            <p>
+                Ένα interface ορίζεται χρησιμοποιώντας το keyword <span class="red_color">interface</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> MyInterface {
+    <span class="light_blue_color">fun </span><span class="red_color"> bar</span>()
+    <span class="light_blue_color">fun </span><span class="red_color"> foo</span>() {
+    <span class="comments">// προαιρετικά σώμα του interface</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Υλοποίηση interfaces
+            </h3>
+            <p>
+                Μία κλάση ή ένα αντικέιμενο μπορεί να υλοποιήσει ένα ή περισσότερα interfaces:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class </span>Child : MyInterface {
+    <span class="light_blue_color">override fun </span><span class="red_color"> bar</span>()
+        <span class="comments">// σώμα</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Ιδιότητες (Properties) στα interfaces
+            </h3>
+            <p>
+                Μπορούμε να δηλώσουμε ιδιότητες στα interfaces. Μία δηλωμένη ιδιότητα σε κάποιο interface μπορεί να είναι είτε abstract ή 
+                να παρέχει υλοποιήσεις πρόσβασης (implementations for accessors). Οι δηλωμένες ιδιότητες στα interfaces δεν μπορούν να 
+                έχουν υποστηρικτικά πεδία, και για αυτό οι δηλωμένοι accessors στα interfaces δεν μπορούν να αναφερθούν σε αυτές:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> MyInterface {
+    <span class="light_blue_color">val</span> prop: Int  <span class="comments">// abstract</span>
+                
+    <span class="light_blue_color">val</span> propertyWithImplementation: String
+    <span class="red_color">get</span>() = <span class="green_color"></span>"foo"
+
+    <span class="light_blue_color">fun</span> <span class="red_color">foo</span>() {
+        <span class="red_color">print</span>(prop)
+    }
+}
+
+<span class="light_blue_color">class</span> Child : MyInterface {
+    <span class="light_blue_color"> override val </span>prop: Int = <span class="purple_color">29</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+            Κληρονομικότητα στα interfaces
+            </h3>
+            <p>
+                Ένα interface μπορεί να κληρονομήσει από άλλα interfaces, εννοώντας πως μπορεί να παρέχει υλοποιήσεις για τα μέλη του 
+                και να δηλώνει νέες συναρτήσεις και ιδιότητες. Φυσικά, οι κλάσεις που υλοποιούν ένα τέτοιο interface απαιτείται μόνο να 
+                ορίζουν τις υλοποιήσεις που λείπουν:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> Named {
+    <span class="red_color">val</span> name: String 
+}                        
+
+<span class="light_blue_color">interface</span> Person : Named {
+    <span class="red_color">val</span> firstName: String
+    <span class="red_color">val</span> lastName: String
+            
+    <span class="light_blue_color">override</span><span class="red_color"> val</span> name: String <span class="red_color">get</span>() = <span class="purple_color">"$firstName $lastName"</span>
+}
+
+<span class="light_blue_color">data class </span>Employee(
+    <span class="comments">// Η υλοποίηση της μεταβλητής 'name' δεν απαιτείται</span>
+    <span class="light_blue_color">override</span><span class="red_color"> val</span> firstName: String,
+    <span class="light_blue_color">override</span><span class="red_color"> val</span> lastName: String,
+    <span class="red_color">val</span> position: Position
+) : Person</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Επίλυση διαμάχης σε περίπτωση υπερκάλυψης (Resolving overriding conflicts)
+            </h3>
+            <p>
+                Όταν δηλώνουμε πολλούς τύπους στην supertype list, μπορούμε να κληρονομήσουμε περισσότερες από μία υλοποιήσεις της ίδιας 
+                μεθόδου:
+             </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> A {
+    <span class="light_blue_color">fun</span> <span class="red_color">foo</span>() { <span class="red_color">print</span>(<span class="green_color">"A"</span>) }
+    <span class="light_blue_color">fun</span> <span class="red_color">bar</span>()
+}                        
+            
+<span class="light_blue_color">interface</span> B {
+    <span class="light_blue_color">fun</span> <span class="red_color">foo</span>() { <span class="red_color">print</span>(<span class="green_color">"B"</span>) }
+    <span class="light_blue_color">fun</span> <span class="red_color">bar</span>() { <span class="red_color">print</span>(<span class="green_color">"bar"</span>) }
+}
+
+<span class="light_blue_color">class</span> C : A {
+    <span class="light_blue_color">override </span><span class="red_color">fun </span>bar() { <span class="red_color">print</span>(<span class="green_color">"bar"</span>}   
+}
+
+<span class="light_blue_color">class</span> D : A, B {
+    <span class="light_blue_color">override </span><span class="light_blue_color">fun </span><span class="red_color">foo</span>()) { 
+        <span class="light_blue_color">super</span><span class="purple_color"><</span>A<span class="purple_color">></span>.<span class="red_color">foo</span>()
+        <span class="light_blue_color">super</span><span class="purple_color"><</span>B<span class="purple_color">></span>.<span class="red_color">foo</span>()   
+}
+
+    <span class="light_blue_color">override </span><span class="light_blue_color">fun</span> <span class="red_color">bar</span>() {
+        <span class="light_blue_color">super</span><span class="purple_color"><</span>B<span class="purple_color">></span>.<span class="red_color">bar</span>()   
+    }   
+}</code></pre>
+            <p>
+                Τα interfaces <b>A</b> και <b>B</b> δηλώνουν και τα δύο τις συναρτήσεις <span class="red_color">foo()</span> και 
+                <span class="red_color">bar()</span>. Και τα δύο υλοποιούν τη foo(), όμως μόνον η <b>B</b> υλοποιεί τη 
+                <span class="red_color">bar()</span>. Η συνάρτηση <span class="red_color">bar()</span> δεν είναι σημειωμένη ως abstract 
+                στο <b>A</b>, επειδή αυτός είναι από σύμβαση ο τρόπος για τα interfaces αν η συνάρτηση δεν έχει σώμα). Τώρα, αν μία
+                concrete κλάση <b>C</b> παράγεται απο το <b>A</b>, χρειάζεται να κάνουμε  override την συνάρτηση <span class="red_color">bar()</span> 
+                και να παρέχουμε την υλοποίηση.
+            </p>
+            <p>
+                Ωστόσο, αν η κλάση <b>D</b> προέρχεται από τα <b>A</b> και <b>B</b>, χρειάζεται να υλοποιήσουμε όλες τις μεθόδους που 
+                έχουμε κληρονομήσει από τα διάφορα interfaces, και χρειάζεται να προσδιορίσουμε πώς ακριβώς το <b>D</b> θα πρέπει να τις 
+                υλοποιήσει. Αυτός ο κανόνας ισχύει και για τις μεθόδους για τις οποίες έχουμε κληρονομήσει μία υλοποίηση 
+                (<span class="red_color">bar()</span>) και για αυτές που έχουμε κληρονομήσει πολλαπλές (<span class="red_color">foo()                    
+                </span>).
+            </p>
+        </div>
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info" >
+                Αντικειμενοστραφής προγραμματισμός
+            </p>            
+        </div>        
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(6)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(6)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                    <ul id="syntax2">
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                            &nbsp;&nbsp;&nbsp;Comments
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                            &nbsp;&nbsp;&nbsp;Data Types
+                        </a></li>                        
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                            &nbsp;&nbsp;&nbsp;Variables
+                        </a>  </li>   
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                            &nbsp;&nbsp;&nbsp;Operators
+                        </a> </li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                            &nbsp;&nbsp;&nbsp;Boolean
+                        </a>   </li>                                                              
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                            &nbsp;&nbsp;&nbsp;Output
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                            &nbsp;&nbsp;&nbsp;Strings
+                        </a></li>      
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                            &nbsp;&nbsp;&nbsp;If...else
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                            &nbsp;&nbsp;&nbsp;When
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                            &nbsp;&nbsp;&nbsp;For loop
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                            &nbsp;&nbsp;&nbsp;While loop
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                            &nbsp;&nbsp;&nbsp;Break/Continue
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                            &nbsp;&nbsp;&nbsp;Collections
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                            &nbsp;&nbsp;&nbsp;Ranges
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                            &nbsp;&nbsp;&nbsp;Functions
+                        </a></li>                            
+                    </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Null safety
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Equality
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;This expression
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Annotations
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Destructuring declarations
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <h1 class="titloi">Kotlin OOP</h1>
+            <p style="line-height: .5;">
+                OOP stands for <strong>Object-Oriented Programming</strong>.
+            <p>
+                Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented 
+                programming is about creating objects that contain both data and methods.
+            </p>
+            <p>
+                Object-oriented programming has several advantages over procedural programming:
+            </p>
+            <ul>
+                <li>OOP is faster and easier to execute</li>
+                <li>OOP provides a clear structure for the programs</li>
+                <li>OOP helps to keep the Kotlin code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug</li>
+                <li>OOP makes it possible to create full reusable applications with less code and shorter development time</li>
+            </ul>
+            <p>
+                <strong>Tip:</strong> The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should 
+                extract out the codes that are common for the application, and place them at a single place and reuse them instead of 
+                repeating it.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Classes and Objects
+            </h3>
+            <p style="line-height: .5;">
+                Classes and objects are the two main aspects of object-oriented programming.
+            </p>
+            <p>
+                Look at the following illustration to see the difference between class and objects:
+            </p>
+            <table>
+                <tr style="font-weight: bold; line-height: 1.5; background-color: #a2a0a7;">
+                    <td style="padding:8px 0;">class</td><td>objects</td>
+                </tr>
+                <tr>
+                    <td>Fruit</td><td>Apple</td>
+                </tr>
+                <tr>
+                    <td></td><td>Banana</td>
+                </tr>
+                <tr>
+                    <td></td><td>Mango</td>
+                </tr>                
+            </table>
+            <p>
+                Another example:
+            </p>
+            <table>
+                <tr style="font-weight: bold; line-height: 1.5; background-color: #a2a0a7;">
+                    <td style="padding:8px 0;">class</td><td>objects</td>
+                </tr>
+                <tr>
+                    <td>Car</td><td>Volvo</td>
+                </tr>
+                <tr>
+                    <td></td><td>Audi</td>
+                </tr>
+                <tr>
+                    <td></td><td>Toyota</td>
+                </tr>                
+            </table> 
+            <p>
+                So, a class is a template for objects, and an object is an instance of a class. 
+            </p>           
+            <p>
+                When the individual objects are created, they inherit all the variables and methods from the class.
+            </p>
+            <h1 class="titloi">Packages και imports</h1>            
+            <p>
+                A source file may start with a package declaration:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">package</span>  org.example
+    <span class="light_blue_color">fun</span><span class="red_color">  printMessage</span>() { <span class="comments">/*...*/</span> }
+    <span class="light_blue_color">class</span> Message {  <span class="comments">/*...*/</span> }</span>
+
+    <span class="comments">// ...</span></code></pre>
+            <p>
+                All the contents, such as classes and functions, of the source file are included in this package. So, in the example 
+                above, the full name of <span class="red_color">printMessage()</span> is <span class="red_color">
+                org.example.printMessage</span>, and the full name of <span class="red_color">Message</span> is 
+                <span class="red_color">org.example.Message</span>.
+            </p>      
+            <p>
+                If the package is not specified, the contents of such a file belong to the default package with no name.
+            </p>      
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Default imports
+            </h3>
+            <p>
+                A number of packages are imported into every Kotlin file by default:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/">kotlin.*</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/">kotlin.annotation.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/">kotlin.collections.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.comparisons/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.comparisons/">kotlin.comparisons.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/">kotlin.io.*</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/">kotlin.ranges.*</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/" style="text-decoration: none;" 
+                    target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/">kotlin.sequences.*
+                    </abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/" style="text-decoration: none;" target="_blank">
+                    <abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/">kotlin.text.*</abbr></a>
+                </li>                                                                                                                
+            </ul>
+            <p>
+                Additional packages are imported depending on the target platform:
+            </p>
+            <ul style="list-style-type: square;">
+                <li>JVM:
+                    <ul style="list-style-type: disc;">
+                        <li>java.lang.*</li>
+                        <li>
+                            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/" style="text-decoration: none;" 
+                            target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/">kotlin.jvm.*</abbr></a>                                                                                    
+                        </li>
+                    </ul>
+                </li>
+                <li>JS:
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/" style="text-decoration: none;" 
+                            target="_blank"><abbr title="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/">kotlin.js.*</abbr></a>                            
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Imports
+            </h3>            
+            <p>
+                Apart from the default imports, each file may contain its own <span class="red_color">import</span> directives.                
+            </p>
+            <p>
+                You can import either a single name:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.example.Message <span class="comments">// Message is now accessible without qualification
+            </span></code></pre>
+             <p>
+                or all the accessible contents of a scope: package, class, object, and so on:
+             </p>  
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.example.* <span class="comments">// everything in 'org.example' becomes accessible</span></code></pre>
+             <p>
+                If there is a name clash, you can disambiguate by using as keyword to locally rename the clashing entity:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.example.Message <span class="comments">//Message is accessible</span></code></pre>
+<pre style="font-size: 1.1em;"><code><span class="light_blue_color">import</span> org.test.Message as TestMessage <span class="comments">// TestMessage stands for 'org.test.Message'</span></code></pre>
+            <p>
+                The <span class="red_color">import</span> keyword is not restricted to importing classes; you can also use it to import 
+                other declarations:
+            </p>
+            <ul>
+                <li>top-level functions and properties</li>
+                <li>functions and properties declared in 
+                    <a href="https://kotlinlang.org/docs/object-declarations.html#object-declarations-overview" 
+                    style="text-decoration: none;" target="_blank"><abbr 
+                    title="https://kotlinlang.org/docs/object-declarations.html#object-declarations-overview">object declarations</abbr>
+                    </a>                               
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/enum-classes.html" style="text-decoration: none;" target="_blank"><abbr 
+                    title="https://kotlinlang.org/docs/enum-classes.html">enum constants</abbr></a>                                                  
+                   </li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Visibility of top-level declarations
+            </h3>
+            <p>
+                If a top-level declaration is marked private, it is private to the file it's declared in (see 
+                <a href="https://kotlinlang.org/docs/visibility-modifiers.html" style="text-decoration: none;" target="_blank"><abbr 
+                title="https://kotlinlang.org/docs/visibility-modifiers.html">Visibility modifiers</abbr></a>).                                                        
+            </p>
+            <h1 class="titloi">Interfaces</h1>
+            <p>
+                Interfaces in Kotlin can contain declarations of abstract methods, as well as method implementations. What makes them 
+                different from abstract classes is that interfaces cannot store state. They can have properties, but these need to be 
+                abstract or provide accessor implementations.
+            </p>
+            <p>
+                An interface is defined using the keyword <span class="red_color">interface</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> MyInterface {
+    <span class="light_blue_color">fun </span><span class="red_color"> bar</span>()
+    <span class="light_blue_color">fun </span><span class="red_color"> foo</span>() {
+    <span class="comments">// προαιρετικά σώμα του interface</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Implementing interfaces
+            </h3>
+            <p>
+                A class or object can implement one or more interfaces:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class </span>Child : MyInterface {
+    <span class="light_blue_color">override fun </span><span class="red_color"> bar</span>()
+        <span class="comments">// σώμα</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Properties in interfaces
+            </h3>
+            <p>
+                You can declare properties in interfaces. A property declared in an interface can either be abstract or provide 
+                implementations for accessors. Properties declared in interfaces can't have backing fields, and therefore accessors 
+                declared in interfaces can't reference them:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> MyInterface {
+    <span class="light_blue_color">val</span> prop: Int  <span class="comments">// abstract</span>
+                
+    <span class="light_blue_color">val</span> propertyWithImplementation: String
+    <span class="red_color">get</span>() = <span class="green_color"></span>"foo"
+
+    <span class="light_blue_color">fun</span> <span class="red_color">foo</span>() {
+        <span class="red_color">print</span>(prop)
+    }
+}
+
+<span class="light_blue_color">class</span> Child : MyInterface {
+    <span class="light_blue_color"> override val </span>prop: Int = <span class="purple_color">29</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Interfaces Inheritance
+            </h3>
+            <p>
+                An interface can derive from other interfaces, meaning it can both provide implementations for their members and 
+                declare new functions and properties. Quite naturally, classes implementing such an interface are only required to 
+                define the missing implementations:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> Named {
+    <span class="red_color">val</span> name: String 
+}                        
+
+<span class="light_blue_color">interface</span> Person : Named {
+    <span class="red_color">val</span> firstName: String
+    <span class="red_color">val</span> lastName: String
+            
+    <span class="light_blue_color">override</span><span class="red_color"> val</span> name: String <span class="red_color">get</span>() = <span class="purple_color">"$firstName $lastName"</span>
+}
+
+<span class="light_blue_color">data class </span>Employee(
+    <span class="comments">// implementing 'name' is not required</span>
+    <span class="light_blue_color">override</span><span class="red_color"> val</span> firstName: String,
+    <span class="light_blue_color">override</span><span class="red_color"> val</span> lastName: String,
+    <span class="red_color">val</span> position: Position
+) : Person</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Resolving overriding conflicts
+            </h3>
+            <p>
+                When you declare many types in your supertype list, you may inherit more than one implementation of the same method:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">interface</span> A {
+    <span class="light_blue_color">fun</span> <span class="red_color">foo</span>() { <span class="red_color">print</span>(<span class="green_color">"A"</span>) }
+    <span class="light_blue_color">fun</span> <span class="red_color">bar</span>()
+}                        
+            
+<span class="light_blue_color">interface</span> B {
+    <span class="light_blue_color">fun</span> <span class="red_color">foo</span>() { <span class="red_color">print</span>(<span class="green_color">"B"</span>) }
+    <span class="light_blue_color">fun</span> <span class="red_color">bar</span>() { <span class="red_color">print</span>(<span class="green_color">"bar"</span>) }
+}
+
+<span class="light_blue_color">class</span> C : A {
+    <span class="light_blue_color">override </span><span class="red_color">fun </span>bar() { <span class="red_color">print</span>(<span class="green_color">"bar"</span>}   
+}
+
+<span class="light_blue_color">class</span> D : A, B {
+    <span class="light_blue_color">override </span><span class="light_blue_color">fun </span><span class="red_color">foo</span>()) { 
+    <span class="light_blue_color">super</span><span class="purple_color"><</span>A<span class="purple_color">></span>.<span class="red_color">foo</span>()
+    <span class="light_blue_color">super</span><span class="purple_color"><</span>B<span class="purple_color">></span>.<span class="red_color">foo</span>()   
+    }
+
+    <span class="light_blue_color">override </span><span class="light_blue_color">fun</span> <span class="red_color">bar</span>() {
+        <span class="light_blue_color">super</span><span class="purple_color"><</span>B<span class="purple_color">></span>.<span class="red_color">bar</span>()   
+    }   
+}</code></pre>
+            <p>
+                Interfaces <b>A</b> and  <b>B</b> both declare functions <span class="red_color">foo()</span> and 
+                <span class="red_color">bar()</span>. Both of them implement <span class="red_color">foo()</span>, but only <b>B</b> 
+                implements <span class="red_color">bar()</span> (<span class="red_color">bar()</span> is not marked as abstract in  
+                <b>A</b>, because this is the default for interfaces if the function has no body). Now, if you derive a concrete class 
+                <b>C</b> from <b>A</b>, you have to override <span class="red_color">bar()</span>  and provide an implementation.
+            </p>
+            <p>
+                However, if you derive <b>D</b> from <b>A</b> and <b>B</b>, you need to implement all the methods that you have inherited 
+                from multiple interfaces, and you need to specify how exactly <b>D</b> should implement them. This rule applies both to 
+                methods for which you've inherited a single implementation (<span class="red_color">bar()</span>) and to those for which 
+                you've inherited multiple implementations (<span class="red_color">foo()                    
+                </span>).
+            </p>
+        </div>
+        <div class="right_side">
+            <h4>
+                Now displaying:
+            </h4>
+            <p class="display_info">
+                Kotlin OOP
+            </p>
+        </div>    
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

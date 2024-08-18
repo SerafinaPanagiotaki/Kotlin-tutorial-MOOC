@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(8)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(8)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1" onclick="display(1,1)"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>              
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Ισότητα
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;Έκφραση this
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <h1 class="titloi">Κατασκευαστές</h1>
+            <p>
+                Σε άλλο σημείο του οδηγού εκμάθησης δημιουργήσαμε αντικείμενο μίας κλάσης και προσδιορίσαμε τις ιδιότητές του μέσα 
+                στην κλάση, ως εξής:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Car {
+    <span class="light_blue_color">var</span> brand = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span> model = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span>  year = <span class="purple_color">0</span>
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="light_blue_color">val</span> c1 = <span class="red_color">Car</span>()
+    c1.brand = <span class="green_color">"Ford"</span>
+    c1.model = <span class="green_color">"Mustang"</span>
+    c1.year = <span class="purple_color">1969</span>
+}</code></pre>
+            <p>
+                Στην Kotlin υπάρχει ταχύτερος τρόπος να το κάνουμε, με τη χρήση ενός <strong>κατασκευαστή (constructor)</strong>.
+            </p>
+            <p>
+                Ένας κατασκευαστής είναι κάτι σαν ειδικού τύπου συνάρτηση (special 
+                <a href="https://www.w3schools.com/kotlin/kotlin_functions.php" target="_blank">
+                <abbr title="https://www.w3schools.com/kotlin/kotlin_functions.php">function</abbr></a>), και ορίζεται με τη χρήση δύο
+                παρενθέσεων <span class="red_color">()</span> μετά από το όνομα της κλάσης. Μπορούμε να καθορίσουμε τις ιδιότητες μέσα 
+                στις παρενθέσεις (όπως περνούμε παραμέτρους μέσα σε μία κανονική σνάρτηση).
+            </p>
+            <p>
+                Ο κατασκευαστής θα αρχικοποιήσει τις ιδιότητες μόλις δημιουργήσουεμ ένα αντικείμενο της κλάσης. Απλώς να θυμόμαστε να 
+                καθορίσουμε τον τύπο της ιδιότητας/μεταβλητής:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Car(<span class="light_blue_color">var</span> brand: String, <span class="light_blue_color">var</span> model: String, <span class="light_blue_color">var</span> year: <span class="purple_color">Int</span>)
+    <span class="light_blue_color">fun</span><span class="light_blue_color"> main()</span> {
+        <span class="light_blue_color">val</span> c1 = <span class="red_color">Car</span>(<span class="green_color">"Ford"</span>, <span class="green_color">"Mustang"</span>, <span class="purple_color">1969</span>)
+}</code></pre>
+            <p>
+                Τώρα είναι ακόμη ευκολότερο να καθορίσουμε πολλαπλά αντικέιμενα σε μία κλάση:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Car(<span class="light_blue_color">var</span> brand: String, <span class="light_blue_color">var</span> model: String, <span class="light_blue_color">var</span> year: <span class="purple_color">Int</span>)
+
+                <span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="light_blue_color">val</span> c1 = Car(<span class="green_color">"Ford"</span>, <span class="green_color">"Mustang"</span>, <span class="purple_color">1969</span>)
+    <span class="light_blue_color">val</span> c2 = Car(<span class="green_color">"BMW"</span>, <span class="green_color">"X5"</span>, <span class="purple_color">1999</span>)
+    <span class="light_blue_color">val</span> c3 = Car(<span class="green_color">"Tesla"</span>, <span class="green_color">"Model S"</span>, <span class="purple_color">2020</span>)
+}</code></pre>
+            <p>
+                Μία κλάση στην Kotlin μπορεί να έχει ένα <strong>πρωτεύοντα κατασκευαστή (primary constructor)</strong> και έναν ή 
+                περισσότερους <strong>δευτερεύοντες κατασκευασές (secondary constructors)</strong>. Ο πρωτεύων κατασκευαστής αποτελεί 
+                τμήμα του class header και πηγαίνει μετά από το όνομα της κλάσης και τους προαιρετικούς τύπους παραμέτρων.
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person constructor(firstName: String) {<span class="comments"> /*...*/</span> }</code></pre>
+            <p>
+                Αν ο πρωτεύων κατασκευαστής δεν έχει annotations ή visibility modifiers, το keyword <span class="red_color">
+                constructor</span> μπορεί να παραλειφθεί:
+            </p>  
+            <pre><code><span class="light_blue_color">class</span> Person(firstName: String) { <span class="comments">/*...*/</span> }</code></pre>
+            <p>
+                Ο πρωτεύων κατασκευαστής δεν μπορεί να περιέχει καθόλου κώδικα. Ο κώδικας αρχικοποίησης μπορεί να τοποθετηθεί σε
+                <b>initializer blocks</b> με το keyword πρόθημα <span class="red_color">init</span> .
+            </p>
+            <p>
+                Κατά την αρχικοποίηση ενός στιγμιοτύπου, τα initializer blocks εκτελούνται με την ίδια σειρά που εμφανίζονται στο σώμα 
+                της κλάσης, ένθετα με τα property initializers:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> InitOrderDemo(name: String) {
+    <span class="light_blue_color">val</span> firstProperty = <span class="green_color">"First property: $name"</span>.<span class="red_color">also</span>(::<span class="red_color">println</span>)
+    
+    <span class="light_blue_color">init</span> {
+        <span class="red_color">println</span>(<span class="green_color">"First initializer block that prints $name"</span>)
+    }
+    
+    <span class="light_blue_color">val</span> secondProperty = <span class="green_color">"Second property: ${name.length}"</span>.<span class="red_color">also</span>(::<span class="red_color">println</span>)
+    
+    <span class="light_blue_color">init</span> {
+        <span class="red_color">println</span>(<span class="green_color">"Second initializer block that prints ${name.length}"</span>)
+    }
+}</code></pre>
+            <p>
+                Οι παράμετροι του πρωτεύοντος κατασκευαστή μπορούν να χρησιμοποιηθούν στα initializer blocks. Μπορούν επίσης να 
+                χρηιμοποιηθούν στα property initializers έχοντας δηλωθεί στο σώμα της κλάσης:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Customer(name: String) {
+    <span class="light_blue_color">val</span> customerKey = name.<span class="red_color">uppercase</span>()
+}</code></pre>
+            <p>
+                Η Kotlin έχει περιεκτική σύνταξη για τη δήλωση ιδιοτήτων και την αρχικοποίησή τους από τον πρωτεύοντα κατασκευαστή:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> firstName: String, <span class="light_blue_color">val</span> lastName: String, <span class="light_blue_color">var</span> age: <span class="purple_color">Int</span>)</code></pre>
+            <p>
+                Τέτοιες δηλώσεις μπορούν επίσης να περιλαμβάνουν default values ιδιοτήτων κλάσης:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> firstName: String, <span class="light_blue_color">val</span> lastName: String, <span class="light_blue_color">var</span> isEmployed: <span class="light_blue_color">Boolean</span> = <span class="purple_color">true</span>)</code></pre>
+            <p>
+                Μπορούμε να χρησιμοποιήσουμε <a href="https://kotlinlang.org/docs/coding-conventions.html#trailing-commas" 
+                target="_blank"><abbr title="https://kotlinlang.org/docs/coding-conventions.html#trailing-commas">trailing comma</abbr>
+                </a> όταν δηλώνουμε ιδιοτητες κλάσης: 
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(
+    <span class="light_blue_color">val</span> firstName: String,
+    <span class="light_blue_color">val</span> lastName: String,
+    <span class="light_blue_color">var</span> age: <span class="purple_color">Int</span>, <span class="comments">// trailing comma</span>
+<span class="comments">) { /*...*/ }</span></code></pre>
+           <p>
+            Παρόμοια με τις κανονικές ιδιότητες, οι ιδιότητες που δηλώνονται στον πρωτεύοντα κατασκευαστή μπορούν να είναι μεταβλητές 
+            (<span class="red_color">var</span>) ή read-only (<span class="red_color">val</span>).</p>
+            <p>
+                Αν ο κατασκευαστής έχει annotations ή visibility modifiers, απαιτείται το keyword <span class="red_color">constructor</span>
+                και τα modifiers πηγαίνουν πριν από αυτό:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Customer public <span class="green_color">@Inject</span><span class="light_blue_color"> constructor</span>(name: String) { <span class="comments">/*...*/</span> }</code></pre>
+            <p>
+                Εδώ μπορείτε να βρείτε περισσότερα για τα <a href="https://kotlinlang.org/docs/visibility-modifiers.html#constructors" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/visibility-modifiers.html#constructors">visibility modifiers</abbr></a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Δευτευρεύοντες κατασκευαστές (Secondary constructors)
+            </h3>
+            <p>
+                Μία κλάση μπορεί επίσης να δηλώνει <strong>δευτερεύοντες κατασκευαστές (secondary constructors)</strong>, οι οποίοι έχουν 
+                πρόθημα το keyword <span class="red_color">constructor</span>:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> pets: MutableList<span class="purple_color">&lt;</span>Pet<span class="purple_color">></span> = <span class="red_color">mutableListOf</span>())
+
+<span class="light_blue_color">class</span> Pet {
+    <span class="light_blue_color">constructor</span>(owner: Person) {
+        owner.pets.<span class="red_color">add</span>(<span class="light_blue_color">this</span>) <span class="comments">// Προσθέτει αυτό το κατοικίδιο στη λίστα με τα κατοικίδια του ιδιοκτήτη τους</span>
+    }
+}</code></pre>
+            <p>
+                Αν η κλάση έχει πρωτεύοντα κατασκευαστή, κάθε δευτερεύων χρειάζεται να ανατεθεί στον πρωτεύοντα κατασκευαστή, είτε άμεσα 
+                ή έμμεσα μέσω άλλου(ων) δευτερεύοντα(ων) κατασκευαστή(ών). Η ανάθεση σε άλλον κατασκευαστή της ίδιας κλάσης γίνεται με τη 
+                χρήση του keyword <span class="red_color">this</span>:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> name: String) {
+    <span class="light_blue_color">val</span> children: MutableList<span class="purple_color">&lt;</span>Person<span class="purple_color">></span> = <span class="red_color">mutableListOf</span>()
+    <span class="light_blue_color">constructor</span>(name: String, parent: Person) : <span class="light_blue_color">this</span>(name) {
+        <span class="light_blue_color">parent</span>.children.<span class="red_color">add</span>(<span class="light_blue_color">this</span>)
+    }
+}</code></pre>
+            <p>
+                Ο κώδικας στα initializer blocks ουσιαστικά γίνεται τμήμα του πρωτεύοντα κατασκευαστή. Η ανάθεση στον πρωτεύοντα 
+                κατασκευαστή συμβαίνει την στιγμή της προσπέλασης της πρώτης δήλωσης ενός δευτερεύοντα κατασκευαστή, έτσι ο κώδικας σε 
+                όλα τα initializer blocks και τα property initializers εκτελείται πριν από το σώμα του δευτερεύοντα κατασκευαστή.
+            </p>
+            <p>
+                Ακόμα και στην περίπτωση που  κλάση δεν έχει δευτερεύοντα κατασκευαστή, η ανάθεση εξακολουθεί να συμβαίνει έμμεσα, και τα 
+                initializer blocks εξακολουθούν να εκτελούνται:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Constructors {
+    <span class="light_blue_color">init</span> {
+        <span class="red_color">println</span>(<span class="green_color">"Init block"</span>)
+    }
+​
+    <span class="light_blue_color">constructor</span>(i: <span class="purple_color">Int</span>) {
+        <span class="red_color">println</span>(<span class="green_color">"Constructor $i"</span>)
+    }
+}</code></pre>
+            <p>
+                Αν μία μη αφαιρετική κλάση (non-abstract class) δε δηλώνει καθόλου κατασκευαστές (πρωτεύοντα ή δευτερεύοντες), τότε θα 
+                παραχθεί πρωτεύων κατασκευαστής χωρίς ορίσματα. Η ορατότητα του κατασκευαστή αυτού είναι public.
+            </p>
+            <p>
+                Αν δεν επιθυμούμε να έχουμε public κατασκευαστή στην κλάση, δηλώνουμε έναν άδειο πρωτεύοντα κατασκευαστή με non-default 
+                visibility:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> DontCreateMe <span class="light_blue_color">private constructor</span>() { <span class="comments">/*...*/</span> }</code></pre>
+            <p>
+                <strong>Παρατήρηση:</strong> Στη JVM, αν όλες οι παράμετροι του πρωτεύοντα κατασκευαστή έχουν default values, ο compiler 
+                θα παράγει έναν επιπλέον κατασκευαστή χωρίς παραμέτρους που θα χρησιμοποιεί τις default values. Κάτι τέτοιο κάνει 
+                ευκολότερη τη χρήση της Kotlin με βιβλιοθήκες όπως οι Jackson ή JPA που δημιουργούν στιγμιότυπα κλάσης μέσω κατασκευαστών 
+                χωρίς παραμέτρους.
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Customer(<span class="light_blue_color">val</span> customerName: String = <span class="green_color">""</span>)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Δημιουργία στιγμιότυπων κάσης
+            </h3>
+            <p>
+                Για να δημιουργήσουμε στιμιότυπο κλάσης, καλούμε τον κατασκευαστή όπως θα καλούσαμε μία κανονική συνάρτηση:
+            </p>
+            <pre><code><span class="light_blue_color">val</span> invoice = <span class="red_color">Invoice</span>()
+
+<span class="light_blue_color">val</span> customer = Customer(<span class="green_color">"Joe Smith"</span>)</code></pre>
+            <p>
+                <strong>Σημείωση: </strong>Η Kotlin δε διαθέτει το keyword <span class="red_color">new</span>.
+            </p>
+            <p>
+                 Η διαδικασία δημιουργίας στιγμιοτύπων σε εμφωλευμένες (nested), εσωτερικές (inner) και ανώνυμες εσωτερικές κλάσεις 
+                 (anonymous inner classes) περιγράφεται στο λήμμα <a href="https://kotlinlang.org/docs/nested-classes.html" 
+                 target="_blank"><abbr title="https://kotlinlang.org/docs/nested-classes.html">Nested classes</abbr></a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Μέλη κλάσης
+            </h3>
+            <p>
+                Οι κλάσεις μπορούν να περιλαμβάνουν:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://kotlinlang.org/docs/classes.html#constructors" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/classes.html#constructors">Κατασκευαστές (Constructors) και initializer 
+                    blocks</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/functions.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/functions.html">Συναρτήσεις (Functions)</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/properties.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/properties.html">Ιδιότητες (Properties)</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/nested-classes.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/nested-classes.html">Εμφωλευμένες (Nested) και εσωτερικές (inner) κλάσεις</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/object-declarations.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/object-declarations.html">Δηλώσεις αντικειμένων (Object declarations)</abbr></a>
+                </li>                                                                          
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Κληρονομικότητα
+            </h3>
+            <p>
+                Οι κλάσεις μπορούν να παράγονται από άλλες και να σχηματίζουν ιεραρχίες κληρονομικόττας (inheritance hierarchies).
+                <a href="https://kotlinlang.org/docs/inheritance.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/inheritance.html">Δείτε εδώ περισσότερα στοιχεία για την κληρονομικότητα 
+                στην Kotlin</abbr></a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Αφαιρετικές κλάσεις (Abstract classes)
+            </h3> 
+            <p>
+                Μία κλάση μπορεί να έχει δηλωθεί ως <span class="red_color">abstract</span>, μαζί με κάποια ή όλα τα μέλη της. Ένα 
+                abstract μέλος δεν υλοποιείται στην κλάση του. Δε χρειάζεται να σημειώσουμε (annotate) τις abstract κλάσεις ή τις 
+                συναρτήσεις με το keyword <span class="red_color">open</span>.
+            </p>  
+            <pre><code><span class="light_blue_color">abstract class</span> Polygon {
+    <span class="light_blue_color">abstract fun</span><span class="red_color"> draw</span>()
+}
+
+<span class="light_blue_color">class</span> Rectangle : <span class="light_blue_color">Polygon</span>() {
+    <span class="light_blue_color">override fun</span><span class="red_color"> draw</span>() {
+        <span class="comments">// Σχεδιάζει το ορθογώνιο (rectangle)</span>
+    }
+}</code></pre>
+            <p>
+                Μπορούμε να υπερκαλύψουμε (override) ένα non-abstract <span class="red_color">open</span> μέλος με ένα abstract.
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Polygon {
+    <span class="light_blue_color">open fun</span><span class="red_color"> draw</span>() {
+        <span class="comments">// Κάποια default μέθοδος σχεδιασμού πολυγώνων</span>
+    }
+}
+
+<span class="light_blue_color">abstract class</span> WildShape : <span class="light_blue_color">Polygon</span>() {
+    <span class="comments">/* Κλάσεις που κληρονομούν την WildShape χρειάζεται να παρέχουν τη δική τους
+    μέθοδο σχεδίασης αντί να χρησιμοποιήσουν τη default μέθοδο της κλάσης Polygon*/</span>
+    <span class="light_blue_color">abstract override fun</span><span class="red_color"> draw</span>()
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Companion objects
+            </h3>
+            <p>
+                Αν χρειαζόμαστε να γράψουμε μία συνάρτηση που θα μπορεί να κληθεί χωρίς να έχουμε στιγμιότυπο κλάσης αλλά αυτό θα 
+                χρειάζεται να προσπελαστεί στο εσωτερικό μίας κλάσης (όπως μία factory method), μπορούμε να τη γράψουμε ως μέλος ενός
+                <a href="https://kotlinlang.org/docs/object-declarations.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/object-declarations.html">object declaration</abbr></a> μέσα σε αυτήν την κλάση.
+            </p>
+            <p>
+                Ακόμα πιο συγκεκριμένα, αν δηλώσουμε ένα <a href="https://kotlinlang.org/docs/object-declarations.html#companion-objects" 
+                target="_blank"><abbr title="https://kotlinlang.org/docs/object-declarations.html#companion-objects">companion object</abbr>
+                </a> μέσα στην κλάση μας, μπορούμε να προσπελάσουμε τα μέλη της χρησιμοποιώντας μόνο το όνομα της κλάσης ως qualifier.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Πρωτεύων vs. Δευτερεύοντος κατασκευαστή
+            </h3>
+            <p>
+                Η Kotlin υποστηρίζει την προδιαγραφή του <span class="red_color">πρωτεύοντος κατασκευαστή (primary constructor)</span> ως 
+                τμήματος του ίδιου του ορισμού της κλάσης, αποτελούμενου από μία λίστα ορισμάτων που ακολουθούν το όνομα της κλάσης. Αυτή 
+                η λίστα ορισμάτων υποστηρίζει μία εκτεταμμένη σύνταξη στις λίστες ορισμάτων συναρτήσεων της Kotlin, που επιτρέπει τη 
+                δήλωση ιδιοτήτων της κλάσης στον πρωτεύοντα κατασκευαστή, συμπεριλαμβανομένων των ιδιοτήτων της ορατότητας (visibility),  
+                επεκτασιμότητας (extensibility) και μεταβλητότητας (mutability). Επιπρόσθετα, όταν καθορίζεται μία υποκλάση, οι ιδιότητες 
+                στα super-interfaces και τις super-classes μπορούν να υπερκαλυφθούν (overridden) στον πρωτεύοντα κατασκευαστή.
+            </p>
+            <pre><code><span class="comments">// Παράδειγμα κλάσης που χρησιμοποιεί πρωτεύοντα κατασκευαστή</span>
+<span class="comments">// (Απαιτείται μόνον ένας κατασκευαστής για αυτήν την κλάση)</span>
+<span class="light_blue_color">open class</span> BaseUser(<span class="light_blue_color">open var</span> isSubscribed: <span class="purple_color">Boolean</span>)
+<span class="light_blue_color">open class</span> PowerUser(<span class="light_blue_color">protected val</span> nickname: String, <span class="light_blue_color">final override var</span> isSubscribed: <span class="purple_color">Boolean</span> = <span class="purple_color">true</span>):BaseUser(isSubscribed) { }</code></pre>
+            <p>
+                Παρόλα αυτά, σε περιπτώσεις όπου περισσότεροι από ένα κατασκευαστές χρειάζονται σε μία κλάση, μπορεί να χρησιμοποιηθεί 
+                ένας πιο γενικός κατασκευαστής που ονομάζεται <span class="red_color">σύνταξη δευτερεύοντος κατασκευαστή (secondary 
+                constructor syntax)</span> που προσομοιάζει με την σύνταξη κατασκευαστών που χρησιμοποιούνται σε γλώσσες 
+                αντικειμενοστραφούς προγραμματισμού (object-oriented languages) όπως οι C++, C#, και Java.
+            </p>
+            <pre><code><span class="comments">// Παράδειγμα κλάσης που χρησιμοποιεί σύνταξη δευτερεύοντος κατασκευαστή</span>
+<span class="comments">// (Περισσότεροι του ενός κατασκευαστές απαιτούνται για αυτήν τν κλάση)</span>
+<span class="light_blue_color">class</span> Context
+<span class="light_blue_color">class</span> AttributeSet
+<span class="light_blue_color">open class</span> View(ctx:Context) {
+    <span class="light_blue_color">constructor</span>(ctx: Context, attr: AttributeSet): <span class="light_blue_color">this</span>(ctx)
+}
+<span class="light_blue_color">class</span> MyButton : View {
+    <span class="comments">// Κατασκευαστής #1 </span>
+    <span class="light_blue_color">constructor</span>(ctx: Context) : <span class="light_blue_color">super</span>(ctx) { 
+    } 
+    <span class="comments">// Κατασκευαστής #2</span>
+    <span class="light_blue_color">constructor</span>(ctx: Context, attr: AttributeSet) : <span class="light_blue_color">super</span>(ctx, attr) {
+        <span class="comments">// ... </span>
+    }
+}</code></pre>                    
+        </div>
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info" >
+                Κατασκευαστές
+            </p>            
+        </div>        
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

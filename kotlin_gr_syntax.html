@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(4)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(4)"/>           
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>
+                <ul id="intro2">
+                    <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                    <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                    <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                    <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                </ul>
+            </li>
+            <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                &nbsp;&nbsp;&nbsp;Εισαγωγή
+            </a>            
+            <ul id="basics2">
+                <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+            </ul>
+            </li>
+            <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                &nbsp;&nbsp;&nbsp;Σύνταξη
+            </a>
+            <ul id="syntax2">
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                    &nbsp;&nbsp;&nbsp;Σχόλια
+                </a> </li>
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                    &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                </a></li>                        
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                    &nbsp;&nbsp;&nbsp;Μεταβλητές
+                </a>  </li>   
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                    &nbsp;&nbsp;&nbsp;Τελεστές
+                </a> </li> 
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                    &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                </a>   </li>                                                              
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                    &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                </a></li>
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                    &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                </a></li>      
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                    &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                </a></li> 
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                    &nbsp;&nbsp;&nbsp;Εντολή When
+                </a></li> 
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                    &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                </a></li>
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                    &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                </a></li>    
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                    &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                </a></li> 
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                    &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                </a> </li>
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                    &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                </a></li> 
+                <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                </a></li>                            
+            </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                </a>
+                <ul id="others2">
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                        &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                        &nbsp;&nbsp;&nbsp;Ισότητα
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                        &nbsp;&nbsp;&nbsp;Έκφραση this
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                        &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                        &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                        &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης&nbsp;&nbsp;(Destructuring declarations)
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                        &nbsp;&nbsp;&nbsp;Reflection
+                    </a></li>                                                                                                  
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <h1 id="comments" class="titloi">Σχόλια</h1>
+            <p>
+                Τα σχόλια μπορούν να χρησιμοποιηθούν στην Kotlin για να επεξηγήσουν τον κώδικα και να τον κάνουν πιο ευανάγνωστο. 
+                Μπορούν επίσης να χρησιμοποιηθούν - περικλείοντας τμήμα κώδικα ανάμεσά τους - για να αποτρέψουν την εκτέλεσή του όταν δοκιμάζεται 
+                κάποιο εναλλακτικό τμήμα κώδικα.
+            </p>
+            <ul>
+                <li class="comment_li">
+                    Σχόλια μονής γραμμής
+                </li>
+            <p style="margin-top: 2px;">
+                Τα σχόλια μονής γραμμής ξεκινούν με δύο κάθετες γραμμές (forward slashes, 
+                <span style="color:#ff5c8e; font-weight:bold;">//</span>).
+            </p>
+            <p>Οτιδήποτε βρίσκεται μεταξύ των δύο καθέτων (<span class="decoration">//</span>) και του τέλους της γραμμής κώδικα 
+                αγνοείται από την Kotlin (και δε θα εκτελεστεί).
+            </p>
+            <p>
+                Το παράδειγμα χρησιμοποιεί σχόλια μονής γραμμής πριν από τη γραμμή κώδικα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Αυτό είναι ένα σχόλιο</span>
+<span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span></code>
+</pre>
+            <p>
+                Αυτό το παράδειγμα χρησιμοποιεί σχόλια μονής γραμμής στο τέλος της γραμμής κώδικα:
+            </p>
+            </span>
+            <pre style="font-size: 1.1em;"><span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span><span class="comments"><code>// Αυτό είναι ένα σχόλιο</code>
+                </pre>  
+            <li class="comment_li">
+                Σχόλια πολλαπλών γραμμών
+            </li>               
+            <p style="margin-top: 2px;">
+                Τα σχόλια πολλαπλών γραμμών ξεκινούν με <span class="decoration">/*</span> και καταλήγουν με <span class="decoration">*/</span>.
+            </p>
+            <p>
+                Οτιδήποτε βρίσκεται μεταξύ των <span class="decoration">/*</span> και <span class="decoration">*/</span> θα αγνοηθεί από
+                την Kotlin.
+            </p>
+            <p>
+                Το παράδειγμα χρησιμοποιεί ένα σχόλιο πολλαπλών γραμμών (comment block) για επεξήγηση του κώδικα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">/*Ο παρακάτω κώδικας θα εκτυπώσει το μήνυμα 
+Hello World στην οθόνη*/</span>
+<span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span>
+            </code></pre> 
+            <li class="comment_li">
+                Εμφωλευμένα σχόλια
+            </li>
+            <p style="margin-top: 2px;">
+                Τα σχόλια πολλαπλών γραμμών (block comments) στην Kotlin μπορούν να εμφωλευθούν. Το παράδειγμα που ακολουθεί 
+                χρησιμοποιεί ένα εμφωλευμένο σχόλιο:                 
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">/* Το σχόλιο ξεκινά εδώ
+/* περιλαμβάνει αυτό το εμφωλευμένο σχόλιο*⁠/
+και τελειώνει εδώ. */</span>
+<span style="color:red;">println</span><span style="color:#009900;">("Hello World")</span>
+            </code></pre>
+        </ul> 
+        <h1 id="data_types" class="titloi">Τύποι Δεδομένων</h1>
+        <p>
+            Στην Kotlin, ο τύπος δεδομένων μίας μεταβλητής διασαφηνίζεται από την τιμή της:
+        </p>
+        <pre><code style="font-size: 1.1em;"><span class="light_blue_color">val</span> myNum = <span class="purple_color">5</span>             <span class="comments">// Int</span>
+<span class="light_blue_color">val</span> myDoubleNum = <span class="purple_color">5.99</span>    <span class="comments">// Double</span>
+<span class="light_blue_color">val</span> myLetter = <span class="green_color">'D'</span>        <span class="comments">// Char</span>
+<span class="light_blue_color">val</span> myBoolean = <span class="purple_color">true</span>      <span class="comments">// Boolean</span>
+<span class="light_blue_color">val</span> myText = <span class="green_color">"Hello"</span>      <span class="comments">// String</span></code></pre>
+        <p>
+            Παρόλα αυτά, είναι δυνατό να προσδιορίσουμε τον τύπο δεδομένων της μεταβλητής εφόσον το επιθυμούμε:
+        </p>
+        <pre><code style="font-size: 1.1em;"><span class="light_blue_color">val</span> myNum: Int = <span class="purple_color">5</span>             <span class="comments">// Int</span>
+<span class="light_blue_color">val</span> myDoubleNum: Double = <span class="purple_color">5.99</span>    <span class="comments">// Double</span>
+<span class="light_blue_color">val</span> myLetter: Char = <span class="green_color">'D'</span>        <span class="comments">// Char</span>
+<span class="light_blue_color">val</span> myBoolean: Boolean = <span class="purple_color">true</span>      <span class="comments">// Boolean</span>
+<span class="light_blue_color">val</span> myText: String = <span class="green_color">"Hello"</span>      <span class="comments">// String</span>
+                    </code></pre>  
+        <p>
+            Ορισμένες φορές είναι ανάγκη να προσδιορίσουμε τον τύπο δεδομένων μίας μεταβλητής, συνήθως πάντως δε χρειάζεται. 
+            Σε κάθε περίπτωση, καλό είναι να γνωρίζουμε τί αναπαριστούν οι διαφορετικοί τύποι δεδομένων.
+        </p>           
+        <p>
+            Οι τύποι δεδομένων χωρίζονται σε διαφορετικές ομάδες:
+        </p>            
+        <ul>
+            <li>Numbers (Αριθμοί)</li>
+            <li>Characters (Χαρακτήρες)</li>
+            <li>Booleans (Λογικοί)</li>
+            <li>Strings (Συμβολοσειρές)</li>
+            <li>Arrays (Πίνακες)</li>
+        </ul>         
+        <ul>
+            <li class="comment_li">
+                Numbers (Αριθμοί)
+            </li>
+            </ul>
+            <p>
+                Οι τύποι δεδομένων αριθμών χωρίζονται με τη σσειρά τους σε δύο κατηγορίες:                
+            </p>
+            <p>
+                <strong>Ακέραιοι (Integer)</strong> που αποθηκεύουν ακέραιους αριθμούς, θετικούς ή αρνητικούς (όπως για παράδειγμα
+                123 ή -456), χωρίς δεκαδικά ψηφία. Οι ισχύοντες τύποι είναι: 
+                <span class="red_color">Byte</span>, 
+                <span class="red_color">Short</span>, 
+                <span class="red_color">Int</span> και
+                <span class="red_color">Long</span>.
+            </p>
+            <p>
+                <strong>Κινητής υποδιαστολής (Floating point)</strong> που αναπαριστούν δεκαδικούς αριθμούς και περιέχουν ένα ή
+                περισσότερα δεκαδικά ψηφία. Υπάρχουν δύο τύποι δεδομένων κινητής υποδιαστολής:
+                <span class="red_color">Float</span> και 
+                <span class="red_color">Double</span>.
+            </p>
+            <p style="color:#5c36ab;">
+                <i>
+                    Αν δεν έχει διευκρινιστεί ο τύπος δεδομένων για μία αριθμητική μεταβλητή, κατά κύριο λόγο χρησιμοποιείται ο τύπος                    
+                    <span class="red_color">Int</span> για τους ακέραιους και 
+                    <span class="red_color">Double</span> για τους δεκαδικούς αριθμούς.
+                </i>
+            </p>
+            <ul>
+                <li class="comment_li">
+                    Ακέραιοι (Integer)
+                </li>
+                </ul>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Byte
+                </h3>
+                <p>
+                    Ο τύπος δεδομένων <span class="red_color">Byte</span> μπορεί να αποθηκεύσει ακέραιους αριθμούς από -128 έως 127 και
+                    μπορεί να χρησιμοποιηθεί αντί του <span class="red_color">Int</span> ή άλλων τύπων δεδομένων ακεραίων αριθμών 
+                    προκειμένου να εξοικονομηθεί μνήμη, εφόσον πάντως είμαστε σίγουροι πως η τιμή της μεταβλητής θα είναι μεταξύ 
+                    -128 και 127:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Byte = <span class="purple_color">100</span>
+<span class="red_color">println</span>(myNum)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Short
+                </h3>
+                <p>
+                    Ο τύπος δεδομένων <span class="red_color">Short</span> μπορεί να αποθηκεύσει ακέραιους αριθμούς από -32768 έως 32767:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Short = <span class="purple_color">5000</span>
+<span class="red_color">println</span>(myNum)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Int
+                </h3>
+                <p>
+                    Ο τύπος δεδομένων <span class="red_color">Int</span> μπορεί να αποθηκεύσει ακέραιους αριθμούς από -2147483648 
+                    μέχρι 2147483647:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Int = <span class="purple_color">100000</span>
+<span class="red_color">println</span>(myNum)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Long
+                </h3>
+                <p>
+                    Ο τύπος δεδομένων <span class="red_color">Long</span> μπορεί να αποθηκεύσει πολύ μεγάλους ακέραιους αριθμούς, από 
+                    -9223372036854775807 μέχρι 9223372036854775807, και χρησιμοποιείται όπου ο τύπος δεδμένων 
+                    <span class="red_color">Int</span> δεν είναι αρκετά μεγάλος για να αποθηκευτεί σε αυτόν η τιμή. Προαιρετικά,
+                    μπορούμε στο τέλος της αριθμητικής τιμής να προσθέσουμε το γράμμα "L":
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum: Long = <span class="purple_color">15000000000L</span>
+<span class="red_color">println</span>(myNum)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Διαφορές μεταξύ Int and Long
+                </h3>
+                <p>
+                    Ένας ακέραιος αριθμός είναι τύπου <span class="red_color">Int</span> εφόσον η τιμή του είναι μέχρι 2147483647.
+                    Αν είναι μεγαλύτερος, τότε ορίζεται ως <span class="red_color">Long</span>:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> myNum1 = <span class="purple_color">2147483647</span><span class="comments"> //Int</span>
+<span class="light_blue_color">val</span> myNum2 = <span class="purple_color">2147483648</span> <span class="comments"> //Long</span>
+                </code></pre> 
+                <h1 id="variables" class="titloi">Μεταβλητές</h1>  
+                <p>
+                    Οι μεταβλητές είναι φορείς αποθήκευσης τιμών δεδομένων.                    
+                </p>
+                <p>
+                    Για να δημιουργήσουμε μία μεταβλητή, χρησιμοποιούμε τις λέξεις <span class="red_color">var</span> ή 
+                    <span class="red_color"> val</span>, και της αναθέτουμε μία τιμή μέσω του τελεστή ανάθεσης (<span 
+                    class="red_color">=</span>):
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> <i>variableName = value</i>
+<span class="light_blue_color">val</span> <i>variableName = value</i>
+                </code></pre>
+                <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0; font-weight: bold;">
+                   Για παράδειγμα:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name = <span class="green_color">"John"</span>
+<span class="light_blue_color">val</span> birthyear = <span class="purple_color">1975</span>
+<span class="red_color">println</span>(name)          <span class="comments">// Τυπώνει την τιμή της μεταβλητής name</span>
+<span class="red_color">println</span>(birthyear)     <span class="comments">// Τυπώνει την τιμή της μεταβλητής birthyear</span></code></pre>
+                <p>
+                    Μπορούμε να δηλώσουμε μεταβλητές και στην αρχή του κώδικα:                    
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> PI = <span class="purple_color">3.14</span>
+<span class="light_blue_color">var</span> x = <span class="purple_color">0</span>
+    
+<span class="red_color">fun</span><span class="purple_color"> incrementX()</span> { 
+    x += 1 
+}            </code></pre>
+                <p style="margin-top: 0; margin-bottom: 35px;">
+                    Η διαφορά μεταξύ <span class="red_color">var</span> και <span class="red_color">val</span> έγκειται στο γεγονός πως 
+                    οι μεταβλητές που δηλώνονται με <span class="red_color">var</span> keyword <b>μπορούν να μεταβληθούν/τροποποιηθούν,
+                    </b> ενώ οι μεταβλητές που δηλώνονται με <span class="red_color">val</span> variables <b>δεν μπορούν</b>.
+                </p>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Τύποι Μεταβλητών
+                </h3>
+                <p>
+                    Σε αντίθεση με άλλες γλώσσες προγραμματισμού, οι μεταβλητές στην Kotlin δε χρειάζονται να δηλωθούν με συγκεκριμένο 
+                    τύπο δεδομένων (όπως για παράδειγμα "String" αν πρόκειται για κείμενο ή "Int" για αριθμούς).
+                </p>
+                <p>
+                    Για να δημιουργήσουμε μία μεταβλητή στην Kotlin που θα αποθηκεύει κείμενο και μία άλλη που θα αποθηκεύει έναν 
+                    αριθμό, σς εξετάσουμε το παράδειγμα που ακολουθεί:   
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name = <span class="green_color">"John"</span><span class="comments"> //String (text)</span>
+<span class="light_blue_color">val</span> birthyear = <span class="purple_color">1975</span><span class="comments"> //Int (number)</span>
+                    
+<span class="red_color">println</span>(name)          <span class="comments"> //Τυπώνει την τιμή της μεταβλητής name</span>
+<span class="red_color">println</span>(birthyear)     <span class="comments"> //Τυπώνει την τιμή της μεταβλητής birthyear</span>                
+                </code></pre>            
+                <p>
+                    Η Kotlin είναι μία αρκετά έξυπνη γλώσσα, ικανή να κατανοήσει ότι η τιμή <b>"John"</b> θα αποθηκευτεί σε μία 
+                    μεταβλητή τύπου <span class="red_color">String</span> (text), και πως η τιμή <b>1975</b> θα αποθηκευτεί σε μία
+                    <span class="red_color">Int</span> (αριθμητική) μεταβλητή.
+                </p>
+                <p>
+                    Παρόλα αυτά, είναι δυνατό να προσδιορίσουμε τον τύπο μίας μεταβλητής αν το επιθυμούμε:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name: String = <span class="green_color">"John"</span><span class="comments"> //String</span>
+<span class="light_blue_color">val</span> birthyear: Int = <span class="purple_color">1975</span><span class="comments"> //Int</span>
+                                    
+<span class="red_color">println</span>(name)          
+<span class="red_color">println</span>(birthyear)                 
+                </code></pre>
+                <p>
+                    Μπορούμε επίσης να δηλώσουμε μία μεταβλητή χωρίς αρχικοποίηση (ανάθεση τιμής) και να της αναθέσουμε μία τιμή 
+                    αργότερα. <b>Εντούτοις</b>, αυτό είναι εφικτό μόνον αν προσδιορίσουμε εξαρχής τον τύπο της μεταβλητής:
+                </p>
+                    <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #e0fbe0;"><code><span class="comments">//Τρέχει σωστά ο κώδικας:</span>
+<span class="light_blue_color">var</span> name: String
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)
+                    </code></pre>
+                    <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #ffdddd;"><code><span class="comments">//Θα παράξει σφάλμα ο κώδικας:</span>
+<span class="light_blue_color">var</span> name
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)
+                    </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                    Σημειώσεις για το πρόθεμα val
+                </h3>                
+                <p>
+                    Όταν δημιουργούμε μία μεταβλητή με το πρόθεμα (keyword) <span class="red_color">val</span>, η τιμή της <b>δεν μπορεί</b> 
+                    να μεταβληθεί/τροποποιηθεί. Οι τοπικές μεταβλητές (read-only) ορίζονται με τη χρήση του keyword 
+                    <span class="red_color">val</span> και μπορεί να τους ανατεθεί τιμή μόνο μία φορά.
+                </p>
+                 <p>
+                    Στο παράδειγμα που ακολουθεί ο κώδικας θα παράξει σφάλμα:
+                 </p>
+                 <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #ffdddd;"><code>
+<span class="light_blue_color">val</span> name = <span class="green_color">"John"</span>
+name = <span class="green_color">"Robert"</span>                
+<span class="red_color">println</span>(name)
+                </code></pre>           
+                <p>
+                    Όταν χρησιμοποιούμε <span class="red_color">var</span>, μπορούμε να μετβάλλουμε την τιμή της μεταβλητής οποτεδήποτε
+                    θελήσουμε:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> name = <span class="green_color">"John"</span>
+name = <span class="green_color">"Robert"</span>                
+<span class="red_color">println</span>(name)
+                </code></pre>  
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Πότε χρησιμοποιούμε val;
+                </h3>             
+                <p>
+                    Το πρόθεμα (keyword) <span class="red_color">val</span> είναι χρήσιμο όταν θέλουμε μία μεταβλητή να αποθηκεύει 
+                    πάντα την ίδια τιμή, όπως για παράδειγμα το PI (3.14159...):   
+                </p>                  
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> pi = <span class="purple_color">3.14159265359</span>               
+<span class="red_color">println</span>(pi)
+                </code></pre>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Εμφάνιση μεταβλητών
+                </h3>             
+                <p>
+                    Όπως είδαμε ήδη στα παραδείγματα που προηγήθηκαν, η μέθοδος <span class="red_color">println()</span> χρησιμοποιείται 
+                    συχνά για την εμφάνιση των μεταβλητών.                    
+                </p>  
+                <p>
+                    Για συνδυασμό κειμένου και μίας μεταβλητής, χρησιμοποιούμε το χαρακτήρα <span class="red_color">+</span>:
+                </p>                
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> name = <span class="green_color">"John"</span>               
+<span class="red_color">println</span>(<span class="green_color">"Hello "</span> <span class="purple_color">+</span> name)
+                </code></pre>            
+                <p>
+                    Μπορούμε επίσης να χρησιμοποιήσουμε το χαρακτήρα <span class="red_color">+</span> προκειμένου να προσθέσουμε (συνενώσουμε) 
+                    δύο μεταβλητές:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">val</span> lastName = <span class="green_color">"Doe"</span> 
+<span class="light_blue_color">val</span> fullName = firstName <span class="purple_color">+</span> lastName               
+<span class="red_color">println</span>(fullName)
+                </code></pre>                             
+                <p>
+                    Για αριθμητικές τιμές, ο χαρακτήρας <span class="red_color">+</span> λειτουργεί ως μαθηματικός τελεστής πρόσθεσης:
+                </p>           
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> x = <span class="purple_color">5</span>
+<span class="light_blue_color">val</span> y = <span class="purple_color">6</span>              
+<span class="red_color">println</span>(x<span class="purple_color">+</span>y)<span class="comments"> //Τυπώνει την τιμή του αθροίσματος x + y </span>
+                </code></pre>            
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                    Ονόματα Μεταβλητών
+                </h3>             
+                <p>
+                    Μία μεταβλητή μπορεί να έχει ένα σύντομο όνομα (λχ x ή y) ή κάποιο περισσότερο περιγραφικό (όπως age, sum, 
+                    totalVolume).
+                </p>
+                <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; font-weight: bold;">
+                    Ο γενικοί κανόνες για τις μεταβλητές στην Kotlin είναι οι εξής:
+                </p>
+                <ul>
+                    <li>Τα ονόματα μπορούν να περιέχουν γράμματα, ψηφία, κάτω παύλες (underscores), και δολλάρια</li>
+                    <li>Τα ονόματα πρέπει να ξεκινούν με κάποιο γράμμα</li>
+                    <li>Τα ονόματα μπορούν επίσης να ξεκινούν και με δολλάριο ($) ή με κάτω παύλα (_) 
+                    <li>Τα ονόματα είναι case sensitive (δηλαδή οι "myVar" και "myvar" είναι εντελώς διαφορετικές μεταβλητές)</li>
+                    <li>Τα ονόματα πρέπει να ξεκινούν με πεζό γράμμα και δεν μπορούν να ξεκινούν με κενό (whitespace)</li>
+                    <li>Δεσμευμένες λέξεις (όπως τα keywords, για παράδειγμα <span class="red_color">var</span> ή
+                        <span class="red_color">String</span>) δεν μπορούν να χρησιμοποιηθούν ως ονόματα μεταβλητών</li>
+                </ul>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; margin-bottom: 0;">
+                    camelCase Μεταβλητές
+                </h3>             
+                <p>
+                    Μπορεί να παρατηρήσατε στα πιο πάνω παραδείγματα πως χρησιμοποιήσαμε για τις μεταβλητές τα ονόματα <b>firstName</b> 
+                    και <b>lastName</b>, αντί για firstname και lastname. Αυτός ο τρόπος γραφής που χρησιμοποιήσαμε είναι γνωστός ως 
+                    "camelCase", και θεωρείται καλή προγραμματιστική πρακτική, αφού τις κάνει πιο ευανάγνωστες στην 
+                    περίπτωση που εμπεριέχουν διαφορετικές λέξεις, πχ "myFavoriteFood", "rateActionMovies" κλπ.            
+                </p>  
+                <h1 id="operators" class="titloi">Τελεστές</h1>
+                <p>
+                    Οι τελεστές χρησιμοποιούνται για την εκτέλεση πράξεων σε μεταβλητές και τιμές.
+                </p>
+                <p>
+                    Η τιμή καλείται τελεστέος, ενώ η εκτέλεση της πράξης (μεταξύ δύο τελεστέων) καθορίζεται από έναν τελεστή:
+                </p>
+                <center><table style="border: 2px solid #5c36ab; width:60%; text-align: center;">
+                    <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                        <td style="padding:10px 0;">Τελεστέος</td><td>Τελεστής</td><td>Τελεστέος</td></tr>
+                    <tr><td>100</td><td>+</td><td>50</td></tr>
+                </table></center>
+                <p>
+                    Στο παράδειγμα που ακολουθεί, οι αριθμοί 100 και 50 είναι <b>τελεστέοι</b>, και το σύμβολο + είναι ένας 
+                    <b>τελεστής</b>:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> x =<span class="purple_color">100</span> + <span class="purple_color">50</span>                 
+                </code></pre>            
+                <p>
+                    Μολονότι ο τελεστής <span class="red_color">+</span> χρησιμοποιείται συχνότερα για να προσθέσει δύο τιμές, όπως στο 
+                    παράδειγμα που προηγήθηκε, μπορεί επίσης να χρησιμοποιηθεί για να προσθέσει μεταξύ τους μία τιμή και μία 
+                    μεταβλητή, ή δύο μεταβλητές:
+               </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> sum1 = <span class="purple_color">100</span> + <span class="purple_color">50</span>       <span class="comments"></span>// 150 (100 + 50)
+<span class="light_blue_color">var</span> sum2 = sum1 + <span class="purple_color">250</span>     <span class="comments"></span>// 400 (150 + 250)
+<span class="light_blue_color">var</span> sum3 = sum2 + sum2    <span class="comments"></span>// 800 (400 + 400)</code></pre>
+                <p>
+                    Η Kotlin διαχωρίζει τους τελεστές της στις ακόλουθες κατηγορίες:
+                </p>
+                <ul>
+                    <li>Αριθμητικοί τελεστές</li>
+                    <li>Τελεστές ανάθεσης</li>
+                    <li>Τελεστές σύγκρισης</li>
+                    <li>Λογικοί τελεστές</li>
+                </ul>            
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                    Αιθμητικοί Τελεστές
+                </h3>
+                <p style="line-height: 0;">
+                    Οι αριθμητικοί τελεστές χρησιμοποιούνται για την εκτέλεση μαθηματικών πράξεων.
+                </p><br>
+                <center><table style="border: 2px solid #5c36ab; width:85%; text-align: center;">
+                    <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                        <td style="padding: 15px 0;">Τελεστής</td><td>Όνομα</td><td>Περιγραφή</td><td>Παράδειγμα</td></tr>
+                    <tr><td>+</td><td>Πρόσθεση</td><td>Προσθέτει δύο τιμές</td><td>x + y</td></tr>
+                    <tr><td>-</td><td>Αφαίρεση</td><td>Αφαιρεί από μία τιμή μία άλλη τιμή</td><td>x - y</td></tr>
+                    <tr><td>*</td><td>Πολλαπλασιασμός</td><td>Πολλαπλασιάζει δύο τιμές μεταξύ τους</td><td>x * y</td></tr>
+                    <tr><td>/</td><td>Διαίρεση</td><td>Διαιρεί μία τιμή με μία άλλη</td><td>x / y</td></tr>
+                    <tr><td>%</td><td>Υπόλοιπο (Modulus)</td><td>Επιστρέφει το υπόλοιπο μίας διαίρεσης</td><td>x % y</td></tr>
+                    <tr><td>++</td><td>Αύξηση (μοναδιαία)</td><td>Αυξάνει την τιμή κατά 1</td><td>++x, x++</td></tr>
+                    <tr><td>--</td><td>Μείωση (μοναδιαία)</td><td>Μειώνει την τιμή κατά 1</td><td>--x, x--</td></tr>
+                </table></center>            
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                    Τελεστές Ανάθεσης
+                </h3>
+                <p>
+                    Οι τελεστές ανάθεσης χρησιμοποιούνται για την ανάθεση τιμών σε μεταβλητές.
+                </p>
+                <p>
+                    Στο παράδειγμα που ακολουθεί χρησιμοποιούμε τον τελεστή <b>ανάθεσης</b> (<span class="red_color">=</span>) 
+                    για να αναθέσουμε την τιμή <b>10</b> σε μία μεταβλητή με όνομα <b>x</b>:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> x = <span class="purple_color">10</span>                
+                </code></pre>
+                <p>
+                    Ο τελεστής <b>ανάθεσης με πρόσθεση</b>(<span class="red_color">+=</span>) προσθέτει κάποια τιμή σε μία μεταβλητή:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> x = <span class="purple_color">10</span> 
+x += <span class="purple_color">5</span>                       
+                </code></pre>            
+                <p>
+                    Ακολουθεί πίνακας με όλους τους τελεστές ανάθεσης:
+                </p>
+                <center><table style="border: 2px solid #5c36ab; width:60%; text-align: center;">
+                    <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                        <td style="padding: 15px 0;">Τελεστής</td><td>Παράδειγμα</td><td>Ίδιο με</td></tr>
+                    <tr><td>=</td><td>x = 5</td><td>x = 5</td></tr>
+                    <tr><td>+=</td><td>x += 3</td><td>x = x + 3</td></tr>
+                    <tr><td>-=</td><td>x -= 3</td><td>x = x - 3</td></tr>
+                    <tr><td>*=</td><td>x *= 3</td><td>x = x * 3</td></tr>
+                    <tr><td>/=</td><td>x /= 3</td><td>x = x / 3</td></tr>
+                    <tr><td>%=</td><td>x %= 3</td><td>x = x % 3</td></tr>
+                </table></center> 
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                    Τελεστές σύγκρισης
+                </h3>        
+                <p>
+                    Οι τελεστές σύγκρισης χρησιμοποιούνται για να συγκρίνουν δύο τιμές, και επιστρέφουν μία τιμή 
+                    <span class="red_color">Boolean</span>: <span class="red_color">true</span> ή <span class="red_color">false</span>. 
+                </p>
+                <center><table style="border: 2px solid #5c36ab; width:60%; text-align: center;">
+                    <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                        <td style="padding: 15px 0;">Τελεστής</td><td>Όνομα</td><td>Παράδειγμα</td></tr>
+                    <tr><td>==</td><td>Ίσο με</td><td>x == y</td></tr>
+                    <tr><td>!=</td><td>Διάφορο του</td><td>x != y</td></tr>
+                    <tr><td>></td><td>Μεγαλύτερο από</td><td>x > y</td></tr>
+                    <tr><td><</td><td>Μικρότερο από</td><td>x < y</td></tr>
+                    <tr><td>>=</td><td>Μεγαλύτερο ή ίσο από</td><td>x >= y</td></tr>
+                    <tr><td><=</td><td>Μικρότερο ή ίσο από</td><td>x <= y</td></tr>
+                </table></center>                     
+                
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;" id="boolean">
+                    Λογικοί τελεστές (Boolean)
+                </h3>        
+                <p>
+                    Οι λογικοί τελεστές χρησιμοποιούνται για να καθορίσουν μία λογική σχέση μεταξύ μεταβλητών ή τιμών
+                </p>
+                <center><table style="border: 2px solid #5c36ab; width:80%; text-align: center;">
+                    <tr style="font-weight: bold; background-color: #fa769e; color:#5c36ab; text-shadow: 2px 2px 3px #ffffff;">
+                        <td style="padding: 15px 0; width:12%;">Τελεστής</td>
+                        <td style="padding: 15px 0; width:18%;">Όνομα</td>
+                        <td style="padding: 15px 0; width:50%;">Περιγραφή</td>
+                        <td style="padding: 15px 0; width:20%;">Παράδειγμα</td></tr>
+                    <tr><td>&&</td><td>Λογικό and</td><td>Επιστρέφει true αν και οι δύο δηλώσεις είναι αληθείς</td>
+                        <td>x < 5 &&  x < 10</td></tr>
+                    <tr><td>||</td><td>Λογικό or</td><td>Επιστρέφει true εάν μία τουλάχιστον από τις δηλώσεις είναι αληθής</td>
+                        <td>x < 5 || x < 4</td></tr>
+                    <tr><td>!</td><td>Λογικό not</td><td>Αντιστρέφει το αποτέλεσμα, επιστρέφει false αν το αποτέλεσμα είναι αληθές και 
+                        αντίστροφα</td><td></td></tr>
+                </table></center>                 
+                <p>
+                    Πολύ συχνά στον προγραμματισμό χρειαζόμαστε έναν τύπο δεδομένων που να μπορεί να επιστρέφει μόνο δύο τιμές, όπως:
+                </p>
+                <ul>
+                    <li>YES / NO</li>
+                    <li>ON / OFF</li>
+                    <li>TRUE / FALSE</li>
+                </ul>
+                <p>
+                    Για το λόγο αυτό, η Kotlin έχει έναν τύπο δεδομένων <span class="red_color">Boolean</span>.
+                </p>
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                    Τιμές Boolean 
+                </h3>
+                <p>
+                    Ένας τύπος δεδομένων boolean μπορεί να δηλωθεί με το keyword <span class="red_color">Boolean</span> και μπορεί 
+                    μόνο να πάρει τις τιμές <span class="red_color">true</span> ή <span class="red_color">false</span>:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var</span> isKotlinFun: Boolean = <span class="purple_color">true</span>         
+<span class="light_blue_color">var</span> isFishTasty: Boolean = <span class="purple_color">false</span>
+<span class="red_color">println</span>(isKotlinFun)   <span class="comments">// Θα εκτυπώσει true</span>
+<span class="red_color">println</span>(isFishTasty)   <span class="comments">// Θα εκτυπώσει false</span></code></pre> 
+                <p>
+                    Όπως ήδη γνωρίζουμε κι από άλλους τύπους δεδομένων, το παραπάνω παράδειγμα μπορεί επίσης να γραφτεί χωρίς να 
+                    προσδιορίσουμε τον τύπο της μεταβλητής, καθώς η Kotlin είναι γλώσσα αρκετά έξυπνη για να αντιληφθεί πως οι 
+                    συγκεκριμένες μεταβλητές είναι τύπου <span class="red_color">Boolean</span>:
+              </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> isKotlinFun = <span class="purple_color">true</span>         
+<span class="light_blue_color">val</span> isFishTasty = <span class="purple_color">false</span>
+<span class="red_color">println</span>(isKotlinFun)   <span class="comments">// Θα εκτυπώσει true</span>
+<span class="red_color">println</span>(isFishTasty)   <span class="comments">// Θα εκτυπώσει false</span>                        
+                </code></pre>            
+                <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;" id="boolean">
+                    Έκφραση Boolean
+                </h3>              
+                <p>
+                    Μία λογική έκφραση επιστρέφει τιμή Boolean: <span class="red_color">true</span> ή <span class="red_color">
+                        false</span>.
+                </p>
+                <p>
+                    Μπορούμε να χρησιμοποιήσουμε έναν τελεστή σύγκρισης, όπως το <b>μεγαλύτερο από</b> (<span class="red_color">></span>)
+                        προκειμένου να διαπιστώσουμε αν μία έκφραση (ή μία μεταβλητή) είναι αληθής:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> x = <span class="purple_color">10</span>         
+<span class="light_blue_color">val</span> y = <span class="purple_color">9</span>
+<span class="red_color">println</span>(x > y)   <span class="comments">// Επιστρέφει true, διότι το 10 είναι μεγαλύτερο από το 9                        
+                </code></pre> 
+                <p>
+                    Ή ακόμη ευκολότερα:
+                <pre style="font-size: 1.1em;"><span class="red_color">println</span>(10 > 9)   <span class="comments">// Returns true, because 10 is greater than 9                        
+                </code></pre>            
+                <p>
+                    Στα παραδείγματα που ακολουθούν, χρησιμοποιούμε τον τελεστή σύγκρισης <b>ισότητας</b> (<span class="red_color">==</span>) 
+                    για να αξιολογήσουμε μία έκφραση:
+                </p>
+                <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> x = <span class="purple_color">10</span>         
+<span class="red_color">println</span>(x == 10)   <span class="comments">// Επιστρέφει true, διότι η τιμή της μεταβλητής x είναι ίση με 10                    
+                </code></pre>                      
+                <pre style="font-size: 1.1em;"><span class="red_color">println</span>(10 == 15)   <span class="comments">// Επιστρέφει false, διότι το 10 δεν είναι ίσο με το 15</code></pre>             
+                <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">Η τιμή Boolean μίας έκφρασης είναι η βάση για όλες τις 
+                    συγκρίσεις και τις συνθήκες στη γλώσσα Kotlin.
+                </p>
+            <h1 id="output" class="titloi">Εκτυπώσεις</h1>
+            <p>
+                Η συνάρτηση <span class="red_color">println()</span> χρησιμοποιείται για να εξάγουμε δεδομένα/εκτυπώσουμε κείμενο:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"Hello World"</span>)
+}</code></pre>
+            <p>
+                Μπορούμε επίσης να προσθέσουμε όσες συναρτήσεις <span class="red_color">println()</span> θέλουμε. Παρατηρήστε πως κάθε 
+                φορά που χρησιμοποιείται η συνάρτηση, προσθέτει στο τέλος μία νέα γραμμή:              
+            </p>          
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"Hello World"</span>)
+    <span class="red_color">println</span>(<span class="green_color">"I am learning Kotlin."</span>)
+    <span class="red_color">println</span>(<span class="green_color">"It is awesome!"</span>)                
+}</code></pre>
+            <p>
+                Μπορείτε επίσης να εκτυπώσετε αριθμούς και να εκτελέσετε μαθηματικούς υπολογισμούς:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="purple_color">3 + 3</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;" id="boolean">
+                Η συνάρτηση print()
+            </h3>
+            <p>
+                Υπάρχει επίσης και η συνάρτηση <span class="red_color">print()</span>, η οποία είναι παρόμοια με την 
+                <span class="red_color">println()</span>. Η ειδοποιός διαφορά τους έγκειται στο γεγνός πως δεν εισάγει νέα γραμμή στο
+                τέλος της εκτύπωσης:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">print</span>(<span class="green_color">"Hello World! "</span>)
+    <span class="red_color">print</span>(<span class="green_color">"I am learning Kotlin. "</span>)
+    <span class="red_color">print</span>(<span class="green_color">""It is awesome!""</span>)                                
+}</code></pre>
+            <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Παρατηρήστε πως έχουμε προσθέσει ένα κενό χαρακτήρα ώστε να δημιουργηθεί κενό μεταξύ των προτάσεων.
+            </p>
+            <h1 id="strings" class="titloi">Συμβολοσειρές</h1>
+            <p>
+                Οι συμβολοσειρές (Strings) χρησιμοποιούνται για να αποθηκεύουν κείμενο.
+            </p>
+            <p>
+                Ένα string περιέχει ένα σύνολο χαρακτήρων που περικλείονται από διπλά εισαγωγικά (double quotes):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>greeting = <span class="green_color">"Hello"</span></code></pre>
+            <p>
+                Σε αντίθεση με τη Java, δε χρειάζεται να ορίσουμε πως μία μεταβλητή θα είναι τύπου <span class="red_color">String</span>. 
+                Η Kotlin είναι αρκετά έξυπνη γλώσσα για να καταλάβει πως η μεταβλητή στο παραπάνω παράδειγμα λόγου χάρη είναι ένα 
+                <span class="red_color">String</span> εξαιτίας των διπλών εισαγωγικών (double quotes).
+            </p>
+            <p>
+                Παρόλα αυτά, όπως ακριβώς και με τους υπόλοιπους τύπους δεδομένων, μπορούμε να ορίσουμε τον τύπο αν το επιθυμούμε:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>greeting: String = <span class="green_color">"Hello"</span></code></pre>
+            <p>
+                <strong>Παρατήρηση:</strong> Αν θέλουμε να δημιουργήσουμε ένα <span class="red_color">String</span> χωρίς ανάθεση τιμής 
+                (και να το κάνουμε αυτό αργότερα), θα πρέπει να ορίσουμε τον τύπο κατά τη δήλωση της μεταβλητής:
+            </p>
+            <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #e0fbe0;"><code><span class="comments">//Ο συγκεκριμένος κώδικας δουλεύει σωστά:</span>
+<span class="light_blue_color">var</span> name: String
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)</code></pre>
+            <pre style="width:49.3%; padding-left:10px; font-size: 1.1em; background-color: #ffdddd;"><code><span class="comments">//Ο συγκεκριμένος κώδικας θα παράξει σφάλμα:</span>
+<span class="light_blue_color">var</span> name
+name = <span class="green_color">"John"</span>
+<span class="red_color">println</span>(name)</code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Πρόσβαση σε String
+            </h3>                
+            <p>
+                Για να έχουμε πρόσβαση στους χαρακτήρες (στοιχεία) ενός string, θα πρέπει πρώτα να κάνουμε αναφορά στον <strong>
+                δείκτη τους (index number)</strong> μέσα σε αγκύλες.
+            </p>
+            <p>
+                Οι δείκτες στα Strings ξεκινούν από το 0. Στο παράδειγμα που ακολουθεί, θα αποκτήσουμε πρόσβαση στο πρώτο και στο τρίτο
+                στοιχείο <span class="red_color">txt</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"Hello World"</span>
+<span class="red_color">println</span>(txt[<span class="purple_color">0</span>])<span class="comments"> // πρώτο στοιχείο (H)</span>
+<span class="red_color">println</span>(txt[<span class="purple_color">2</span>])<span class="comments"> // τρίτο στοιχείο (l)</span></code></pre>
+            <p>
+                [0] είναι το πρώτο στοιχείο, [1] είναι το δεύτερο, [2] είναι το τρίτο κοκ.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Μήκος συμβολοσειράς
+            </h3>
+            <p>
+                Στην Kotlin ένα String είναι ένα αντικείμενο που περιέχει ιδιότητες και συναρτήσεις οι οποίες μπορούν να επιτελέσουν 
+                συγκεκριμένες λειτουργίες πάνω του, γράφοντας μία τελεία (<span class="red_color">.</span>) μετά από την μεταβλητή 
+                string. Για παράδειγμα, το μήκος μίας συμβολοσειράς μπορεί να βρεθεί με την ιδιότητα
+                <span class="red_color">length</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>
+<span class="red_color">println</span>(<span class="green_color">"The length of the txt string is: "</span><span class="purple_color"> + </span>txt.length)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Συναρτήσεις (String Functions)
+            </h3> 
+            <p>
+                Υπάρχουν πολλές διαθέσιμες συναρτήσεις για strings, όπως πχ οι συναρτήσεις <span class="red_color">toUpperCase()</span> 
+                και <span class="red_color">toLowerCase()</span>:
+            </p>
+            <p>
+                <b>Τα Strings είναι αμετάβλητα</b>. Από την στιγμή που αρχικοποιούμε ένα string, δεν μπορούμε να αλλάξουμε την τιμή του 
+                ή να του αναθέσουμε μία νέα τιμή. Όλες οι λειτουργίες που μετασχηματίζουν ένα string επιστρέφουν το αποτέλεσμά τους σε 
+                ένα νέο αντικείμενο τύπου <span class="red_color">String</span>, αφήνοντας το αρχικό string αμετάβλητο:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"Hello World"</span>
+<span class="red_color">println</span>(txt.<span class="red_color">toUpperCase</span>())<span class="comments"> // Δημιουργεί και τυπώνει ένα νέο αντικείμενο String, στην έξοδο δίνει "HELLO WORLD"</span>
+<span class="red_color">println</span>(txt.<span class="red_color">toLowerCase</span>())<span class="comments"> // Δημιουργεί και τυπώνει ένα νέο αντικείμενο String, στην έξοδο δίνει "hello world"</span>
+<span class="red_color">println</span>(txt)<span class="comments"> // Το αρχικό string παραμένει το ίδιο</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Σύγκριση (Comparing Strings)
+            </h3>                 
+            <p>
+                Η συνάρτηση <span class="red_color">compareTo(string)</span> συγκρίνει δύο strings και επιστρέφει 0 αν είναι ίσα μεταξύ
+                τους:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt1 = <span class="green_color">"Hello World"</span>
+<span class="light_blue_color">var </span>txt2 = <span class="green_color">"Hello World"</span>
+<span class="red_color">println</span>(txt1.<span class="red_color">compareTo</span>(txt2))<span class="comments"> // Εκτυπώνει 0 (είναι ίσα)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Εύρεση συμβολοσειράς μέσα σε συμβολοσειρά
+            </h3> 
+            <p>
+                Η συνάρτηση <span class="red_color">indexOf()</span> επιστρέφει το <b>δείκτη</b> (θέση) του πρώτου χαρακτήρα και της 
+                πρώτης εμφάνισης τους συγκεκριμένου κειμένου που αναζητούμε μέσα σε ένα string (συμπεριλαμβάνονται τα κενά διαστήματα):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt = <span class="green_color">"Please locate where 'locate' occurs!"</span>
+<span class="red_color">println</span>(txt.<span class="red_color">indexOf</span>(<span class="green_color">"locate"</span>))<span class="comments"> // Εκτυπώνει 7</code></pre>
+            <p style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Να θυμάστε πως η Kotlin μετρά τις θέσεις ξεκινώντας από το 0 που αντιστοιχεί στην πρώτη θέση ενός string.
+           </p> 
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+               Εισαγωγικά μέσα σε String
+            </h3>   
+            <p>
+                Για να χρησιμοποιήσουμε εισαγωγικά μέσα σε ένα string στην Kotlin, χρησιμοποιούμε τα μονά εισαγωγικά (single quotes, ' '):
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>txt1 = <span class="green_color">"It's alright"</span>
+<span class="light_blue_color">var </span>txt2 = <span class="green_color">"That's great"</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Συνένωση συμβολοσειρών (Concatenation)
+            </h3>      
+            <p>
+                Ο τελεστής <span class="red_color">+</span> μπορεί να χρησιμοποιηθεί μεταξύ strings για να τα προσθέσει μεταξύ τους ώστε
+                να δημιουργηθεί ένα νέο string. Αυτό καλείται <strong>συνένωση (concatenation)</strong>:
+            </p>             
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">var </span>lastName = <span class="green_color">"Doe"</span>
+<span class="red_color">println</span>(firstName <span class="purple_color">+</span><span class="green_color"> " "</span><span class="purple_color">+</span> lastName)</code></pre>
+            <p>
+                Παρατηρήστε πως προσθέσαμε κενό κείμενο (" ") προκειμένου να δημιουργηθεί ένα κενό διάστημα μεταξύ των τιμών των 
+                μεταβλητών firstName και lastName κατά την εκτύπωση.
+            </p>            
+            <p>
+                Η ενέργεια αυτή λειτουργεί επίσης και για συνένωση strings με τιμές άλλων τύπων δεδομένων, <b>αρκεί το πρώτο στοιχείο 
+                της έκφρασης να είναι string</b>:
+            </p>            
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>s = <span class="green_color">"abc" </span><span class="purple_color">+ </span>1
+<span class="red_color">println</span>(s + <span class="green_color">"def"</span>)<span class="comments"> // Εκτυπώνει "abc1def"</span></code></pre>
+            <p>
+                Μπορούμε επίσης να χρησιμοποιήσουμε την συνάρτηση <span class="red_color">plus()</span> για να συνενώσουμε δύο strings:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">var </span>lastName = <span class="green_color">"Doe"</span>
+<span class="red_color">println</span>(firstName.<span class="red_color">plus</span>(lastName))</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                String literals
+            </h3>
+            <p style="line-height: 0;">
+                H Kotlin διαθέτει δύο τύπους string literals:
+            </p>
+            <ul style="list-style-type:square;">
+                <li>Escaped strings</li>
+                <li>Raw strings</li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Escaped string
+            </h3>           
+            <p>
+                Τα Escaped strings μπορούν να εμπεριέχουν χαρακτήρες διαφυγής.
+            </p>
+            <p>
+                Ακολουθεί ένα παράδειγμα escaped string:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>s = <span class="green_color">"Hello, world!\n"</span><span class="comments"> //Η διαφυγή πραγματοποιείται με τον κλασικό τρόπο, μέσω της ανάποδης καθέτου (backslash, \).</span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Raw strings
+            </h3>
+            <p>
+                Τα Raw strings μπορούν να περιέχουν νέες γραμμές και αυθαίρετο κείμενο. Είναι οριοθετημένα από τρία διπλά εισαγωγικά
+                (<span class="red_color">"""</span>), δεν περιέχουν διαφυγή και μπορούν να περιέχουν νέες γραμμές και οποιουσδήποτε
+                άλλους χαρακτήρες:
+            </p>               
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>text = <span class="green_color">"""
+    for (c in "foo") 
+        print(c) 
+"""</span></code></pre>
+            <p>
+                Για να αφαιρέσουμε τα κενά διαστήματα από raw strings, χρησιμοποιούμε την συνάρτηση <span class="red_color">
+                trimMargin()</span>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>text = <span class="green_color">"""
+    |Tell me and I forget.
+    |Teach me and I remember.
+    |Involve me and I learn.
+    |(Benjamin Franklin)
+    """</span>.<span class="red_color">trimMargin()</span></code></pre>
+            <p>
+                Από σύμβαση, το σύβολο της καθέτου <span class="red_color">|</span> χρησιμοποιείται ως <b>πρόθημα περιθωρίου</b>, όμως 
+                είναι δυνατό να επιλέξουμε κάποιον άλλο χαρακήρα που θα πρέπει να τον περάσουμε ως παράμετρο όπως πχ 
+                <span class="red_color">trimMargin</span>(<span class="green_color">">"</span>).
+            </p>    
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e;">
+                Πρότυπα (String Templates)/Εισαγωγή (Interpolation)
+            </h3> 
+            <p>
+                Αντί της συνένωσης μπορούμε εξίσου να χρησιμοποιήσουμε τα "πρότυπα" ("string templates"), που είναι ένας εύκολος τρόπος 
+                για να προσθέσουμε μεταβλητές και εκφράσεις μέσα σε ένα string.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>firstName = <span class="green_color">"John"</span>
+<span class="light_blue_color">var </span>lastName = <span class="green_color">"Doe"</span>
+<span class="red_color">println</span>(<span class="green_color">"My name is </span><span class="comments">$</span>firstName <span class="comments">$</span>lastName<span class="green_color">"</span>)</code></pre>
+            <p>
+               Τα String literals μπορούν να περιέχουν πρότυπες εκφράσεις - τμήματα κώδικα που είναι υπολογισμένα και των οποίων τα 
+               αποτελέσματα είναι συνενωμένα σε string. Μία πρότυπη έκφραση ξεκινά με το σύμβολο του δολαρίου (<span class="red_color">
+                $</span>) και αποτελείται είτε από ένα όνομα:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>i = <span class="purple_color">10</span>
+<span class="red_color">println</span>(<span class="green_color">"i = $i"</span>)<span class="comments"> // Εκτυπώνει "i = 10"</span></code></pre>
+            <p>
+                ή από μία έκφραση που περικλείεται σε αγκύλες:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>s = <span class="green_color">"abc"</span>
+<span class="red_color">println</span>(<span class="green_color">"$s.length is ${s.length}"</span>)<span class="comments"> // Εκτυπώνει "abc.length is 3"</span></code></pre>
+             <p>
+                Μπορούμε να χρησιμοποιήσουμε πρότυπα τόσο για raw όσο και για escaped strings. Για να εισάγουμε το σύμβολο του 
+                δολαρίου <span class="red_color">$ </span> σε ένα raw string (το οποίο <strong>δεν υποστηρίζει</strong> διαφυγή με 
+                backslash) πριν από οποιοδήποτε σύμβολο, το οποίο επιτρέπεται ως αναγνωριστικό έναρξης, χρησιμοποιούμε την ακόλουθη 
+                σύνταξη: 
+             </p>               
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>price = <span class="green_color">"""
+${'$'}_9.99                
+"""</span></code></pre>                                                  
+              <p>
+                Τα String Templates είναι από τα δημοφιλή στοιχεία της Kotlin, καθώς μειώνουν τον συνολικό κώδικα. Για 
+                παράδειγμα, δε χρειάζεται να ορίσουμε κάποιο κενό διάστημα (whitespace) μεταξύ των μεταβλητών firstName και lastName,
+                όπως κάναμε σε ένα από τα παραπάνω παραδείγματα συνένωσης.
+              </p>            
+              <h1 id="ifelse" class="titloi">Δομή ελέγχου If... Else</h1>
+              <p>
+                Η Kotlin υποσηρίζει τις συνήθεις λογικές συνθήκες των μαθηματικών:
+              </p>
+              <ul>
+                <li>Μικρότερο από: <span class="red_color">a < b</span></li>
+                <li>Μικρότερο ή ίσο από: <span class="red_color">a <= b</span></li>
+                <li>Μεγαλύτερο από: <span class="red_color"></span>a > b</li>
+                <li>Μεγαλύτερο ή ίσο από: <span class="red_color">a >= b</span></li>
+                <li>Ίσο με: <span class="red_color">a == b</span></li>
+                <li>Διάφορο του: <span class="red_color">a != b</span></li>
+              </ul>
+              <p>
+                Μπορούμε να χρησιμοποιούμε αυτές τις συνθήκες για να εκτελέσουμε διαφορετικές ενέργειες για διαφορετικές αποφάσεις.
+              </p>
+              <p>
+                Η Kotlin διαθέτει τις ακόλουθες υποθετικές προτάσεις
+              </p>
+              <ul style="list-style-type: square;">
+                <li><span class="red_color">if</span> για να ορίσουμε ένα block εντολών που θα εκτελεστεί, εάν η ορισμένη συνθήκη
+                    είναι αληθής</li>
+                <li><span class="red_color">else</span> </span> για να ορίσουμε ένα block εντολών που θα εκτελεστεί, εάν η ορισμένη 
+                    συνθήκη είναι ψευδής</li>
+                <li><span class="red_color">else if</span> για να ορίσουμε μία νέα προς έλεγχο υπόθεση, σε περίπτωση που η πρώτη 
+                    συνθήκη είναι ψευδής</li>
+                <li><span class="red_color">when</span> για να ορίσουμε πολλά εναλλακτικά blocks εντολών κώδικα προς εκτέλεση.</li>
+              </ul>
+              <p>
+                <b>Παρατήρηση:</b> Σε αντίθεση με τη Java, στην Kotlin η δομή ελέγχου <span class="red_color">if..else</span> μπορεί 
+                να χρησιμοποιηθεί ως <b>δήλωση</b> ή και ως μία <b>έκφραση</b> (για να αναθέσει τιμή σε μία μεταβλητή)
+              </p>
+              <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0.5;">
+                If
+            </h3> 
+            <p>
+                Το <span class="red_color">if</span> χρησιμοποιείται για να ορίσει ένα block εντολών προς εκτέλεση εάν μία συνθήκη
+                επιστρέφει τιμή <span class="red_color">true</span>.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">if </span>(συνθήκη){
+    <span class="comments"> // block κώδικα που θα εκτελεστεί εάν η συνθήκη είναι αληθής</span>    
+}</code></pre>
+            <p>
+                Παρατηρήστε πως το <span class="red_color">if</span> είναι γραμμένο με πεζά γράμματα. Αν γραφτεί με κεφαλαία
+                γράμματα (If ή IF) θα παραχθεί σφάλμα.
+            </p>
+            <p>
+                Στο παράδειγμα που ακολουθεί, εξετάζουμε δύο τιμές προκειμένου να διαπιστώσουμε αν το 20 είναι μεγαλύτερο από το 18.
+                Εάν η συνθήκη επιστρέψει <span class="red_color">true</span>, τότε θα τυπωθεί κάποιο κείμενο:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">if </span>(<span class="purple_color">20</span> > <span class="purple_color">18</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"Το 20 είναι μεγαλύτερο από το 18"</span>)
+}</code></pre>    
+            <p style="line-height: 0.5;">
+                Μπορούμε εξίσου να ελέγξουμε μεταβλητές:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>x = <span class="purple_color">20</span>
+<span class="light_blue_color">val </span>y = <span class="purple_color">18</span>                
+<span class="light_blue_color">if </span>(x > y) {
+    <span class="red_color">println</span>(<span class="green_color">"Το x είναι μεγαλύτερο από το y"</span>)
+}</code></pre>
+            <h3 style="line-height: 0.5;">
+                Εξήγηση του παραδείγματος
+            </h3>
+            <p>
+                Στο πιο πάνω παράδειγμα χρησιμοποιούμε δύο μεταβλητές, τις <b>x</b> και <b>y</b>, για να ελέγξουμε εάν το x είναι 
+                μεγαλύτερο από το y (χρησιμοποιώντας τον τελεστή σύγκρισης <span class="red_color">></span>). Καθώς το x ισούται με 
+                20 και το y με 18, και γνωρίζουμε πως το 20 είναι μεγαλύτερο από το 18, τυπώνουμε στην οθόνη το μήνυμα 
+                "Το x είναι μεγαλύτερο από το y".
+            </p>
+            <p>
+                Στην Kotlin, το <span class="red_color">if</span> είναι μία έκφραση· επιστρέφει μία τιμή. Επομένως, <b>δεν υπάρχει 
+                τριαδικός τελεστής (<span class="red_color">συνθήκη ? then : else</span>)</b> επειδή το συνηθισμένο
+                <span class="red_color">if </span>δουλεύει κανονικά στο ρόλο του.
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>max = a
+<span class="light_blue_color">if </span>(a <span class="red_color"><</span> b) max = b</code></pre>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Με χρήση else</span>
+<span class="light_blue_color">if </span>(a <span class="red_color">></span> b){
+    max = a
+} <span class="light_blue_color">else</span> {
+    max = b
+}</code></pre>  
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Ως έκφραση</span>
+max = <span class="light_blue_color">if </span>(a <span class="red_color">></span> b) a <span class="light_blue_color">else </span>b</code></pre>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Μπορούμε επίσης να χρησιμοποιήσουμε το `else if` μέσα σε εκφράσεις:</span>
+<span class="light_blue_color">val </span>maxLimit = <span class="purple_color">1</span>
+<span class="light_blue_color">val </span>maxOrLimit = <span class="light_blue_color">if </span>(maxLimit <span class="red_color">></span> a) maxLimit <span class="light_blue_color">else if </span>(a <span class="red_color">></span> b) a <span class="light_blue_color">else </span>b</code></pre>
+            <p>
+                Τμήματα μίας έκφρασης <span class="red_color">if</span> μπορεί να είναι blocks εντολών. Σε μία τέτοια περίπτωση, 
+                <strong>η τελευταία έκραση του block εντολών είναι η τιμή του</strong>:
+           </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>max = <span class="light_blue_color">if </span>(a <span class="red_color">></span> b) {
+    <span class="red_color">print</span>(<span class="green_color">"Choose a"</span>)
+    a  
+} <span class="light_blue_color">else </span>{              
+    <span class="red_color">print</span>(<span class="green_color">"Choose b"</span>)
+    b                  
+}</code></pre>              
+            <p>
+                Αν χρησιμοποιούμε το <span class="red_color">if</span> ως μία έκφραση, για παράδειγμα, προκειμένου να επιστρέψει την 
+                τιμή του ή για να αναθέσει τιμή σε μία μεταβλητή,<strong> η χρήση του τμήματος εντολής της <span class="red_color">
+                else </span>είναι υποχρεωτική</strong>.
+             </p>
+             <h1 id="when" class="titloi">Εντολή When</h1>
+             <p>
+                Αντί να γράφουμε πολλές εκφράσεις του τύπου <span class="red_color">if..else</span>, μπορούμε επίσης να χρησιμοποιούμε 
+                την έκφραση <span class="red_color">when</span>, η οποία είναι περισσότερο ευανάγνωστη.
+             </p>
+             <p>
+                Χρησιμοποιείται για να επιλεχθεί ένα - μεταξύ πολλών - block κώδικα για να εκτελεστεί:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="comments">// Παράδειγμα - Χρησιμοποιούμε τον αριθμό μιας ημέρας για να υπολογίσουμε το όνομά της:</span>
+ <span class="light_blue_color">val </span>day = <span class="purple_color">4</span> 
+ <span class="light_blue_color">val </span>result = <span class="light_blue_color">when</span> (day) {
+     <span class="purple_color">1 -></span> <span class="green_color">"Monday"</span>  
+     <span class="purple_color">2 -></span> <span class="green_color">"Tuesday"</span>  
+     <span class="purple_color">3 -></span> <span class="green_color">"Wednsday"</span>  
+     <span class="purple_color">4 -></span> <span class="green_color">"Thirsday"</span>  
+     <span class="purple_color">5 -></span> <span class="green_color">"Friday"</span>  
+     <span class="purple_color">6 -></span> <span class="green_color">"Saturday"</span>  
+     <span class="purple_color">7 -></span> <span class="green_color">"Sunday"</span>  
+     <span class="light_blue_color">else</span> <span class="purple_color">-></span> <span class="green_color">"Invalid day."</span>    
+ }
+ <span class="red_color">println</span>(result)
+ 
+ <span class="comments">// Εκτυπώνει "Thursday" (day 4)</span></code></pre>            
+             <p>
+                Η έκφραση <span class="red_color">when</span> είναι παραπλήσια με τη δήλωση <span class="red_color">switch</span> της 
+                Java.
+             </p>
+             <p style="line-height:.5;">
+                Αυτός είναι ο τρόπος που δουλεύει:
+             </p>
+             <ul>
+                 <li>Η μεταβλητή (<b>day</b>) της εντολής <span class="red_color">when</span>  εκτιμάται μία φορά</li>
+                 <li>Η τιμή της μεταβλητής <b>day</b> συγκρίνεται με τις τιμές εκάστου τμήματος κώδικα</li>
+                 <li>Κάθε τμήμα κώδικα ξεκινά με μία τιμή, ακολουθούμενη από ένα βέλος (->) και ένα αποτέλεσμα</li>
+                 <li>Αν υπάρξει αντιστοίχιση τιμών, θα εκτελεστεί το σχετικό block κώδικα</li>
+                 <li>Η εντολή <span class="red_color">else</span> χρησιμοποιείται για να προσδιορίσει κάποιο τμήμα κώδικα που θα 
+                 εκτελεστεί σε περίπτωση που τελικά δεν υπάρξει αντιστοίχιση</li>
+                 <li>Στο πιο πάνω παράδειγμα, η τιμή της μεταβλητής <span class="red_color">day</span> είναι <span class="red_color">                    
+                 4</span>, γεγονός που σημαίνει πως θα εκτυπωθεί το όνομα ημέρας "Thursday"</li>
+             </ul>
+             <p>Η εντολή <span class="red_color">when</span> μπορεί να χρησιμοποιηθεί είτε ως έκφραση ή και ως δήλωση. Αν χρησιμοποιηθεί
+                ως μία έκφραση, η τιμή της πρώτης αντιστοίχισης με κάποιο τμήμα του κώδικα που γίνονται οι συγκρίσεις, γίνεται η τιμή της 
+                έκφρασης συνολικά. Αν πάλι χρησιμοποιηθεί ως δήλωση, τότε οι τιμές των μεμονωμένων τμημάτων κώδικα που γίνονται οι 
+                συγκρίσεις αγνοούνται. Όπως ακριβώς και με το <span class="red_color">if</span>, κάθε τμήμα κώδικα μπορεί να είναι ένα
+                block, και <b>η τιμή του είναι η τιμή της τελευταίας έκφρασής του</b>.
+             </p>
+             <p>
+                Αν το <span class="red_color">when</span> χρησιμοποιείται ως έκφραση, τότε το κομμάτι του κώδικα του 
+                <span class="red_color">else</span> είναι υποχρεωτικό, εκτός αν ο compiler μπορεί να αποδείξει πως όλες οι πιθανές 
+                περιπτώσεις είναι καλυμένες με τμήματα συνθηκών, για παράδειγμα, με <span class="red_color">enum</span> class entries 
+                και <span class="red_color">sealed</span> class subtypes.
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">enum class </span>Bit {
+     ZERO, ONE                
+}
+ 
+<span class="light_blue_color">val</span> numericValue = <span class="light_blue_color">when</span> (<span class="purple_color">getRandomBit</span>()) {
+     Bit.ZERO <span class="purple_color">-> 0</span>
+     Bit.ONE <span class="purple_color">-> 1</span>
+     <span class="comments">// Η εντολή 'else' δεν είναι απαραίτητη, αφού όλες οι περιπτώσεις έχουν καλυφθεί</span>
+}</code></pre>
+             <p>
+                Σε δηλώσεις με χρήση <span class="red_color">when</span>, η εντολή <span class="red_color">else</span><b> είναι 
+                υποχρεωτική στις παρακάτω περιπτώσεις:</b> 
+            </p>
+             <ul>
+                 <li>Η εντολή <span class="red_color">when</span> έχει ένα αντικείμενο τύπου <span class="red_color">Boolean</span>, 
+                <span class="red_color">enum</span>, ή <span class="red_color">sealed</span>, ή τα (nullable) ισοδύναμά τους</li>
+                 <li>Τμήματα κώδικα με χρήση <span class="red_color">when</span> δεν καλύπτουν όλες τις πιθανές περιπτώσεις για το 
+                    αντικείμενο</li>
+             </ul>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">enum class </span>Color {
+     RED, GREEN, BLUE                
+ }
+             
+ <span class="light_blue_color">when</span> (<span class="purple_color">getColor</span>()) {
+     <span class="purple_color">Color</span>.RED -> <span class="red_color">println</span> (<span class="green_color">"red"</span>)
+     <span class="purple_color">Color</span>.GREEN -> <span class="red_color">println</span> (<span class="green_color">"green"</span>)
+     <span class="purple_color">Color</span>.BLUE -> <span class="red_color">println</span> (<span class="green_color">"blue"</span>)
+     <span class="comments">// Η εντολή 'else' δεν είναι απαραίτητη αφού όλες οι περιπτώσεις έχουν καλυφθεί</span>
+ }</code></pre>
+ <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (<span class="purple_color">getColor</span>()) {
+     <span class="purple_color">Color</span>.RED -> <span class="red_color">println</span> (<span class="green_color">"red"</span>)<span class="comments"> // Δεν υπάρχουν τμήματα κώδικα σύγκρισης για τις τιμές GREEN και BLUE</span>
+     <span class="light_blue_color">else</span> -> <span class="red_color">println</span> (<span class="green_color">"not red"</span>)<span class="comments"> // Η εντολή 'else' απαιτείται</span> 
+ }</code></pre>
+             <p>
+                Για να καθορίσουμε κοινή συμπεριφορά <b>πολλαπλών περιπτώσεων</b>, συνδυάζουμε τις προϋποθέσεις αυτές σε μία
+                γραμμή, διαχωρίζοντάς τες με κόμμα:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (x) {
+     <span class="purple_color">0</span>, <span class="purple_color">1</span> -> <span class="red_color">print</span>(<span class="green_color">"x == 0 or x == 1"</span>)
+     <span class="light_blue_color">else</span> -> <span class="red_color">print</span> (<span class="green_color">"otherwise"</span>)
+ }</code></pre>
+             <p>
+                Μπορούμε να χρησιμοποιήσουμε αυθαίρετες εκφράσεις (όχι μόνο σταθερές) ως τμήματα κώδικα για σύγκριση:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (x) {
+     s.<span class="red_color">toInt()</span> -> <span class="red_color">print</span>(<span class="green_color">"s encodes x"</span>)
+     <span class="light_blue_color">else</span> -> <span class="red_color">print</span> (<span class="green_color">"s does not encode x"</span>)
+ }</code></pre>
+             <p>
+                Μπορούμε επίσης να ελέγξουμε αν μία τιμή ανήκει - ή όχι - στο πεδίο τιμών μίας δομής δεδομένων:
+            </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when</span> (x) {
+     <span class="red_color">in</span><span class="light_blue_color"> 1..10</span> -> <span class="red_color">print</span>(<span class="green_color">"x is in the range"</span>)
+     <span class="red_color">in</span>  validNumbers -> <span class="red_color">print</span>(<span class="green_color">"x is valid"</span>)        
+     <span class="red_color">!in</span><span class="light_blue_color"> 10..20</span> -> <span class="red_color">print</span>(<span class="green_color">"x is outside the range"</span>)
+     <span class="light_blue_color">else</span> -> <span class="red_color">print</span> (<span class="green_color">"none of the above"</span>)
+ }</code></pre>
+             <p>
+                Μία άλλη επιλογή είναι να ελέγξουμε αν η τιμή είναι - ή όχι - κάποιου συγκεκριμένου τύπου. Παρατηρήστε πως, λόγω των 
+                smart casts, μπορούμε να έχουμε πρόσβαση στις μεθόδους και τις ιδιότητες του τύπου χωρίς επιπλέον ελέγχους.
+            </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span> <span class="red_color">hasPrefix</span> (<span class="purple_color">x: Any</span>) = <span class="light_blue_color">when</span> (x) {
+     <span class="red_color">is</span><span class="red_color"> String</span> -> x.<span class="red_color">startsWith</span>(<span class="green_color">"prefix"</span>)
+     <span class="light_blue_color">else</span> -> <span class="purple_color">false</span>
+ }</code></pre>
+             <p>
+                 Η εντολή <span class="red_color">when</span> μπορεί επίσης να χρησιμοποιηθεί για να αντικαταστήσει μία δομή ελέγχου 
+                 τύπου <span class="red_color">if-else if</span>. Αν δεν παρέχονται ορίσματα, τα τμήματα κώδικα που περιέχουν τις 
+                 συνθήκες είναι απλώς εκφράσεις boolean, και ένα τμήμα κώδικα θα εκτελεστεί εφόσον η συνθήκη είναι αληθής:
+            </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">when </span> {
+     x.<span class="red_color">isOdd()</span> -> <span class="red_color"> print</span>(<span class="green_color">"x is odd"</span>)
+     y.<span class="red_color">isEven()</span> -> <span class="red_color"> print</span>(<span class="green_color">"y is even"</span>)
+     <span class="light_blue_color">else</span> -> <span class="red_color"> print</span>(<span class="green_color">"x+y is odd"</span>)
+ }</code></pre>
+             <p>
+                Μπορούμε να αποθηκεύσουμε μία εντολή <span class="red_color">when</span> σε μία μεταβλητή, χρησιμοποιώντας την 
+                ακόλουθη σύνταξη:
+            </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">Request.getBody</span>() =
+     <span class="light_blue_color">when</span> (<span class="light_blu_color">val </span>response = <span class="red_color">executeRequest()</span>) {
+     <span class="red_color">is </span> Success -> <span class="red_color"> response</span>.body
+     <span class="red_color">is </span> HttpError -> <span class="red_color"> throw HttpException</span> (<span class="red_color">response</span>.status)
+ }</code></pre>
+             <p>
+                Η εμβέλεια της μεταβλητής που εισήχθη στην εντολή <span class="red_color">when</span> είναι περιορισμένη στο σώμα της
+                εντολής <span class="red_color">when</span>.
+             </p>
+             <h1 id="for" class="titloi">Δομή επανάληψης For</h1>
+             <p>
+                Συχνά, δουλεύοντας με πίνακες, χρειαζόμαστε να τον διασχίσουμε (διατρέχοντας όλα τα στοιχεία του).
+             </p>
+             <p>
+                Για να διατρέξουμε τα στοιχεία ενός πίνακα, χηριμοποιούμε τη δομή επανάληψης <span class="red_color">for</span> μαζί με
+                τον τελεστή <span class="red_color">in</span>:
+             </p>
+             <pre style="font-size: 1.1em;"><code><span class="comments">// Παράδειγμα - Εκτύπωση όλων των στοιχείων (αυτοκίνητα) ενός πίνακα:</span>
+ <span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)                
+ <span class="light_blue_color">for</span> (x <span class="light_blu_color">in </span>cars) {
+     <span class="red_color">println</span> (x)
+ }</code></pre>
+            <p>
+                Μπορούμε να διασχίσουμε όλα τα είδη πινάκων. Στο παραπάνω παράδειγμα, χρησιμοποιήσαμε έναν πίνακα με συμβολοσειρές
+                (strings). Στο αμέσως επόμενο παράδειγμα, θα διασχίσουμε έναν πίνακα ακεραίων αριθμών: 
+            </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>nums = <span class="red_color">arrayOf</span>(<span class="purple_color">1, 5, 10, 15, 20</span>)                
+<span class="light_blue_color">for</span> (x <span class="light_blu_color">in </span>nums) {
+    <span class="red_color">println</span> (x)
+}</code></pre>            
+            <p>
+                Σε αντίθεση με τη Java και άλλες γλώσσες προγραμματισμού, δεν υπάρχει στην Kotlin η παραδοσιακή δομή επανάληψης 
+                <span class="red_color">for</span>. Εδώ, το <span class="red_color">for</span> χρησιμοποιείται για να διασχίσουμε 
+                πίνακες, πεδία τιμών και άλλα, τα οποία περιέχουν πεπερασμένο αριθμό τιμών. Αυτό είναι ισοδύναμο με τη δομή 
+                επανάληψης <span class="red_color">foreach</span> που συναντάμε σε γλώσσες όπως πχ στη C#.
+            </p>
+            <p>
+                Η δομή επανάληψης <span class="red_color">for</span> χρησιμοποιείται σε οτιδήποτε μπορεί να επαναληφθεί. Αυτό
+                σημαίνει ότι:
+            </p>
+            <ul>
+                <li>έχει κάποιο μέλος ή μία extension function <span class="red_color">iterator()</span> η οποία Επιστρέφει
+                <span class="red_color">Iterator</span></li>
+                <li>έχει κάποιο μέλος ή μία extension function <span class="red_color">next()</span></li>
+                <li>έχει κάποιο μέλος ή μία extension function <span class="red_color">hasNext()</span> η οποία Επιστρέφει
+                <span class="red_color">Boolean</span></li>
+            </ul>
+            <p>
+                Για να χηρισμοποιήσουμε τη δομή επανάληψης σε ένα πεδίο τιμών, χρησιμοποιούμε έκφραση <span class="red_color">
+                εύρους φάσματος</span>:
+            </p>
+             <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for</span> (i  <span class="light_blue_color">in </span><span class="purple_color">1..3</span>) {        
+    <span class="red_color">println</span> (i)
+}
+ 
+<span class="light_blue_color">for</span> (i  <span class="light_blue_color">in </span><span class="purple_color">6</span> <span class="light_blue_color"></span>downTo <span class="purple_color">0 </span><span class="light_blue_color">step </span><span class="purple_color">2</span></span>) {        
+    <span class="red_color">println</span> (i)
+}</code></pre>
+            <p>
+                Η δομή επανάληψης <span class="red_color">for</span> όταν χρησιμοποιείται για πίνακα μετασχηματίζεται σε μία δομή 
+                επανάληψης με βάση ένα δείκτη (θέσης του στοιχείου του πίνακα) που δε δημιουργεί ένα αντικείμενο iterator.
+            </p>
+             Αν θέλουμε να κάνουμε επαναλήψεις μέσα σε ένα πίνακα ή μία αριθμημένη λίστα, μπορούμε να το κάνουμε ως εξής:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>(i <span class="light_blue_color">in</span> array.indices) {
+    <span class="red_color">println</span>(array[<span class="red_color">i</span>])
+}</code></pre> 
+            <p>
+                Εναλλακτικά, μπορούμε να χρησιμοποιήσουμε την συνάρτηση <span class="red_color">withIndex</span> από τη βιβλιοθήκη της
+                Kotlin:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>((index, value) <span class="light_blue_color">in</span> array.<span class="red_color">withIndex()</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"the element at $index is $value"</span>)
+}</code></pre>
+<h1 id="while" class="titloi">Δομή επανάληψης While</h1>
+<p>
+    Οι δομές επανάληψης μπορούν να εκτελούν ένα τμήμα κώδικα όσο μία ορισμένη συνθήκη είναι αληθής. Οι δομές επανάληψης είναι 
+    εξαιρετικά εύχρηστες, καθώς μας γλιτώνουν χρόνο, μειώνουν τον κίνδυνο λαθών και κάνουν τον κώδικα πιο ευανάγνωστο.
+</p>
+<p>
+    Η δομή επανάληψης <span class="red_color">while</span> διατρέχει ένα τμήμα κώδικα όσο μία ορισμένη συνθήκη επιστρέφει τιμή 
+    <span class="red_color">true</span>:
+</p>
+<pre style="font-size: 1.1em;"><code><span class="light_blue_color">while </span>(condition) {
+<span class="comments">// Τμήμα κώδικα που θα εκτελεστεί</span>
+}</code></pre>
+<p>
+    Στο παράδειγμα που ακολουθεί, ο κώδικας στη δομή επανάληψης θα εκτελείται ξανά και ξανά, όσο η μεταβλητή - μετρητής (i) έχει 
+    τιμή μικρότερη του 5:
+</p>
+<pre style="font-size: 1.1em;"><code><span class="light_blue_color">var </span>i = <span class="purple_color">0</span>
+<span class="light_blue_color">while </span>(i < <span class="purple_color">5</span>) {
+    <span class="red_color">println</span>(i) 
+    i<span class="purple_color">++</span>
+}</code></pre>
+<p>
+    <strong>Παρατήρηση:</strong> Μην ξεχνάτε να αυξάνετε την τιμή της μεταβλητής στην συνθήκη, αλλιώς η δομή επανάληψης δε θα 
+    σταματήσει ποτέ να ετκελείται (ατέρμων βρόχος).
+</p>
+<p>
+    Οι δομές επανάληψης <span class="red_color">While</span> και <span class="red_color">do-while</span> εκτελούν το σώμα εντολών τους
+    συνεχώς όσο ικανοποιείται μία ορισμένη συνθήκη. </br>
+    <strong>Η ειδοποιός διαφορά μεταξύ τους έγκειται στο χρόνο ελέγχου της συνθήκης:</strong>
+</p>
+<ul style="list-style-type: square;">
+    <li>
+        Η δομή επανάληψης <span class="red_color">while</span> ελέγχει την συνθήκη και <strong>αν αυτή ικανοποιείται, τότε εκτελεί 
+        τον κώδικά της και επιστρέφει στον έλεγχο της συνθήκης.</strong>
+     <li>
+        Η δομή επανάληψης <span class="red_color">do-while</span> <strong>εκτελεί τον κώδικά της και μετά ελέγχει την συνθήκη</strong>.
+        Αν αυτή ικανοποιείται, τότε η δομή επανάληψης εκτελεί εκ νέου τον κώδικά της. Επομένως, <strong>ο κώδικας της
+            <span class="red_color"></span> do-while εκτελείται τουλάχιστον μία φορά, ανεξάρτητα από την συνθήκη.</strong>
+        </li>
+</ul>
+<pre style="font-size: 1.1em;"><code><span class="light_blue_color">while </span>(x > <span class="purple_color">0</span>) {
+    x<span class="purple_color">--</span>
+}
+
+<span class="light_blue_color">do </span>{
+    <span class="light_blue_color">val</span> y = <span class="red_color">retrieveData()</span>
+}<span class="light_blue_color">while</span> (y != <span class="purple_color">null</span>)<span class="comments"> //το y εδώ είναι ορατό!</span></code></pre>      
+        <h1 id="break_continue" class="titloi">Εντολές Break/Continue</h1>                
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Break
+        </h3>
+        <p>
+            Η εντολή <span class="red_color">break</span> χρησιμοποιείται για να τερματίσουμε ένα βρόχο (δομή επανάληψης).
+        </p>        
+        <pre style="font-size: 1.1em;"><code><span class="comments">// Στο παράδειγμα ο βρόχος θα τερματιστεί όταν η μεταβλητή i πάρει την ιμή 4:</span>
+<span class="light_blue_color">var  </span>i = <span class="purple_color">0</span>) 
+<span class="light_blue_color">while </span>(i < <span class="purple_color">10</span>) {
+    <span class="red_color">println</span>(i)
+    <span class="light_blue_color">if</span> (i == <span class="purple_color">4</span>) {
+        <span class="light_blue_color">break</span>
+    }
+}</code></pre>
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Continue
+        </h3>
+        <p>
+            Η εντολή <span class="red_color">continue</span> σταματά μία επανάληψη (μέσα στο βρόχο), εφόσον επαληθευτεί μία ορισμένη 
+            συνθήκη, και συνεχίζει με την επόμενη επανάληψη μέσα στο βρόχο.
+        </p>            
+        <pre style="font-size: 1.1em;"><code><span class="comments">// Στο παράδειγμα παραλείπεται η επανάληψη όταν η μεταβλητή i πάρει την τιμή 4:</span>
+<span class="light_blue_color">var </span>i = <span class="purple_color">0</span>
+<span class="light_blue_color">while </span>(i < <span class="purple_color">10</span>) { 
+    <span class="light_blue_color">if </span>(i == <span class="purple_color">4</span>) {
+        i++
+        <span class="light_blue_color">continue</span>
+    }
+    <span class="red_color">println</span>(i)
+    i++                
+}</code></pre>            
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Break και continue labels
+        </h3>
+        <p>
+            Κάθε έκφραση στην Kotlin μπορεί να επισημανθεί με μία ετικέτα (label). Οι ετικέτες έχουν τη μορφή identifier ακολουθούμενου
+            από το σύμβολο <span class="red_color">@</span>, όπως για παράδειγμα <span class="red_color">abc@</span> ή 
+            <span class="red_color">fooBar@</span>. Για να τοποθετήσουμε ετικέτα σε μία έκφραση, απλώς βάζουμε την ετικέτα στην αρχή 
+            της.
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="purple_color">loop@ </span><span class="light_blue_color">for</span> (i <span class="light_blue_color">in</span> <span class="purple_color">1</span>..<span class="purple_color">100</span>1) {
+    <span class="comments">// ...</span>) 
+}</code></pre>
+        <p>
+            Τώρα, μπορούμε να προσδιορίσουμε με ετικέτα και τις εντολές <span class="red_color">break</span> ή 
+            <span class="red_color">continue</span>:
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="purple_color">loop@ </span><span class="light_blue_color">for</span> (i <span class="light_blue_color">in</span> <span class="purple_color">1</span>..<span class="purple_color">100</span>) {
+    <span class="light_blue_color">for</span>(j <span class="light_blue_color">in</span> <span class="purple_color">1</span>..<span class="purple_color">100</span>) {
+        <span class="light_blue_color">if</span> (...) <span class="light_blue_color">break</span><span class="purple_color">@loop</span>
+    }
+}</code></pre>
+        <p>
+            Μία εντολή <span class="red_color">break</span> με ετικέτα πηδάει στο σημείο εκτέλεσης αμέσως μόλις ο βρόχος που βρίσκεται 
+            έχει επισημανθεί με την ετικέτα της. Μία εντολή <span class="red_color">continue</span> πάλι προχωρά στην επόμενη 
+            επανάληψη του βρόχου που βρίσκεται.
+        </p>
+        <h1 id="collections" class="titloi">Δομές δεδομένων</h1>                
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Πίνακες
+        </h3>
+        <p>
+            Οι πίνακες χρησιμοποιούνται για να αποθηκεύουν πολλαπλές τιμές σε μία μόνο μεταβλητή, αντί να δημιουργούμε ξεχωριστές
+            μεταβλητές για κάθε τιμή.
+        </p>
+        <p>
+            Για να δημιουργήσουμε έναν πίνακα, χρησιμοποιούμε την συνάρτηση <span class="red_color">arrayOf()</span> και τοποθετούμε
+            τις τιμές στο εσωτερικό του σε μία λίστα που διαχωρίζει τα στοιχεία της με κόμμα: 
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)</code></pre>
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Πρόσβαση στα στοιχεία ενός πίνακα
+        </h3>
+        <p>
+            Μπορούμε να έχουμε πρόσβαση στο στοιχείο ενός πίνακα αναφερόμενοι στο <strong>δείκτη θέσης του στοιχείου</strong>, 
+            μέσα σε <strong>αγκύλες</strong>.
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="comments">// Στο συγκεκριμένο παράδειγμα, έχουμε πρόσβαση στην τιμή του πρώτου στοιχείου του πίνακα cars:</span>
+<span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)                
+<span class="red_color">println</span>(cars[<span class="purple_color">0</span>])
+<span class="comments">// Εκτυπώνει Volvo</span></code></pre>            
+            <p>
+                <strong>Παρατήρηση:</strong> Όπως ακριβώς και με τα Strings, ο δείκτης θέσης (Array index) ενός πίνακα ξεκινά από το 0: [0]
+                 είναι το πρώτο στοιχείο, [1] είναι το δεύτερο στοιχείο κοκ.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Αλλαγή στοιχείου πίνακα
+            </h3>            
+            <p>
+                Για να αλλάξουμε την τιμή ενός συγκεκριμένου στοιχείου, αναφερόμαστε στο δείκτη θέσης του:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+cars[<span class="purple_color">0</span>] = <span class="green_color">"Opel"</span>
+<span class="red_color">println</span>(cars[<span class="purple_color">0</span>])
+<span class="comments">// Τώρα θα εκτυπώσει Opel instead αντί για Volvo</span></code></pre>
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Μήκος πίνακα
+        </h3>      
+        <p>
+            Για να βούμε πόσα στοιχεία έχει κάποιος πίνακας, χρησιμοποιούμε την ιδιότητα <span class="red_color">size</span>:
+        </p>                 
+        <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+<span class="red_color">println</span>(cars.size)
+<span class="comments">// Εκτυπώνει 4 </span></code></pre>               
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Έλεγχος ύπαρξης ενός στοιχείου
+        </h3>
+        <p>
+            Για να δούμε αν υπάρχει ένα στοιχείο μέσα σε ένα πίνακα, χρησιμοποιούμε τον τελεστή <span class="red_color">in</span>: 
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+<span class="light_blue_color">if</span>(<span class="green_color"> "Volvo" </span><span class="light_blue_color"> in </span>cars) {
+    <span class="red_color">println</span><span class="green_color">("It exists!"</span>)
+}<span class="light_blue_color"> else </span>{  
+    <span class="red_color">println</span><span class="green_color">("It does not exist."</span>)
+}</code></pre>
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Διάσχιση πίνακα (Loop Through an Array)
+        </h3>
+        <p>
+            Συχνά όταν δουλεύουμε με πίνακες, χρειάζεται να τους διασχίσουμε.
+        </p>
+        <p>
+            Μπορούμε να διατρέξουμε όλα τα στοιχεία ενός πίνακα με τη δομή επανάληψης <span class="red_color">for</span>. Στο παρακάτω 
+            παράδειγμα εκτυπώνονται όλα τα στοιχεία του πίνακα  cars:            
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val</span> cars = arrayOf(<span class="green_color">"Volvo", "BMW", "Ford", "Mazda"</span>)
+<span class="light_blue_color">for</span> (x <span class="light_blue_color"> in </span>cars) {
+    <span class="red_color">println</span>(x)
+}</code></pre>
+        <p>
+            Οι πίνακες στην Kotlin αναπαριστώνται από την κλάση <span class="red_color">Array</span>. Η κλάση έχει τις συναρτήσεις 
+            <span class="red_color">get()</span> και <span class="red_color">set()</span> που μετατρέπονται σε <span class="red_color">
+            [ ]</span> μέσω υπερφόρτωσης τελεστή (operator overloading conventions) και την ιδιότητα <span class="red_color">size</span>,
+             μαζί με άλλες χρήσιμες συναρτήσεις:
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="light_blue_color">class </span>Array<T> <span class="light_blue_color">private constructor</span>() {
+    <span class="light_blue_color">val</span> size: Int
+    <span class="light_blue_color">operator fun get</span>(index: Int): T
+    <span class="light_blue_color">operator fun set</span>(index: Int, value: T): Unit
+
+    <span class="light_blue_color">operator fun iterator</span>(): Iterator<T>
+    <span class="comments">// ...</span>
+}</code></pre>
+        <p>
+            Για να δημιουργήσουμε έναν πίνακα, χηρσιμοποιούμε την συνάρτηση <span class="red_color">arrayOf()</span> στην οποία περνάμε
+            τις τιμές για κάθε στοιχείο του πίνακα, έτσι ώστε πχ η <span class="red_color">arrayOf(1, 2, 3)</span> να
+            δημιουργήσει τον πίνακα <span class="red_color">[1, 2, 3]</span>. 
+            Εναλλακτικά, η συνάρτηση <span class="red_color">arrayOfNulls()</span> μπορεί να χρησιμοποιηθεί για να δημιουργήσουμε
+            πίνακα με δεδομένο μήκος και γεμάτο από στοιχεία με τιμή <span class="red_color">null</span>.
+        </p>
+        <p>
+            Μία άλλη επιλογή είναι να χρησιμοποιήσουμε τον κατασκευαστή <span class="red_color">Array</span> που παίρνει ως όρισμα το 
+            μέγεθος του πίνακα μαζί με την συνάρτηση που επιστέφει τιμές για τα στοιχεία του πίνακα με δεδομένο το δείκτη θέσης τους:
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="comments">// Δημιουργεί ένα πίνακα με τιμές ["0", "1", "4", "9", "16"]</span>
+<span class="light_blue_color">val</span> asc = Array(<span class="purple_color">5</span>) { i -> (i * i).toString() }
+asc.forEach { <span class="red_color">println</span>(<span class="light_blue_color">it</span>) }</code></pre>
+        <p>
+            Οι αγκύλες <span class="red_color">[ ]</span> χρησιμοποιούνται για την κλήση των μελών-συναρτήσεων της κλάσης 
+            <span class="red_color">get() </span> και <span class="red_color">set()</span>.
+        </p>
+        <p>
+            Οι πίνακες στην Kotlin είναι <i>αμετάβλητοι</i>. Αυτό σημαίνει πως η Kotlin δεν μας επιτρέπει να αναθέσουμε πίνακα σε
+            κάποιον άλλο πίνακα, κάτι που εμποδίζει πιθανό σφάλμα κατά την εκτέλεση (runtime failure).
+        </p>
+        <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+            Primitive type arrays
+        </h3>
+        <p>
+            Η Kotlin διαθέτει επίσης κλάσεις που αναπαριστούν πίνακες πρωτογενών τύπων δεδομένων (primitive types) χωρίς να τις 
+            περιορίζει: <span class="red_color">ByteArray</span>, <span class="red_color">ShortArray</span>, <span class="red_color">
+            IntArray</span> κλπ. Αυτές οι κλάσεις δεν έχουν σχέση κληρονομικότητας με την κλάση <span class="red_color">Array</span>,
+            όμως έχουν το ίδιο σετ μεθόδων και ιδιοτήτων (methods, properties). Καθεμιά τους έχει επίσης μία αντίστοιχη έτοιμη
+            συνάρτηση:
+        </p>
+        <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>x: IntArray = <span class="red_color">intArrayOf</span>(<span class="purple_color">1</span>, <span class="purple_color">2</span>, <span class="purple_color">3</span>)
+x[<span class="purple_color">0</span>] = x[<span class="purple_color">1</span>] + x[<span class="purple_color">2</span>]                
+
+<span class="comments">// Πίνακας ακεραίων int με μέγεθος 5 και τιμές [0, 0, 0, 0, 0]</span>
+<span class="light_blue_color">val </span>arr = <span class="red_color">IntArray</span>(<span class="purple_color">5</span>)
+
+<span class="comments">// Παράδειγμα αρχικοποίησης των τιμών ενός πίνακα με σταθερά</span>
+<span class="comments">// Πίνακας ακεραίων int με μέγεθος 5 και τιμές [42, 42, 42, 42, 42]</span>
+<span class="light_blue_color">val </span>arr = <span class="red_color">IntArray</span>(<span class="purple_color">5</span>) { <span class="purple_color">42</span> }
+
+<span class="comments">// Παράδειγμα αρχικοποίησης των τιμών ενός πίνακα με χρήση συνάρτησης lambda</span>
+<span class="comments">// Πίνακας ακεραίων int με μέγεθος 5 και τιμές [0, 1, 2, 3, 4] (οι τιμές αρχικοποιούνται με βάση το δείκτη θέσης τους)</span>
+<span class="light_blue_color">var </span>arr = <span class="red_color">IntArray</span>(<span class="purple_color">5</span>) { <span class="light_blue_color">it</span> * <span class="purple_color">1</span> }</code></pre>
+            <h1 id="ranges" class="titloi">Πεδία τιμών (Ranges)</h1>  
+            <p>
+                Με τη <a href="#for">δομή επανάληψης <span class="red_color">for</span></a> μπορούμε επίσης να δημιουργήσουμε πεδία τιμών με τη 
+                χρήση των χαρακτήρων "<span class="red_color">..</span>":
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Εκτύπωση ολόκληρου του λατινικού αλφαβλητου:</span>
+<span class="light_blue_color">for </span>(chars <span class="light_blue_color">in </span><span class="green_color">'a'</span></span><span class="purple_color">..</span><span class="green_color">'z'</span>) {
+    <span class="red_color">println</span>(chars)
+}</code></pre>
+            <p>
+                Μπορούμε εξίσου να δημιουργήσουμε πεδία τιμών με αριθμούς:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>(nums <span class="light_blue_color">in </span><span class="purple_color">5..15</span>) {
+    <span class="red_color">println</span>(nums)
+}</code></pre>
+            <p>
+                <strong>Παρατήρηση:</strong> Η πρώτη και η τελευταία τιμή περιλαμβάνονται στο πεδίο τιμών.  
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Έλεγχος ύπαρξης μίας τιμής σε ένα πεδίο τιμών:
+            </h3> 
+            <p>
+                Μπορούμε να χρησιμοποιήσουμε τον τελεστή <span class="light_blue_color">in</span> προκειμένου να ελέγξουμε αν μία τιμή υπάρχει σε 
+                ένα πεδίο τιμών:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>nums = <span class="red_color">arrayOf</span>(<span class="purple_color">2</span>, <span class="purple_color">4</span>, <span class="purple_color">6</span>, <span class="purple_color">8</span>)
+<span class="light_blue_color">if</span>(<span class="purple_color">2 </span><span class="light_blue_color">in</span> nums) {
+    <span class="red_color">println</span>(<span class="green_color">"It exists!"</span>)
+} else {
+    <span class="red_color">println</span>(<span class="green_color">"It does not exist."</span>)
+}
+
+<span class="light_blue_color">val </span>cars = <span class="red_color">arrayOf</span>(<span class="green_color">"Volvo"</span>, <span class="green_color">"BMW"</span>, <span class="green_color">"Ford"</span>, <span class="green_color">"Mazda"</span>)
+    <span class="light_blue_color">if</span>(<span class="green_color">"Volvo" </span><span class="light_blue_color">in</span> carss) {
+        <span class="red_color">println</span>(<span class="green_color">"It exists!"</span>)
+    } else {
+        <span class="red_color">println</span>(<span class="green_color">"It does not exist."</span>)
+}</code></pre>  
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Έλεγχος αν ένας αριθμός βρίσκεται εκτός του πεδίου τιμών
+            </h3>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">val </span>list = listOf(<span class="green_color">"a"</span>, <span class="green_color">"b"</span>, <span class="green_color">"c"</span>)
+<span class="light_blue_color">if </span>(<span class="purple_color">-1 !<span class="light_blue_color">in</span> <span class="purple_color">0</span>..list.<span class="red_color">lastIndex</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"-1 is out of range"</span>)
+}
+
+<span class="light_blue_color">if </span>(list.<span class="red_color">size</span><span class="purple_color"> !<span class="light_blue_color">in</span> list.<span class="red_color">indices</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"list size is out of valid list indices range, too"</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Προοδευτική επανάληψη (επανάληψη με βήμα)
+            </h3>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">for </span>(x <span class="light_blue_color">in </span><span class="purple_color">1..10</span> step <span class="purple_color">2</span>) {
+    <span class="red_color">println</span>(x) <span class="comments">// Εκτυπώνει 1, 3, 5, 7, 9</span>
+}
+
+<span class="light_blue_color">for </span>(x <span class="light_blue_color">in </span><span class="purple_color">9 </span>downTo <span class="purple_color">0</span> step <span class="purple_color">3</span>) {
+    <span class="red_color">println</span>(x) <span class="comments">// Εκτυπώνει 9, 6, 3, 0</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Break και Continue σε ένα πεδίο τιμών
+            </h3>      
+            <p>
+                Μπορούμε να χρησιμοποιήσουμε τις εντολές <span class="red_color">break</span> και <span class="red_color">continue</span> 
+                και σε ένα πεδίο τιμών:
+            </p>       
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Σταματά το βρόχο όταν η τιμή της μεταβλητής nums ισούται με 10:</span> 
+<span class="light_blue_color">for</span> (nums <span class="light_blue_color">in</span> <span class="purple_color">5..15</span>) {               
+    <span class="light_blue_color">if</span> (nums == <span class="purple_color">10</span>){
+        <span class="light_blue_color">break</span>
+    }
+    <span class="red_color">println</span>(nums)
+}
+
+<span class="comments">// Παραλείπει την τιμή 10 στην επανάληψη του βρόχου και συνεχίζει με την επόμενη επανάληψη:</span> 
+<span class="light_blue_color">for</span> (nums <span class="light_blue_color">in</span> <span class="purple_color">5..15</span>) {               
+    <span class="light_blue_color">if</span> (nums == <span class="purple_color">10</span>){
+        <span class="light_blue_color">continue</span>
+    }
+    <span class="red_color">println</span>(nums)    
+}</code></pre>
+            <h1 id="functions" class="titloi">Συναρτήσεις</h1>
+            <p>
+                <strong>Συνάρτηση</strong> καλείται ένα τμήμα κώδικα το οποίο εκτελείται αποκλειστικά και μόνο όταν καλείται. Σε μία συνάρτηση μπορούμε 
+                να εισάγουμε δεδομένα, γνωστά ως παράμετροι της συνάρτησης.
+            </p>  
+            <p>
+                Οι συναρτήσεις χρησιμοποιούνται για να εκτελούν συγκεκριμένες ενέργειες, και είναι επίσης γνωστές με το όνομα
+                <strong>μέθοδοι</strong>.
+
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Προκαθορισμένες (έτοιμες) συναρτήσεις
+            </h3>       
+            <p> 
+                Η συνάρτηση <span class="red_color">println()</span> για παράδειγμα είναι μία έτοιμη συνάρτηση, που χρησιμοποιείται 
+                για την έξοδο/εκτύπωση κειμένου στην οθόνη:
+           </p>     
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"Hello World"</span>)
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Δημιουργία δικών μας συναρτήσεων
+            </h3>
+            <p>
+                Για να δημιουργήσουμε τις δικές μας συναρτήσεις, χρησιμοποιούμε τη λέξη (keyword) <span class="red_color">fun</span> 
+                και ακολούθως γράφουμε το όνομα της συνάρτησης, ακολουθούμενο από παρενθέσεις <b>()</b>:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Δημιουργία της συνάρτησης "myFunction" η οποία πρέπει να εκτυπώσει κάποιο κείμενο:</span>
+<span class="light_blue_color">fun </span><span class="red_color">myFunction</span>() {
+    <span class="red_color">println</span>(<span class="green_color">"I just got executed!"</span>)
+}</code></pre>            
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Κλήση συνάρτησης
+            </h3>
+            <p>
+                Αφού έχουμε ήδη δημιουργήσει μία συνάρτηση, μπορούμε στην συνέχεια να την εκτελέσουμε <b>καλώντας</b> την. Για να 
+                καλέσουμε μία συνάρτηση στην Kotlin, γράφουμε το όνομά της ακολουθούμενο από δύο παρενθέσεις <b>()</b>.
+            </p>           
+            <p>
+                Στο παράδειγμα που ακολουθεί, η ενέργεια της συνάρτησης <span class="red_color">myFunction</span>() είναι να εκυπώσει 
+                κάποιο κείμενο μόλις κληθεί:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">myFunction</span>()<span class="comments"> // Κλήση της myFunction</span>
+}
+
+<span class="comments"> // Εκτυπώνει "I just got executed!"</span></code></pre>
+            <p>
+                Μία συνάρτηση μπορεί να κληθεί πολλές φορές αν το θέλουμε:
+            </p>
+            <pre style="font-size: 1.1em;"><code><span class="light_blue_color">fun </span><span class="red_color">main</span>() {
+    <span class="red_color">myFunction</span>()<span class="comments"> // Κλήση της myFunction</span>
+    <span class="red_color">myFunction</span>()<span class="comments"> // Κλήση της myFunction</span>
+    <span class="red_color">myFunction</span>()<span class="comments"> // Κλήση της myFunction</span>
+}
+                
+<span class="comments"> // Εκτυπώνει "I just got executed!"</span>
+<span class="comments"> // Εκτυπώνει "I just got executed!"</span>
+<span class="comments"> // Εκτυπώνει "I just got executed!"</span></code></pre> 
+            <pre style="font-size: 1.1em;"><code><span class="comments">// Συνάρτηση με δύο παραμέτρους ακεραίους Int και τύπου επιστροφής επίσης Int.</span>
+<span class="light_blue_color">fun </span><span class="red_color">sum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>): <span class="light_blue_color">Int</span> {
+    <span class="light_blue_color">return</span> a + b
+}
+
+<span class="comments">// Το σώμα μίας συνάρτησης μπορεί να είναι μία έκφραση. Ο τύπος επιστροφής της μπορεί να συμπεραθεί.</span>
+<span class="light_blue_color">fun </span><span class="red_color">sum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>) = a + b
+
+<span class="comments">// Συνάρτηση που επιστρέφει ασήμαντη τιμή.</span>
+<span class="light_blue_color">fun </span><span class="red_color">sum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>): <span class="light_blue_color">Unit</span> {
+    <span class="red_color">println</span>(<span class="green_color">"sum of $a and $b is ${a + b}"</span>) 
+}
+
+<span class="comments">// Ο τύπος επιστροφής Unit μπορεί να παραληφθεί.</span>
+<span class="light_blue_color">fun </span><span class="red_color">printSum</span>(a: <span class="light_blue_color">Int</span>, b: <span class="light_blue_color">Int</span>) {
+    <span class="red_color">println</span>(<span class="green_color">"sum of $a and $b is ${a + b}"</span>) 
+}</code></pre>
+        </div>
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info">
+                Σύνταξη
+            </p>
+        </div>    
+    </br></br>                                                                   
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="uk(1)"/>
+            <center><h1 id="title">Kotlin Tutorial</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(8)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(8)"/>
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin Tutorial</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_uk.html">
+                    &nbsp;&nbsp;&nbsp;Home 
+                </a></li>               
+                <li class="menu_buttons" id="intro1"><a href="kotlin_uk_overview.html">
+                    &nbsp;&nbsp;&nbsp;Overview
+                </a>  
+                <ul id="intro2">
+                    <li><a href="kotlin_uk_overview.html#history">History</a></li>
+                    <li><a href="kotlin_uk_overview.html#about">What is Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#use">Why use Kotlin?</a></li>
+                    <li><a href="kotlin_uk_overview.html#version">Kotlin versions</a></li>
+                </ul>
+                </li>               
+                <li class="menu_buttons" id="basics1"><a href="kotlin_uk_intro.html">
+                    &nbsp;&nbsp;&nbsp;Intro
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_uk_intro.html#started">Get started with Kotlin</a></li>
+                    <li><a href="kotlin_uk_intro.html#install">Install Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_uk_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Syntax
+                </a>
+                    <ul id="syntax2">
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#comments">
+                            &nbsp;&nbsp;&nbsp;Comments
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#data_types">
+                            &nbsp;&nbsp;&nbsp;Data Types
+                        </a></li>                        
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#variables">
+                            &nbsp;&nbsp;&nbsp;Variables
+                        </a>  </li>   
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#operators">
+                            &nbsp;&nbsp;&nbsp;Operators
+                        </a> </li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#boolean">
+                            &nbsp;&nbsp;&nbsp;Boolean
+                        </a>   </li>                                                              
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#output">
+                            &nbsp;&nbsp;&nbsp;Output
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#strings">
+                            &nbsp;&nbsp;&nbsp;Strings
+                        </a></li>      
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ifelse">
+                            &nbsp;&nbsp;&nbsp;If...else
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#when">
+                            &nbsp;&nbsp;&nbsp;When
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#for">
+                            &nbsp;&nbsp;&nbsp;For loop
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#while">
+                            &nbsp;&nbsp;&nbsp;While loop
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#break_continue">
+                            &nbsp;&nbsp;&nbsp;Break/Continue
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#collections">
+                            &nbsp;&nbsp;&nbsp;Collections
+                        </a> </li>
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#ranges">
+                            &nbsp;&nbsp;&nbsp;Ranges
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_syntax.html#functions">
+                            &nbsp;&nbsp;&nbsp;Functions
+                        </a></li>                            
+                    </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_uk_functions.html">
+                    &nbsp;&nbsp;&nbsp;More Kotlin features
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Null safety
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Equality
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;This expression
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Asynchronous &nbsp;&nbsp;&nbsp;programming techniques
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Annotations
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Destructuring declarations
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_uk_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_uk_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Kotlin OOP
+                </li></a>               
+                <a href="kotlin_uk_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Classes/objects
+                </li></a>  
+                
+                <a href="kotlin_uk_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Constructors
+                </li></a>
+                <a href="kotlin_uk_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Class Functions
+                </li></a>
+                <a href="kotlin_uk_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Inheritance
+                </li></a>           
+        </div>
+        <div id="context">
+            <h1 class="titloi">Constructors</h1>
+            <p>
+                In other chapter, we created an object of a class, and specified the properties inside the class, like this:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Car {
+    <span class="light_blue_color">var</span> brand = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span> model = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span>  year = <span class="purple_color">0</span>
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="light_blue_color">val</span> c1 = <span class="red_color">Car</span>()
+    c1.brand = <span class="green_color">"Ford"</span>
+    c1.model = <span class="green_color">"Mustang"</span>
+    c1.year = <span class="purple_color">1969</span>
+}</code></pre>
+            <p>
+                In Kotlin, there's a faster way of doing this, by using a <strong>constructor</strong>.
+            </p>
+            <p>
+                A constructor is like a special <a href="https://www.w3schools.com/kotlin/kotlin_functions.php" target="_blank">
+                <abbr title="https://www.w3schools.com/kotlin/kotlin_functions.php">function</abbr></a>, and it is defined by using two 
+                parantheses <span class="red_color">()</span> after the class name. You can specify the properties inside of the 
+                parantheses (like passing parameters into a regular function).
+            </p>
+            <p>
+                The constructor will initialize the properties when you create an object of a class. Just remember to specify the type 
+                of the property/variable:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Car(<span class="light_blue_color">var</span> brand: String, <span class="light_blue_color">var</span> model: String, <span class="light_blue_color">var</span> year: <span class="purple_color">Int</span>)
+    <span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+        <span class="light_blue_color">val</span> c1 = <span class="red_color">Car</span>(<span class="green_color">"Ford"</span>, <span class="green_color">"Mustang"</span>, <span class="purple_color">1969</span>)
+}</code></pre>
+            <p>
+                Now it's even easier to specify multiple objects of one class:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Car(<span class="light_blue_color">var</span> brand: String, <span class="light_blue_color">var</span> model: String, <span class="light_blue_color">var</span> year: <span class="purple_color">Int</span>)
+
+<span class="light_blue_color">fun</span><span class="light_blue_color"> main</span>() {
+    <span class="light_blue_color">val</span> c1 = Car(<span class="green_color">"Ford"</span>, <span class="green_color">"Mustang"</span>, <span class="purple_color">1969</span>)
+    <span class="light_blue_color">val</span> c2 = Car(<span class="green_color">"BMW"</span>, <span class="green_color">"X5"</span>, <span class="purple_color">1999</span>)
+    <span class="light_blue_color">val</span> c3 = Car(<span class="green_color">"Tesla"</span>, <span class="green_color">"Model S"</span>, <span class="purple_color">2020</span>)
+}</code></pre>
+            <p>
+                A class in Kotlin can have a <strong>primary constructor</strong> and one or more <strong>secondary constructors</strong>. 
+                The primary constructor is a part of the class header, and it goes after the class name and optional type 
+                parameters.
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person constructor(firstName: String) {<span class="comments"> /*...*/</span> }</code></pre>
+            <p>
+                If the primary constructor does not have any annotations or visibility modifiers, the <span class="red_color">constructor
+                </span> keyword can be omitted:
+            </p>  
+            <pre><code><span class="light_blue_color">class</span> Person(firstName: String) { <span class="comments">/*...*/</span> }</code></pre>
+            <p>
+                The primary constructor cannot contain any code. Initialization code can be placed in <b>initializer blocks</b> prefixed 
+                with the <span class="red_color">init</span> keyword.
+            </p>
+            <p>
+                During the initialization of an instance, the initializer blocks are executed in the same order as they appear in the 
+                class body, interleaved with the property initializers:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> InitOrderDemo(name: String) {
+    <span class="light_blue_color">val</span> firstProperty = <span class="green_color">"First property: $name"</span>.<span class="red_color">also</span>(::<span class="red_color">println</span>)
+    
+    <span class="light_blue_color">init</span> {
+        <span class="red_color">println</span>(<span class="green_color">"First initializer block that prints $name"</span>)
+    }
+    
+    <span class="light_blue_color">val</span> secondProperty = <span class="green_color">"Second property: ${name.length}"</span>.<span class="red_color">also</span>(::<span class="red_color">println</span>)
+    
+    <span class="light_blue_color">init</span> {
+        <span class="red_color">println</span>(<span class="green_color">"Second initializer block that prints ${name.length}"</span>)
+    }
+}</code></pre>
+            <p>
+                Primary constructor parameters can be used in the initializer blocks. They can also be used in property initializers 
+                declared in the class body:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Customer(name: String) {
+    <span class="light_blue_color">val</span> customerKey = name.<span class="red_color">uppercase</span>()
+}</code></pre>
+            <p>
+                Kotlin has a concise syntax for declaring properties and initializing them from the primary constructor:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> firstName: String, <span class="light_blue_color">val</span> lastName: String, <span class="light_blue_color">var</span> age: <span class="purple_color">Int</span>)</code></pre>
+            <p>
+                Such declarations can also include default values of the class properties:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> firstName: String, <span class="light_blue_color">val</span> lastName: String, <span class="light_blue_color">var</span> isEmployed: <span class="light_blue_color">Boolean</span> = <span class="purple_color">true</span>)</code></pre>
+            <p>
+                You can use a <a href="https://kotlinlang.org/docs/coding-conventions.html#trailing-commas" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/coding-conventions.html#trailing-commas">trailing comma</abbr></a> when you 
+                declare class properties: 
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(
+    <span class="light_blue_color">val</span> firstName: String,
+    <span class="light_blue_color">val</span> lastName: String,
+    <span class="light_blue_color">var</span> age: <span class="purple_color">Int</span>, <span class="comments">// trailing comma</span>
+<span class="comments">) { /*...*/ }</span></code></pre>
+           <p>Much like regular properties, properties declared in the primary constructor can be mutable (<span class="red_color">var</span>) 
+            or read-only (<span class="red_color">val</span>).</p>
+            <p>
+                If the constructor has annotations or visibility modifiers, the <span class="red_color">constructor</span> keyword is 
+                required and the modifiers go before it:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Customer public <span class="green_color">@Inject</span><span class="light_blue_color"> constructor</span>(name: String) { <span class="comments">/*...*/</span> }</code></pre>
+            <p>
+                Learn more about <a href="https://kotlinlang.org/docs/visibility-modifiers.html#constructors" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/visibility-modifiers.html#constructors">visibility modifiers</abbr></a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Secondary constructors
+            </h3>
+            <p>
+                A class can also declare <strong>secondary constructors</strong>, which are prefixed with <span class="red_color">
+                constructor</span>:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> pets: MutableList<span class="purple_color">&lt;</span>Pet<span class="purple_color">></span> = <span class="red_color">mutableListOf</span>())
+
+<span class="light_blue_color">class</span> Pet {
+    <span class="light_blue_color">constructor</span>(owner: Person) {
+        owner.pets.<span class="red_color">add</span>(<span class="light_blue_color">this</span>) <span class="comments">// adds this pet to the list of its owner's pets</span>
+    }
+}</code></pre>
+            <p>
+                If the class has a primary constructor, each secondary constructor needs to delegate to the primary constructor, either 
+                directly or indirectly through another secondary constructor(s). Delegation to another constructor of the same class is 
+                done using the <span class="red_color">this</span> keyword:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Person(<span class="light_blue_color">val</span> name: String) {
+    <span class="light_blue_color">val</span> children: MutableList<span class="purple_color">&lt;</span>Person<span class="purple_color">></span> = <span class="red_color">mutableListOf</span>()
+    <span class="light_blue_color">constructor</span>(name: String, parent: Person) : <span class="light_blue_color">this</span>(name) {
+        <span class="light_blue_color">parent</span>.children.<span class="red_color">add</span>(<span class="light_blue_color">this</span>)
+    }
+}</code></pre>
+            <p>
+                Code in initializer blocks effectively becomes part of the primary constructor. Delegation to the primary constructor 
+                happens at the moment of access to the first statement of a secondary constructor, so the code in all initializer blocks 
+                and property initializers is executed before the body of the secondary constructor.
+            </p>
+            <p>
+                Even if the class has no primary constructor, the delegation still happens implicitly, and the initializer blocks are 
+                still executed:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Constructors {
+    <span class="light_blue_color">init</span> {
+        <span class="red_color">println</span>(<span class="green_color">"Init block"</span>)
+    }
+​
+    <span class="light_blue_color">constructor</span>(i: <span class="purple_color">Int</span>) {
+        <span class="red_color">println</span>(<span class="green_color">"Constructor $i"</span>)
+    }
+}</code></pre>
+            <p>
+                If a non-abstract class does not declare any constructors (primary or secondary), it will have a generated primary 
+                constructor with no arguments. The visibility of the constructor will be public.
+            </p>
+            <p>
+                If you don't want your class to have a public constructor, declare an empty primary constructor with non-default 
+                visibility:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> DontCreateMe <span class="light_blue_color">private constructor</span>() { <span class="comments">/*...*/</span> }</code></pre>
+            <p>
+                <strong>Note:</strong> On the JVM, if all of the primary constructor parameters have default values, the compiler will 
+                generate an additional parameterless constructor which will use the default values. This makes it easier to use Kotlin 
+                with libraries such as Jackson or JPA that create class instances through parameterless constructors.
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Customer(<span class="light_blue_color">val</span> customerName: String = <span class="green_color">""</span>)</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Creating instances of classes
+            </h3>
+            <p>
+                To create an instance of a class, call the constructor as if it were a regular function:
+            </p>
+            <pre><code><span class="light_blue_color">val</span> invoice = <span class="red_color">Invoice</span>()
+
+<span class="light_blue_color">val</span> customer = Customer(<span class="green_color">"Joe Smith"</span>)</code></pre>
+            <p>
+                <strong>Note: </strong>Kotlin does not have a <span class="red_color">new</span> keyword.
+            </p>
+            <p>
+                The process of creating instances of nested, inner, and anonymous inner classes is described in 
+                <a href="https://kotlinlang.org/docs/nested-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/nested-classes.html">Nested classes</abbr></a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Class members
+            </h3>
+            <p>
+                Classes can contain:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://kotlinlang.org/docs/classes.html#constructors" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/classes.html#constructors">Constructors and initializer blocks</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/functions.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/functions.html">Functions</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/properties.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/properties.html">Properties</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/nested-classes.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/nested-classes.html">Nested and inner classes</abbr></a>
+                </li>
+                <li>
+                    <a href="https://kotlinlang.org/docs/object-declarations.html" target="_blank">
+                    <abbr title="https://kotlinlang.org/docs/object-declarations.html">Object declarations</abbr></a>
+                </li>                                                                          
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Inheritance
+            </h3>
+            <p>
+                Classes can be derived from each other and form inheritance hierarchies.
+                <a href="https://kotlinlang.org/docs/inheritance.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/inheritance.html">Learn more about inheritance in Kotlin</abbr></a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Abstract classes
+            </h3> 
+            <p>
+                A class may be declared <span class="red_color">abstract</span>, along with some or all of its members. An abstract 
+                member does not have an implementation in its class. You don't need to annotate abstract classes or functions with 
+                <span class="red_color">open</span>.
+            </p>  
+            <pre><code><span class="light_blue_color">abstract class</span> Polygon {
+    <span class="light_blue_color">abstract fun</span><span class="red_color"> draw</span>()
+}
+
+<span class="light_blue_color">class</span> Rectangle : <span class="light_blue_color">Polygon</span>() {
+    <span class="light_blue_color">override fun</span><span class="red_color"> draw</span>() {
+        <span class="comments">// draw the rectangle</span>
+    }
+}</code></pre>
+            <p>
+                You can override a non-abstract <span class="red_color">open</span> member with an abstract one.
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> Polygon {
+    <span class="light_blue_color">open fun</span><span class="red_color"> draw</span>() {
+        <span class="comments">// some default polygon drawing method</span>
+    }
+}
+
+<span class="light_blue_color">abstract class</span> WildShape : <span class="light_blue_color">Polygon</span>() {
+    <span class="comments">// Classes that inherit WildShape need to provide their own</span>
+    <span class="comments">// draw method instead of using the default on Polygon</span>
+    <span class="light_blue_color">abstract override fun</span><span class="red_color"> draw</span>()
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Companion objects
+            </h3>
+            <p>
+                If you need to write a function that can be called without having a class instance but that needs access to the 
+                internals of a class (such as a factory method), you can write it as a member of an 
+                <a href="https://kotlinlang.org/docs/object-declarations.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/object-declarations.html">object declaration</abbr></a> inside that class.
+            </p>
+            <p>
+                Even more specifically, if you declare a <a href="https://kotlinlang.org/docs/object-declarations.html#companion-objects" 
+                target="_blank"><abbr title="https://kotlinlang.org/docs/object-declarations.html#companion-objects">companion object</abbr>
+                </a>inside your class, you can access its members using only the class name as a qualifier.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: 0;">
+                Primary constructor vs. secondary constructors
+            </h3>
+            <p>
+                Kotlin supports the specification of a <span class="red_color">"primary constructor"</span> as part of the class 
+                definition itself, consisting of an argument list following the class name. This argument list supports an expanded 
+                syntax on Kotlin's standard function argument lists, that enables declaration of class properties in the primary 
+                constructor, including visibility, extensibility and mutability attributes. Additionally, when defining a subclass, 
+                properties in super-interfaces and super-classes can be overridden in the primary constructor.
+            </p>
+            <pre><code><span class="comments">// Example of class using primary constructor syntax</span>
+<span class="comments">// (Only one constructor required for this class)</span>
+<span class="light_blue_color">open class</span> BaseUser(<span class="light_blue_color">open var</span> isSubscribed: <span class="purple_color">Boolean</span>)
+<span class="light_blue_color">open class</span> PowerUser(<span class="light_blue_color">protected val</span> nickname: String, <span class="light_blue_color">final override var</span> isSubscribed: <span class="purple_color">Boolean</span> = <span class="purple_color">true</span>):BaseUser(isSubscribed) { }</code></pre>
+            <p>
+               However, in cases where more than one constructor is needed for a class, a more general constructor can be used called 
+               <span class="red_color">secondary constructor syntax</span> which closely resembles the constructor syntax used in most 
+               object-oriented languages like C++, C#, and Java.
+            </p>
+            <pre><code><span class="comments">// Example of class using secondary constructor syntax</span>
+<span class="comments">// (more than one constructor required for this class)</span>
+<span class="light_blue_color">class</span> Context
+<span class="light_blue_color">class</span> AttributeSet
+<span class="light_blue_color">open class</span> View(ctx:Context) {
+    <span class="light_blue_color">constructor</span>(ctx: Context, attr: AttributeSet): <span class="light_blue_color">this</span>(ctx)
+}
+<span class="light_blue_color">class</span> MyButton : View {
+    <span class="comments">// Constructor #1 </span>
+    <span class="light_blue_color">constructor</span>(ctx: Context) : <span class="light_blue_color">super</span>(ctx) { 
+    } 
+    <span class="comments">// Constructor #2</span>
+    <span class="light_blue_color">constructor</span>(ctx: Context, attr: AttributeSet) : <span class="light_blue_color">super</span>(ctx, attr) {
+        <span class="comments">// ... </span>
+    }
+}</code></pre>
+        </div>
+        <div class="right_side">
+            <h4>
+                Now displaying:
+            </h4>
+            <p class="display_info">
+                Constructors
+            </p>
+        </div>    
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>

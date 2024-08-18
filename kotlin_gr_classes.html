@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="el-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kotlin - Οδηγός εκμάθησης</title>
+        <link rel="stylesheet" type="text/css" href="kotlin_gr.css"> 
+        <link rel="icon" type="image/x-icon" href="kotlin_log.png">
+        <script src="kotlin.js"></script>
+        <style>
+            table{
+                width:70%; 
+                margin:auto; 
+                text-align: center;
+            }
+            td{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body id="start">
+        <header>            
+            <img src="kotlin_log.png" alt="kotlin_logo" id="logo" onclick="gr(1)"/>
+            <center><h1 id="title">Kotlin - Οδηγός εκμάθησης</h1></center>
+        </header>
+            <p id="lang_choice">Language selection:</p></br></br>
+            <img src="greek_flag.png" alt="greek_lang" class="lang" onclick="gr(7)"/>
+            <img src="uk_flag.png" alt="uk_lang" class="lang" onclick="uk(7)"/>            
+        <div id="menu">
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - Εκπαιδευτικό υλικό</p>
+            <ul class="nav">
+                <li class="menu_buttons"><a href="kotlin_gr.html">
+                    &nbsp;&nbsp;&nbsp;Αρχική σελίδα 
+                </a></li>               
+                <li class="menu_buttons" id="intro1" onclick="display(1,1)"><a href="kotlin_gr_overview.html">
+                    &nbsp;&nbsp;&nbsp;Επισκόπηση
+                </a>  
+                    <ul id="intro2">
+                        <li><a href="kotlin_gr_overview.html#history">Ιστορικά στοιχεία</a></li>
+                        <li><a href="kotlin_gr_overview.html#about">Τι είναι η Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#use">Γιατί να χρησιμοποιήσω Kotlin;</a></li>
+                        <li><a href="kotlin_gr_overview.html#version">Εκδόσεις της Kotlin</a></li>
+                    </ul>
+                </li>              
+                <li class="menu_buttons" id="basics1"><a href="kotlin_gr_intro.html">
+                    &nbsp;&nbsp;&nbsp;Εισαγωγή
+                </a>
+                <ul id="basics2">
+                    <li><a href="kotlin_gr_intro.html#started">Ξεκινώντας με την  Kotlin</a></li>
+                    <li><a href="kotlin_gr_intro.html#install">Εγκατάσταση της Kotlin</a></li>
+                </ul>
+                </li>
+                <li class="menu_buttons" id="syntax1"><a href="kotlin_gr_syntax.html">
+                    &nbsp;&nbsp;&nbsp;Σύνταξη
+                </a>
+                <ul id="syntax2">
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#comments">
+                        &nbsp;&nbsp;&nbsp;Σχόλια
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#data_types">
+                        &nbsp;&nbsp;&nbsp;Τύποι δεδομένων
+                    </a></li>                        
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#variables">
+                        &nbsp;&nbsp;&nbsp;Μεταβλητές
+                    </a>  </li>   
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#operators">
+                        &nbsp;&nbsp;&nbsp;Τελεστές
+                    </a> </li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#boolean">
+                        &nbsp;&nbsp;&nbsp;Λογικοί τελεστές (Boolean)
+                    </a>   </li>                                                              
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#output">
+                        &nbsp;&nbsp;&nbsp;Εκτυπώσεις
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#strings">
+                        &nbsp;&nbsp;&nbsp;Συμβολοσειρές
+                    </a></li>      
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ifelse">
+                        &nbsp;&nbsp;&nbsp;Δομή ελέγχου If...else
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#when">
+                        &nbsp;&nbsp;&nbsp;Εντολή When
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#for">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης For
+                    </a></li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#while">
+                        &nbsp;&nbsp;&nbsp;Δομή επανάληψης While
+                    </a></li>    
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#break_continue">
+                        &nbsp;&nbsp;&nbsp;Εντολές Break/Continue
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#collections">
+                        &nbsp;&nbsp;&nbsp;Δομές δεδομένων
+                    </a> </li>
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#ranges">
+                        &nbsp;&nbsp;&nbsp;Πεδία τιμών (Ranges)
+                    </a></li> 
+                    <li class="menu_buttons"><a href="kotlin_gr_syntax.html#functions">
+                        &nbsp;&nbsp;&nbsp;Συναρτήσεις
+                    </a></li>                            
+                </ul>
+                </li>                    
+                <li class="menu_buttons" id="others1"><a href="kotlin_gr_functions.html">
+                    &nbsp;&nbsp;&nbsp;Επιπλέον στοιχεία για την &nbsp;&nbsp;&nbsp;Kotlin
+                    </a>
+                    <ul id="others2">
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#null">
+                            &nbsp;&nbsp;&nbsp;Ασφάλεια έναντι του κενού &nbsp;&nbsp;&nbsp;(Null safety)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#equality">
+                            &nbsp;&nbsp;&nbsp;Ισότητα
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#this">
+                            &nbsp;&nbsp;&nbsp;Έκφραση this
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#asynchronous">
+                            &nbsp;&nbsp;&nbsp;Ασύγχρονες τεχνικές &nbsp;&nbsp;&nbsp;προγραμματισμού
+                        </a></li> 
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#annotations">
+                            &nbsp;&nbsp;&nbsp;Σημειώσεις (Annotations)
+                        </a></li>    
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#destructuring">
+                            &nbsp;&nbsp;&nbsp;Δηλώσεις αποικοδόμησης &nbsp;&nbsp;(Destructuring declarations)
+                        </a></li>
+                        <li class="menu_buttons"><a href="kotlin_gr_functions.html#reflection">
+                            &nbsp;&nbsp;&nbsp;Reflection
+                        </a></li>                                                                                                   
+                    </ul>
+                </li>                
+            </ul>
+            <p class="headlines">&nbsp;&nbsp;&nbsp;Kotlin - OOP</p>
+            <ul class="nav">
+                <a href="kotlin_gr_oop.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Αντικειμενοστραφής προγ/μός
+                </li></a>               
+                <a href="kotlin_gr_classes.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κλάσεις/Αντικείμενα
+                </li></a>  
+                
+                <a href="kotlin_gr_constructors.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κατασκευαστές
+                </li></a>
+                <a href="kotlin_gr_methods.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Συναρτήσεις κλάσεων
+                </li></a>
+                <a href="kotlin_gr_inheritance.html"><li class="menu_buttons">
+                    &nbsp;&nbsp;&nbsp;Κληρονομικότητα
+                </li></a>           
+        </div> 
+        <div id="context">
+            <h1 class="titloi">Κλάσεις/Αντικείμενα</h1>
+            <p>
+                Τα πάντα στην Kotlin είναι συνδεδεμένα με κλάσεις και αντικείμενα, μαζί με τις ιδιότητές τους και τις συναρτήσεις. Για 
+                παράδειγμα: Στην πραγματική ζωή, ένα αυτοκίνητο είναι ένα <b>αντικείμενο (object)</b>. Το αυτοκίνητο έχει <b>ιδιότητες 
+                (properties)</b>, όπως μάρκα και χρώμα και <b>συναρτήσεις (functions)</b>, όπως οδήγησε και φρέναρε.
+            </p>
+            <p>
+                Μία κλάση είναι κάτι σαν ένας κατασκευαστ'ης αντικειμένων, ή καλύτερα, ένα πρότυπο δημιουργίας τους.                
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+               Δημιουργία κλάσης
+            </h3>
+            <p>
+                Για να δημιουργήσουμε μία κλάση, χρησιμοποιούμε το keyword <span class="red_color">class</span> και προσδιορίζουμε το 
+                όνομα της κλάσης:
+            </p>
+            <pre><code><span class="comments">//Δημιουργία της κλάσης Car μαζί με μερικές ιδιότητες (μάρκα, μοντέλο και χρονιά)</span>
+<span class="light_blue_color">class</span> Car {  
+    <span class="light_blue_color">var</span> brand = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span> model = <span class="green_color">""</span>
+    <span class="light_blue_color">var</span> year = <span class="purple_color">0</span>  
+}</code></pre>
+            <p>   
+                Μία <strong>ιδιότητα (property)</strong> είναι βασικά μία <a href="https://www.w3schools.com/kotlin/kotlin_variables.php" 
+                target="_blank" style="text-decoration: none;"><abbr title="https://www.w3schools.com/kotlin/kotlin_variables.php">
+                <strong>μεταβλητή (variable)</strong></abbr></a> που ανήκει στην κλάση.
+            </p>
+            <p>
+                <strong>Καλό είναι να γνωρίζουμε:</strong> Για καλύτερη οργάνωση, θεωρείται καλή πρακτική να ξεκινούμε το όνομα μίας 
+                κλάσης με κεφαλαίο γράμμα.
+            </p>
+            <p>
+                Η δήλωση κλάσης περιέχει το όνομά της, την υπογραφή της (που προσδιορίζει τους τύπους παραμέτρων της, τον πρωτογενή 
+                constructor και μερικά άλλα πράγματα) και το σώμα της κλάσης περικλειόμενο από άγκιστρα. Τόσο η υπογραφή όσο και το σώμα 
+                είναι προαιρετικά· αν η κλ΄ση δεν έχει σώμα, τα άγκιστρα μπορούν να παραλειφθούν.                
+            </p>
+            <pre><code><span class="light_blue_color">class</span> Empty</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+               Κατασκευή αντικειμένου
+            </h3>
+            <p>
+                Μπορούμε τώρα να χρησιμοποιοήσουμε την κλάση με όνομα <b>Car</b> για να δημιουργήσουε αντικείμενα.
+            </p>
+            <p>
+                Στο παράδειγμα που ακολουθεί, δημιουργούμε ένα αντικείμενο της κλάσης <b>Car</b> με όνομα <b>c1</b>, και στην συνέχεια 
+                προσπελαύνουμε τις ιδιότητες του <b>c1</b> χρησιμοποιώντας τελεία (<span class="red_color">.</span>), ακριβώς όπως 
+                κάνουμε για να προσπελάσουμε ιδιότητες πινάκων ή συμβολοσειρών (strings):
+            </p>
+            <pre><code><span class="comments">// Δημιουργία του αντικειμένου c1 της κλάσης Car</span>
+<span class="light_blue_color">val </span> c1 = <span class="red_color">Car</span>()
+
+<span class="comments"> // Προσπέλαση των ιδιοτήτων και πρόσθεση ορισμένων τιμών σε αυτές</span>
+c1.brand = <span class="green_color">"Ford"</span> 
+c1.model = <span class="green_color">"Mustang"</span> 
+c1.year = <span class="purple_color">1969</span> 
+
+<span class="red_color">println</span>(c1.brand)  <span class="comments">// Εκτυπώνει Ford</span>
+<span class="red_color">println</span>(c1.model)  <span class="comments">// Εκτυπώνει Mustang</span>
+<span class="red_color">println</span>(c1.year)   <span class="comments">// Εκτυπώνει 1969 </span></code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Άλλες εκφράσεις και δηλώσεις
+            </h3>
+            <p>
+                Μερικές φορές χρειαζόμαστε να δμιουργήσουμε ένα αντικείμενο που να είναι μία μικρή παραλλαγή κάποιας κλάσης, χωρίς τη  
+                ρητή δήλωση μίας υποκλάσης (subclass). Στην Kotlin κάτι τέτοιο μπορούμε να το διαχειριστούμε με <b>εκφράσεις αντικειμένων 
+                (object expressions)</b> και <b>δηλώσεις αντικειμένων (object declarations)</b>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Εκφράσεις αντικειμένων
+            </h3>
+            <p>
+                Οι εκφράσεις αντικειμένων δημιουργούν αντικείμενα ανώνυμων κλάσεων, οι οποίες είναι κλάσεις που δεν έχουν δηλωθεί ρητά 
+                με τη δήλωση <span class="red_color">class</span>. Τέτοιες κλάσεις είναι χρήσιμες για μία και μόνη χρήση. Μπορούμε να τις
+                καθορίσουμε από την αρχή, να κληρονομούν από υφιστάμενες κλάσεις ή να υλοποιούν interfaces. Τα στιγμιότυπα (instances) 
+                ανώνυμων κλάσεων (anonymous classes) καλούνται επίσς <strong>anonymous objects</strong> επειδή είναι ορισμένα από μία 
+                έκφραση κι όχι από ένα όνομα.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Δημιουργία anonymous objects από το μηδέν
+            </h3>
+            <p>
+                Οι εκφράσεις αντικειμένων ξεκινούν με το keyword <span class="red_color">object</span>.
+            </p>
+            <p>
+                Αν χρειαζόμαστε ένα αντικείμενο που δεν έχει nontrivial supertypes, γράφουμε τα μέλη του σε άγκιστρα μετά από το
+                <span class="red_color">object</span>:
+            </p>
+            <pre><code><span class="light_blue_color">val</span> helloWorld = <span class="light_blue_color">object</span> {
+    <span class="light_blue_color">val</span> hello = <span class="green_color">"Hello"</span>
+    <span class="light_blue_color">val</span> world = <span class="green_color">"World"</span>
+    <span class="comments">//Οι εκφράσεις αντικειμένων κληρονομούν από την Any, επομένως απαιτείται η υπερκάλυψη (override) της μεθόδου toString()</span>
+    <span class="light_blue_color"> override fun </span><span class="red_color">toString</span>() =  <span class="green_color">"$hello $world"</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Κληρονομικότητα anonymous objects από supertypes
+            </h3>
+            <p>
+                Για να δημιουργήσουμε αντικείμενο μίας anonymous κλάσης που κληρονομεί από κάποιον τύπο (ή τύπους), προσδιορίζουμε τον 
+                τύπο αυτό μετά από τη λέξη <span class="red_color">object</span> και άνω-κάτω τελεία (<span class="red_color">:</span>). 
+                Στην συνέχεια υλοποιούμε ή υπερκαλύπτουμε (override) τα μέλη αυτής της κλάσης σαν να 
+                <a href="https://kotlinlang.org/docs/inheritance.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/inheritance.html">κληρονομούσαμε</abbr></a> από αυτήν:
+            </p>
+            <pre><code>window.<span class="red_color">addMouseListener</span>(<span class="light_blue_color">object</span>: <span class="red_color">MouseAdapter</span>() {</span>
+    <span class="light_blue_color">override fun </span><span class="red_color">mouseClicked</span>(e: MouseEvent) { <span class="comments">/*...*/ </span>}
+
+    <span class="light_blue_color">override fun </span><span class="red_color">mouseEntered</span>(e: MouseEvent) { <span class="comments">/*...*/ </span>}
+})</code></pre>
+            <p>
+                Αν ένα supertype έχει constructor, περνούμε τις κατάλληλες παραμέτρους στον constructor αυτόν. Πολλαπλά supertypes 
+                μπορούν να προσδιοριστούν ως μία λίστα διαχωρισμένη με κόμμα, αμέσως μετά την άνω-κάτω τελεία:
+            </p>
+            <pre><code><span class="light_blue_color">open class</span> A(x: <span class="purple_color">Int</span>) {
+    <span class="light_blue_color">public open val </span>y: <span class="purple_color">Int</span> = x
+}
+
+<span class="light_blue_color">interface</span> B { <span class="comments">/*...*/</span> }
+<span class="light_blue_color">val</span> ab: A = <span class="light_blue_color">object</span> : A(<span class="purple_color">1</span>), B {
+    <span class="light_blue_color">override val</span> y = <span class="purple_color">15</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Χρήση anonymous objects ως επιστροφή και τύποι τιμών (value types)
+            </h3>
+            <p>
+                Όταν χρησιμοποιείται ένα anonymous object ως τύπος μίας τοπικής (local) ή 
+                <a href="https://kotlinlang.org/docs/visibility-modifiers.html#packages" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/visibility-modifiers.html#packages">private</abbr></a> αλλά όχι
+                <a href="https://kotlinlang.org/docs/inline-functions.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/inline-functions.html">inline</abbr></a> δήλωσης (συνάρτησης ή ιδιότητας), όλα 
+                τα μέλη της είναι προσβάσιμα μέσω της συνάρτησης ή της ιδιότητας:
+            </p>
+            <pre><code>window.<span class="light_blue_color">class</span> C {
+    <span class="light_blue_color">private fun</span> <span class="red_color">getObject</span>() = <span class="light_blue_color">object</span> {
+        <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>       
+    }
+
+    <span class="light_blue_color">fun </span><span class="red_color">printX</span>() {
+        <span class="red_color">println</span>(<span class="red_color">getObject</span>().x)
+    }
+}</code></pre>
+            <p>
+                Αν αυτή η συνάρτηση ή ιδιότητα είναι public ή private inline, ο πραγματικός της τύπος είναι:
+            </p>
+            <ul>
+                <li><span class="red_color">Any</span> αν το anonymous object δεν έχει δηλωμένο supertype</li>
+                <li>Το δηλωμένο supertype του anonymous object, αν υπάρχει ακριβώς ένας τέτοιος τύπος</li>
+                <li>Ο ρητά δηλωμένος τύπος σε περίπτωση που υπάρχουν περισσότερα από ένα δηλωμένα supertypes</li>
+            </ul>
+            <p>
+                Σε όλες αυτές τις περιπτώσεις, τα μέλη που προστίθενται στο anonymous object δεν είναι προσβάσιμα. Τα μέλη που έχουν 
+                υπερκαλυφθεί (overridden members) είναι προσπελάσιμα αν έχουν δηλωθεί στον πραματικό τύπο της συνάρτησης ή της ιδιότητας:
+            </p>
+            <pre><code><span class="light_blue_color">interface</span> A {
+    <span class="light_blue_color">fun</span><span class="red_color"> funFromA</span>() {}
+}
+<span class="light_blue_color">interface</span> B
+
+<span class="light_blue_color">class</span> C {
+    <span class="comments">// Ο τύπος επιστροφής είναι Any· το x δεν είναι προσπελάσιμο</span>
+    <span class="light_blue_color">fun</span><span class="red_color"> getObject</span>() = <span class="light_blue_color">object</span> {
+        <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>
+    }
+
+    <span class="comments">// Ο τύπος επιστροφής A· το x δεν είναι προσπελάσιμο</span>
+    <span class="light_blue_color">fun</span><span class="red_color"> getObjectA</span>() = <span class="light_blue_color">object</span>: A {
+        <span class="light_blue_color">override fun</span><span class="red_color"> funFromA</span>() {}
+        <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>
+    }
+
+    <span class="comments">// Ο τύπος επιστροφής B· η συνάρτηση funFromA() και η μεταβλητή x δεν είναι προσπελάσιμα</span>
+    <span class="light_blue_color">fun</span><span class="red_color"> getObjectB</span>(): B = <span class="light_blue_color">object</span>: A, B { <span class="comments">// απαιτείται ρητός τύπος επιστροφής</span>
+        <span class="light_blue_color">override fun </span><span class="red_color"> funFromA</span>() {}
+            <span class="light_blue_color">val</span> x: String = <span class="green_color">"x"</span>
+    }
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Προσπέλαση μεταβλητών από anonymous objects
+            </h3>
+            <p>
+                Ο κώδικας στα object expressions μπορεί να προσπελάσει μεταβλητές εσωτερικής εμβέλειας:
+            </p>
+            <pre><code><span class="light_blue_color">fun</span><span class="red_color"> countClicks</span>(window: JComponent) {
+    <span class="light_blue_color">var</span> clickCount =<span class="purple_color">0</span>
+    <span class="light_blue_color">var</span> enterCount =<span class="purple_color">0</span>
+
+    window.<span class="red_color">addMouseListener</span>(<span class="light_blue_color">object</span> : <span class="red_color">MouseAdapter</span>() {
+        <span class="light_blue_color">override fun</span><span class="red_color"> mouseClicked</span>(e: MouseEvent) {
+            clickCount++
+        }
+
+        <span class="light_blue_color">override fun</span><span class="red_color"> mouseEntered</span>(e: MouseEvent) {
+            enterCount++
+        }
+    })
+    <span class="comments"></span>// ...
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Δηλώσεις αντικειμένων
+            </h3>
+            <p>
+                Το σχέδιο <a href="https://en.wikipedia.org/wiki/Singleton_pattern" target="_blank">
+                <abbr title="https://en.wikipedia.org/wiki/Singleton_pattern">Singleton</abbr></a> μπορεί να αποβεί χρήσιμο σε διάφορες 
+                περιπτώσεις, και η Kotlin κάνει εύκολες τις δηλώσεις singletons:
+            </p>
+            <pre><code><span class="light_blue_color">object</span> DataProviderManager {
+    <span class="light_blue_color">fun </span><span class="red_color">registerDataProvider</span>(provider: DataProvider) {
+        <span class="comments"></span>// ...</span>
+    }
+
+    <span class="light_blue_color">val</span> allDataProviders: Collection<span class="purple_color">&lt;</span>DataProvider<span class="purple_color">></span>
+    <span class="red_color">get</span>() = <span class="comments">// ...</span>
+}</code></pre>
+            <p>
+                Αυτό ονομάζεται <strong>δήλωση αντικειμένου (object declaration)</strong>, και πάντοτε έχει όνομα που ακολουθεί το 
+                keyword <span class="red_color">object</span>. Όπως ακριβώς και με τη δήλωση μεταβλητής, μία δήλωση αντικειμένου δεν είναι 
+                έκφραση και δεν μπορεί να χρησιμοποιηθεί στο δεξί μέρος μίας δήλωσης ανάθεσης.
+            </p>
+            <p>
+                Η αρχικοποίηση μίας δήλωσης αντικειμένου είναι thread-safe και πραγματοποιείται στην πρώτη προσπέλαση.
+            </p>
+            <p>
+                Για να αναφερθούμε στο αντικείμενο χρησιμοποιούμε απευθείας το όνομά του:
+
+            </p>
+            <pre><code>DataProviderManager.<span class="light_blue_color">registerDataProvider</span>(...)</code></pre>
+            <p>
+                Τέτοια αντικείμενα μπορούν να έχουν supertypes:
+            </p>
+            <pre><code><span class="light_blue_color">object</span> DefaultListener : <span class="red_color">MouseAdapter</span>() {
+    <span class="light_blue_color">override fun</span><span class="red_color"> mouseClicked</span>(e: MouseEvent) { <span class="comments">...</span> }
+    <span class="light_blue_color">override fun</span><span class="red_color"> mouseEntered</span>(e: MouseEvent) { <span class="comments">...</span> }
+}</code></pre>
+            <p>
+                <strong>Σημείωση: </strong>Οι δηλώσεις αντικειμένων δεν μπορούν να είναι local (αυτό γιατί δεν μπορούν να εμφωλευθούν μέσα 
+                σε μία συνάρτηση) αλλά μπορούν να εμφωλευθούν απευθευείας μέσα σε άλλες δηλώσεις αντικειμένων ή σε μη εσωτερικές 
+                (non-inner) κλάσεις.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Data objects
+            </h3>
+            <p>
+                <strong>Σημείωση: </strong>Οι δηλώσεις data object είναι ένα <a href="https://kotlinlang.org/docs/components-stability.html" 
+                target="_blank"><abbr title="https://kotlinlang.org/docs/components-stability.html">πειραματικό</abbr></a> στοιχείο. 
+                Μπορούν να παρατηθούν ή να αλλαχθούν σε οποιαδήποτε στιγμή. Απαιτείται Opt-in με την
+                <a href="https://kotlinlang.org/docs/gradle.html#compiler-options" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/gradle.html#compiler-options">επιλογή compiler</abbr></a>
+                <span class="red_color">compilerOptions.languageVersion.set(KotlinVersion.KOTLIN_1_9) </span>.
+            </p>
+                Όταν εκτυπώνουμε μία απλή δήλωση <span class="red_color">object</span> στην Kotlin, θα παρατηρήσουμε πως η αναπαράσταση 
+                της συμβολοσειράς (string representation) περιέχει το όνομά της καθώς και το hash του αντικειμένου:
+            <p>
+                <pre><code><span class="light_blue_color">object</span> MyObject
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="red_color">println</span>(MyObject) <span class="comments">// MyObject@1f32e575</span>
+}</code></pre>
+            <p>
+                Όπως ακριβώς συμβαίνει με τις <a href="https://kotlinlang.org/docs/data-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/data-classes.html">data classes</abbr></a>, μπορούμε να επισημάνουμε μία 
+                δήλωση <span class="red_color">object</span> με τον <span class="red_color">data</span> modifier. Αυτός δίνει οδηγίες 
+                στον compiler να παράγει έναν αριθμό συναρτήσεων για το αντικείμενό μας:
+            </p>
+            <ul>
+                <li><span class="red_color">toString()</span> που επιστρέφει το όνομα του data object</li>
+                <li>Το ζευγάρι συναρτήσεων <span class="red_color">equals()</span> / <span class="red_color">hashCode()</span></li>
+            </ul>
+            <p>
+                <strong>Σημείωση: </strong>Δεν μπορούμε να παρέχουμε μία συνηθισμένη υλοποίηση <span class="red_color">equals</span> ή
+                <span class="red_color">hashCode</span> για ένα <span class="red_color">data</span> object.
+            </p>
+            <p>
+                Η συνάρτηση <span class="red_color">toString()</span> ενός data object επιστρέφει το όνομα του αντικειμένου:
+            </p>
+            <pre><code><span class="light_blue_color">data object</span> MyDataObject {
+    <span class="light_blue_color">val</span> x: Int = <span class="purple_color">3</span>
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="red_color">println</span>(MyDataObject) <span class="comments"></span>// MyDataObject
+}</code></pre>
+            <p>
+               Η συνάρτηση <span class="red_color">equals()</span> για ένα <span class="red_color">data object</span> διασφαλίζει πως 
+               όλα τα αντικείμενα που έχουν τον τύπο του δικού μας <span class="red_color">data object</span> θεωρούνται ίσα. Στις 
+               περισσότερες περιπτώσεις, μπορούμε να έχουμε ένα και μόνο στιγμιότυπο του data object μας κατά το χρόνο εκτέλεσης (για 
+               παράδειγμα, χρησιμοποιώντας platform reflection μέσω της <span class="red_color">Java.lang.reflect</span> ή της
+               serialization library της JVM που χρησιμοποιεί αυτό το API από κάτω), εξασφαλίζοντας με αυτόν τον τρόπο πως τα αντικείμενα 
+               μεταχειρίζονται ως ίσα.
+            </p>
+            <p>
+                <strong>Σημείωση: </strong> Ας βεβαιωθούμε μόνο πως συγκρίνουμε τα <span class="red_color">data objects</span> δομικά
+                (χρησιμοποιώντας τον τελεστή <span class="red_color">==</span>) και ποτέ μέσω αναφοράς (χρησιμοποιώντας τον τελεστή 
+                <span class="red_color">===</span>). Αυτό μας βοηθά να αποφύγουμε παγίδες όταν περισσότερα από ένα στιγμιότυπα ενός 
+                data object υφίστανται κατά το χρόνο εκτέλεσης.
+            </p>
+            <pre><code><span class="light_blue_color">import</span> java.lang.reflect.Constructor
+<span class="light_blue_color">data object</span> MySingleton
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="light_blue_color">val</span> evilTwin = <span class="red_color">createInstanceViaReflection</span>()
+
+    <span class="red_color">println</span>(MySingleton)<span class="comments"> // MySingleton</span>
+    <span class="red_color">println</span>(evilTwin)<span class="comments"> // MySingleton</span>
+
+    <span class="comments">/* Ακόμα κι όταν μία βιβλιοθήκη δημιουργεί σθεναρά ένα δεύτερο στιγμιότυπο του MySingleton, η μέθοδός του `
+    equals` επιστρέφει true:*/</span>
+    <span class="red_color">println</span>(MySingleton == evilTwin)<span class="comments"> // true</span>
+
+    <span class="comments">// Να μη συγκρίνουμε data objects μέσω του τελεστή ===.</span>
+    <span class="red_color">println</span>(MySingleton === evilTwin) <span class="comments">// false</span>
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> createInstanceViaReflection</span>(): MySingleton {
+    <span class="comments">// Η Kotlin reflection δεν επιτρέπει την υλοποίηση data objects.</span>
+    <span class="comments">// Δημιουργεί ένα νέο στιγμιότυπο MySingleton "σθεναρά" (π.χ. Java platform reflection)</span>
+    <span class="comments">// Να μην το κάνουμε αυτό!</span>
+    <span class="light_blue_color">return</span> (MySingleton.javaClass.declaredConstructors[<span class="purple_color">0</span>].<span class="red_color">apply</span> { <span class="light_blue_color">isAccessible</span> = <span class="purple_color">true</span> } <span class="light_blue_color">as Constructor</span><span class="purple_color">&lt;</span>MySingleton<span class="purple_color">></span>).<span class="red_color">newInstance</span>()
+}</code></pre>
+            <p>
+                Η παραγόμενη συνάρτηση <span class="red_color">hashCode()</span> έχει συμπεριφορά συνεπή με την συνάρτηση
+                <span class="red_color">equals()</span>, ώστε όλα τα στιγμιότυπα ενός <span class="red_color">data object</span> κατά το 
+                χρόνο εκτέλεσης έχουν τον ίδιο κώδικα hash.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Διαφορές ανάμεσα σε data objects και data classes
+            </h3>
+            <p>
+                Ενώ οι δηλώσεις των <span class="red_color">data object</span> και <span class="red_color">data class</span> συχνά 
+                χρησιμοποιούνται μαζί και παρουσιάζουν κάποιες ομοιότητες, υπάρχουν ορισμένες συναρτήσεις που δεν παράγονται για ένα 
+                <span class="red_color">data object</span>:
+            </p>
+            <ul>
+                <li>Συνάρτηση <span class="red_color">copy()</span>. Επειδή η δήλωση ενός <span class="red_color">data object</span> 
+                αποσκοπεί να χρησιμοποιείται ως singleton objects, δεν παράγεται η συνάρτηση <span class="red_color">copy()</span>. Το 
+                σχέδιο Singleton περιορίζει την ενσάρκωση μίας κλάσης σε ένα μόνο στιγμιότυπο, το οποίο θα παραβιαζόταν από αντίγραφα 
+                που θα επιτρέπονταν από το υπό δημιουργία στιγμιότυπο.
+                </li>
+                <li>Συνάρτηση <span class="red_color">componentN()</span>. Σε αντίθεση με μία <span class="red_color">data class</span>, 
+                ένα <span class="red_color">data object</span> δεν έχει ιδιότητες (data properties). Εφόσον επιχειρούσαμε να καταστρέψουμε 
+                ένα τέτοιο αντικείμενο χωρίς ιδιότητες δε θα είχε νόημα, καμία συνάρτηση <span class="red_color">componentN()</span> δεν 
+                παράγεται.</li>
+            </ul>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Χρήση data objects με sealed hierarchies
+            </h3>
+            <p>
+                Οι δηλώσεις <span class="red_color">data objects</span> είναι ιδιαίτερα ταιριαστές για sealed hierarchies, όπως 
+                <a href="https://kotlinlang.org/docs/sealed-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/sealed-classes.html"> sealed classes</abbr></a> ή
+                <a href="https://kotlinlang.org/docs/sealed-classes.html" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/sealed-classes.html">sealed interfaces</abbr></a>, καθώς μας επιτρέπουν να 
+                διατηρήσουμε συμμετρία με οποιεσδήποτε data classes θα μπορούσαμε να έχουμε καθορίσει μαζί με το αντικείμενο:
+            </p>
+            <pre><code><span class="light_blue_color">sealed interface</span> ReadResult
+<span class="light_blue_color">data class</span> Number(<span class="light_blue_color">val</span> number: <span class="purple_color">Int</span>) : ReadResult
+<span class="light_blue_color">data class</span> Text(<span class="light_blue_color">val</span> text: String) : ReadResult
+<span class="light_blue_color">data object</span> EndOfFile : ReadResult
+
+<span class="light_blue_color">fun</span><span class="red_color"> printReadResult</span>(r: ReadResult) {
+    <span class="light_blue_color">when</span>(r) {
+        <span class="light_blue_color">is</span> Number <span class="purple_color">-></span><span class="red_color"> println</span>(<span class="green_color">"Num ${r.number}"</span>)
+        <span class="light_blue_color">is</span> Text <span class="purple_color">-></span><span class="red_color"> println</span>(<span class="green_color">"Txt ${r.text}"</span>)
+        <span class="light_blue_color">is</span> EndOfFile <span class="purple_color">-></span><span class="red_color"> println</span>(<span class="green_color">"EOF"</span>)
+    }
+}
+
+<span class="light_blue_color">fun</span><span class="red_color"> main</span>() {
+    <span class="red_color">printReadResult</span>(EndOfFile) <span class="comments">// EOF</span>
+}</code></pre>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Companion objects
+            </h3>
+            <p>
+                Μία δήλωση αντικειμένου μέσα σε μία κλάση μπορεί να σημειωθεί με το keyword <span class="red_color">companion</span>:
+            </p>
+            <pre><code><span class="light_blue_color">class</span> MyClass {
+    <span class="light_blue_color">companion object</span> Factory {
+        <span class="light_blue_color">fun</span><span class="red_color"> create</span>(): MyClass =<span class="light_blue_color"> MyClass</span>()
+    }
+}</code></pre>
+            <p>
+                Τα μέλη του companion object μπορούν να κληθούν απλώς με χρήση του ονόματος της κλάσης ως qualifier:
+            </p>
+            <pre><code><span class="light_blue_color">val</span> instance = MyClass.<span class="red_color">create</span>()</code></pre>
+            <p>
+                Το όνομα του companion object μπορεί να παραλειφθεί, στην περίπτωση που χρησιμοποιηθεί το όνομα <span class="red_color">
+                Companion</span>:
+            </p>  
+            <pre><code><span class="light_blue_color">class</span> MyClass {
+    <span class="light_blue_color">companion object</span> { }
+}
+
+<span class="light_blue_color">val</span> x = MyClass.Companion</code></pre>
+            <p>
+                Τα μέλη της κλάσης μπορούν να προσπελάσουν τα private μέλη του αντίστοιχου companion object.
+            </p>
+            <p>
+                Το όνομα μίας κλάσης που χρησιμοποιείται αφ' εαυτού (όχι ως qualifier άλλου ονόματος) συμπεριφέρεται σαν αναφορά στο 
+                companion object της κλάσης (είτε έχει όνομα ή όχι):
+            </p>
+            <pre><code><span class="light_blue_color">class</span> MyClass1 {
+    <span class="light_blue_color">companion object</span> Named { }
+}
+
+<span class="light_blue_color">val</span> x = MyClass1
+
+<span class="light_blue_color">class</span> MyClass2 {
+    <span class="light_blue_color">companion object</span> { }
+}
+
+<span class="light_blue_color">val</span> y = MyClass2</code></pre>
+            <p>
+                Παρατηρούμε πως μολονότι τα μέλη των companion objects μοιάζουν με static members άλλων γλωσσών, κατά το χρόνο εκτέλεσης 
+                αυτά εξακολουθούν να είναι στιγμιότυπα πραγματικών αντικειμένων, και μπορούν για παράδειγμα να υλοποιούν interfaces:
+            </p>
+            <pre><code><span class="light_blue_color">interface</span> Factory<span class="purple_color">&lt;</span>T<span class="purple_color">></span> {
+    <span class="light_blue_color">fun</span><span class="red_color"> create</span>(): T
+}
+
+<span class="light_blue_color">class</span> MyClass {
+    <span class="light_blue_color">companion object</span> : Factory<span class="purple_color">&lt;</span>MyClass<span class="purple_color">></span> {
+        <span class="light_blue_color">override fun</span><span class="red_color"> create</span>(): MyClass = <span class="light_blue_color">MyClass</span>()
+    }
+}
+
+<span class="light_blue_color">val</span> f: Factory<span class="light_blue_color">&lt;</span>MyClass<span class="light_blue_color">></span> = MyClass</code></pre>
+            <p>
+                Όπως και να 'χει, στο JVM μπορούμε να έχουμε μέλη companion objects που παράγονται ως πραγματικές static methods και 
+                πεδία εφόσον χρησιμοποιήσουμε το annotation <span class="red_color">@JvmStatic</span>. Συμβουλεύτείτε για περισσότερες 
+                πληροφορίες το τμήμα <a href="https://kotlinlang.org/docs/java-to-kotlin-interop.html#static-fields" target="_blank">
+                <abbr title="https://kotlinlang.org/docs/java-to-kotlin-interop.html#static-fields">Java interoperability</a>.
+            </p>
+            <h3 style="color:#5c36ab; text-shadow: 1px 1px 1px#fa769e; line-height: .5;">
+                Σημαντική διαφορά μεταξύ εκφράσεων και δηλώσεων αντικειμένων
+            </h3>
+            <p>
+                Υπάρχει μία σημαντική διαφορά μεταξύ εκφράσεων και δηλώσεων αντικειμένων:
+            </p>
+            <ul>
+                <li>Οι εκφράσεις αντικειμένων εκτελούνται (και αρχικοποιούνται) <b>άμεσα</b>, όποτε χρησιμοποιύνται.</li>
+                <li>Οι δηλώσεις αντικειμένων αρχικοποιούνται <b>βαριεστημένα (lazily)</b>, όταν προσπελαύνονται για πρώτη φορά.</li>
+                <li>Ένα companion object αρχικοποιείται όταν φορτώνεται η αντίστοιχη κλάση που ταιριάζει με τα semantics ενός 
+                Java static initializer.</li>
+            </ul>                      
+        </div>
+        <div class="right_side">
+            <h4>
+                Τρέχουσα σελίδα:
+            </h4>
+            <p class="display_info" >
+                Κλάσεις / Αντικείμενα
+            </p>            
+        </div>        
+        <footer>
+            <a href=#start><input type="button" value="Top"  class="top"/></a>
+            <p>Programmed, designed and developed by Serafina Panagiotaki - DYPA IEK Aigaleo, &copy; Copyright 2023</p>
+        </footer>
+    </body>
+</html>
